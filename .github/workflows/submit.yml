@@ -1,0 +1,16 @@
+name: Curvenote Submit
+on:
+  push:
+    branches: ['main']
+permissions:
+  contents: write
+jobs:
+  create-submission:
+    uses: curvenote/actions/.github/workflows/submit.yml@v1
+    with:
+      venue: bnext-devnotes
+      kind: devnote
+      collection: developer-cells
+    secrets:
+      CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
+      GITHUB: ${{ secrets.GITHUB_TOKEN }}
