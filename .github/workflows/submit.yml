@@ -11,6 +11,7 @@ jobs:
       venue: bnext-devnotes
       kind: devnote
       collection: developer-cells
+      path: ./*
     secrets:
       CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
       GITHUB: ${{ secrets.GITHUB_TOKEN }}
