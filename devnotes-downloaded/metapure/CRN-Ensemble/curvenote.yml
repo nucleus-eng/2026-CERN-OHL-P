@@ -1,0 +1,22 @@
+version: 1
+extends: base.yml
+project:
+  title: 'CRNsemble'
+  authors:
+    - name: Arash Elahi
+      # email: build@bnext.bio
+      # orcid: 0000-0000-0000-0001
+      affiliations:
+        - name: University of Tennessee, Knoxville
+          # city: San Francisco
+          # state: California
+          # postal_code: 94107
+          # country: USA
+      corresponding: true
+  date: 2026-07-14T00:00:00.000Z
+  banner: banner.webp
+  thumbnail: figs/system_diagram.png
+  toc:
+    # - file: main.md
+    - file: CRNsmeble_Demo.ipynb
+  id: 019deb45-d0ac-78f0-86dd-d7d351f201c2

@@ -1,0 +1,88 @@
+version: 1
+extends: base.yml
+project:
+  title: SecYEG-Based Membrane Translation Module in Synthetic Cells
+  description: >-
+    Development of a Membrane Translation Module via Reconstitution of the
+    SecYEG Translocon for Enhanced Membrane Protein Integration in Liposomes
+  banner: banner.webp
+  authors:
+    - nameParsed:
+        literal: Yen-Yu Hsu
+        given: Yen-Yu
+        family: Hsu
+      name: Yen-Yu Hsu
+      orcid: 0000-0003-0866-6184
+      corresponding: true
+      email: yenyu@bnext.bio
+      affiliations:
+        - affiliations-curvenote-generated-uid-0
+      id: contributors-curvenote-generated-uid-0
+  affiliations:
+    - id: affiliations-curvenote-generated-uid-0
+      name: b.next, San Francisco, California, 94107, USA
+      city: San Francisco
+      state: California
+      postal_code: '94107'
+      country: USA
+  date: '2026-06-12'
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - url: general/DNA Constructs/GenBank files.zip
+      title: DNA Constructs
+  #thumbnail: general/schematic-FA_metabolism.png
+  toc:
+    - file: main.md
+    #- file: experiments/experiment-01/20250220-analysis.ipynb
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - Cytosol
+    - Module
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      articles:
+        - file: main.md
+      output: devnote.pdf
+      id: article
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - general/**/*
+    - General/**/*
+    - experiments/**/*
+    - Experiments/**/*
+    - resources/**/*
+    - Resources/**/*
+    - plasmids/**/*
+    - Plasmids/**/*
+  plugins:
+    - type: javascript
+      path: /home/jovyan/projects/bnext/SecYEG-YH/lorem.mjs
+  id: 019e896a-6e0d-76d5-99ef-2df38c5ebd7f
+site:
+  nav: []
+  template: article-theme
+extend:
+  - /home/jovyan/projects/bnext/SecYEG-YH/base.yml

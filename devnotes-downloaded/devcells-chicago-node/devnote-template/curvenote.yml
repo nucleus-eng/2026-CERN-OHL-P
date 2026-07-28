@@ -1,0 +1,98 @@
+version: 1
+extends: base.yml
+project:
+  title: 'Theophylline-LacZ sensor validation in Cytosol'
+  description: >-
+    [this appears as description for social media preview, recommend using
+    subtitle]
+  subtitle: ''
+  banner: banner.webp
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - Cytosol
+    - Module
+  authors:
+    - nameParsed:
+        literal: Sam Cell
+        given: Sam
+        family: Cell
+      name: DevCells Kickoff Workshop
+      orcid: 0000-0000-0000-0001
+      corresponding: true
+      email: build@bnext.bio
+      affiliations:
+        - affiliations-curvenote-generated-uid-0
+      id: contributors-curvenote-generated-uid-0
+  affiliations:
+    - id: affiliations-curvenote-generated-uid-0
+      name: b.next, San Francisco, California, 94107, USA
+      city: San Francisco
+      state: California
+      postal_code: '94107'
+      country: USA
+  date: '2026-01-10'
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      articles:
+        - file: main.md
+      output: devnote.pdf
+      id: article
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - url: experiments/workshop-protocols.pdf
+      title: Lab Notebook Entry
+  # thumbnail: general/schematic-FA_metabolism.png
+  id: b6272c31-dae6-4c60-bf48-a86466349d86
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  toc:
+    - file: main.md
+    - file: experiments/20251208-day1/analysis-G1.ipynb
+    - file: experiments/20251208-day1/analysis-G1.ipynb
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - general/**/*
+    - General/**/*
+    - experiments/**/*
+    - Experiments/**/*
+    - resources/**/*
+    - Resources/**/*
+    - plasmids/**/*
+    - Plasmids/**/*
+  plugins:
+    - type: javascript
+      path: /home/jovyan/devnotes/kickoff/devnote-template/lorem.mjs
+site:
+  nav: []
+  template: article-theme
+  title: 'Meta DevNote: a DevNote about creating DevNotes'
+  options:
+    logo_text: 'Meta DevNote: a DevNote about creating DevNotes'
+  actions:
+    - title: Learn More
+      url: https://curvenote.com/docs/web
+  domains:
+    - amolina.curve.space
+extend:
+  - /home/jovyan/devnotes/kickoff/devnote-template/base.yml

@@ -1,0 +1,1 @@
+This folder holds assets (figures and tables, typically).

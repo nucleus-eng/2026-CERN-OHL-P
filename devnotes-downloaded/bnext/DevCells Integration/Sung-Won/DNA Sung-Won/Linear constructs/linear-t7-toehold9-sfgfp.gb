@@ -1,0 +1,53 @@
+LOCUS       Linear_T7_toehold9_sfGF 1021 bp ds-DNA     linear       29-JAN-2026
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     primer          1..18
+                     /label="T7TH9sfG_F"
+                     /note="sequence: TCCGGCGTAGAGGATCGA"
+                     /ApEinfo_revcolor="#75c6a9"
+                     /ApEinfo_fwdcolor="#75c6a9"
+     misc_feature    38..56
+                     /label="T7 promoter"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     misc_feature    57..137
+                     /label="toehold 9"
+                     /ApEinfo_revcolor="#c7b0e3"
+                     /ApEinfo_fwdcolor="#c7b0e3"
+     misc_feature    138..851
+                     /label="sfGFP"
+                     /ApEinfo_revcolor="#ffef86"
+                     /ApEinfo_fwdcolor="#ffef86"
+     CDS             138..872
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="MRKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFARYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYKHHHHHH*"
+     misc_feature    935..982
+                     /label="T7 term"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+     primer          complement(1004..1021)
+                     /label="T7TH9sfG_R"
+                     /note="sequence: CGTCCCATTCGCCAATCC"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+ORIGIN
+        1 TCCGGCGTAG AGGATCGAGA TCTCGATCCC GCGAAATTAA TACGACTCAC TATAGGGTTG
+       61 TGTGGtATTG TCTTGTTTGC ATACAGAAAC AGAGGAGATA TGCAATGAAG ACAATAAACC
+      121 TGAAAGGAGC GCAAAAGatg cgtaaaggcg aagagctgtt cactggtgtc gtccctattc
+      181 tggtggaact ggatggtgat gtcaacggtc ataagttttc cgtgcgtggc gagggtgaag
+      241 gtgacgcaac taatggtaaa ctgacgctga agttcatctg tactactggt aaactgccgg
+      301 taccttggcc gactctggta acgacgctga cttatggtgt tcagtgcttt gctcgttatc
+      361 cggaccatat gaagcagcat gacttcttca agtccgccat gccggaaggc tatgtgcagg
+      421 aacgcacgat ttcctttaag gatgacggca cgtacaaaac gcgtgcggaa gtgaaatttg
+      481 aaggcgatac cctggtaaac cgcattgagc tgaaaggcat tgactttaaa gaagacggca
+      541 atatcctggg ccataagctg gaatacaatt ttaacagcca caatgtttac atcaccgccg
+      601 ataaacaaaa aaatggcatt aaagcgaatt ttaaaattcg ccacaacgtg gaggatggca
+      661 gcgtgcagct ggctgatcac taccagcaaa acactccaat cggtgatggt cctgttctgc
+      721 tgccagacaa tcactatctg agcacgcaaa gcgttctgtc taaagatccg aacgagaaac
+      781 gcgatcatat ggttctgctg gagttcgtaa ccgcagcggg catcacgcat ggtatggatg
+      841 aactatacaa aCACCACCAC CACCACCACT GAGATCCGGC TGCTAACAAA GCCCGAAAGG
+      901 AAGCTGAGTT GGCTGCTGCC ACCGCTGAGC AATAACTAGC ATAACCCCTT GGGGCCTCTA
+      961 AACGGGTCTT GAGGGGTTTT TTCTGAAAGG AGGAACTATA TCCGGATTGG CGAATGGGAC
+     1021 G
+//

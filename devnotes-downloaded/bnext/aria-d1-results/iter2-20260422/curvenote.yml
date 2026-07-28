@@ -1,0 +1,27 @@
+version: 1
+# extends: base.yml
+project:
+  title: 'IGOR PPK Optimization: Round 2'
+  # subtitle: ''
+  # description: ''
+  authors:
+    - name: 'Scott Riggs'
+      email: 'scr@findwhatmatters.ai'
+      affiliations:
+        - name: 'Find What Matters'
+      corresponding: true
+    - name: 'IGOR'
+      affiliations:
+        - name: 'Find What Matters'
+      corresponding: false
+  date: 2026-04-22
+  banner: aria.webp
+  thumbnail: figures/viz-02-test-split-sigmoid_rate-1-h.png
+  toc:
+    - file: main.md
+  # downloads:
+  #   - file: workspace/workspace_data.csv
+  #     title: Workspace Data CSV
+  id: 591140bb-e66b-415b-ae5c-03302aa68bbe
+site:
+  template: article-theme

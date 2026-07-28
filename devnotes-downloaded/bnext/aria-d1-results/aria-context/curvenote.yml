@@ -1,0 +1,24 @@
+version: 1
+extends: base.yml
+project:
+  title: 'AI-driven Cell-Free Energy Development and Optimization'
+  authors:
+    - name: Anton Jackson-Smith
+      email: build@bnext.bio
+      orcid: 0000-0000-0000-0001
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+    - name: Scott Riggs
+      email: build@bnext.bio
+      orcid: 0000-0000-0000-0001
+      affiliations:
+        - name: FindWhatMatters, San Francisco, California, 94107, USA
+      corresponding: true
+  date: 2026-01-10
+  banner: aria.webp
+  thumbnail: thumbnail.png
+  abbreviations:
+      IGOR: Resting Heart Rate
+  toc:
+    - file: main.md
+  id: 019db9cf-6b15-79fa-b71f-550cf37149fa

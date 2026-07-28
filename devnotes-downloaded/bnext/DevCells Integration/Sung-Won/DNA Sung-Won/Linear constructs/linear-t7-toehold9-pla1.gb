@@ -1,0 +1,77 @@
+LOCUS       Linear_T7_toehold9_PLA1 1249 bp ds-DNA     linear       22-MAY-2026
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     primer          1..18
+                     /label="T7TH9sfG_F"
+                     /note="sequence: TCCGGCGTAGAGGATCGA"
+                     /ApEinfo_revcolor="#75c6a9"
+                     /ApEinfo_fwdcolor="#75c6a9"
+     misc_feature    38..56
+                     /label="T7 Promotor"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+     primer          49..75
+                     /label="TH9_In_F"
+                     /note="sequence: ACTATAGGGTTGTGTGGtATTGTCTTG"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+     primer          complement(56..76)
+                     /label="TH9_BB_R2"
+                     /note="sequence: ACAAGACAATaCCACACAACC"
+                     /ApEinfo_revcolor="#ff9ccd"
+                     /ApEinfo_fwdcolor="#ff9ccd"
+     misc_feature    57..137
+                     /label="toehold #9"
+                     /ApEinfo_revcolor="#ffef86"
+                     /ApEinfo_fwdcolor="#ffef86"
+     misc_feature    91..98
+                     /label="RBS"
+                     /ApEinfo_revcolor="#85dae9"
+                     /ApEinfo_fwdcolor="#85dae9"
+     misc_feature    138..1100
+                     /label="PLA1 (codon-optimized to E. coli)"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="phospholipase A1 (PLA1) from Serratia sp. MK1"
+     CDS             138..1100
+                     /label="PLA1"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /translation="MSMSLSFTSAIAPAAIQPPMVRTQPEPLSSSQPVEASATKAPVATLSQNSLNAQSLLNTLVSEISAAAPAAANQGVTRGQQPQKGDYTLALLAKDVYSTGSQGVEGFNRLSADALLGAGIDPASLQDAASGFQAGIYTDNQQYVLAFAGTNDMRDWLSNVRQATGYDDVQYNQAVSLAKSAKAAFGDALVIAGHSLGGGLAATAALATGTVAVTFNAAGVSDYTLNRMGIDPAAAKQDAQAGGIRRYSEQYDMLTGTQESTSLIPDAIGHKITLANNDTLSGIDDWRPSKHLDRSLTAHGIDKVISSMAEQKPWEAMANA*"
+     primer          1101..1120
+                     /label="250824 CPPsfGbl_BB_F"
+                     /note="sequence: GATCCGGCTGCTAACAAAGC"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+     misc_feature    1163..1210
+                     /label="T7 Terminator"
+                     /ApEinfo_revcolor="#ff9ccd"
+                     /ApEinfo_fwdcolor="#ff9ccd"
+     primer          complement(1232..1249)
+                     /label="T7TH9sfG_R"
+                     /note="sequence: CGTCCCATTCGCCAATCC"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+ORIGIN
+        1 TCCGGCGTAG AGGATCGAGA TCTCGATCCC GCGAAATTAA TACGACTCAC TATAGGGTTG
+       61 TGTGGtATTG TCTTGTTTGC ATACAGAAAC AGAGGAGATA TGCAATGAAG ACAATAAACC
+      121 TGAAAGGAGC GCAAAAGATG TCTATGTCAC TGTCTTTTAC ATCGGCTATC GCGCCCGCTG
+      181 CTATTCAACC GCCAATGGTC CGTACACAGC CGGAACCGTT GTCTTCTAGT CAGCCTGTGG
+      241 AAGCGAGCGC TACAAAAGCC CCTGTCGCAA CCCTGAGTCA GAACTCCCTC AATGCCCAAT
+      301 CATTGCTCAA TACCCTCGTC TCCGAAATCT CTGCCGCCGC TCCGGCGGCA GCTAATCAAG
+      361 GAGTCACGCG CGGGCAGCAG CCACAGAAAG GAGACTATAC TTTGGCGCTG CTCGCTAAAG
+      421 ATGTTTATTC AACCGGTTCA CAGGGTGTCG AAGGGTTCAA CCGCCTGTCA GCTGATGCGT
+      481 TGTTAGGAGC AGGTATAGAT CCGGCAAGTC TGCAGGACGC CGCTTCCGGC TTTCAAGCAG
+      541 GGATTTATAC GGATAACCAG CAGTACGTTC TTGCTTTTGC TGGGACCAAT GATATGCGAG
+      601 ATTGGTTGAG CAACGTCCGT CAAGCGACCG GATACGACGA TGTACAGTAT AATCAGGCTG
+      661 TCAGCTTGGC AAAATCTGCT AAAGCCGCCT TCGGCGACGC GCTTGTTATT GCCGGCCATA
+      721 GCTTAGGGGG CGGCCTCGCC GCAACGGCTG CATTGGCTAC AGGGACTGTG GCTGTTACTT
+      781 TTAACGCAGC TGGGGTGTCA GATTATACGC TTAATCGTAT GGGAATTGAC CCTGCGGCAG
+      841 CCAAACAGGA TGCCCAGGCC GGTGGGATCC GTCGCTATAG CGAACAATAC GATATGCTTA
+      901 CTGGGACACA AGAATCAACA AGCCTCATCC CAGACGCTAT TGGTCATAAA ATTACCTTAG
+      961 CGAACAACGA TACATTGAGT GGCATTGATG ACTGGCGTCC CTCAAAACAC CTGGATCGTT
+     1021 CACTGACTGC ACATGGTATC GATAAAGTTA TCTCGAGTAT GGCGGAACAG AAGCCGTGGG
+     1081 AAGCAATGGC CAACGCATGA GATCCGGCTG CTAACAAAGC CCGAAAGGAA GCTGAGTTGG
+     1141 CTGCTGCCAC CGCTGAGCAA TAACTAGCAT AACCCCTTGG GGCCTCTAAA CGGGTCTTGA
+     1201 GGGGTTTTTT CTGAAAGGAG GAACTATATC CGGATTGGCG AATGGGACG
+//

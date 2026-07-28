@@ -1,0 +1,107 @@
+LOCUS       T7-theo-PLA1-t7h        1178 bp    DNA     linear   UNA 13-JUL-2026
+DEFINITION  .
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 1178)
+  AUTHORS   Bnext Bio
+  TITLE     Direct Submission
+  JOURNAL   Exported Jul 13, 2026 from SnapGene 8.2.2
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..1178
+                     /mol_type="genomic DNA"
+                     /organism="unspecified"
+     source          join(1..18,19..30)
+                     /mol_type="genomic DNA"
+                     /note="This feature has 2 segments:
+                        1:  1 .. 18 / #ffffff
+                        2: 19 .. 30 / #ffffff"
+                     /organism="unspecified"
+     source          106..1068
+                     /note="color: #ffffff"
+                     /organism="Gene_0 in pTwist Amp Medium Copy"
+     source          1146..1157
+                     /mol_type="genomic DNA"
+                     /note="color: #ffffff"
+                     /organism="unspecified"
+     source          1158..1178
+                     /mol_type="genomic DNA"
+                     /note="color: #ffffff"
+                     /organism="unspecified"
+     primer_bind     1..18
+                     /label=M13 fwd
+                     /note="common sequencing primer, one of multiple similar 
+                     variants"
+                     /note="color: #a020f0; direction: RIGHT"
+     misc_feature    19..24
+                     /label=BbsI
+                     /note="color: #a6acb3"
+     misc_feature    27..30
+                     /label=MC1-TU-L
+                     /note="color: #a6acb3"
+     promoter        31..49
+                     /label=T7 promoter
+                     /note="promoter for bacteriophage T7 RNA polymerase"
+                     /note="color: #ffffff; direction: RIGHT"
+     misc_feature    49..105
+                     /label=Theophylline riboswitch (Mansy lab)
+                     /note="color: #a6acb3"
+     CDS             106..1068
+                     /codon_start=1
+                     /label=PLA1
+                     /note="color: #b4abac"
+                     /translation="MSMSLSFTSAIAPAAIQPPMVRTQPEPLSSSQPVEASATKAPVAT
+                     LSQNSLNAQSLLNTLVSEISAAAPAAANQGVTRGQQPQKGDYTLALLAKDVYSTGSQGV
+                     EGFNRLSADALLGAGIDPASLQDAASGFQAGIYTDNQQYVLAFAGTNDMRDWLSNVRQA
+                     TGYDDVQYNQAVSLAKSAKAAFGDALVIAGHSLGGGLAATAALATGTVAVTFNAAGVSD
+                     YTLNRMGIDPAAAKQDAQAGGIRRYSEQYDMLTGTQESTSLIPDAIGHKITLANNDTLS
+                     GIDDWRPSKHLDRSLTAHGIDKVISSMAEQKPWEAMANA"
+     misc_feature    106..1068
+                     /label=PLA1 (codon-optimized to E. coli)
+                     /note="phospholipase A1 (PLA1) from Serratia sp. MK1"
+                     /note="color: #b4abac"
+     misc_feature    1069..1086
+                     /label=CDS Suffix
+                     /note="color: #a6acb3"
+     regulatory      1087..1125
+                     /label=T7hyb6 Terminator
+                     /note="color: #ffffff"
+     misc_feature    1126..1145
+                     /label=Terminator Spacer
+                     /note="color: #a6acb3"
+     misc_feature    1146..1149
+                     /label=MC1-TU-R
+                     /note="color: #a6acb3"
+     misc_feature    complement(1152..1157)
+                     /label=BbsI
+                     /note="color: #a6acb3; direction: LEFT"
+     primer_bind     complement(1158..1178)
+                     /label=M13 rev
+                     /note="common sequencing primer, one of multiple similar 
+                     variants"
+                     /note="color: #a020f0; direction: LEFT"
+ORIGIN
+        1 gtaaaacgac ggccagtgga agacatggag taatacgact cactataggg tgataccagc
+       61 atcgtcttga tgcccttggc agcaccctgc taaggtaaca acaagatgtc tatgtcactg
+      121 tcttttacat cggctatcgc gcccgctgct attcaaccgc caatggtccg tacacagccg
+      181 gaaccgttgt cttctagtca gcctgtggaa gcgagcgcta caaaagcccc tgtcgcaacc
+      241 ctgagtcaga actccctcaa tgcccaatca ttgctcaata ccctcgtctc cgaaatctct
+      301 gccgccgctc cggcggcagc taatcaagga gtcacgcgcg ggcagcagcc acagaaagga
+      361 gactatactt tggcgctgct cgctaaagat gtttattcaa ccggttcaca gggtgtcgaa
+      421 gggttcaacc gcctgtcagc tgatgcgttg ttaggagcag gtatagatcc ggcaagtctg
+      481 caggacgccg cttccggctt tcaagcaggg atttatacgg ataaccagca gtacgttctt
+      541 gcttttgctg ggaccaatga tatgcgagat tggttgagca acgtccgtca agcgaccgga
+      601 tacgacgatg tacagtataa tcaggctgtc agcttggcaa aatctgctaa agccgccttc
+      661 ggcgacgcgc ttgttattgc cggccatagc ttagggggcg gcctcgccgc aacggctgca
+      721 ttggctacag ggactgtggc tgttactttt aacgcagctg gggtgtcaga ttatacgctt
+      781 aatcgtatgg gaattgaccc tgcggcagcc aaacaggatg cccaggccgg tgggatccgt
+      841 cgctatagcg aacaatacga tatgcttact gggacacaag aatcaacaag cctcatccca
+      901 gacgctattg gtcataaaat taccttagcg aacaacgata cattgagtgg cattgatgac
+      961 tggcgtccct caaaacacct ggatcgttca ctgactgcac atggtatcga taaagttatc
+     1021 tcgagtatgg cggaacagaa gccgtgggaa gcaatggcca acgcatgatg aagagcttag
+     1081 agaccgagat aacagatact tcggtatctg ttatctgttt tttttctaag catcacactg
+     1141 ccgtccgcta tgtcttccat ggtcatagct gtttcctg
+//

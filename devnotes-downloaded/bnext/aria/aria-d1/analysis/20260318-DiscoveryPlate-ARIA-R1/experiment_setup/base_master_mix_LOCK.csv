@@ -1,0 +1,11 @@
+reagent,unit,stock_conc,base_conc,vol_per_rxn_ul,vol_to_pipette_ul,below_min_pipetting_vol,base_master_mix_fold,base_master_mix_vol_to_add_ul,effective_pipetting_scalar,total_master_mix_volume_ul
+hepes,mM,1500.0,50.0,0.333,16.333,False,1.849568,5.407,1.4,264.927
+ctp,mM,50.0,1.0,0.2,9.8,False,1.849568,5.407,1.4,264.927
+utp,mM,50.0,1.0,0.2,9.8,False,1.849568,5.407,1.4,264.927
+tcep,mM,50.0,1.0,0.2,9.8,False,1.849568,5.407,1.4,264.927
+folinic_acid,mM,5.0,0.02,0.04,1.96,False,1.849568,5.407,1.4,264.927
+spermidine,mM,200.0,2.0,0.1,4.9,False,1.849568,5.407,1.4,264.927
+rnas_inh,U/ml,40000.0,2000.0,0.5,24.5,False,1.849568,5.407,1.4,264.927
+dna,nM,60.0,5.0,0.833,40.833,False,1.849568,5.407,1.4,264.927
+ribosome,uM,10.0,1.8,1.8,88.2,False,1.849568,5.407,1.4,264.927
+pmix,mg/ml,15.0,1.8,1.2,58.8,False,1.849568,5.407,1.4,264.927

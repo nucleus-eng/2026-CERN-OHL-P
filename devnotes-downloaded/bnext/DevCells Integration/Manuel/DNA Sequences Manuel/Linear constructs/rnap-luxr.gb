@@ -1,0 +1,68 @@
+LOCUS       RNAP_LUXR               1022 bp ds-DNA     circular     05-MAR-2026
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     MCS             22..43
+                     /label="Prefix"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    44..78
+                     /label="Bba_J23101 Const prom"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     misc_feature    79..84
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     RBS             87..98
+                     /label="Bba_B0034"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     misc_feature    99..104
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    105..860
+                     /label="luxR"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+     CDS             105..860
+                     /label="LuxR"
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="MKNINADDTYRIINKIKACRSNNDINQCLSDMTKMVHCEYYLLAIIYPHSMVKSDISILDNYPKKWRQYYDDANLIKYDPIVDYSNSNHSPINWNIFENNAVNKKSPNVIKEAKTSGLITGFSFPIHTANNGFGMLSFAHSEKDNYIDSLFLHACMNIPLIVPSLVDNYRKINIANNKSNNDLTKREKECLAWACEGKSSWDISKILGCSERTVTFHLTNAQMKLNTTNRCQSISKAILTGAIDCPYFKN**"
+     misc_feature    861..866
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    869..997
+                     /label="terminator"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    949..954
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    998..1003
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+ORIGIN
+        1 TCAGCCATAC CACATTTGGT Cgaattcgcg gccgcttcta gagtttacag ctagctcagt
+       61 cctaggtatt atgctagcta ctagagaaag aggagaaata ctagatgaaa aacataaatg
+      121 ccgacgacac atacagaata attaataaaa ttaaagcttg tagaagcaat aatgatatta
+      181 atcaatgctt atctgatatg actaaaatgg tacattgtga atattattta ctcgcgatca
+      241 tttatcctca ttctatggtt aaatctgata tttcaatcct agataattac cctaaaaaat
+      301 ggaggcaata ttatgatgac gctaatttaa taaaatatga tcctatagta gattattcta
+      361 actccaatca ttcaccaatt aattggaata tatttgaaaa caatgctgta aataaaaaat
+      421 ctccaaatgt aattaaagaa gcgaaaacat caggtcttat cactgggttt agtttcccta
+      481 ttcatacggc taacaatggc ttcggaatgc ttagttttgc acattcagaa aaagacaact
+      541 atatagatag tttattttta catgcgtgta tgaacatacc attaattgtt ccttctctag
+      601 ttgataatta tcgaaaaata aatatagcaa ataataaatc aaacaacgat ttaaccaaaa
+      661 gagaaaaaga atgtttagcg tgggcatgcg aaggaaaaag ctcttgggat atttcaaaaa
+      721 tattaggttg cagtgagcgt actgtcactt tccatttaac caatgcgcaa atgaaactca
+      781 atacaacaaa ccgctgccaa agtatttcta aagcaatttt aacaggagca attgattgcc
+      841 catactttaa aaattaataa tactagagcc aggcatcaaa taaaacgaaa ggctcagtcg
+      901 aaagactggg cctttcgttt tatctgttgt ttgtcggtga acgctctcta ctagagtcac
+      961 actggctcac cttcgggtgg gcctttctgc gtttatatac tagATGTTTC AGGTTCAGGG
+     1021 GG
+//

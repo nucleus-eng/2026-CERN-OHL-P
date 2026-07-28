@@ -1,0 +1,25 @@
+version: 1
+extends: base.yml
+project:
+  title: 'Characterizing the Limited Operational Lifetime of Cytosol Reactions'
+  authors:
+    - name: Surendra Yadav
+      corresponding: true
+      email: surendra@bnext.bio
+      orcid: 0009-0009-5630-957X
+      affiliations:
+          name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: '94107'
+          country: USA
+  date: 2026-06-24
+  banner: banner.webp
+  thumbnail: /experiments/20260506-Cytosol-Lifetime-Test/kinetics-normalized.png
+  toc:
+    - file: main.md
+    #- file: experiments/experiment-01/20250220-analysis.ipynb
+  downloads:
+    - file: general/pOpen-deGFP.gb
+      title: pOpen-deGFP
+  id: 019ed70b-0af7-7dd0-aefe-688ebf933399

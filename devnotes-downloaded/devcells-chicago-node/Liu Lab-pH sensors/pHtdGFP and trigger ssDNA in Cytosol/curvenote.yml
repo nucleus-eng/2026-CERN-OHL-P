@@ -1,0 +1,107 @@
+version: 1
+extends: base.yml
+project:
+  title: 'Toehold switch-enabled translation regulation verified in Nucleus Cytosol'
+  description: "Preliminary testing for pH-responsive DevCell."
+  subtitle: 'Preliminary testing for pH-responsive DevCell.'
+  banner: banner.webp
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - Cytosol
+    - Module
+    - translation regulation
+    - trigger ssDNA
+    - toehold switch
+  authors:
+      - name: Samuel J. Chen
+        orcid: 0000-0001-8501-7175
+        corresponding: true
+        email: samjchen@umich.edu
+        affiliations:
+          - name: Mechanical Engineering Department, University of Michigan, Ann Arbor, Michigan, 48103, USA
+            city: Ann Arbor
+            state: Michigan
+            postal_code: '48103'
+            country: USA
+      - name: Sung-Won Hwang
+        corresponding: true
+        email: sungwonh@umich.edu 
+        affiliations:
+          - name: Mechanical Engineering Department, University of Michigan, Ann Arbor, Michigan, 48103, USA
+            city: Ann Arbor
+            state: Michigan
+            postal_code: '48103'
+            country: USA
+      - name: Allen Liu
+        corresponding: true
+        email: allenliu@umich.edu
+        affiliations:
+          - name: Mechanical Engineering Department, University of Michigan, Ann Arbor, Michigan, 48103, USA
+            city: Ann Arbor
+            state: Michigan
+            postal_code: '48103'
+            country: USA
+  date: '2025-12-16'
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  # abbreviations:
+  #   MyST: Markedly Structured Text
+  #   CDK: cell development kit
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      articles:
+        - file: main.md
+      output: devnote.pdf
+      id: article
+  downloads:
+    - id: article
+      title: Download Article PDF
+    # - url: experiments/workshop-protocols.pdf
+    #   title: Lab Notebook Entry
+  # thumbnail: general/schematic-FA_metabolism.png
+  id: sjcliulab02
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  toc:
+    - file: main.md
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - general/**/*
+    - General/**/*
+    - experiments/**/*
+    - Experiments/**/*
+    - resources/**/*
+    - Resources/**/*
+    - plasmids/**/*
+    - Plasmids/**/*
+  plugins:
+    - type: javascript
+      path: ./lorem.mjs
+site:
+  # nav: []
+  # template: article-theme
+  # title: 'Meta DevNote: a DevNote about creating DevNotes'
+  # options:
+  #   logo_text: 'Meta DevNote: a DevNote about creating DevNotes'
+  # actions:
+  #   - title: Learn More
+  #     url: https://curvenote.com/docs/web
+  # domains:
+  #   - amolina.curve.space
+extend:
+  - base.yml

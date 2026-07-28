@@ -1,0 +1,37 @@
+Well,Lysate,Reaction,DNA,Settings,Test
+B4,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,0 mM Mg
+B5,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,0 mM Mg
+B6,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,0 mM Mg
+B7,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,2 mM Mg
+B8,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,2 mM Mg
+B9,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,2 mM Mg
+C4,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,4 mM Mg
+C5,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,4 mM Mg
+C6,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,4 mM Mg
+C7,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,0% PEG
+C8,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,0% PEG
+C9,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,0% PEG
+D4,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,1.5% PEG
+D5,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,1.5% PEG
+D6,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,1.5% PEG
+D7,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,3% PEG
+D8,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,3% PEG
+D9,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,3% PEG
+E4,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,0 mM AA
+E5,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,0 mM AA
+E6,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,0 mM AA
+E7,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,2 mM AA
+E8,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,2 mM AA
+E9,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,2 mM AA
+F4,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,4 mM AA
+F5,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,4 mM AA
+F6,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,4 mM AA
+F7,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,10X Emix
+F8,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,10X Emix
+F9,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,10X Emix
+G4,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,15X Emix
+G5,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,15X Emix
+G6,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,15X Emix
+G7,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 1,20X Emix
+G8,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 2,20X Emix
+G9,BL21R2 DRecBCD,myTXTL,p70a-mCherry,Replicate 3,20X Emix

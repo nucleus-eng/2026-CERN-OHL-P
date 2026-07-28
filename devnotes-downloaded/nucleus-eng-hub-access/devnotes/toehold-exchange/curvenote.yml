@@ -1,0 +1,87 @@
+version: 1
+extends: base.yml
+project:
+  title: 'Tunable protein expression strength with toehold exchange riboregulators'
+  description: 'Tunable protein expression strength with toehold exchange riboregulators'
+  subtitle: ''
+  banner: banner.webp
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - Cytosol
+    - Module
+  authors:
+      name: Sam Schaffer
+      orcid: 0000-0002-7259-7374
+      corresponding: true
+      email: samuel.schaffter@nist.gov
+      affiliations:
+        - affiliations-curvenote-generated-uid-0
+      id: contributors-curvenote-generated-uid-0
+  affiliations:
+    - id: affiliations-curvenote-generated-uid-0
+      name: National Institute of Standards and Technology, Gaithersburg, MD 20899, USA
+  date: '2026-01-10'
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      articles:
+        - file: main.md
+      output: devnote.pdf
+      id: article
+  downloads:
+    - id: article
+      title: Download Article PDF
+    # - url: experiments/experiment-01/MTHFS-labnotebook.pdf
+    #   title: Lab Notebook Entry
+  # thumbnail: /general/schematic-2.png
+  id: d26b0f43-315f-4706-ac4b-0adeeefd9057
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  toc:
+    - file: main.md
+    - file: experiments/experiment-01/20250220-analysis.ipynb
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - general/**/*
+    - General/**/*
+    - experiments/**/*
+    - Experiments/**/*
+    - resources/**/*
+    - Resources/**/*
+    - plasmids/**/*
+    - Plasmids/**/*
+  plugins:
+    - type: javascript
+      path: lorem.mjs
+site:
+  nav: []
+  template: article-theme
+  title: 'Meta DevNote: a DevNote about creating DevNotes'
+  options:
+    logo_text: 'Meta DevNote: a DevNote about creating DevNotes'
+  actions:
+    - title: Learn More
+      url: https://curvenote.com/docs/web
+  domains:
+    - amolina.curve.space
+extend:
+  - base.yml

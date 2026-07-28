@@ -1,0 +1,13 @@
+[experiment]
+name = "base_master_mix"
+protocol = "base_mm.py"
+parameters = "base_params.py"
+sweep_calculator = "sweep_calculator.py"
+csv = [
+  "base_master_mix.csv",
+  "../experimental_setup/reagents.csv",
+  "../experimental_setup/samples_titration_labcraft.csv"
+]
+labware = "labware/"
+verbose = true
+artifacts_dir = "runs/"

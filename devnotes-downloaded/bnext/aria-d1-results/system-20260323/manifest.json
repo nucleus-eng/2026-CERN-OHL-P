@@ -1,0 +1,30 @@
+{
+  "schema_version": "devnote_manifest/v1",
+  "workspace_id": "c17eeaac-78a3-4977-a0ea-41c6dd42ffe5",
+  "session_id": "43bfb568-63a7-42a2-85b8-46380effe16a",
+  "generation_timestamp": "2026-03-23T23:54:14.410285Z",
+  "generation_local_timestamp": "2026-03-23T16:54:14.410285-07:00",
+  "generation_timezone": "America/Los_Angeles",
+  "source_report_reference": "Optimize PURE System Yield and Rate - Final Report - 2026-03-23.md",
+  "included_visualizations": [
+    {
+      "id": "7dff0f41-1201-4da1-b59e-c1020800865b",
+      "title": "Test Split: sigmoid_rate (1/h)",
+      "filename": "viz-01-test-split-sigmoid_rate-1-h.png",
+      "status": "included"
+    },
+    {
+      "id": "aaec5a34-c92f-47f3-b8ce-73b978b1b09b",
+      "title": "Test Split: sigmoid_steady_state (ng/uL)",
+      "filename": "viz-02-test-split-sigmoid_steady_state-ng-ul.png",
+      "status": "included"
+    },
+    {
+      "id": "aee0e816-6131-44e4-8a44-792ef234a146",
+      "title": "sigmoid_rate (1/h) vs sigmoid_steady_state (ng/uL)",
+      "filename": "viz-03-sigmoid_rate-1-h-vs-sigmoid_steady_state-ng-ul.png",
+      "status": "included"
+    }
+  ],
+  "warnings": []
+}

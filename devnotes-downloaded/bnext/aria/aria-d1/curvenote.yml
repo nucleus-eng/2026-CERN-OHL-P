@@ -1,0 +1,66 @@
+version: 1
+project:
+  title: "AI Scientist: Base Module Report"
+  authors:
+    - name: "IGOR"
+      affiliations:
+        - name: "Find What Matters"
+      corresponding: false
+    - name: "b.next"
+      email: "anton@bnext.bio"
+      corresponding: true
+    - name: "FindWhatMatters"
+      email: "scr@findwhatmatters.ai"
+      corresponding: true
+  date: 2026-04-26T00:00:00.000Z
+  banner: aria.webp
+  thumbnail: thumbnail-2.png
+
+  venue: Nucleus
+  subject: Developer Note
+  license: CC-BY-4.0
+  open_access: true
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  references:
+    devnotes: https://devnotes.nucleus.engineering/
+  keywords:
+    - AI
+
+  abbreviations:
+    IGOR: Iterative Guide and Orchestrated Research, our AI scientist.
+    PURE: Protein synthesis Using Recombinant Elements, our base cytosol for compositional biology.
+  
+  toc:
+    - file: main.md
+    - file: README.ipynb
+    - file: orchestrated-research/iter1/main.md
+    - file: orchestrated-research/iter2/main.md
+  downloads:
+    - file: ./data/20260320-iteration-2/workspace/jl/data/20260417-iteration-2-data_jl-curated.csv
+      title: Full Curated Dataset
+    - id: meca
+      title: Computational Archive
+      filename: ai-scientist-base-module-archive.zip
+  exports:
+    - format: meca
+      id: meca
+  resources:
+    - analysis/**/*
+    - data/**/*
+    - figures/**/*
+    - general/**/*
+    - orchestrated-research/**/*
+    - thumbnail*
+    - schema.md
+    - README.ipynb
+    
+  requirements:
+    - environment.yml
+
+  jupyter: true
+  id: 019dcbd4-f87a-7e0d-97d7-6e58ef3403df
+  
+site:
+  template: https://github.com/curvenote-themes/spa-preview/archive/refs/heads/main.zip
+  options:
+    site_id: bnext-devnotes

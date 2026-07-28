@@ -1,0 +1,27 @@
+version: 1
+extends: base.yml
+project:
+  title: 'Using platemaps to analyze and share data'
+  authors:
+    - name: Jay Bhasin
+      email: jay@bnext.bio
+      # orcid: 0000-0000-0000-0001
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
+      corresponding: true
+  date: '2026-04-22'
+  banner: banner.webp
+  thumbnail: assets/thumbnail.png
+  toc:
+    - file: main.md
+    - file: src/long-data-format.ipynb
+  id: 019d6e3a-c618-77bc-853c-fe4694511f53
+site:
+  template: https://github.com/curvenote-themes/spa-preview/archive/refs/heads/main.zip
+  # template: article-theme
+  options:
+    site_id: bnext-devnotes

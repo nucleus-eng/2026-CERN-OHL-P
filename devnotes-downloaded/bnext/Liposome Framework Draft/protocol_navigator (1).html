@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liposome Protocol Navigator — Nucleus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #ffffff; --bg2: #f7f8f6; --bg3: #f0f1ee; --bg4: #e8e9e6;
+  --border: rgba(0,0,0,0.08); --border-mid: rgba(0,0,0,0.14);
+  --text: #1a1b18; --muted: #5a5b57; --dim: #9a9b97;
+  --teal: #1D9E75; --teal-l: #0F6E56; --teal-d: #0a4f3e;
+  --purple: #534AB7; --purple-l: #3d358f; --purple-d: #2e2870;
+  --amber: #BA7517; --amber-l: #854F0B; --amber-d: #5e3807;
+  --coral: #D85A30; --coral-l: #993C1D; --coral-d: #6e2a12;
+  --blue: #185FA5; --blue-l: #0f4578; --blue-d: #0a3059;
+  --green: #3B6D11; --green-l: #2a4e0b; --green-d: #1a3207;
+}
+html { font-size: 15px; }
+body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; overflow-x: hidden; }
+
+/* HEADER */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 32px;
+  display: flex; align-items: center; gap: 14px;
+  position: sticky; top: 0;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(14px); z-index: 200;
+}
+.logo { width: 28px; height: 28px; border: 1.5px solid var(--teal); border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; }
+.logo-inner { width: 9px; height: 9px; border-radius: 50%; background: var(--teal); }
+.header-title { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 400; color: var(--muted); letter-spacing: 0.05em; }
+.header-title span { color: var(--teal-l); }
+.header-badge { margin-left: auto; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--dim); border: 1px solid var(--border); padding: 3px 8px; border-radius: 3px; }
+
+/* LAYOUT */
+.layout { display: grid; grid-template-columns: 1fr 340px; min-height: calc(100vh - 57px); }
+
+/* LEFT: TREE PANEL */
+.tree-panel { border-right: 1px solid var(--border); padding: 32px; overflow: auto; }
+.tree-panel h2 { font-family: 'Instrument Serif', serif; font-size: 26px; font-weight: 400; margin-bottom: 6px; }
+.tree-panel p.sub { font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; margin-bottom: 24px; line-height: 1.6; }
+
+/* TREE NODES (HTML-rendered, not SVG) */
+.tree { display: flex; flex-direction: column; gap: 0; }
+
+/* Track / connector lines */
+.branch-row { display: flex; align-items: flex-start; gap: 0; }
+.v-line { width: 1px; background: var(--border-mid); margin: 0 auto; }
+.v-line.active { background: var(--teal); }
+
+/* NODE CARDS */
+.node-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: all 0.18s;
+  position: relative;
+  background: var(--bg2);
+}
+.node-card:hover { border-color: var(--border-mid); background: var(--bg3); }
+.node-card.active { border-color: var(--teal); background: rgba(15,110,86,0.07); }
+.node-card.reached-teal { border-color: var(--teal); background: rgba(15,110,86,0.12); }
+.node-card.reached-purple { border-color: var(--purple-d); background: rgba(83,74,183,0.1); }
+.node-card.reached-amber { border-color: var(--amber-d); background: rgba(186,117,23,0.1); }
+.node-card.reached-coral { border-color: var(--coral-d); background: rgba(216,90,48,0.1); }
+.node-card.reached-blue { border-color: var(--blue-d); background: rgba(55,138,221,0.1); }
+.node-card.dimmed { opacity: 0.3; pointer-events: none; }
+.node-card.start-node { border-color: var(--teal-d); background: rgba(29,158,117,0.08); }
+
+.node-type { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+.node-type.q { color: var(--muted); }
+.node-type.dest-teal { color: var(--teal); }
+.node-type.dest-purple { color: var(--purple); }
+.node-type.dest-amber { color: var(--amber-l); }
+.node-type.dest-coral { color: var(--coral-l); }
+.node-type.dest-blue { color: var(--blue-l); }
+
+.node-title { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.node-sub { font-size: 11px; color: var(--muted); font-family: 'DM Mono', monospace; }
+
+/* tree connector infrastructure */
+.connector-down { height: 24px; width: 1px; background: var(--border-mid); margin: 0 auto; transition: background 0.3s; }
+.connector-down.active { background: var(--teal); }
+.branch-set { display: grid; gap: 12px; }
+.branch-item { display: flex; flex-direction: column; align-items: stretch; }
+.branch-label { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--dim); text-align: center; padding: 3px 0; transition: color 0.3s; }
+.branch-label.active { color: var(--teal); }
+
+/* horizontal connector for multi-branch */
+.h-connector { height: 1px; background: var(--border-mid); margin: 0 12px; }
+.h-connector.active { background: var(--teal); }
+
+/* CENTER DIVIDER: for 2-col branch */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.four-col { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; }
+
+/* RIGHT: SIDE PANEL */
+.side-panel { padding: 28px 22px; display: flex; flex-direction: column; gap: 20px; overflow-y: auto; }
+
+.panel-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); margin-bottom: 10px; }
+
+/* QUESTION WIDGET */
+.q-widget { background: var(--bg3); border: 1px solid var(--border-mid); border-radius: 10px; padding: 18px; }
+.q-text { font-family: 'Instrument Serif', serif; font-size: 19px; font-weight: 400; line-height: 1.25; color: var(--text); margin-bottom: 6px; }
+.q-hint { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--dim); margin-bottom: 16px; line-height: 1.5; }
+.q-opts { display: flex; flex-direction: column; gap: 7px; }
+.q-opt {
+  background: var(--bg2); border: 1px solid var(--border);
+  color: var(--muted); font-family: 'DM Sans', sans-serif; font-size: 12px;
+  padding: 9px 13px; border-radius: 7px; cursor: pointer; text-align: left;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: all 0.15s;
+}
+.q-opt:hover { background: rgba(29,158,117,0.08); border-color: var(--teal); color: var(--text); }
+.q-opt-arrow { color: var(--dim); font-size: 14px; }
+.q-opt:hover .q-opt-arrow { color: var(--teal); }
+
+/* RESULT CARD */
+.result-widget { background: var(--bg3); border: 1px solid var(--border-mid); border-radius: 10px; padding: 18px; display: none; animation: fu 0.35s ease; }
+.result-widget.show { display: block; }
+@keyframes fu { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.res-badge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-bottom: 10px; }
+.res-badge.teal { background: rgba(29,158,117,0.15); color: var(--teal-l); border: 1px solid var(--teal-d); }
+.res-badge.purple { background: rgba(127,119,221,0.15); color: var(--purple-l); border: 1px solid var(--purple-d); }
+.res-badge.amber { background: rgba(186,117,23,0.15); color: var(--amber-l); border: 1px solid var(--amber-d); }
+.res-badge.coral { background: rgba(216,90,48,0.15); color: var(--coral-l); border: 1px solid var(--coral-d); }
+.res-badge.blue { background: rgba(55,138,221,0.15); color: var(--blue-l); border: 1px solid var(--blue-d); }
+
+.res-title { font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400; color: var(--text); margin-bottom: 8px; line-height: 1.2; }
+.res-desc { font-size: 12px; color: var(--muted); line-height: 1.65; margin-bottom: 14px; }
+
+.spec-table { border-top: 1px solid var(--border); padding-top: 12px; margin-bottom: 14px; }
+.spec-row { display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0; border-bottom: 1px solid var(--border); font-size: 11px; gap: 8px; }
+.spec-row:last-child { border-bottom: none; }
+.spec-k { font-family: 'DM Mono', monospace; color: var(--dim); font-size: 10px; white-space: nowrap; }
+.spec-v { color: var(--muted); text-align: right; font-size: 11px; }
+.spec-v.pending { color: var(--dim); font-style: italic; font-size: 10px; }
+.spec-v.highlight { color: var(--teal-l); }
+
+.ref-link { display: inline-flex; align-items: center; gap: 5px; background: rgba(15,110,86,0.12); border: 1px solid var(--teal-d); color: var(--teal-l); font-family: 'DM Mono', monospace; font-size: 11px; padding: 7px 13px; border-radius: 6px; text-decoration: none; transition: background 0.2s; margin-top: 4px; }
+.ref-link:hover { background: rgba(15,110,86,0.22); }
+
+/* TRAIL */
+.trail-list { display: flex; flex-direction: column; gap: 0; }
+.trail-item { display: flex; gap: 10px; align-items: flex-start; padding-bottom: 14px; position: relative; }
+.trail-item:last-child { padding-bottom: 0; }
+.trail-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border-mid); flex-shrink: 0; margin-top: 4px; transition: background 0.3s; z-index: 1; }
+.trail-item.done .trail-dot { background: var(--teal); }
+.trail-item.current .trail-dot { background: var(--teal-l); box-shadow: 0 0 0 3px rgba(29,158,117,0.2); }
+.trail-line { position: absolute; left: 3px; top: 11px; bottom: -3px; width: 1px; background: var(--border); }
+.trail-item.done .trail-line { background: rgba(29,158,117,0.3); }
+.trail-q { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--dim); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.05em; }
+.trail-a { font-size: 12px; color: var(--muted); }
+.trail-item.done .trail-a { color: var(--text); }
+
+/* RESET */
+.reset-btn { background: none; border: none; color: var(--dim); font-family: 'DM Mono', monospace; font-size: 10px; cursor: pointer; padding: 5px 0; text-align: left; transition: color 0.15s; letter-spacing: 0.04em; }
+.reset-btn:hover { color: var(--muted); }
+
+/* PROGRESS BAR */
+.progress-bar { height: 2px; background: var(--border); border-radius: 1px; overflow: hidden; margin-bottom: 20px; }
+.progress-fill { height: 100%; background: var(--teal); transition: width 0.4s ease; border-radius: 1px; }
+
+/* REFS SECTION */
+.refs { border-top: 1px solid var(--border); padding-top: 14px; }
+.refs p { font-family: 'DM Mono', monospace; font-size: 9px; color: var(--dim); line-height: 1.6; }
+.refs a { color: var(--teal-d); text-decoration: none; }
+.refs a:hover { color: var(--teal); }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .tree-panel { border-right: none; border-bottom: 1px solid var(--border); }
+  header { padding: 14px 18px; }
+  .tree-panel { padding: 20px 16px; }
+  .side-panel { padding: 20px 16px; }
+  .three-col { grid-template-columns: 1fr 1fr; }
+  .four-col { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABwAHQDASIAAhEBAxEB/8QAHAABAQADAQEBAQAAAAAAAAAAAAcFBggDBAIB/8QALhAAAQQCAgEEAQMDBQEAAAAAAQIDBAUAEQYSIQcTIjFBFBUyFyNRFjNCYXEk/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAKBEAAgECBgIBBAMAAAAAAAAAAAECBBEDITFBYfASUXEUMoHRocHh/9oADAMBAAIRAxEAPwDsvGMYAxjGAMZoUX1Z4lNk1DVZ+5WDdrYOV7DzENXRLqAgqKu2iE6WPOj+T9A5hFeo13axIDbvGRSRpMl2Nbfr7NEaRCjk9EPp2UqHYlQB1/JBA+wcj5Izuqwtnf4z7qVjGc88dmXNbI4o2qZzSkfeVLrmK+VqYFOLKy3JkElI69l+AU+Q0deATmVZ5bzOAqsq5t3HsnWq+Z+tiez7E+xdQlakqjaBBTopAWPsoWdHWs55oqjWxau4vtvzv6LjjIVxHlnIuLNRo8qRKtIMajNhMrZr5fug6tZ0nR18RtP48J2SPoZUYHN+OSIC5EixYgyGK9uwmQ5Cwl+I0tAVtxH2NBQ3/wCj/IzqkmWYVVDEWeT5NkxnhXTYljBZnQJLMqK+gLaeaWFIWk/RBH3nvkjSncYxjAGMYwBjGMA+W2soNTXyLCxkojxo7S3nVq/CEJKlHQ8nQBPjJjynn9jdw1R+Kl6BWWNcHq3kKWS72f8Ad6qZDJT2J0Fb0CUgFWtDefL61rjyeTRH2Kp0y62tkuxr19wmthOnYU2+nRSSQkjR/JQNEHxqzNZInux/22PYzH+QRY1XNeqpQjxYzAQyVzIzXT/b7eNjSfCx8SvQrlJ6I8yoqJuThHTjXvx832PaXqy/1SzOtOVOolbrH2tNw23JUZsLKoyex2t9bZASlJ/3D2B2Dn7erm5MCof5hx+yc41dNxK+LUCDqdFkIOi7IfSELKSQtXk7V7m+qSM3es9O50nkLDPKZDFtQ0aYyuPlTihJbdQlIWp0jXbZSD5JB8aA+speFC+ow6Rzu5Zd3413zvckXFPT3kdg8idyaWKJH6iYmVVVclxTE5p5PUKWSs9T5VoDegAQEneYuBwvk6aaHTQ+DUkNiusXYLcmXLLkk1yyStbbqSFJUSpX0QfOgkecuOM74Iv+iw7d4/WxB+S091RzqlfIrHh7E63uzCU/+jUHXoPZKkNoUEEpWFbPbYIUUHvsbz4WYc/9bOkuyqx1LctTcmXWV37h+srY4AMJ9w7/ALhSE/E+VAAqPhOXywrK6wXHXYV8SWqM4HWC+ylZaWPpSdj4n/sec0PkvAeBceq0cj/ZpLDdBJeuENwXFdlOkJKj1J0f4I0PAHX8De+OBTi0ji7p5ct99mA9LOZNxpcSOyq2sqm/kOPV7aa5thqlYRsBpwJUQkePH40O35OWUEEAg7B+jnObDYm11LAm8kavoVtGUzcP2kox7COzIWhTCPaCzolfXSlBf8gPCCMzfBLa1quR8RRat21Y2+wulZo4TgmRWw2ApDzy+3wUUqB+ieqd7CTrEZWI09S4JRlpl/Xzu/fC0LjjGMsPUGMYwBmieqXOFcfAo6R6vPJ5UVcqI1OJRH9tvy4pa9gJ+CVkbIHxOz/ne8lvrNaRHLur4+biojtqZdk3MORGW4+/XAf3EtqQhRBKUr8AhR0CPo5GTsjPVTccNtOxPZkRith2jVfVVNW2+6y7CmWVkp6rsn5KNPFAP8x17BOypICd+FZTeI8Vk/1Gk3FvxGtrG6iK3CpJcOSQFtFKu49oK0AOytbSD5/P3k5VEfTRQW5bvCqz9HfsQY8CVMVIjIYaK1oHQlZQ+r3D27FKikDYT530bkIK5jpMJSd3tb1zx+nkhjGMtPUGMYwBjGMAnXqdwygMOy5I1fL4fPfWyZ1yy4UqW2kgBtXyAAJ6DxrZA3v6yZvMJkxrBtyuncUs72TIsJLNfad5k1DCfcaWy2f5hZLo0kpGxvyABnQXIKasv6h+puYbUyC/r3GXN6VohQ+v8EA5CraJOqr40/J5L1nbV1XOlMy66rSkt162y2G23AAW3EaWpI6lOyE9hveVTVjy6zCUZeSWT6/4e2ud9i0cR5JCvquA8EuQpsqIJX7fKUlMlDZPXupG99Sf+WteRmcyKejMJo8xrJsanWuKnjaPYtLCd/8AetCnNhDjAXoJ32AV11pI+R+steTi7o2U2JLEheQxjGSNAznm+5IeVXU2bS8yo2X7OUiBxpTtKVSW1MlJea9xTZ6hRUlQKiQSR/HyB0NkY9SF9fUV2pg8gUiQupJh1EOKlt9h51zoZLb6gEJVpSifkFHRH5yE9DFXJ+Kzy7yufedvR+/S+Hxu15PcRZfH+OexIfauK5wSQ7IlrHZK3y0Vq6dV7HgJSCSB2+8smRXgLNpYckqZ1JTB1+kfcprq2vW1JmvtI8hTWjo72oedq8pBJGzlqxDQ7RfZp3/NBjGMmbBjGMAYxjAGRPn7lnP5LbQLu8EmRTPN3VJT0a1ImOtI2no4SnR2ep8bV5UQNaGWzI16nz+M3HJKiRE5Dx4MPSHaexaMUOvzHB1UhgOhCugSvR8lKQSCd/WQnoY637Ne/wCann6bqSn1DatbChQ3IVUpE23mTENyI77zncRXGUlKEq+QA+CVHQJ+9Zac56oOOHlN5Cg3fDuPtyLOSudyVtu5KpLamioMu9EunqFFSwQkEEk76+DnQuIaHKFvxfrvC49539DGMZM2jIt6zTm1cvsoEm6fcijjay/UV8E/rnEKc0XEPFOgN9SR2+kn4nyctOYTl3HIV/UT4q1OxJMuKYpmxQlMlLZO+qV63on8fXk5GSuiipw5YkLRIrVSptVei34tFXYXFbVQor0SyswlTVetsOKcdbUR0cb0hKj2Kdkq6jesu3Hrmr5BUMW1NMbmQX9+283vStEpP358EEZz806HotcpNhY8RsryVHrozs+rC5ktEdPtupecH80rJaO1aGxrRAKspXplzWh/SVvGnqFXD58hbwg07rZBW2lRJcGkgAEhZ862Qdb+zCDsYqPFUZeLeT6v4e+uVtyjYxjLT1BjGMAYxjAGc5ia8KGeuGeF1oiX0ifJnw4Kn4yGWihC/lpZQ+r3R16gEpB0U/micw5U/wD1Gj09Vy6DVt00RyddRJcU9XGilPU+6U6AHYeAQfP5+hM4cxqsg1T0+4ra5qQ681Mi1dapyrsn5KNshf4WOuirQUAE68K+6pu55dXjKTstr+uOf08mUL0YrYbt1aXqamlYbLLUellRpC3JL1cB/bU6FqJG0pQNkBR0QR4GVLNF9LuDq48n97u2a9XKJMVEWY/BSUMe034bShGglPxSgHqkD4jxm9ZOKsjZSxccNJqwxjGSNAxjGAQ7ndRbVXIuXrqF3FU3Jjt3L95KSJcZAa2lbDKOvwUUqP5J0nWgk7zCvOGdW3U+Hxxm+g28ZL9RGrYpi2EdmQpSJCy8WzolXbaQV+CT4RvOiyARo+Rka9VOGMxpUyW63Z2NVfyGmrVx2xbYap46NEuN9k6SPHnfjQ6/kZVKNszy6imcE5R0z/v53frl6Gd41z/gXHKpzjhtZcZqgks06nJzaiVOkKCR2A0f4K2dADr+Bre+11pW2K5CK+xiTFRnC1IDDyXC0sfaVaPxV/0fOQNybPE6BFZYqnEolByJEsbA2AmVkcEiYy2OwDpSFeR5VohI8Kz7uO3N5S2Fq1x2Dw5ifbXQmpYElSXXoPZaXFrSVEpcCuqemgQfc+GxnVOx3Cq3Gyay4T76LzjIXY815ImnnW0zndTFbrLFqe5FhwiqSa5ZCUNraWApKiVJ+/rYJV9ZlOWeonJbB1UHjUU0CC/DVDtbOM4tmc08nsUoSEHqfknZOwNEEpJGd80X/W4du8/rcsGTOy9Q58rkEh7ijDFtRUSZKeQJS2sSUOoSooQ0DrtspI8Aj73rwc0aNPYkQ7dnht/YL4zeNyrCXamdqwjyUHYbjsKKFEEhCfAJV7muwIGfyMBZp4s9EqOVOIlasmHVuNw2zLjNlCUyVdT2W+tAJUpW/wC4Op8kZxzKMSrc0lHLu3Gm2eh4vWkye4+LKRZynL+PJtIjNtGDESKyEPBESQ5317fbR86Sf7Z0kr2Nr9ExGk8nmMO2kgTa6sjNSqWOgmsiLOlJWwdlJJCQdj8qWQVA+Po4r6e2FxDRI5UlyBXWNcpiy477ynEqf90qS8XgoqJ0E62SU6Cd6Gsp9VXwqqvj19fHRHjR2kMtNp/4oSAlI39nQAHnEYvUU9PNyU5ac69+fix9WMYyw9MYxjAGMYwBnhYQ4ljBegz4zMqK+godZdQFIWk/YIPgjPfGA1c12fwrjkivTGYrY8J5mA5XxJcdsJfiNLQU6bXradBR1/6f8nJZzHiXIuLR5L0KPKta+NSCuhz4TJfukurWNq7DR6Davo+E6A195dcZFxTM2LTQxFlkyGP8P5rAVZWUCnj2LrNfD/Qyy97E+wdSlCVJkknSkgFZKFfZQgbOsxHIIFzWSOWOpruZ0kiQYdi/YQ1CZ3dWUByMwAEfHss7IV9NDfgAZ0VjOeCKpUMWspPt/wA7+yUJ9Orq2hz3W+ULpY0uS1KqhCrkRZEFg/NbCtdSOxKdjf8AJAJ8kjM1K9JeITZFu7ZN2E9FtYN2Ehp+WroHUBYT166ITpavGz+B9AZvuM74ouVLhbq/zn3UYxjJGgYxjAGMYwD/2Q==" alt="b.next logo" style="width:34px;height:34px;flex-shrink:0;object-fit:contain;image-rendering:crisp-edges;">
+  <span class="header-title">Nucleus — <span>Liposome Protocol Navigator</span></span>
+  <span class="header-badge">v2 Draft</span>
+</header>
+
+<div class="layout">
+
+<!-- ═══════════════════════════════════════════════
+     LEFT PANEL — VISUAL TREE
+════════════════════════════════════════════════ -->
+<div class="tree-panel">
+  <h2>Protocol decision tree</h2>
+  <p class="sub">Click a node to explore it in the navigator →</p>
+
+  <div class="tree" id="tree">
+
+    <!-- ── START ── -->
+    <div class="node-card start-node" id="tn-start" onclick="navTo('start')">
+      <div class="node-type dest-teal">Entry point</div>
+      <div class="node-title">Start: define your experiment</div>
+      <div class="node-sub">All paths begin here</div>
+    </div>
+    <div class="connector-down" id="cd-start"></div>
+
+    <!-- ── Q1: PRIMARY PURPOSE ── -->
+    <div class="node-card" id="tn-q1" onclick="navTo('q1')">
+      <div class="node-type q">Decision 1</div>
+      <div class="node-title">What is the primary purpose of your liposomes?</div>
+      <div class="node-sub">4 major branches</div>
+    </div>
+    <div class="connector-down" id="cd-q1"></div>
+
+    <!-- ── TIER 2: FOUR PRIMARY BRANCHES ── -->
+    <div class="four-col" id="tier2">
+      <!-- Branch A: Synthetic Cell -->
+      <div class="branch-item">
+        <div class="branch-label" id="bl-synth">synthetic cell</div>
+        <div class="node-card" id="tn-q2a" onclick="navTo('q2a')">
+          <div class="node-type q">Branch A</div>
+          <div class="node-title">Synthetic cell / bottom-up biology</div>
+          <div class="node-sub">GUV-scale · encapsulate machinery</div>
+        </div>
+        <div class="connector-down" id="cd-q2a"></div>
+        <!-- A sub-branches -->
+        <div class="two-col">
+          <div class="branch-item">
+            <div class="branch-label" id="bl-cfx">cell-free expr.</div>
+            <div class="node-card" id="tn-q3a1" onclick="navTo('q3a1')">
+              <div class="node-type q">A-1</div>
+              <div class="node-title">Cell-free expression (PURE/TXTL)?</div>
+              <div class="node-sub">encapsulation efficiency critical</div>
+            </div>
+            <div class="connector-down" id="cd-q3a1"></div>
+            <div class="two-col">
+              <div class="branch-item">
+                <div class="branch-label" id="bl-emtr">yes</div>
+                <div class="node-card reached-teal" id="tn-p-emtr" onclick="navTo('p-emtr')">
+                  <div class="node-type dest-teal">Protocol</div>
+                  <div class="node-title">Emulsion transfer / cDICE</div>
+                  <div class="node-sub">high EE · POPC:Chol 70:30</div>
+                </div>
+              </div>
+              <div class="branch-item">
+                <div class="branch-label" id="bl-electro">no / microscopy</div>
+                <div class="node-card reached-teal" id="tn-p-electro" onclick="navTo('p-electro')">
+                  <div class="node-type dest-teal">Protocol</div>
+                  <div class="node-title">Electroformation</div>
+                  <div class="node-sub">large GUVs · solvent-free</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="branch-item">
+            <div class="branch-label" id="bl-hydrogel-sc">hydrogel embed</div>
+            <div class="node-card reached-teal" id="tn-p-hydrogel" onclick="navTo('p-hydrogel')">
+              <div class="node-type dest-teal">Protocol</div>
+              <div class="node-title">Hydrogel-adapted protocol</div>
+              <div class="node-sub">matrix-compatible · TBD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Branch B: Membrane Biophysics -->
+      <div class="branch-item">
+        <div class="branch-label" id="bl-biophys">membrane biophysics</div>
+        <div class="node-card" id="tn-q2b" onclick="navTo('q2b')">
+          <div class="node-type q">Branch B</div>
+          <div class="node-title">Membrane biophysics / protein reconstitution</div>
+          <div class="node-sub">lipid properties · protein function</div>
+        </div>
+        <div class="connector-down" id="cd-q2b"></div>
+        <div class="branch-item">
+          <div class="branch-label" id="bl-membprot">membrane protein?</div>
+          <div class="node-card" id="tn-q3b1" onclick="navTo('q3b1')">
+            <div class="node-type q">B-1</div>
+            <div class="node-title">Incorporating membrane protein?</div>
+            <div class="node-sub">determines tuning requirement</div>
+          </div>
+          <div class="connector-down" id="cd-q3b1"></div>
+          <div class="two-col">
+            <div class="branch-item">
+              <div class="branch-label" id="bl-noprot">no protein</div>
+              <div class="node-card reached-teal" id="tn-p-base" onclick="navTo('p-base')">
+                <div class="node-type dest-teal">Protocol</div>
+                <div class="node-title">Base Cell Protocol</div>
+                <div class="node-sub">POPC:Chol 70:30 · standard</div>
+              </div>
+            </div>
+            <div class="branch-item">
+              <div class="branch-label" id="bl-prot">yes — protein</div>
+              <div class="node-card" id="tn-q3b2" onclick="navTo('q3b2')">
+                <div class="node-type q">B-2</div>
+                <div class="node-title">Tuned membrane spec needed?</div>
+                <div class="node-sub">charge · curvature · stiffness</div>
+              </div>
+              <div class="connector-down" id="cd-q3b2"></div>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div class="node-card reached-purple" id="tn-p-charge" onclick="navTo('p-charge')">
+                  <div class="node-type dest-purple">Protocol</div>
+                  <div class="node-title">Charge-tuned</div>
+                  <div class="node-sub">POPA / POPG / POPE · 60/30/10</div>
+                </div>
+                <div class="node-card reached-purple" id="tn-p-curv" onclick="navTo('p-curv')">
+                  <div class="node-type dest-purple">Protocol</div>
+                  <div class="node-title">Curvature-tuned</div>
+                  <div class="node-sub">DOPC · cone-shaped lipids</div>
+                </div>
+                <div class="node-card reached-purple" id="tn-p-stiff" onclick="navTo('p-stiff')">
+                  <div class="node-type dest-purple">Protocol</div>
+                  <div class="node-title">Stiffness-tuned</div>
+                  <div class="node-sub">POPC:Chol 9:1 → 2:1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Branch C: Drug Delivery / Cargo -->
+      <div class="branch-item">
+        <div class="branch-label" id="bl-cargo">drug / cargo delivery</div>
+        <div class="node-card" id="tn-q2c" onclick="navTo('q2c')">
+          <div class="node-type q">Branch C</div>
+          <div class="node-title">Drug / cargo delivery & encapsulation</div>
+          <div class="node-sub">EE · size · stability · release</div>
+        </div>
+        <div class="connector-down" id="cd-q2c"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div class="node-card" id="tn-q3c1" onclick="navTo('q3c1')">
+            <div class="node-type q">C-1</div>
+            <div class="node-title">Cargo type?</div>
+            <div class="node-sub">hydrophilic / hydrophobic / macromolecule</div>
+          </div>
+          <div class="connector-down" id="cd-q3c1"></div>
+          <div class="three-col" style="gap:6px">
+            <div class="node-card reached-amber" id="tn-p-hydrophilic" onclick="navTo('p-hydrophilic')">
+              <div class="node-type dest-amber">Protocol</div>
+              <div class="node-title">Hydrophilic cargo</div>
+              <div class="node-sub">aqueous core · thin film / extrusion</div>
+            </div>
+            <div class="node-card reached-amber" id="tn-p-hydrophobic" onclick="navTo('p-hydrophobic')">
+              <div class="node-type dest-amber">Protocol</div>
+              <div class="node-title">Hydrophobic cargo</div>
+              <div class="node-sub">bilayer embed · DSPC/Chol</div>
+            </div>
+            <div class="node-card reached-amber" id="tn-p-macro" onclick="navTo('p-macro')">
+              <div class="node-type dest-amber">Protocol</div>
+              <div class="node-title">Macromolecule / protein</div>
+              <div class="node-sub">emulsion transfer · high EE</div>
+            </div>
+          </div>
+          <div class="node-card" id="tn-q3c2" onclick="navTo('q3c2')">
+            <div class="node-type q">C-2</div>
+            <div class="node-title">Target release mechanism?</div>
+            <div class="node-sub">passive / triggered / stimuli-responsive</div>
+          </div>
+          <div class="two-col" style="gap:6px">
+            <div class="node-card reached-amber" id="tn-p-thermosens" onclick="navTo('p-thermosens')">
+              <div class="node-type dest-amber">Protocol</div>
+              <div class="node-title">Thermosensitive release</div>
+              <div class="node-sub">DPPC · Tm ~41°C tuning</div>
+            </div>
+            <div class="node-card reached-amber" id="tn-p-passive" onclick="navTo('p-passive')">
+              <div class="node-type dest-amber">Protocol</div>
+              <div class="node-title">Passive / sustained release</div>
+              <div class="node-sub">DSPC:Chol · stable bilayer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Branch D: Microfluidic / Scalable -->
+      <div class="branch-item">
+        <div class="branch-label" id="bl-micro">microfluidics / scale</div>
+        <div class="node-card" id="tn-q2d" onclick="navTo('q2d')">
+          <div class="node-type q">Branch D</div>
+          <div class="node-title">Throughput & production scale</div>
+          <div class="node-sub">monodispersity · reproducibility</div>
+        </div>
+        <div class="connector-down" id="cd-q2d"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div class="node-card" id="tn-q3d1" onclick="navTo('q3d1')">
+            <div class="node-type q">D-1</div>
+            <div class="node-title">Required monodispersity?</div>
+            <div class="node-sub">polydisperse acceptable vs. tight PDI</div>
+          </div>
+          <div class="connector-down" id="cd-q3d1"></div>
+          <div class="two-col" style="gap:6px">
+            <div class="branch-item">
+              <div class="branch-label">tight PDI needed</div>
+              <div class="node-card" id="tn-q3d2" onclick="navTo('q3d2')">
+                <div class="node-type q">D-2</div>
+                <div class="node-title">Chip access?</div>
+                <div class="node-sub">clean room vs. benchtop</div>
+              </div>
+              <div class="connector-down" id="cd-q3d2"></div>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div class="node-card reached-blue" id="tn-p-ola" onclick="navTo('p-ola')">
+                  <div class="node-type dest-blue">Protocol</div>
+                  <div class="node-title">OLA microfluidics</div>
+                  <div class="node-sub">5–20 µm · &gt;10 Hz · cell-sized</div>
+                </div>
+                <div class="node-card reached-blue" id="tn-p-cdice" onclick="navTo('p-cdice')">
+                  <div class="node-type dest-blue">Protocol</div>
+                  <div class="node-title">cDICE</div>
+                  <div class="node-sub">high EE · continuous flow</div>
+                </div>
+              </div>
+            </div>
+            <div class="branch-item">
+              <div class="branch-label">PDI flexible</div>
+              <div class="node-card" id="tn-q3d3" onclick="navTo('q3d3')">
+                <div class="node-type q">D-3</div>
+                <div class="node-title">Target size range?</div>
+                <div class="node-sub">SUV / LUV / GUV</div>
+              </div>
+              <div class="connector-down" id="cd-q3d3"></div>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div class="node-card reached-blue" id="tn-p-suv" onclick="navTo('p-suv')">
+                  <div class="node-type dest-blue">Protocol</div>
+                  <div class="node-title">SUV — sonication</div>
+                  <div class="node-sub">20–100 nm · fast · drug delivery</div>
+                </div>
+                <div class="node-card reached-blue" id="tn-p-luv" onclick="navTo('p-luv')">
+                  <div class="node-type dest-blue">Protocol</div>
+                  <div class="node-title">LUV — extrusion</div>
+                  <div class="node-sub">100–1000 nm · defined pore size</div>
+                </div>
+                <div class="node-card reached-blue" id="tn-p-pva" onclick="navTo('p-pva')">
+                  <div class="node-type dest-blue">Protocol</div>
+                  <div class="node-title">PVA-assisted swelling</div>
+                  <div class="node-sub">GUV · physiological salt · no ITO</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /four-col -->
+
+    <!-- Benchmarking footer -->
+    <div style="margin-top:20px;height:1px;background:var(--border)"></div>
+    <div style="margin-top:16px">
+      <div class="node-card" id="tn-bench" onclick="navTo('bench')" style="border-style:dashed;opacity:0.6;">
+        <div class="node-type q">All paths converge</div>
+        <div class="node-title">Benchmarking + cross-lab data sharing</div>
+        <div class="node-sub">yield · lamellarity · EE · module functionality · Nucleus Forum</div>
+      </div>
+    </div>
+
+  </div><!-- /tree -->
+
+  <div class="refs" style="margin-top:28px">
+    <p>Key references: Lombardo & Kiselev, <em>Pharmaceutics</em> 2022 · Pautot et al. <em>PNAS</em> 2003 (emulsion transfer) · Angelova & Dimitrov 1986 (electroformation) · van Swaay & deMello <em>Nat Protoc</em> 2018 (OLA) · Abkarian et al. <em>Soft Matter</em> 2011 (cDICE) · Exterkate et al. <em>ACS Syn Bio</em> 2023 (LUV production) · London Exchange Meeting DevNote LEX-20260501 · <a href="https://devnotes.nucleus.engineering/articles/bnext-devnotes-lex-20260501" target="_blank">devnotes.nucleus.engineering</a></p>
+  </div>
+</div><!-- /tree-panel -->
+
+<!-- ═══════════════════════════════════════════════
+     RIGHT PANEL — NAVIGATOR
+════════════════════════════════════════════════ -->
+<div class="side-panel">
+
+  <div>
+    <div class="panel-label">Progress</div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:5%"></div></div>
+  </div>
+
+  <!-- Question widget -->
+  <div id="q-widget" class="q-widget">
+    <div class="q-text" id="q-text">Loading…</div>
+    <div class="q-hint" id="q-hint"></div>
+    <div class="q-opts" id="q-opts"></div>
+    <button class="reset-btn" id="reset-btn" onclick="reset()" style="margin-top:14px;display:none">← restart</button>
+  </div>
+
+  <!-- Result widget -->
+  <div id="res-widget" class="result-widget">
+    <div id="res-badge" class="res-badge teal"></div>
+    <div class="res-title" id="res-title"></div>
+    <div class="res-desc" id="res-desc"></div>
+    <div class="spec-table" id="res-specs"></div>
+    <div id="res-links"></div>
+    <button class="reset-btn" onclick="reset()" style="margin-top:14px;display:block">← start over</button>
+  </div>
+
+  <!-- Trail -->
+  <div>
+    <div class="panel-label">Decision trail</div>
+    <div class="trail-list" id="trail-list">
+      <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--dim)">No decisions yet.</div>
+    </div>
+  </div>
+
+</div><!-- /side-panel -->
+</div><!-- /layout -->
+
+<script>
+/* ══════════════════════════════════════════════════════
+   DATA MODEL
+══════════════════════════════════════════════════════ */
+const NODES = {
+
+  start: {
+    q: "Where are you starting?",
+    hint: "all liposome preparation paths begin with the Base Cell Protocol as the reference point",
+    opts: [{ label: "I'm ready to define my experimental needs", next: "q1" }],
+    treeNode: "tn-start", connector: "cd-start",
+    progress: 5
+  },
+
+  q1: {
+    q: "What is the primary purpose of your liposomes?",
+    hint: "this determines which of the four major protocol branches applies to your work",
+    opts: [
+      { label: "Synthetic cell / bottom-up cell assembly", next: "q2a", answer: "Synthetic cell", bl: "bl-synth" },
+      { label: "Membrane biophysics / protein reconstitution", next: "q2b", answer: "Membrane biophysics", bl: "bl-biophys" },
+      { label: "Drug / cargo delivery & encapsulation", next: "q2c", answer: "Cargo delivery", bl: "bl-cargo" },
+      { label: "Scalable / microfluidic production", next: "q2d", answer: "Throughput / scale", bl: "bl-micro" },
+    ],
+    treeNode: "tn-q1", connector: "cd-q1",
+    trailQ: "Primary purpose",
+    progress: 15
+  },
+
+  /* ── BRANCH A: SYNTHETIC CELL ── */
+  q2a: {
+    q: "What synthetic cell application are you targeting?",
+    hint: "determines GUV formation method and whether encapsulation efficiency is the critical parameter",
+    opts: [
+      { label: "Cell-free expression system (PURE / TXTL) inside GUVs", next: "q3a1", answer: "Cell-free expression", bl: "bl-cfx" },
+      { label: "Microscopy / membrane observation (no complex cargo)", next: "p-electro", answer: "Microscopy / observation", bl: "bl-electro" },
+      { label: "Embedding in hydrogel matrix (Chicago / London nodes)", next: "p-hydrogel", answer: "Hydrogel embedding", bl: "bl-hydrogel-sc" },
+    ],
+    treeNode: "tn-q2a", connector: "cd-q2a",
+    trailQ: "Synthetic cell goal",
+    progress: 28
+  },
+
+  q3a1: {
+    q: "Do you need high encapsulation efficiency of large biomolecules (DNA, ribosomes, proteins)?",
+    hint: "electroformation gives poor EE for large cargo; emulsion-based methods excel here",
+    opts: [
+      { label: "Yes — high EE essential (PURE system, gene circuits)", next: "p-emtr", answer: "High EE needed", bl: "bl-emtr" },
+      { label: "No — EE less critical / small molecules only", next: "p-electro", answer: "EE not critical", bl: "bl-electro" },
+    ],
+    treeNode: "tn-q3a1", connector: "cd-q3a1",
+    trailQ: "Encapsulation efficiency",
+    progress: 42
+  },
+
+  p_emtr: {
+    result: true, color: "teal",
+    title: "Emulsion transfer / cDICE protocol",
+    badge: "Synthetic cell — high EE",
+    desc: "The inverted emulsion (w/o/w) transfer method and continuous droplet interface crossing encapsulation (cDICE) are the gold-standard approaches when encapsulation of the full PURE cell-free expression system or large biomolecular assemblies is required. The density difference between inner aqueous, oil, and outer phases drives vesicle formation. Centrifugation speed, lipid concentration, and osmotic balance are critical optimisation parameters.",
+    specs: [
+      { k: "Lipid composition", v: "POPC:Chol 70:30 (Base Cell) or DOPC:Chol", hl: true },
+      { k: "Concentration", v: "3–5 mg/mL in mineral oil" },
+      { k: "Inner solution", v: "PURE system / cell-free mix in DPBS" },
+      { k: "Outer solution", v: "Glucose 0.5 M in DPBS 1X" },
+      { k: "Density medium", v: "5% Optiprep (sucrose gradient)" },
+      { k: "Centrifugation", v: "~3000–6000 rpm, 15 min, 4 °C (TBD)" },
+      { k: "Target size", v: "5–30 µm (cell-sized GUVs)" },
+      { k: "Encapsulation efficiency", v: "High (>60% for large molecules)" },
+      { k: "Key limitation", v: "Residual oil traces; low yield without optimisation" },
+    ],
+    refs: [
+      { label: "Pautot et al. 2003 (emulsion transfer)", url: "https://pubmed.ncbi.nlm.nih.gov/12655055/" },
+      { label: "Exterkate et al. 2023 (ACS Syn Bio)", url: "https://pubs.acs.org/doi/10.1021/acssynbio.3c00540" },
+      { label: "Nucleus DevNote LEX-20260501", url: "https://devnotes.nucleus.engineering/articles/bnext-devnotes-lex-20260501" },
+    ],
+    treeNode: "tn-p-emtr"
+  },
+
+  'p-electro': {
+    result: true, color: "teal",
+    title: "Electroformation protocol",
+    badge: "Synthetic cell — GUV formation",
+    desc: "Electroformation (Angelova & Dimitrov, 1986) produces large GUVs with excellent unilamellarity and a wide size distribution (up to 100 µm). Dried lipid films on ITO glass or Pt wire electrodes are hydrated under AC electric field above the lipid Tm. Best for imaging and membrane property studies. Encapsulation efficiency is low for macromolecules. High-cholesterol formulations (>30 mol%) can cause demixing artifacts; damp-film protocols mitigate this.",
+    specs: [
+      { k: "Lipid composition", v: "POPC:Chol 70:30 or DOPC:Chol 9:1", hl: true },
+      { k: "Concentration", v: "0.4–4 mg/mL in chloroform" },
+      { k: "Electrode", v: "ITO glass or Pt wire" },
+      { k: "Hydration buffer", v: "Sucrose 200–300 mOsm (iso-osmotic)" },
+      { k: "AC field", v: "1–3 V, 10 Hz, 1–3 h at T > Tm" },
+      { k: "Target size", v: "10–100 µm GUVs" },
+      { k: "EE", v: "Low for large biomolecules" },
+      { k: "Limitation", v: "Avoid high salt; poor yield at physiological ionic strength" },
+    ],
+    refs: [
+      { label: "Mardesic et al. 2024 (high-Chol electroformation)", url: "https://pubmed.ncbi.nlm.nih.gov/38667592/" },
+      { label: "Weinberger et al. 2013 (PVA comparison)", url: "https://pubmed.ncbi.nlm.nih.gov/23391476/" },
+    ],
+    treeNode: "tn-p-electro"
+  },
+
+  'p-hydrogel': {
+    result: true, color: "teal",
+    title: "Hydrogel-adapted protocol",
+    badge: "Synthetic cell — matrix embedding",
+    desc: "When synthetic cells must be embedded in hydrogels (e.g. Matrigel, polyacrylamide, or custom ECM-mimics for the Chicago and London node demonstration projects), the Base Cell Protocol must be adapted for matrix compatibility. Liposome surface chemistry may need modification to prevent adhesion or aggregation. Optiprep density medium and osmotic balance with the gel are critical. This protocol is currently under community development — parameters are TBD.",
+    specs: [
+      { k: "Base lipid", v: "POPC:Chol 70:30 (Base Cell)", hl: true },
+      { k: "Surface modification", v: "PEG-lipid (DSPE-PEG2000) — optional" },
+      { k: "Osmotic balance", v: "Match gel medium osmolarity" },
+      { k: "Density medium", v: "5% Optiprep — verify compatibility" },
+      { k: "Benchmarking", v: "TBD — community input needed", pending: true },
+      { k: "Status", v: "Protocol in active development (LEX-2026)", pending: true },
+    ],
+    refs: [
+      { label: "Nucleus DevNote LEX-20260501", url: "https://devnotes.nucleus.engineering/articles/bnext-devnotes-lex-20260501" },
+    ],
+    treeNode: "tn-p-hydrogel"
+  },
+
+  /* ── BRANCH B: MEMBRANE BIOPHYSICS ── */
+  q2b: {
+    q: "What is the focus of your membrane biophysics study?",
+    hint: "determines whether standard or tuned lipid composition is required",
+    opts: [
+      { label: "Lipid-only bilayer — no protein", next: "p-base", answer: "Lipid-only bilayer", bl: "bl-noprot" },
+      { label: "Reconstituting a membrane protein into GUVs", next: "q3b1", answer: "Membrane protein reconstitution", bl: "bl-membprot" },
+    ],
+    treeNode: "tn-q2b", connector: "cd-q2b",
+    trailQ: "Membrane biophysics focus",
+    progress: 30
+  },
+
+  q3b1: {
+    q: "Does your membrane protein require a specific lipid environment?",
+    hint: "some proteins are functional in standard POPC:Chol; others need defined charge, curvature or stiffness",
+    opts: [
+      { label: "No — standard POPC:Chol bilayer is sufficient", next: "p-base", answer: "No tuning needed", bl: "bl-noprot" },
+      { label: "Yes — needs specific membrane properties", next: "q3b2", answer: "Tuning required", bl: "bl-prot" },
+    ],
+    treeNode: "tn-q3b1", connector: "cd-q3b1",
+    trailQ: "Lipid tuning needed",
+    progress: 44
+  },
+
+  q3b2: {
+    q: "Which membrane property is critical for your protein?",
+    hint: "based on the panel of membrane specifications from the London Exchange Meeting",
+    opts: [
+      { label: "Surface charge — electrostatic protein-lipid interactions", next: "p-charge", answer: "Charge", bl: "bl-charge" },
+      { label: "Membrane curvature — topology / insertion preference", next: "p-curv", answer: "Curvature", bl: "bl-curv" },
+      { label: "Bending stiffness / rigidity", next: "p-stiff", answer: "Stiffness", bl: "bl-stiff" },
+    ],
+    treeNode: "tn-q3b2", connector: "cd-q3b2",
+    trailQ: "Membrane property",
+    progress: 58
+  },
+
+  'p-base': {
+    result: true, color: "teal",
+    title: "Base Cell Protocol",
+    badge: "Standard — no adaptation",
+    desc: "The Nucleus Base Cell is a liposome-encapsulated system containing Nucleus Cytosol for protein synthesis. The membrane is composed of POPC, plant cholesterol, and Liss-Rhod PE as a fluorescent label. Liposomes are assembled using the inverted emulsion method: a lipid-oil mixture is combined with the inner solution (Cytosol), layered onto an outer glucose solution, and centrifuged at 9000 × g for 10 minutes.",
+    specs: [
+      { k: "Lipid composition", v: "POPC:Chol 70:30", hl: true },
+      { k: "Concentration", v: "3 mg/mL" },
+      { k: "Liss-Rhod PE", v: "0.05% (fluorescent membrane label)" },
+      { k: "Mineral oil volume", v: "1 mL per 1.8 mL glass vial" },
+      { k: "Lipid-oil prep", v: "55 °C hot bath, 4 hours, shielded from light" },
+      { k: "Centrifugation", v: "9000 × g, 10 min, room temperature" },
+    ],
+    refs: [
+      { label: "DevNote", url: "https://devnotes.nucleus.engineering/articles/bnext-devnotes-base-cell-01" },
+      { label: "Nucleus Docs", url: "https://docs.nucleus.engineering/docs/processes/assemble-base-cell/main/" },
+    ],
+    treeNode: "tn-p-base"
+  },
+
+  'p-charge': {
+    result: true, color: "purple",
+    title: "Charge-tuned lipid protocol",
+    badge: "Tuned membrane — charge",
+    desc: "Introducing anionic or zwitterionic headgroup lipids modulates electrostatic interactions between the membrane and proteins, cargo, or the encapsulated solution. Lab 6 (LEX survey) uses a 60/30/10 POPC/Chol/(POPE or POPA or POPG) formulation. POPA and POPG confer negative surface charge; POPE is zwitterionic but influences curvature. Zeta potential measurement is the key benchmarking output.",
+    specs: [
+      { k: "Reference composition", v: "60/30/10 POPC/Chol/X", hl: true },
+      { k: "Anionic option A", v: "POPA (phosphatidic acid, -2 charge)" },
+      { k: "Anionic option B", v: "POPG (phosphatidylglycerol, -1 charge)" },
+      { k: "Zwitterionic option", v: "POPE (10% for curvature + charge effect)" },
+      { k: "Concentration", v: "15 mg/mL (20 mM) — Lab 6 reference" },
+      { k: "Benchmarking", v: "Zeta potential · protein insertion efficiency", pending: true },
+    ],
+    refs: [
+      { label: "Nucleus LEX survey (Lab 6)", url: "https://devnotes.nucleus.engineering/articles/bnext-devnotes-lex-20260501" },
+    ],
+    treeNode: "tn-p-charge"
+  },
+
+  'p-curv': {
+    result: true, color: "purple",
+    title: "Curvature-tuned lipid protocol",
+    badge: "Tuned membrane — curvature",
+    desc: "Lipid molecular geometry determines spontaneous membrane curvature. Cone-shaped lipids (large headgroup relative to tail, e.g. lysophospholipids) favour positive curvature; inverted-cone lipids (PE headgroups) favour negative curvature. DOPC vs POPC substitution alters curvature preference. Critical for membrane proteins with topology-dependent insertion, fusion proteins, and curvature-sensing domains.",
+    specs: [
+      { k: "DOPC substitution", v: "Replace POPC with DOPC for altered Kc", hl: true },
+      { k: "Negative curvature", v: "Add DOPE (20–30%) — inverted cone" },
+      { k: "Positive curvature", v: "LysoPC (5–10%) — cone-shaped" },
+      { k: "Bending modulus (κ)", v: "DOPC ≈ 19 kT vs DPPC ≈ 35 kT" },
+      { k: "Cholesterol", v: "Adjust ratio independently of curvature lipid" },
+      { k: "Benchmarking", v: "Flickering spectroscopy · tube pulling assay", pending: true },
+    ],
+    refs: [
+      { label: "Dimova 2014 (GUV mechanics review)", url: "https://pubmed.ncbi.nlm.nih.gov/24952212/" },
+    ],
+    treeNode: "tn-p-curv"
+  },
+
+  'p-stiff': {
+    result: true, color: "purple",
+    title: "Stiffness-tuned lipid protocol",
+    badge: "Tuned membrane — stiffness / rigidity",
+    desc: "Cholesterol intercalates into the non-polar bilayer region, filling voids from loose lipid packing and increasing bending rigidity. Lab 5 (LEX survey) uses POPC:Chol ratios of 9:1 (fluid/soft) and 2:1 (more rigid). At >50 mol% cholesterol, membrane fluidity plateaus. For saturated lipids (DPPC, DSPC), chain length further increases Tm and stiffness.",
+    specs: [
+      { k: "Soft membrane", v: "POPC:Chol 9:1 (~10 mol% Chol)", hl: true },
+      { k: "Standard (Base Cell)", v: "POPC:Chol 70:30 (~30 mol% Chol)" },
+      { k: "Rigid membrane", v: "POPC:Chol 2:1 (~33 mol% Chol)" },
+      { k: "Very rigid", v: "DPPC:Chol or DSPC:Chol (high Tm lipids)" },
+      { k: "Concentration", v: "15 mg/mL (20 mM) — Lab 5 reference" },
+      { k: "Benchmarking", v: "Flicker spectroscopy · DSC phase transition", pending: true },
+    ],
+    refs: [
+      { label: "Nucleus LEX survey (Lab 5)", url: "https://devnotes.nucleus.engineering/articles/bnext-devnotes-lex-20260501" },
+      { label: "Cholesterol review PMC12195132", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12195132/" },
+    ],
+    treeNode: "tn-p-stiff"
+  },
+
+  /* ── BRANCH C: CARGO / DRUG DELIVERY ── */
+  q2c: {
+    q: "What type of cargo are you encapsulating?",
+    hint: "cargo solubility determines which bilayer compartment is targeted — aqueous core vs. hydrophobic bilayer interior",
+    opts: [
+      { label: "Hydrophilic cargo (small molecules, ions, soluble proteins)", next: "p-hydrophilic", answer: "Hydrophilic cargo", bl: "bl-hydrophilic" },
+      { label: "Hydrophobic cargo (lipophilic drugs, membrane anchors)", next: "p-hydrophobic", answer: "Hydrophobic cargo", bl: "bl-hydrophobic" },
+      { label: "Macromolecules (DNA, RNA, large proteins, ribosomes)", next: "p-macro", answer: "Macromolecules", bl: "bl-macro" },
+      { label: "Defined release trigger needed (thermal, pH, etc.)", next: "q3c2", answer: "Triggered release", bl: "bl-thermo" },
+    ],
+    treeNode: "tn-q2c", connector: "cd-q2c",
+    trailQ: "Cargo type",
+    progress: 30
+  },
+
+  q3c2: {
+    q: "What release trigger do you require?",
+    hint: "bilayer Tm and lipid saturation determine trigger temperature; pH-responsive lipids for endosomal escape",
+    opts: [
+      { label: "Temperature-triggered (hyperthermia, ~41–45 °C)", next: "p-thermosens", answer: "Thermosensitive", bl: "bl-thermosens" },
+      { label: "Passive / sustained release (no specific trigger)", next: "p-passive", answer: "Passive release", bl: "bl-passive" },
+    ],
+    treeNode: "tn-q3c2", connector: "cd-q3c2",
+    trailQ: "Release mechanism",
+    progress: 52
+  },
+
+  'p-hydrophilic': {
+    result: true, color: "amber",
+    title: "Hydrophilic cargo protocol",
+    badge: "Cargo delivery — aqueous core",
+    desc: "Hydrophilic drugs and soluble biomolecules are dissolved in the aqueous inner phase. Thin film hydration followed by extrusion through defined pore-size membranes (100–200 nm) gives LUVs with acceptable encapsulation efficiency (~10–30%). For higher EE at low ionic strength, reverse-phase evaporation can reach up to 65%. Keep cargo in hydration buffer during film rehydration to maximize capture.",
+    specs: [
+      { k: "Method", v: "Thin film hydration + extrusion (100 nm membrane)", hl: true },
+      { k: "Lipid composition", v: "POPC:Chol 70:30 or DPPC:Chol (stable)" },
+      { k: "Concentration", v: "3–10 mg/mL" },
+      { k: "Encapsulation efficiency", v: "10–30% (passive) / up to 65% (REV)" },
+      { k: "Sizing", v: "Extrusion ×10 passes through 100 nm pore" },
+      { k: "High-EE alternative", v: "Reverse-phase evaporation (REV method)" },
+      { k: "Storage", v: "Argon atmosphere, 4 °C, light-protected" },
+    ],
+    refs: [
+      { label: "Avanti Lipids — Liposome Preparation Protocol", url: "https://www.sigmaaldrich.com/US/en/technical-documents/protocol/cell-culture-and-cell-culture-analysis/transfection-and-gene-editing/liposome-preparation" },
+      { label: "Lombardo & Kiselev 2022", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8955843/" },
+    ],
+    treeNode: "tn-p-hydrophilic"
+  },
+
+  'p-hydrophobic': {
+    result: true, color: "amber",
+    title: "Hydrophobic cargo protocol",
+    badge: "Cargo delivery — bilayer embedding",
+    desc: "Lipophilic drugs intercalate within the hydrophobic bilayer interior. The drug is co-dissolved with lipids in the organic solvent before film formation. Saturated, long-chain phospholipids (DSPC, DPPC) form more stable bilayers that retain hydrophobic cargo better. High-Tm lipids with cholesterol reduce membrane permeability. Drug:lipid molar ratio is critical — excess drug can destabilize the bilayer.",
+    specs: [
+      { k: "Method", v: "Thin film co-dissolution (drug + lipid in CHCl3)", hl: true },
+      { k: "Lipid composition", v: "DSPC:Chol (saturated, high Tm)" },
+      { k: "Typical drug:lipid ratio", v: "1:5 to 1:20 molar" },
+      { k: "Cholesterol", v: "30–40 mol% for stability" },
+      { k: "Loading route", v: "Bilayer intercalation (not aqueous core)" },
+      { k: "Stability", v: "Enhanced with saturated lipids (gel phase)" },
+    ],
+    refs: [
+      { label: "Lombardo & Kiselev 2022", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8955843/" },
+    ],
+    treeNode: "tn-p-hydrophobic"
+  },
+
+  'p-macro': {
+    result: true, color: "amber",
+    title: "Macromolecule encapsulation protocol",
+    badge: "Cargo delivery — large biomolecules",
+    desc: "Encapsulating DNA, RNA, ribosomes, or large proteins requires methods that avoid organic solvent contact and brief sonication that can denature or shear biomolecules. Emulsion transfer (inverted emulsion) achieves EE up to 98% for proteins and dextran under optimised conditions. Osmotic balance between inner and outer solution is critical to avoid efflux. The fluorocarbon centrifugation method has also shown very high EE for sensitive APIs.",
+    specs: [
+      { k: "Method", v: "Inverted emulsion transfer (w/o/w)", hl: true },
+      { k: "Alternative", v: "Fluorocarbon nano-emulsion centrifugation" },
+      { k: "Lipid composition", v: "POPC:Chol 70:30 in mineral oil" },
+      { k: "EE achievable", v: "Up to 98% (macromolecules)" },
+      { k: "Critical parameter", v: "Osmotic balance inner vs. outer phase" },
+      { k: "Avoid", v: "Sonication / organic solvent contact with cargo" },
+      { k: "Centrifugation", v: "Higher density fluorocarbons → higher EE" },
+    ],
+    refs: [
+      { label: "Göpfrich et al. 2021 (macromolecule EE)", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8150985/" },
+      { label: "Exterkate et al. 2023", url: "https://pubs.acs.org/doi/10.1021/acssynbio.3c00540" },
+    ],
+    treeNode: "tn-p-macro"
+  },
+
+  'p-thermosens': {
+    result: true, color: "amber",
+    title: "Thermosensitive release protocol",
+    badge: "Triggered delivery — temperature",
+    desc: "Thermosensitive liposomes (TSL) release cargo when membrane Tm is exceeded. DPPC (Tm ~41 °C) is the canonical choice for hyperthermia applications. Cholesterol reduces membrane permeability below Tm (protecting cargo) and increases fluidity above Tm (facilitating release). The ratio of saturated:unsaturated lipids precisely tunes the trigger temperature. Drug loading efficiency exceeds 90% at temperatures just below the Tm.",
+    specs: [
+      { k: "Core lipid", v: "DPPC (Tm ~41–42 °C)", hl: true },
+      { k: "Trigger range", v: "41–45 °C (hyperthermic range)" },
+      { k: "Cholesterol", v: "~10–20 mol% (balance stability vs. release)" },
+      { k: "Lyso-PC addition", v: "MPPC or MSPC (5 mol%) — sharp transition" },
+      { k: "Tm tuning down", v: "Add DPPC + unsaturated lipids (e.g. POPC)" },
+      { k: "Tm tuning up", v: "DSPC (Tm ~55 °C) replacement" },
+      { k: "Loading temp", v: "Load just below Tm for >90% efficiency" },
+    ],
+    refs: [
+      { label: "Lombardo & Kiselev 2022", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8955843/" },
+    ],
+    treeNode: "tn-p-thermosens"
+  },
+
+  'p-passive': {
+    result: true, color: "amber",
+    title: "Passive / sustained release protocol",
+    badge: "Cargo delivery — controlled release",
+    desc: "For sustained, passive release without a specific trigger, stable bilayers from saturated lipids with high cholesterol content are preferred. DSPC:Chol formulations remain in the gel phase at 37 °C, providing slow, diffusion-limited release. PEGylated lipids (DSPE-PEG2000) extend circulation half-life. Size uniformity (100–200 nm LUVs by extrusion) is critical for reproducible pharmacokinetics.",
+    specs: [
+      { k: "Lipid composition", v: "DSPC:Chol 60:40 (stable gel phase)", hl: true },
+      { k: "Stealth coating", v: "DSPE-PEG2000 (5–10 mol%) optional" },
+      { k: "Tm (DSPC)", v: "~55 °C — gel phase at 37 °C" },
+      { k: "Sizing method", v: "Extrusion × 10 through 100 nm membrane" },
+      { k: "Release rate", v: "Days to weeks (diffusion-limited)" },
+      { k: "Storage", v: "4 °C, argon, protect from light, pH 7.4" },
+    ],
+    refs: [
+      { label: "Lombardo & Kiselev 2022", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8955843/" },
+    ],
+    treeNode: "tn-p-passive"
+  },
+
+  /* ── BRANCH D: THROUGHPUT / SCALE ── */
+  q2d: {
+    q: "What production scale and monodispersity do you require?",
+    hint: "tradeoff between size control, throughput, equipment access, and encapsulation efficiency",
+    opts: [
+      { label: "Tight size distribution (PDI < 0.1) — monodisperse population", next: "q3d1", answer: "Tight PDI needed", bl: "bl-mono" },
+      { label: "Moderate PDI acceptable — benchtop methods", next: "q3d3", answer: "PDI flexible", bl: "bl-pdi-flex" },
+    ],
+    treeNode: "tn-q2d", connector: "cd-q2d",
+    trailQ: "Monodispersity requirement",
+    progress: 30
+  },
+
+  q3d1: {
+    q: "Do you have access to a microfluidic chip fabrication facility?",
+    hint: "OLA requires PDMS chip (cleanroom or direct-write lithography); cDICE requires custom spinning device — both benchtop-operable once fabricated",
+    opts: [
+      { label: "Yes — chip fabrication available (cleanroom / direct-write)", next: "p-ola", answer: "Chip access available", bl: "bl-chip" },
+      { label: "No chip access — need a simpler microfluidic alternative", next: "p-cdice", answer: "No chip access", bl: "bl-nochip" },
+    ],
+    treeNode: "tn-q3d1", connector: "cd-q3d1",
+    trailQ: "Chip access",
+    progress: 46
+  },
+
+  q3d2: {
+    q: "What is your target liposome size range?",
+    hint: "size determines the preparation method — each method yields a characteristic size window",
+    opts: [
+      { label: "SUV — 20–100 nm (drug delivery, EV mimics)", next: "p-suv", answer: "SUV (20–100 nm)", bl: "bl-suv" },
+      { label: "LUV — 100–1000 nm (cargo encapsulation, bioreactors)", next: "p-luv", answer: "LUV (100–1000 nm)", bl: "bl-luv" },
+      { label: "GUV — 1–200 µm (synthetic cells, microscopy)", next: "p-pva", answer: "GUV (1–200 µm)", bl: "bl-guv" },
+    ],
+    treeNode: "tn-q3d2", connector: "cd-q3d2",
+    trailQ: "Target size range",
+    progress: 46
+  },
+
+  q3d3: {
+    q: "What is your target liposome size range?",
+    hint: "size determines the preparation method — each method yields a characteristic size window",
+    opts: [
+      { label: "SUV — 20–100 nm (drug delivery, EV mimics)", next: "p-suv", answer: "SUV (20–100 nm)" },
+      { label: "LUV — 100–1000 nm (cargo encapsulation, bioreactors)", next: "p-luv", answer: "LUV (100–1000 nm)" },
+      { label: "GUV — 1–200 µm (synthetic cells, microscopy)", next: "p-pva", answer: "GUV (1–200 µm)" },
+    ],
+    treeNode: "tn-q3d3", connector: "cd-q3d3",
+    trailQ: "Target size range",
+    progress: 46
+  },
+
+  'p-ola': {
+    result: true, color: "blue",
+    title: "OLA — Octanol-assisted liposome assembly",
+    badge: "Microfluidics — cell-sized GUVs",
+    desc: "OLA (van Swaay & deMello, 2018) produces monodisperse, unilamellar, cell-sized liposomes (5–20 µm) at >10 Hz using PDMS microfluidic chips. An aqueous inner phase and 1-octanol lipid phase are hydrodynamically focused by outer aqueous streams, generating double-emulsion droplets that spontaneously dewet into liposomes. On-chip density-based purification removes 1-octanol droplets to >95% purity. Excellent encapsulation efficiency for biologicals. Small sample volumes (~50 µL) make it ideal for precious reagents.",
+    specs: [
+      { k: "Platform", v: "PDMS microfluidic chip (direct-write lithography)", hl: true },
+      { k: "Size range", v: "5–20 µm (cell-sized)" },
+      { k: "Throughput", v: ">10 Hz production rate" },
+      { k: "Lipid solvent", v: "1-octanol + lipid mixture" },
+      { k: "Lipid composition", v: "DOPC:Chol or POPC:Chol (PC-based lipids)" },
+      { k: "EE", v: "Excellent for DNA, proteins, cell-free systems" },
+      { k: "Sample volume", v: "~50 µL inner phase" },
+      { k: "Purity", v: ">95% after on-chip density separation" },
+    ],
+    refs: [
+      { label: "van Swaay & deMello, Nat Protoc 2018", url: "https://www.nature.com/articles/nprot.2017.160" },
+      { label: "Dekker Lab — OLA synthetic cells", url: "https://ceesdekkerlab.nl/research/research-lines/bacterial-biophysics-and-bottom-up-biology/synthetic-cells-on-chip/" },
+    ],
+    treeNode: "tn-p-ola"
+  },
+
+  'p-cdice': {
+    result: true, color: "blue",
+    title: "cDICE — continuous droplet interface crossing encapsulation",
+    badge: "Microfluidics — high-EE GUVs",
+    desc: "cDICE (Abkarian et al. 2011) uses a rotating cylindrical chamber to generate w/o emulsion droplets that cross an oil-water interface to form GUVs. The centrifugal force drives droplet crossing without requiring a chip. Custom benchtop devices can be 3D-printed. High encapsulation efficiency and compatibility with a wider range of lipid compositions than OLA. Cell-sized GUVs (5–50 µm) with good monodispersity.",
+    specs: [
+      { k: "Platform", v: "Rotating chamber (custom or 3D-printed device)", hl: true },
+      { k: "Size range", v: "5–50 µm GUVs" },
+      { k: "EE", v: "High — comparable to emulsion transfer" },
+      { k: "Lipid composition", v: "POPC:Chol, DOPC:Chol, mixed compositions" },
+      { k: "Inner solution", v: "PURE system / cell-free mix compatible" },
+      { k: "Outer solution", v: "Glucose / DPBS osmotic balance" },
+      { k: "Advantage", v: "No cleanroom required; compatible with charged lipids" },
+    ],
+    refs: [
+      { label: "Abkarian et al. Soft Matter 2011", url: "https://pubs.rsc.org/en/content/articlelanding/2011/sm/c1sm05239j" },
+    ],
+    treeNode: "tn-p-cdice"
+  },
+
+  'p-suv': {
+    result: true, color: "blue",
+    title: "SUV protocol — sonication",
+    badge: "20–100 nm · small unilamellar vesicles",
+    desc: "Small unilamellar vesicles (SUVs) are produced by probe-tip or bath sonication of multilamellar vesicle (MLV) suspensions. High acoustic energy breaks MLVs into small, high-curvature SUVs. SUVs are not ideal for long-term storage (spontaneous fusion below Tm) and are not recommended for encapsulating proteins or nucleic acids (denaturation risk). Rapid, requires minimal equipment.",
+    specs: [
+      { k: "Preparation", v: "MLV hydration → sonication (probe or bath)", hl: true },
+      { k: "Size range", v: "15–100 nm" },
+      { k: "Lipid composition", v: "Any; avoid high Chol content (reduces sonication efficiency)" },
+      { k: "Sonication", v: "1s pulses, 150 W, until solution clears" },
+      { k: "Temperature", v: "Above Tm of lipid during sonication" },
+      { k: "Limitation", v: "Protein/DNA denaturation risk; unstable below Tm" },
+      { k: "Alternative sizing", v: "Extrusion through 30–50 nm membrane" },
+    ],
+    refs: [
+      { label: "Avanti Lipids — SUV vs LUV guide", url: "https://avantiresearch.com/news/suv-vs-luv-whats-the-difference" },
+    ],
+    treeNode: "tn-p-suv"
+  },
+
+  'p-luv': {
+    result: true, color: "blue",
+    title: "LUV protocol — extrusion",
+    badge: "100–1000 nm · large unilamellar vesicles",
+    desc: "Large unilamellar vesicles (LUVs) are produced by extruding MLVs through polycarbonate membranes of defined pore size (typically 100–400 nm) using an Avanti mini-extruder or syringe extruder. Multiple passes (≥10) produce a tight size distribution. LUVs can be produced from a wide range of lipid compositions including charged lipids. A 100 nm pore produces LUVs of ~120–135 nm depending on lipid composition.",
+    specs: [
+      { k: "Preparation", v: "MLV → extrusion ×10 through polycarbonate membrane", hl: true },
+      { k: "Pore size", v: "100 nm (standard) / 200–400 nm for larger LUVs" },
+      { k: "Target size", v: "120–150 nm (100 nm pore)" },
+      { k: "PDI", v: "<0.1 achievable with ×10 passes" },
+      { k: "Temperature", v: "Above Tm; heat extruder if needed" },
+      { k: "Lipid composition", v: "POPC:Chol or DOPC:DOPG for charged LUVs" },
+      { k: "Limitation", v: "Low EE for passive encapsulation (~10–30%)" },
+    ],
+    refs: [
+      { label: "Exterkate et al. ACS Syn Bio 2023", url: "https://pubs.acs.org/doi/10.1021/acssynbio.3c00540" },
+    ],
+    treeNode: "tn-p-luv"
+  },
+
+  'p-pva': {
+    result: true, color: "blue",
+    title: "PVA-assisted gel swelling (GUV)",
+    badge: "GUV — physiological conditions",
+    desc: "PVA-assisted swelling deposits lipids onto a PVA-coated surface, enabling GUV formation at physiological ionic strength (unlike standard electroformation which requires low salt). Dried lipid films on PVA gel swell upon hydration to form GUVs. Size and yield are comparable to electroformation but compatible with 150 mM NaCl buffers. Important for membrane protein reconstitution and cell-physiology mimicry. No special electronic equipment needed.",
+    specs: [
+      { k: "Substrate", v: "PVA-coated glass slide (10% w/v PVA, dried)", hl: true },
+      { k: "Hydration buffer", v: "Physiological saline (150 mM NaCl) compatible" },
+      { k: "Target size", v: "5–100 µm GUVs" },
+      { k: "Lipid composition", v: "POPC:Chol 70:30 or with charged lipids" },
+      { k: "Equipment", v: "No ITO glass or AC field required" },
+      { k: "Advantage", v: "Works at physiological ionic strength" },
+      { k: "Trade-off vs. electroformation", v: "Slightly lower yield; more leakage" },
+    ],
+    refs: [
+      { label: "Weinberger et al. 2013 (PVA swelling)", url: "https://pubmed.ncbi.nlm.nih.gov/23391476/" },
+      { label: "Biorvix 2021 — PVA vs electroformation", url: "https://www.biorxiv.org/content/10.1101/2021.12.22.473796v1.full" },
+    ],
+    treeNode: "tn-p-pva"
+  },
+
+  bench: {
+    result: true, color: "teal",
+    title: "Benchmarking & cross-lab data sharing",
+    badge: "Community convergence",
+    desc: "Whichever protocol you use, contributing benchmarking data to the Nucleus Forum and DevNotes is critical for community convergence. The London Exchange Meeting identified two key metrics: yield (number of liposomes per preparation) and module functionality (does the encapsulated system work as intended?). Data that normally falls outside scholarly communication — negative results, parameter sweeps, protocol variations — is especially valuable here.",
+    specs: [
+      { k: "Primary benchmarks", v: "Yield + module functionality (LEX consensus)" },
+      { k: "Size characterisation", v: "DLS / NTA for SUV/LUV; confocal for GUV" },
+      { k: "Lamellarity", v: "Cryo-TEM or fluorescence dequenching assay" },
+      { k: "EE measurement", v: "Fluorescence after lysis + centrifugation" },
+      { k: "Membrane properties", v: "Zeta potential · flickering spectroscopy" },
+      { k: "Forum", v: "devnotes.nucleus.engineering — share your data", pending: true },
+    ],
+    refs: [
+      { label: "Nucleus DevNote LEX-20260501", url: "https://devnotes.nucleus.engineering/articles/bnext-devnotes-lex-20260501" },
+    ],
+    treeNode: "tn-bench"
+  }
+};
+
+/* ══════════════════════════════════════════════════════
+   NAVIGATOR STATE
+══════════════════════════════════════════════════════ */
+let current = "start";
+let trail = [];
+
+function navTo(id) {
+  const node = NODES[id] || NODES[id.replace('-','_')];
+  if (!node) return;
+
+  // Update active tree node highlight
+  document.querySelectorAll('.node-card').forEach(n => {
+    n.classList.remove('active');
+  });
+  if (node.treeNode) {
+    const tn = document.getElementById(node.treeNode);
+    if (tn) tn.classList.add('active');
+  }
+
+  current = id;
+
+  if (node.result) {
+    showResult(node);
+  } else {
+    showQuestion(node);
+  }
+
+  // Update progress
+  if (node.progress) {
+    document.getElementById('progress-fill').style.width = node.progress + '%';
+  }
+
+  // Scroll side panel into view on mobile
+  document.getElementById('q-widget').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function showQuestion(node) {
+  document.getElementById('q-widget').style.display = 'block';
+  document.getElementById('res-widget').classList.remove('show');
+  document.getElementById('q-text').textContent = node.q;
+  document.getElementById('q-hint').textContent = node.hint || '';
+
+  const optsEl = document.getElementById('q-opts');
+  optsEl.innerHTML = node.opts.map((o, i) =>
+    `<button class="q-opt" onclick="choose('${current}',${i})">${o.label}<span class="q-opt-arrow">→</span></button>`
+  ).join('');
+
+  document.getElementById('reset-btn').style.display = trail.length ? 'block' : 'none';
+}
+
+function showResult(node) {
+  document.getElementById('q-widget').style.display = 'none';
+  const rw = document.getElementById('res-widget');
+  rw.classList.add('show');
+
+  const badge = document.getElementById('res-badge');
+  badge.textContent = node.badge;
+  badge.className = 'res-badge ' + node.color;
+
+  document.getElementById('res-title').textContent = node.title;
+  document.getElementById('res-desc').textContent = node.desc;
+
+  const specsEl = document.getElementById('res-specs');
+  specsEl.innerHTML = node.specs.map(s =>
+    `<div class="spec-row"><span class="spec-k">${s.k}</span><span class="spec-v${s.pending ? ' pending' : s.hl ? ' highlight' : ''}">${s.v}</span></div>`
+  ).join('');
+
+  const linksEl = document.getElementById('res-links');
+  if (node.refs && node.refs.length) {
+    linksEl.innerHTML = node.refs.map(r =>
+      `<a href="${r.url}" target="_blank" class="ref-link" style="margin-bottom:6px;display:inline-flex">${r.label} ↗</a>`
+    ).join('');
+  } else {
+    linksEl.innerHTML = '';
+  }
+
+  document.getElementById('progress-fill').style.width = '95%';
+}
+
+function choose(fromId, optIdx) {
+  const node = NODES[fromId] || NODES[fromId.replace('-','_')];
+  if (!node) return;
+  const opt = node.opts[optIdx];
+  if (!opt) return;
+
+  if (node.trailQ) {
+    trail.push({ q: node.trailQ, a: opt.answer || opt.label.substring(0,40) });
+    renderTrail();
+  }
+
+  navTo(opt.next);
+}
+
+function renderTrail() {
+  const el = document.getElementById('trail-list');
+  if (!trail.length) {
+    el.innerHTML = '<div style="font-family:\'DM Mono\',monospace;font-size:10px;color:var(--dim)">No decisions yet.</div>';
+    return;
+  }
+  el.innerHTML = trail.map((item, i) => {
+    const isLast = i === trail.length - 1;
+    return `<div class="trail-item ${isLast ? 'current' : 'done'}">
+      <div style="position:relative;width:7px;flex-shrink:0">
+        <div class="trail-dot"></div>
+        ${!isLast ? '<div class="trail-line"></div>' : ''}
+      </div>
+      <div>
+        <div class="trail-q">${item.q}</div>
+        <div class="trail-a">${item.a}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function reset() {
+  current = 'start';
+  trail = [];
+  document.getElementById('progress-fill').style.width = '5%';
+  document.querySelectorAll('.node-card').forEach(n => n.classList.remove('active'));
+  document.getElementById('res-widget').classList.remove('show');
+  renderTrail();
+  navTo('start');
+}
+
+// Init
+navTo('start');
+</script>
+</body>
+</html>

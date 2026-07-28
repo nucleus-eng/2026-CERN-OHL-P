@@ -1,0 +1,42 @@
+{
+  "schema_version": "devnote_manifest/v1",
+  "workspace_id": "30f8bf9f-64f0-401e-bbfe-ea9a127cb1bf",
+  "session_id": "4779d576-7f19-44a4-8c30-14d9138f9c03",
+  "generation_timestamp": "2026-02-24T05:15:14.229381Z",
+  "generation_local_timestamp": "2026-02-23T21:15:14.229381-08:00",
+  "generation_timezone": "America/Los_Angeles",
+  "source_report_reference": "Optimize PURE System for Yield and Rate - Final Report - 2026-02-24.md",
+  "included_visualizations": [
+    {
+      "id": "605175c5-35eb-4972-9c91-a7d197e51765",
+      "title": "Test Split: fit_param_1 (2)",
+      "filename": "viz-01-test-split-fit_param_1-2.png",
+      "status": "included"
+    },
+    {
+      "id": "629522d4-c996-4bf4-bf25-7a15df1740c5",
+      "title": "Test Split: fit_param_3",
+      "filename": "viz-02-test-split-fit_param_3.png",
+      "status": "included"
+    },
+    {
+      "id": "9291c6a5-b19e-41cf-8592-dbb1301cda19",
+      "title": "Test Split: fit_param_1",
+      "filename": "viz-03-test-split-fit_param_1.png",
+      "status": "included"
+    },
+    {
+      "id": "a281b23e-c5d9-4c64-b91e-5c3bf2106def",
+      "title": "Test Split: fit_param_0",
+      "filename": "viz-04-test-split-fit_param_0.png",
+      "status": "included"
+    },
+    {
+      "id": "fc4c5619-eeab-47cd-ae80-55d932c3f800",
+      "title": "Test Split: fit_param_4",
+      "filename": "viz-05-test-split-fit_param_4.png",
+      "status": "included"
+    }
+  ],
+  "warnings": []
+}

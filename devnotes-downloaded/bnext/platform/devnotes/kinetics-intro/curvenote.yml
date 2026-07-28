@@ -1,0 +1,96 @@
+version: 1
+extends: base.yml
+project:
+  title: Intro to Kinetics Analysis of Plate Reader Experiments
+  banner: banner.webp
+  authors:
+    # - nameParsed:
+    #     literal: Sharon Newman
+    #     given: Sharon
+    #     family: Newman
+      name: Sharon Newman
+      # orcid: 0000-0000-0000-0001
+      corresponding: true
+      email: sharon@bnext.bio
+      affiliations:
+        - affiliations-curvenote-generated-uid-0
+      id: contributors-curvenote-generated-uid-0
+      country: USA
+    # - nameParsed:
+    #     literal: Jonathan Calles
+    #     given: Jonathan
+    #     family: Calles
+      # name: Jonathan Calles
+      # # orcid: 0000-0000-0000-0001
+      # corresponding: false
+      # email: jon@bnext.bio
+      # affiliations:
+      #   - affiliations-curvenote-generated-uid-0
+      # id: contributors-curvenote-generated-uid-0
+  affiliations:
+    - id: affiliations-curvenote-generated-uid-0
+      name: b.next, San Francisco, California, 94107, USA
+      city: San Francisco
+      state: California
+      postal_code: '94107'
+      country: USA
+  date: '2026-04-22'
+  thumbnail: "assets/thumbnail.png"
+  toc:
+    - file: main.md
+    - file: experiments/kinetics-intro.ipynb
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - Cytosol
+    - CDK
+    - kinetics
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      articles:
+        - file: main.md
+      output: devnote.pdf
+      id: article
+  downloads:
+    - id: article
+      title: Download Article PDF
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - general/**/*
+    - General/**/*
+    - experiments/**/*
+    - Experiments/**/*
+    - resources/**/*
+    - Resources/**/*
+    - plasmids/**/*
+    - Plasmids/**/*
+  plugins:
+    - type: javascript
+      path: lorem.mjs
+  id: 019db3ce-4971-7fd6-83c0-c1a15e780bbe
+site:
+  # template: https://github.com/curvenote-themes/spa-preview/archive/refs/heads/main.zip
+  template: article-theme
+  options:
+    site_id: bnext-devnotes

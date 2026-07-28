@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liposome Protocol Selector — Nucleus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal-50: #E1F5EE;
+    --teal-100: #9FE1CB;
+    --teal-400: #1D9E75;
+    --teal-600: #0F6E56;
+    --teal-800: #085041;
+    --purple-50: #EEEDFE;
+    --purple-100: #CECBF6;
+    --purple-400: #7F77DD;
+    --purple-600: #534AB7;
+    --purple-800: #3C3489;
+    --gray-50: #F1EFE8;
+    --gray-100: #D3D1C7;
+    --gray-400: #888780;
+    --gray-600: #5F5E5A;
+    --gray-800: #444441;
+    --amber-50: #FAEEDA;
+    --amber-400: #BA7517;
+    --amber-600: #854F0B;
+    --bg: #0e0f0d;
+    --bg2: #161714;
+    --bg3: #1e1f1c;
+    --border: rgba(255,255,255,0.08);
+    --border-mid: rgba(255,255,255,0.14);
+    --text: #e8e6df;
+    --text-muted: #888780;
+    --text-dim: #5F5E5A;
+    --accent: #1D9E75;
+    --accent-light: #9FE1CB;
+  }
+
+  html { font-size: 16px; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* ── GRAIN OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  /* ── HEADER ── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    background: rgba(14,15,13,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+
+  .logo-mark {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .logo-mark svg { width: 16px; height: 16px; }
+
+  header h1 {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  header h1 span {
+    color: var(--accent-light);
+  }
+
+  .devnote-tag {
+    margin-left: auto;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 64px 40px 40px;
+    max-width: 700px;
+  }
+
+  .hero-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .hero h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .hero h2 em {
+    font-style: italic;
+    color: var(--accent-light);
+  }
+
+  .hero p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 0;
+    min-height: calc(100vh - 220px);
+  }
+
+  /* ── TREE PANEL ── */
+  .tree-panel {
+    border-right: 1px solid var(--border);
+    padding: 40px;
+    overflow-x: auto;
+  }
+
+  /* ── FLOWCHART SVG ── */
+  .chart-wrap {
+    min-width: 560px;
+  }
+
+  .chart-wrap svg {
+    width: 100%;
+    max-width: 660px;
+    height: auto;
+    display: block;
+  }
+
+  /* Node styles */
+  .fc-node {
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .fc-node:hover { opacity: 0.82; }
+  .fc-node.active rect, .fc-node.active ellipse { filter: drop-shadow(0 0 6px rgba(29,158,117,0.5)); }
+  .fc-node.dimmed { opacity: 0.25; }
+
+  .node-start rect { fill: #0F6E56; stroke: #1D9E75; stroke-width: 1; }
+  .node-start text { fill: #9FE1CB; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+
+  .node-q rect { fill: #1e1f1c; stroke: rgba(255,255,255,0.12); stroke-width: 0.5; }
+  .node-q text.label { fill: #e8e6df; font-family: 'DM Sans', sans-serif; font-weight: 400; }
+  .node-q text.sub { fill: #888780; font-family: 'DM Mono', monospace; }
+  .node-q.active rect { stroke: #1D9E75; stroke-width: 1; fill: #111f19; }
+
+  .node-dest-teal rect { fill: #0a1a14; stroke: #0F6E56; stroke-width: 1; }
+  .node-dest-teal text.label { fill: #9FE1CB; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+  .node-dest-teal text.sub { fill: #1D9E75; font-family: 'DM Mono', monospace; }
+  .node-dest-teal.reached rect { fill: #0d2a1e; stroke: #1D9E75; stroke-width: 1.5; }
+
+  .node-dest-purple rect { fill: #110f28; stroke: #534AB7; stroke-width: 1; }
+  .node-dest-purple text.label { fill: #CECBF6; font-family: 'DM Sans', sans-serif; font-weight: 500; }
+  .node-dest-purple text.sub { fill: #7F77DD; font-family: 'DM Mono', monospace; }
+  .node-dest-purple.reached rect { fill: #1a1640; stroke: #7F77DD; stroke-width: 1.5; }
+
+  .connector { fill: none; stroke: rgba(255,255,255,0.15); stroke-width: 1; }
+  .connector.active { stroke: #1D9E75; stroke-width: 1.5; }
+  .connector.dimmed { stroke: rgba(255,255,255,0.05); }
+
+  .edge-label { fill: #5F5E5A; font-family: 'DM Mono', monospace; font-size: 11px; }
+  .edge-label.active { fill: #1D9E75; }
+
+  /* ── SIDE PANEL ── */
+  .side-panel {
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .panel-section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+
+  /* ── PROGRESS TRAIL ── */
+  .trail { display: flex; flex-direction: column; gap: 0; }
+
+  .trail-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 16px;
+  }
+
+  .trail-item:last-child { padding-bottom: 0; }
+
+  .trail-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border-mid);
+    flex-shrink: 0;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+    transition: background 0.3s;
+  }
+
+  .trail-item.done .trail-dot { background: var(--accent); }
+  .trail-item.current .trail-dot { background: var(--accent-light); box-shadow: 0 0 0 3px rgba(29,158,117,0.25); }
+
+  .trail-line {
+    position: absolute;
+    left: 3.5px;
+    top: 13px;
+    bottom: -3px;
+    width: 1px;
+    background: var(--border);
+  }
+
+  .trail-item.done .trail-line { background: var(--accent); opacity: 0.3; }
+
+  .trail-text { flex: 1; }
+  .trail-q {
+    font-size: 11px;
+    color: var(--text-dim);
+    font-family: 'DM Mono', monospace;
+    margin-bottom: 2px;
+  }
+  .trail-answer {
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.3s;
+  }
+  .trail-item.done .trail-answer { color: var(--text); }
+
+  /* ── RESULT CARD ── */
+  .result-card {
+    background: var(--bg3);
+    border: 1px solid var(--border-mid);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    animation: fadeUp 0.4s ease;
+  }
+
+  .result-card.visible { display: block; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .result-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .result-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .result-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+
+  .result-specs {
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+    margin-bottom: 16px;
+  }
+
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+
+  .spec-row:last-child { border-bottom: none; }
+
+  .spec-key {
+    font-family: 'DM Mono', monospace;
+    color: var(--text-dim);
+    font-size: 11px;
+  }
+
+  .spec-val { color: var(--text-muted); font-size: 12px; }
+  .spec-val.pending { color: var(--text-dim); font-style: italic; font-size: 11px; }
+
+  .result-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(15,110,86,0.15);
+    border: 1px solid var(--accent);
+    color: var(--accent-light);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+  }
+
+  .result-btn:hover { background: rgba(15,110,86,0.28); }
+
+  /* ── QUESTION CARD ── */
+  .question-card {
+    background: var(--bg3);
+    border: 1px solid var(--border-mid);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .q-prompt {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .q-hint {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-bottom: 18px;
+  }
+
+  .q-options { display: flex; flex-direction: column; gap: 8px; }
+
+  .q-btn {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 10px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .q-btn:hover {
+    background: rgba(29,158,117,0.08);
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  .q-btn-arrow { color: var(--text-dim); font-size: 16px; transition: transform 0.15s; }
+  .q-btn:hover .q-btn-arrow { transform: translateX(3px); color: var(--accent); }
+
+  .reset-btn {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 6px 0;
+    text-align: left;
+    transition: color 0.15s;
+    letter-spacing: 0.04em;
+  }
+
+  .reset-btn:hover { color: var(--text-muted); }
+
+  /* ── FLOWCHART DEFS ── */
+  .arr-teal { fill: none; stroke: #1D9E75; stroke-width: 1; }
+  .arr-gray  { fill: none; stroke: rgba(255,255,255,0.15); stroke-width: 1; }
+
+  @media (max-width: 820px) {
+    main { grid-template-columns: 1fr; }
+    .tree-panel { border-right: none; border-bottom: 1px solid var(--border); }
+    header { padding: 16px 20px; }
+    .hero { padding: 40px 20px 24px; }
+    .tree-panel { padding: 24px 20px; }
+    .side-panel { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">
+    <svg viewBox="0 0 16 16" fill="none">
+      <circle cx="8" cy="8" r="6" stroke="#1D9E75" stroke-width="1.2"/>
+      <circle cx="8" cy="8" r="2.5" fill="#1D9E75"/>
+    </svg>
+  </div>
+  <h1>Nucleus — <span>Liposome Protocol Selector</span></h1>
+  <span class="devnote-tag">DevNote · LEX-20260501</span>
+</header>
+
+<div class="hero">
+  <p class="hero-label">Developer Cell Project</p>
+  <h2>Which protocol <em>fits your</em> experiment?</h2>
+  <p>Navigate from the Base Cell Protocol to the right liposome preparation method based on your experimental requirements. Based on the London Exchange Meeting survey, April 2026.</p>
+</div>
+
+<main>
+  <!-- ── FLOWCHART ── -->
+  <div class="tree-panel">
+    <div class="chart-wrap">
+      <svg viewBox="0 0 660 730" xmlns="http://www.w3.org/2000/svg" id="flowchart">
+        <defs>
+          <marker id="arr-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+          <marker id="arr-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+          <marker id="arr-dim" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+        </defs>
+
+        <!-- ══ CONNECTORS (drawn first, under nodes) ══ -->
+
+        <!-- Start → Q1 -->
+        <line id="c-start-q1" x1="330" y1="74" x2="330" y2="112" class="connector" marker-end="url(#arr-teal)" stroke="#1D9E75"/>
+
+        <!-- Q1 → hydrogel YES (left) -->
+        <path id="c-q1-hydrogel" d="M192 140 L100 140 L100 224" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-yes1" x="144" y="133" class="edge-label">yes</text>
+
+        <!-- Q1 → Q2 NO (down) -->
+        <line id="c-q1-q2" x1="330" y1="168" x2="330" y2="218" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-no1" x="338" y="198" class="edge-label">no</text>
+
+        <!-- Q2 → base-cell NO (right) -->
+        <path id="c-q2-base" d="M476 248 L556 248 L556 336" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-no2" x="490" y="240" class="edge-label">no</text>
+
+        <!-- Q2 → Q3 YES (down) -->
+        <line id="c-q2-q3" x1="330" y1="278" x2="330" y2="318" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-yes2" x="338" y="302" class="edge-label">yes</text>
+
+        <!-- Q3 → base-cell2 NO (left) -->
+        <path id="c-q3-base2" d="M188 348 L118 348 L118 430" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-no3" x="150" y="340" class="edge-label">no</text>
+
+        <!-- Q3 → Q4 YES (down) -->
+        <line id="c-q3-q4" x1="330" y1="378" x2="330" y2="418" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-yes3" x="338" y="402" class="edge-label">yes</text>
+
+        <!-- Q4 → charge (left) -->
+        <path id="c-q4-charge" d="M210 448 L130 448 L130 546" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-charge" x="118" y="500" class="edge-label" text-anchor="middle">charge</text>
+
+        <!-- Q4 → curvature (down) -->
+        <line id="c-q4-curv" x1="330" y1="478" x2="330" y2="546" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-curv" x="338" y="516" class="edge-label">curve</text>
+
+        <!-- Q4 → stiffness (right) -->
+        <path id="c-q4-stiff" d="M450 448 L530 448 L530 546" class="connector" marker-end="url(#arr-gray)"/>
+        <text id="el-stiff" x="520" y="500" class="edge-label" text-anchor="middle">stiffness</text>
+
+        <!-- Benchmarking convergence lines -->
+        <line x1="130" y1="616" x2="130" y2="660" stroke="rgba(83,74,183,0.3)" stroke-width="0.5" stroke-dasharray="3 3"/>
+        <line x1="330" y1="616" x2="330" y2="660" stroke="rgba(83,74,183,0.3)" stroke-width="0.5" stroke-dasharray="3 3"/>
+        <line x1="530" y1="616" x2="530" y2="660" stroke="rgba(83,74,183,0.3)" stroke-width="0.5" stroke-dasharray="3 3"/>
+        <line x1="130" y1="660" x2="530" y2="660" stroke="rgba(83,74,183,0.3)" stroke-width="0.5" stroke-dasharray="3 3"/>
+        <line x1="330" y1="660" x2="330" y2="692" stroke="rgba(83,74,183,0.3)" stroke-width="0.5" stroke-dasharray="3 3" marker-end="url(#arr-dim)"/>
+
+        <!-- ══ NODES ══ -->
+
+        <!-- START -->
+        <g class="fc-node node-start" id="n-start" data-node="start">
+          <rect x="195" y="24" width="270" height="50" rx="25"/>
+          <text x="330" y="44" text-anchor="middle" dominant-baseline="central" style="font-size:13px;font-weight:500;fill:#9FE1CB;font-family:'DM Sans',sans-serif">Start here</text>
+          <text x="330" y="61" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#1D9E75;font-family:'DM Mono',monospace;letter-spacing:0.04em">Base Cell Protocol — POPC:Chol 70:30</text>
+        </g>
+
+        <!-- Q1 -->
+        <g class="fc-node node-q" id="n-q1" data-node="q1">
+          <rect x="182" y="112" width="296" height="56" rx="8"/>
+          <text x="330" y="134" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:13px;font-weight:400;fill:#e8e6df;font-family:'DM Sans',sans-serif">Embedding in a hydrogel?</text>
+          <text x="330" y="154" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#888780;font-family:'DM Mono',monospace">e.g. Chicago / London node projects</text>
+        </g>
+
+        <!-- HYDROGEL OUTCOME -->
+        <g class="fc-node node-dest-teal" id="n-hydrogel" data-node="hydrogel">
+          <rect x="40" y="224" width="120" height="58" rx="8"/>
+          <text x="100" y="244" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#9FE1CB;font-family:'DM Sans',sans-serif">Hydrogel</text>
+          <text x="100" y="260" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#9FE1CB;font-family:'DM Sans',sans-serif">protocol</text>
+          <text x="100" y="275" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#1D9E75;font-family:'DM Mono',monospace">matrix-adapted</text>
+        </g>
+
+        <!-- Q2 -->
+        <g class="fc-node node-q" id="n-q2" data-node="q2">
+          <rect x="182" y="218" width="296" height="60" rx="8"/>
+          <text x="330" y="240" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:13px;font-weight:400;fill:#e8e6df;font-family:'DM Sans',sans-serif">Incorporating a membrane protein?</text>
+          <text x="330" y="260" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#888780;font-family:'DM Mono',monospace">bilayer compatibility required</text>
+        </g>
+
+        <!-- BASE CELL (no protein) -->
+        <g class="fc-node node-dest-teal" id="n-base1" data-node="base1">
+          <rect x="494" y="336" width="126" height="58" rx="8"/>
+          <text x="557" y="354" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#9FE1CB;font-family:'DM Sans',sans-serif">Base Cell</text>
+          <text x="557" y="370" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#9FE1CB;font-family:'DM Sans',sans-serif">Protocol</text>
+          <text x="557" y="386" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#1D9E75;font-family:'DM Mono',monospace">no adaptation</text>
+        </g>
+
+        <!-- Q3 -->
+        <g class="fc-node node-q" id="n-q3" data-node="q3">
+          <rect x="182" y="318" width="296" height="60" rx="8"/>
+          <text x="330" y="338" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:13px;font-weight:400;fill:#e8e6df;font-family:'DM Sans',sans-serif">Requires tuned membrane?</text>
+          <text x="330" y="358" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#888780;font-family:'DM Mono',monospace">protein needs specific lipid env.</text>
+        </g>
+
+        <!-- BASE CELL (with protein, no tuning) -->
+        <g class="fc-node node-dest-teal" id="n-base2" data-node="base2">
+          <rect x="48" y="430" width="140" height="58" rx="8"/>
+          <text x="118" y="450" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#9FE1CB;font-family:'DM Sans',sans-serif">Base Cell</text>
+          <text x="118" y="466" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#9FE1CB;font-family:'DM Sans',sans-serif">Protocol</text>
+          <text x="118" y="482" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#1D9E75;font-family:'DM Mono',monospace">+ membrane protein</text>
+        </g>
+
+        <!-- Q4 -->
+        <g class="fc-node node-q" id="n-q4" data-node="q4">
+          <rect x="192" y="418" width="276" height="60" rx="8"/>
+          <text x="330" y="438" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:13px;font-weight:400;fill:#e8e6df;font-family:'DM Sans',sans-serif">Key membrane property?</text>
+          <text x="330" y="458" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#888780;font-family:'DM Mono',monospace">select physico-chemical requirement</text>
+        </g>
+
+        <!-- CHARGE -->
+        <g class="fc-node node-dest-purple" id="n-charge" data-node="charge">
+          <rect x="60" y="546" width="140" height="70" rx="8"/>
+          <text x="130" y="564" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#CECBF6;font-family:'DM Sans',sans-serif">Charge-tuned</text>
+          <text x="130" y="580" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#CECBF6;font-family:'DM Sans',sans-serif">lipid protocol</text>
+          <text x="130" y="598" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#7F77DD;font-family:'DM Mono',monospace">POPA · POPG · POPE</text>
+          <text x="130" y="610" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#534AB7;font-family:'DM Mono',monospace">60/30/10 POPC/Chol/X</text>
+        </g>
+
+        <!-- CURVATURE -->
+        <g class="fc-node node-dest-purple" id="n-curv" data-node="curv">
+          <rect x="255" y="546" width="150" height="70" rx="8"/>
+          <text x="330" y="564" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#CECBF6;font-family:'DM Sans',sans-serif">Curvature-tuned</text>
+          <text x="330" y="580" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#CECBF6;font-family:'DM Sans',sans-serif">lipid protocol</text>
+          <text x="330" y="598" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#7F77DD;font-family:'DM Mono',monospace">lipid geometry adjusted</text>
+          <text x="330" y="610" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#534AB7;font-family:'DM Mono',monospace">DOPC · cone-shaped lipids</text>
+        </g>
+
+        <!-- STIFFNESS -->
+        <g class="fc-node node-dest-purple" id="n-stiff" data-node="stiff">
+          <rect x="460" y="546" width="140" height="70" rx="8"/>
+          <text x="530" y="564" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#CECBF6;font-family:'DM Sans',sans-serif">Stiffness-tuned</text>
+          <text x="530" y="580" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:500;fill:#CECBF6;font-family:'DM Sans',sans-serif">lipid protocol</text>
+          <text x="530" y="598" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#7F77DD;font-family:'DM Mono',monospace">cholesterol ratio varied</text>
+          <text x="530" y="610" class="sub" text-anchor="middle" dominant-baseline="central" style="font-size:9px;fill:#534AB7;font-family:'DM Mono',monospace">POPC:Chol 9:1 → 2:1</text>
+        </g>
+
+        <!-- BENCHMARKING -->
+        <g class="fc-node node-q" id="n-bench" data-node="bench">
+          <rect x="200" y="692" width="260" height="36" rx="18"/>
+          <text x="330" y="710" class="label" text-anchor="middle" dominant-baseline="central" style="font-size:12px;font-weight:400;fill:#888780;font-family:'DM Sans',sans-serif">Benchmarking + data sharing</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ── SIDE PANEL ── -->
+  <div class="side-panel">
+
+    <!-- Question card -->
+    <div id="question-card" class="question-card">
+      <div class="q-prompt" id="q-prompt">Loading…</div>
+      <div class="q-hint" id="q-hint"></div>
+      <div class="q-options" id="q-options"></div>
+      <button class="reset-btn" id="reset-btn" onclick="reset()" style="margin-top:16px;display:none">← restart</button>
+    </div>
+
+    <!-- Result card -->
+    <div id="result-card" class="result-card">
+      <div class="result-type" id="res-type"></div>
+      <div class="result-title" id="res-title"></div>
+      <div class="result-desc" id="res-desc"></div>
+      <div class="result-specs" id="res-specs"></div>
+      <a href="https://devnotes.nucleus.engineering/articles/bnext-devnotes-lex-20260501" target="_blank" class="result-btn">View DevNote ↗</a>
+      <button class="reset-btn" onclick="reset()" style="margin-top:14px;display:block">← start over</button>
+    </div>
+
+    <!-- Trail -->
+    <div>
+      <div class="panel-section-label">Decision trail</div>
+      <div class="trail" id="trail"></div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+const STEPS = {
+  start: {
+    prompt: "What are you preparing?",
+    hint: "begin at the base cell protocol",
+    options: [
+      { label: "Liposomes for synthetic cell assembly", next: "q1" }
+    ],
+    highlightNodes: ["n-start"],
+    highlightConnectors: ["c-start-q1"]
+  },
+  q1: {
+    prompt: "Are you embedding your synthetic cells into a hydrogel?",
+    hint: "e.g. Chicago or London node demonstration projects",
+    options: [
+      { label: "Yes — hydrogel embedding required", next: "hydrogel", answer: "Yes, hydrogel embedding", connector: "c-q1-hydrogel", edgeLabel: "el-yes1" },
+      { label: "No — free-standing liposomes", next: "q2", answer: "No hydrogel", connector: "c-q1-q2", edgeLabel: "el-no1" }
+    ],
+    highlightNodes: ["n-q1"],
+    trailQ: "Hydrogel embedding?"
+  },
+  q2: {
+    prompt: "Are you incorporating a membrane protein?",
+    hint: "requires bilayer compatibility checks",
+    options: [
+      { label: "Yes — membrane protein present", next: "q3", answer: "Yes, membrane protein", connector: "c-q2-q3", edgeLabel: "el-yes2" },
+      { label: "No — lipid-only bilayer", next: "base1", answer: "No membrane protein", connector: "c-q2-base", edgeLabel: "el-no2" }
+    ],
+    highlightNodes: ["n-q2"],
+    trailQ: "Membrane protein?"
+  },
+  q3: {
+    prompt: "Does the membrane protein require a tuned lipid environment?",
+    hint: "specific physico-chemical properties needed",
+    options: [
+      { label: "Yes — specific membrane specs needed", next: "q4", answer: "Yes, tuning needed", connector: "c-q3-q4", edgeLabel: "el-yes3" },
+      { label: "No — standard composition is fine", next: "base2", answer: "No tuning needed", connector: "c-q3-base2", edgeLabel: "el-no3" }
+    ],
+    highlightNodes: ["n-q3"],
+    trailQ: "Tuned membrane?"
+  },
+  q4: {
+    prompt: "What is the key membrane property you need to control?",
+    hint: "select the dominant physico-chemical requirement",
+    options: [
+      { label: "Charge — electrostatic interactions", next: "charge", answer: "Charge", connector: "c-q4-charge", edgeLabel: "el-charge" },
+      { label: "Curvature — vesicle shape & budding", next: "curv", answer: "Curvature", connector: "c-q4-curv", edgeLabel: "el-curv" },
+      { label: "Stiffness — membrane rigidity", next: "stiff", answer: "Stiffness", connector: "c-q4-stiff", edgeLabel: "el-stiff" }
+    ],
+    highlightNodes: ["n-q4"],
+    trailQ: "Membrane property?"
+  },
+  hydrogel: {
+    result: true,
+    type: "Adapted protocol",
+    title: "Hydrogel protocol",
+    desc: "The Base Cell Protocol must be adapted to produce liposomes compatible with hydrogel embedding. Since both Chicago and London node projects involve embedding synthetic cells into hydrogels, this is an opportunity to define a benchmarking protocol for this specific use case.",
+    specs: [
+      { k: "Base", v: "POPC:Chol 70:30 · 3 mg/mL" },
+      { k: "Adaptation", v: "Matrix-compatible", pending: false },
+      { k: "Benchmarking", v: "TBD — community input needed", pending: true },
+      { k: "Status", v: "Protocol in development", pending: true }
+    ],
+    highlightNodes: ["n-hydrogel"]
+  },
+  base1: {
+    result: true,
+    type: "Standard protocol",
+    title: "Base Cell Protocol",
+    desc: "No adaptation required. Use the standard Base Cell Protocol as agreed at the London Exchange Meeting. This forms the benchmarking baseline for all labs in the Developer Cell Project.",
+    specs: [
+      { k: "Lipid", v: "POPC:Chol 70:30" },
+      { k: "Concentration", v: "3 mg/mL" },
+      { k: "Preparation", v: "Thin film" },
+      { k: "Oil phase", v: "Bioultra (CAS 8042-47-5)" },
+      { k: "Outer solution", v: "Glucose 0.5 M in DPBS 1X" },
+      { k: "Density medium", v: "5% Optiprep" }
+    ],
+    highlightNodes: ["n-base1"]
+  },
+  base2: {
+    result: true,
+    type: "Standard protocol + protein",
+    title: "Base Cell Protocol",
+    desc: "Use the standard Base Cell Protocol. The membrane protein does not require adjustments to lipid composition. Monitor for protein insertion efficiency as a benchmarking metric.",
+    specs: [
+      { k: "Lipid", v: "POPC:Chol 70:30" },
+      { k: "Concentration", v: "3 mg/mL" },
+      { k: "Preparation", v: "Thin film" },
+      { k: "Modification", v: "None required" },
+      { k: "Note", v: "Track insertion efficiency", pending: true }
+    ],
+    highlightNodes: ["n-base2"]
+  },
+  charge: {
+    result: true,
+    type: "Tuned lipid protocol — charge",
+    title: "Charge-tuned protocol",
+    desc: "A modified lipid composition introducing charged headgroups. Lab 6's composition (60/30/10 POPC/Chol/POPE or POPA or POPG) serves as the reference. Charged membranes influence electrostatic interactions with the protein and encapsulated cargo.",
+    specs: [
+      { k: "Reference", v: "60/30/10 POPC/Chol/X" },
+      { k: "Anionic option", v: "POPA or POPG (10%)" },
+      { k: "Zwitterionic", v: "POPE (10%)" },
+      { k: "Concentration", v: "15 mg/mL (20 mM)" },
+      { k: "Benchmarking", v: "Zeta potential · protein activity", pending: true }
+    ],
+    highlightNodes: ["n-charge"]
+  },
+  curv: {
+    result: true,
+    type: "Tuned lipid protocol — curvature",
+    title: "Curvature-tuned protocol",
+    desc: "Adjust lipid geometry to modulate intrinsic membrane curvature. DOPC (vs POPC) and other cone-shaped lipids influence spontaneous curvature, affecting vesicle stability and membrane protein topology.",
+    specs: [
+      { k: "Base swap", v: "DOPC (vs POPC)" },
+      { k: "Geometry", v: "Cone-shaped lipids" },
+      { k: "Cholesterol", v: "Adjust ratio as needed" },
+      { k: "Benchmarking", v: "Vesicle size · tubulation", pending: true },
+      { k: "Status", v: "Panel under definition", pending: true }
+    ],
+    highlightNodes: ["n-curv"]
+  },
+  stiff: {
+    result: true,
+    type: "Tuned lipid protocol — stiffness",
+    title: "Stiffness-tuned protocol",
+    desc: "Vary the POPC:Cholesterol ratio to tune membrane bending rigidity. Lab 5 reports using 9:1 and 2:1 ratios. Higher cholesterol increases stiffness (bending modulus κ); lower ratios give more fluid membranes.",
+    specs: [
+      { k: "Low stiffness", v: "POPC:Chol 9:1" },
+      { k: "High stiffness", v: "POPC:Chol 2:1" },
+      { k: "Concentration", v: "15 mg/mL (20 mM)" },
+      { k: "Benchmarking", v: "Flicker spectroscopy · GUV shape", pending: true }
+    ],
+    highlightNodes: ["n-stiff"]
+  }
+};
+
+let currentStep = "start";
+let trail = [];
+let activeConnectors = [];
+
+function getAllNodes() {
+  return document.querySelectorAll('.fc-node');
+}
+
+function setNodeState(nodeId, state) {
+  const el = document.getElementById(nodeId);
+  if (!el) return;
+  el.classList.remove('active', 'dimmed', 'reached');
+  if (state) el.classList.add(state);
+}
+
+function setConnectorState(connId, state) {
+  const el = document.getElementById(connId);
+  if (!el) return;
+  el.classList.remove('active', 'dimmed');
+  if (state) el.classList.add(state);
+}
+
+function updateDiagram(step) {
+  const data = STEPS[step];
+  getAllNodes().forEach(n => n.classList.remove('active', 'dimmed', 'reached'));
+  document.querySelectorAll('.connector').forEach(c => c.classList.remove('active', 'dimmed'));
+  document.querySelectorAll('.edge-label').forEach(e => e.classList.remove('active'));
+
+  // Highlight active nodes
+  (data.highlightNodes || []).forEach(id => setNodeState(id, data.result ? 'reached' : 'active'));
+
+  // Active connectors from trail
+  activeConnectors.forEach(id => {
+    setConnectorState(id, 'active');
+  });
+}
+
+function renderQuestion(step) {
+  const data = STEPS[step];
+  const card = document.getElementById('question-card');
+  const resCard = document.getElementById('result-card');
+
+  if (data.result) {
+    card.style.display = 'none';
+    resCard.classList.add('visible');
+    document.getElementById('res-type').textContent = data.type;
+    document.getElementById('res-title').textContent = data.title;
+    document.getElementById('res-desc').textContent = data.desc;
+    const specsEl = document.getElementById('res-specs');
+    specsEl.innerHTML = data.specs.map(s =>
+      `<div class="spec-row"><span class="spec-key">${s.k}</span><span class="spec-val${s.pending ? ' pending' : ''}">${s.v}</span></div>`
+    ).join('');
+    return;
+  }
+
+  card.style.display = 'block';
+  resCard.classList.remove('visible');
+
+  document.getElementById('q-prompt').textContent = data.prompt;
+  document.getElementById('q-hint').textContent = data.hint || '';
+
+  const optEl = document.getElementById('q-options');
+  optEl.innerHTML = data.options.map((o, i) =>
+    `<button class="q-btn" onclick="choose(${i})">${o.label}<span class="q-btn-arrow">→</span></button>`
+  ).join('');
+
+  document.getElementById('reset-btn').style.display = trail.length > 0 ? 'block' : 'none';
+}
+
+function renderTrail() {
+  const el = document.getElementById('trail');
+  if (!trail.length) {
+    el.innerHTML = `<div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--text-dim)">No decisions made yet.</div>`;
+    return;
+  }
+  el.innerHTML = trail.map((item, i) => {
+    const isLast = i === trail.length - 1;
+    return `<div class="trail-item ${isLast ? 'current' : 'done'}">
+      <div>
+        <div class="trail-dot"></div>
+        ${!isLast ? '<div class="trail-line"></div>' : ''}
+      </div>
+      <div class="trail-text">
+        <div class="trail-q">${item.q}</div>
+        <div class="trail-answer">${item.answer}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function choose(optIndex) {
+  const data = STEPS[currentStep];
+  const opt = data.options[optIndex];
+
+  if (data.trailQ && opt.answer) {
+    trail.push({ q: data.trailQ, answer: opt.answer });
+  }
+
+  if (opt.connector) activeConnectors.push(opt.connector);
+  if (opt.edgeLabel) {
+    const el = document.getElementById(opt.edgeLabel);
+    if (el) el.classList.add('active');
+  }
+
+  currentStep = opt.next;
+  updateDiagram(currentStep);
+  renderQuestion(currentStep);
+  renderTrail();
+}
+
+function reset() {
+  currentStep = "start";
+  trail = [];
+  activeConnectors = [];
+  document.querySelectorAll('.edge-label').forEach(e => e.classList.remove('active'));
+  document.getElementById('result-card').classList.remove('visible');
+  updateDiagram("start");
+  renderQuestion("start");
+  renderTrail();
+}
+
+// Init
+updateDiagram("start");
+renderQuestion("start");
+renderTrail();
+</script>
+</body>
+</html>

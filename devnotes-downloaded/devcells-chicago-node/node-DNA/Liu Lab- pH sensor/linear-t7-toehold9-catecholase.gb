@@ -1,0 +1,49 @@
+LOCUS       Linear_T7_toehold9_cate 1210 bp ds-DNA     linear       20-NOV-2025
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     misc_feature    38..56
+                     /label="T7 promoter"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     misc_feature    57..137
+                     /label="toehold 9"
+                     /ApEinfo_revcolor="#c7b0e3"
+                     /ApEinfo_fwdcolor="#c7b0e3"
+     misc_feature    138..1058
+                     /label="catecholase"
+                     /ApEinfo_revcolor="#fbff00"
+                     /ApEinfo_fwdcolor="#fbff00"
+                     /locus_tag="catecholase"
+                     /label="catecholase"
+                     /ApEinfo_graphicformat="arrow_data {{0 1 2 0 0 -1} {} 0}width 5 offset 0"
+     CDS             1059..1061
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="*"
+     misc_feature    1124..1171
+                     /label="T7 term"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+ORIGIN
+        1 TCCGGCGTAG AGGATCGAGA TCTCGATCCC GCGAAATTAA TACGACTCAC TATAGGGTTG
+       61 TGTGGtATTG TCTTGTTTGC ATACAGAAAC AGAGGAGATA TGCAATGAAG ACAATAAACC
+      121 TGAAAGGAGC GCAAAAGatg aacaaaggtg taatgcgacc gggccatgtg cagctgcgtg
+      181 tactggacat gagcaaggcc ctggaacact acgtcgagtt gctgggcctg atcgagatgg
+      241 accgtgacga ccagggccgt gtctatctga aggcttggac cgaagtggat aagttttccc
+      301 tggtgctacg cgaggctgac gagccgggca tggattttat gggtttcaag gttgtggatg
+      361 aggatgctct ccggcaactg gagcgggatc tgatggcata tggctgtgcc gttgagcagc
+      421 tacccgcagg tgaactgaac agttgtggcc ggcgcgtgcg cttccaggcc ccctccgggc
+      481 atcacttcga gttgtatgca gacaaggaat atactggaaa gtggggtttg aatgacgtca
+      541 atcccgaggc atggccgcgc gatctgaaag gtatggcggc tgtgcgtttc gaccacgccc
+      601 tcatgtatgg cgacgaattg ccggcgacct atgacctgtt caccaaggtg ctcggtttct
+      661 atctggccga acaggtgctg gacgaaaatg gcacgcgcgt cgcccagttt ctcagtctgt
+      721 cgaccaaggc ccacgacgtg gccttcattc accatccgga aaaaggccgc ctccatcatg
+      781 tgtccttcca cctcgaaacc tgggaagact tgcttcgcgc cgccgacctg atctccatga
+      841 ccgacacatc tatcgatatc ggcccaaccc gccacggcct cactcacggc aagaccatct
+      901 acttcttcga cccgtccggt aaccgcaacg aagtgttctg cgggggagat tacaactacc
+      961 cggaccacaa accggtgacc tggaccaccg accagctggg caaggcgatc ttttaccacg
+     1021 accgcattct caacgaacga ttcatgaccg tgctgaccTA AGATCCGGCT GCTAACAAAG
+     1081 CCCGAAAGGA AGCTGAGTTG GCTGCTGCCA CCGCTGAGCA ATAACTAGCA TAACCCCTTG
+     1141 GGGCCTCTAA ACGGGTCTTG AGGGGTTTTT TCTGAAAGGA GGAACTATAT CCGGATTGGC
+     1201 GAATGGGACG
+//

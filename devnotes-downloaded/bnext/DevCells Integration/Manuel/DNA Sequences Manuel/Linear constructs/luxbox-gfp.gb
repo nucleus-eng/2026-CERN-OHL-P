@@ -1,0 +1,86 @@
+LOCUS       Luxbox_GFP               987 bp ds-DNA     circular     10-MAR-2026
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     misc_feature    17..92
+                     /label="Alternative promotor"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+     misc_feature    23..28
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    31..50
+                     /label="lux box"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    31..85
+                     /label="Plux"
+                     /ApEinfo_revcolor="#85dae9"
+                     /ApEinfo_fwdcolor="#85dae9"
+     misc_feature    51..55
+                     /label="-35 promotor element"
+                     /ApEinfo_revcolor="#d6b295"
+                     /ApEinfo_fwdcolor="#d6b295"
+     misc_feature    56..72
+                     /label="spacer"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    72..77
+                     /label="-10 element"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+     misc_feature    78..80
+                     /label="discriminator element"
+                     /ApEinfo_revcolor="#ffef86"
+                     /ApEinfo_fwdcolor="#ffef86"
+     misc_feature    78..87
+                     /label="transpiration 5'UTR"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+     misc_feature    84..84
+                     /label=+1
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+     RBS             94..105
+                     /label="Bba_B0034"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     misc_feature    106..111
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    112..831
+                     /label="GFPmut3b"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+     misc_feature    832..837
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    840..968
+                     /label="terminator"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    920..925
+                     /label="RF[10] scar RBS"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+ORIGIN
+        1 TCAGCCATAC CACATTTGGT Catactagag acctgtagga tcgtacaggt ttacgcaaga
+       61 aaatggtttg ttatagtcga ataaatacta gagaaagagg agaaatacta gatgcgtaaa
+      121 ggagaagaac ttttcactgg agttgtccca attcttgttg aattagatgg tgatgttaat
+      181 gggcacaaat tttctgtcag tggagagggt gaaggtgatg caacatacgg aaaacttacc
+      241 cttaaattta tttgcactac tggaaaacta cctgttccat ggccaacact tgtcactact
+      301 ttcggttatg gtgttcaatg ctttgcgaga tacccagatc atatgaaaca gcatgacttt
+      361 ttcaagagtg ccatgcccga aggttatgta caggaaagaa ctatattttt caaagatgac
+      421 gggaactaca agacacgtgc tgaagtcaag tttgaaggtg atacccttgt taatagaatc
+      481 gagttaaaag gtattgattt taaagaagat ggaaacattc ttggacacaa attggaatac
+      541 aactataact cacacaatgt atacatcatg gcagacaaac aaaagaatgg aatcaaagtt
+      601 aacttcaaaa ttagacacaa cattgaagat ggaagcgttc aactagcaga ccattatcaa
+      661 caaaatactc caattggcga tggccctgtc cttttaccag acaaccatta cctgtccaca
+      721 caatctgccc tttcgaaaga tcccaacgaa aagagagacc acatggtcct tcttgagttt
+      781 gtaacagctg ctgggattac acatggcatg gatgaactat acaaataata atactagagc
+      841 caggcatcaa ataaaacgaa aggctcagtc gaaagactgg gcctttcgtt ttatctgttg
+      901 tttgtcggtg aacgctctct actagagtca cactggctca ccttcgggtg ggcctttctg
+      961 cgtttataCC CCCTGAACCT GAAACAT
+//

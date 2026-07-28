@@ -1,0 +1,24 @@
+version: 1
+extends: base.yml
+project:
+  title: 'PLA1 DevNote'
+  authors:
+    - name: Sung-Won Hwang
+      email: sungwonh@umich.edu
+      affiliations:
+        - name: Mechanical Engineering Department, University of Michigan
+          city: Ann Arbor
+          state: Michigan
+          postal_code: 48103
+          country: USA
+      corresponding: true
+  date: 2026-06-17
+  banner: banner.webp
+  thumbnail: general/schematic-FA_metabolism.png
+  toc:
+    - file: main.md
+   # - file: experiments/experiment-01/20250220-analysis.ipynb
+  downloads:
+   # - file: experiments/experiment-01/MTHFS-labnotebook.pdf
+   #  title: Lab Notebook Entry
+  id: 019ed7c0-0591-70ce-bcf5-352d08e946f6

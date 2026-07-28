@@ -1,0 +1,81 @@
+version: 1
+project:
+  # doi: 10.63765/XXXXXXXX
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-devnotes-DNA_toolkit_aptamer_reporters
+  # Ensure your title is the same as in your `main.md`
+  title: "DNA toolkit - Aptamer reporter constructs for simultaneous transcription and translation monitoring in PURE"
+  subtitle: "Characterising aptamer-based transcription reporters for simultaneous monitoring of transcription and translation in PURE"
+  description: "Characterising aptamer-based transcription reporters for simultaneous monitoring of transcription and translation in PURE"
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Charlie Newell
+      email: Charlie@bnext.bio
+      orcid: 0000-0001-9208-7542
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
+      corresponding: true
+  keywords:
+    - DNA toolkit
+    - RNA aptamers
+    - Broccoli
+    - MangoIV
+    - PURE
+    - transcription
+    - translation
+    - cell-free expression
+  # abbreviations:
+  #   PURE: Protein synthesis Using Recombinant Elements
+  #   SNR: signal-to-noise ratio
+  #   CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publication date for the note
+  date: 2026-05-12
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  thumbnail: ./experiments/20260511_combined_analysis/figures/summary_figure.png
+  # A create a banner image for your publication, use this as a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first in the list
+  toc:
+    - file: main.md
+    - file: experiments/20251027_Aptamer_test_Broccoli_mScarlet/20251027_Broccoli_mScarlet_clean.ipynb
+    - file: experiments/20251030_Aptamer_test_Mango_mScarlet/20251030_MangoTO1_mScarlet_clean.ipynb
+    - file: experiments/20251031_Aptamer_test_Mango_deGFP/20251031_MangoTO3_deGFP_clean.ipynb
+    - file: experiments/20260511_combined_analysis/20260511_combined_analysis.ipynb
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+  requirements:
+    - environment.yml
+  resources:
+    - General/**/*
+    - src/**/*
+    - experiments/**/*
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - file: ./General/DNA_toolkit_aptamer_reporters-labnotebook.pdf
+      title: Lab notebook entry
+  # funding:
+  #   - id: G-0000-00000
+  #     source:
+  #       - Alfred P. Sloan Foundation
+site:
+  template: https://github.com/curvenote-themes/spa-preview/archive/refs/heads/main.zip
+  options:
+    site_id: bnext-devnotes

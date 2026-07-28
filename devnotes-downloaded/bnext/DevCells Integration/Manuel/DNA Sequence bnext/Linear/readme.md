@@ -1,0 +1,1 @@
+All constructs were ordered as gBlocks from IDT, except LuxR-PLA1 and LuxR-deGFP, which were ordered through gene synthesis service in pET-Kanamycin vector from IDT

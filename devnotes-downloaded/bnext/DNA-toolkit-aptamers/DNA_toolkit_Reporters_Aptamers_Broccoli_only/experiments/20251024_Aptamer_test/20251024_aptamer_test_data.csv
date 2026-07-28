@@ -1,0 +1,1096 @@
+,Time,Well,Data,Row,Column,Read,Plate,Clock Time,Sample #,Name
+0,0 days 00:00:00,D3,1164,D,3,TO1-Biotin,Plate 1,2025-10-24 16:03:14,1,Negative
+1,0 days 00:05:00,D3,901,D,3,TO1-Biotin,Plate 1,2025-10-24 16:08:14,1,Negative
+2,0 days 00:10:00,D3,764,D,3,TO1-Biotin,Plate 1,2025-10-24 16:13:14,1,Negative
+3,0 days 00:15:00,D3,684,D,3,TO1-Biotin,Plate 1,2025-10-24 16:18:14,1,Negative
+4,0 days 00:20:00,D3,704,D,3,TO1-Biotin,Plate 1,2025-10-24 16:23:14,1,Negative
+5,0 days 00:25:00,D3,652,D,3,TO1-Biotin,Plate 1,2025-10-24 16:28:14,1,Negative
+6,0 days 00:30:00,D3,629,D,3,TO1-Biotin,Plate 1,2025-10-24 16:33:14,1,Negative
+7,0 days 00:35:00,D3,634,D,3,TO1-Biotin,Plate 1,2025-10-24 16:38:14,1,Negative
+8,0 days 00:40:00,D3,649,D,3,TO1-Biotin,Plate 1,2025-10-24 16:43:14,1,Negative
+9,0 days 00:45:00,D3,686,D,3,TO1-Biotin,Plate 1,2025-10-24 16:48:14,1,Negative
+10,0 days 00:50:00,D3,651,D,3,TO1-Biotin,Plate 1,2025-10-24 16:53:14,1,Negative
+11,0 days 00:55:00,D3,658,D,3,TO1-Biotin,Plate 1,2025-10-24 16:58:14,1,Negative
+12,0 days 01:00:00,D3,646,D,3,TO1-Biotin,Plate 1,2025-10-24 17:03:14,1,Negative
+13,0 days 01:05:00,D3,640,D,3,TO1-Biotin,Plate 1,2025-10-24 17:08:14,1,Negative
+14,0 days 01:10:00,D3,669,D,3,TO1-Biotin,Plate 1,2025-10-24 17:13:14,1,Negative
+15,0 days 01:15:00,D3,603,D,3,TO1-Biotin,Plate 1,2025-10-24 17:18:14,1,Negative
+16,0 days 01:20:00,D3,648,D,3,TO1-Biotin,Plate 1,2025-10-24 17:23:14,1,Negative
+17,0 days 01:25:00,D3,652,D,3,TO1-Biotin,Plate 1,2025-10-24 17:28:14,1,Negative
+18,0 days 01:30:00,D3,635,D,3,TO1-Biotin,Plate 1,2025-10-24 17:33:14,1,Negative
+19,0 days 01:35:00,D3,633,D,3,TO1-Biotin,Plate 1,2025-10-24 17:38:14,1,Negative
+20,0 days 01:40:00,D3,654,D,3,TO1-Biotin,Plate 1,2025-10-24 17:43:14,1,Negative
+21,0 days 01:45:00,D3,651,D,3,TO1-Biotin,Plate 1,2025-10-24 17:48:14,1,Negative
+22,0 days 01:50:00,D3,602,D,3,TO1-Biotin,Plate 1,2025-10-24 17:53:14,1,Negative
+23,0 days 01:55:00,D3,617,D,3,TO1-Biotin,Plate 1,2025-10-24 17:58:14,1,Negative
+24,0 days 02:00:00,D3,626,D,3,TO1-Biotin,Plate 1,2025-10-24 18:03:14,1,Negative
+25,0 days 02:05:00,D3,619,D,3,TO1-Biotin,Plate 1,2025-10-24 18:08:14,1,Negative
+26,0 days 02:10:00,D3,601,D,3,TO1-Biotin,Plate 1,2025-10-24 18:13:14,1,Negative
+27,0 days 02:15:00,D3,632,D,3,TO1-Biotin,Plate 1,2025-10-24 18:18:14,1,Negative
+28,0 days 02:20:00,D3,624,D,3,TO1-Biotin,Plate 1,2025-10-24 18:23:14,1,Negative
+29,0 days 02:25:00,D3,630,D,3,TO1-Biotin,Plate 1,2025-10-24 18:28:14,1,Negative
+30,0 days 02:30:00,D3,622,D,3,TO1-Biotin,Plate 1,2025-10-24 18:33:14,1,Negative
+31,0 days 02:35:00,D3,605,D,3,TO1-Biotin,Plate 1,2025-10-24 18:38:14,1,Negative
+32,0 days 02:40:00,D3,635,D,3,TO1-Biotin,Plate 1,2025-10-24 18:43:14,1,Negative
+33,0 days 02:45:00,D3,673,D,3,TO1-Biotin,Plate 1,2025-10-24 18:48:14,1,Negative
+34,0 days 02:50:00,D3,615,D,3,TO1-Biotin,Plate 1,2025-10-24 18:53:14,1,Negative
+35,0 days 02:55:00,D3,651,D,3,TO1-Biotin,Plate 1,2025-10-24 18:58:14,1,Negative
+36,0 days 03:00:00,D3,622,D,3,TO1-Biotin,Plate 1,2025-10-24 19:03:14,1,Negative
+37,0 days 03:05:00,D3,630,D,3,TO1-Biotin,Plate 1,2025-10-24 19:08:14,1,Negative
+38,0 days 03:10:00,D3,642,D,3,TO1-Biotin,Plate 1,2025-10-24 19:13:14,1,Negative
+39,0 days 03:15:00,D3,626,D,3,TO1-Biotin,Plate 1,2025-10-24 19:18:14,1,Negative
+40,0 days 03:20:00,D3,630,D,3,TO1-Biotin,Plate 1,2025-10-24 19:23:14,1,Negative
+41,0 days 03:25:00,D3,639,D,3,TO1-Biotin,Plate 1,2025-10-24 19:28:14,1,Negative
+42,0 days 03:30:00,D3,650,D,3,TO1-Biotin,Plate 1,2025-10-24 19:33:14,1,Negative
+43,0 days 03:35:00,D3,632,D,3,TO1-Biotin,Plate 1,2025-10-24 19:38:14,1,Negative
+44,0 days 03:40:00,D3,678,D,3,TO1-Biotin,Plate 1,2025-10-24 19:43:14,1,Negative
+45,0 days 03:45:00,D3,623,D,3,TO1-Biotin,Plate 1,2025-10-24 19:48:14,1,Negative
+46,0 days 03:50:00,D3,684,D,3,TO1-Biotin,Plate 1,2025-10-24 19:53:14,1,Negative
+47,0 days 03:55:00,D3,669,D,3,TO1-Biotin,Plate 1,2025-10-24 19:58:14,1,Negative
+48,0 days 04:00:00,D3,623,D,3,TO1-Biotin,Plate 1,2025-10-24 20:03:14,1,Negative
+49,0 days 04:05:00,D3,696,D,3,TO1-Biotin,Plate 1,2025-10-24 20:08:14,1,Negative
+50,0 days 04:10:00,D3,643,D,3,TO1-Biotin,Plate 1,2025-10-24 20:13:14,1,Negative
+51,0 days 04:15:00,D3,622,D,3,TO1-Biotin,Plate 1,2025-10-24 20:18:14,1,Negative
+52,0 days 04:20:00,D3,677,D,3,TO1-Biotin,Plate 1,2025-10-24 20:23:14,1,Negative
+53,0 days 04:25:00,D3,651,D,3,TO1-Biotin,Plate 1,2025-10-24 20:28:14,1,Negative
+54,0 days 04:30:00,D3,640,D,3,TO1-Biotin,Plate 1,2025-10-24 20:33:14,1,Negative
+55,0 days 04:35:00,D3,642,D,3,TO1-Biotin,Plate 1,2025-10-24 20:38:14,1,Negative
+56,0 days 04:40:00,D3,653,D,3,TO1-Biotin,Plate 1,2025-10-24 20:43:14,1,Negative
+57,0 days 04:45:00,D3,646,D,3,TO1-Biotin,Plate 1,2025-10-24 20:48:14,1,Negative
+58,0 days 04:50:00,D3,684,D,3,TO1-Biotin,Plate 1,2025-10-24 20:53:14,1,Negative
+59,0 days 04:55:00,D3,687,D,3,TO1-Biotin,Plate 1,2025-10-24 20:58:14,1,Negative
+60,0 days 05:00:00,D3,671,D,3,TO1-Biotin,Plate 1,2025-10-24 21:03:14,1,Negative
+61,0 days 05:05:00,D3,676,D,3,TO1-Biotin,Plate 1,2025-10-24 21:08:14,1,Negative
+62,0 days 05:10:00,D3,691,D,3,TO1-Biotin,Plate 1,2025-10-24 21:13:14,1,Negative
+63,0 days 05:15:00,D3,682,D,3,TO1-Biotin,Plate 1,2025-10-24 21:18:14,1,Negative
+64,0 days 05:20:00,D3,664,D,3,TO1-Biotin,Plate 1,2025-10-24 21:23:14,1,Negative
+65,0 days 05:25:00,D3,709,D,3,TO1-Biotin,Plate 1,2025-10-24 21:28:14,1,Negative
+66,0 days 05:30:00,D3,680,D,3,TO1-Biotin,Plate 1,2025-10-24 21:33:14,1,Negative
+67,0 days 05:35:00,D3,680,D,3,TO1-Biotin,Plate 1,2025-10-24 21:38:14,1,Negative
+68,0 days 05:40:00,D3,690,D,3,TO1-Biotin,Plate 1,2025-10-24 21:43:14,1,Negative
+69,0 days 05:45:00,D3,689,D,3,TO1-Biotin,Plate 1,2025-10-24 21:48:14,1,Negative
+70,0 days 05:50:00,D3,669,D,3,TO1-Biotin,Plate 1,2025-10-24 21:53:14,1,Negative
+71,0 days 05:55:00,D3,684,D,3,TO1-Biotin,Plate 1,2025-10-24 21:58:14,1,Negative
+72,0 days 06:00:00,D3,705,D,3,TO1-Biotin,Plate 1,2025-10-24 22:03:14,1,Negative
+73,0 days 00:00:00,D5,330,D,5,TO1-Biotin,Plate 1,2025-10-24 16:03:14,2,57 nm TO1-Biotin
+74,0 days 00:05:00,D5,271,D,5,TO1-Biotin,Plate 1,2025-10-24 16:08:14,2,57 nm TO1-Biotin
+75,0 days 00:10:00,D5,292,D,5,TO1-Biotin,Plate 1,2025-10-24 16:13:14,2,57 nm TO1-Biotin
+76,0 days 00:15:00,D5,313,D,5,TO1-Biotin,Plate 1,2025-10-24 16:18:14,2,57 nm TO1-Biotin
+77,0 days 00:20:00,D5,350,D,5,TO1-Biotin,Plate 1,2025-10-24 16:23:14,2,57 nm TO1-Biotin
+78,0 days 00:25:00,D5,370,D,5,TO1-Biotin,Plate 1,2025-10-24 16:28:14,2,57 nm TO1-Biotin
+79,0 days 00:30:00,D5,400,D,5,TO1-Biotin,Plate 1,2025-10-24 16:33:14,2,57 nm TO1-Biotin
+80,0 days 00:35:00,D5,436,D,5,TO1-Biotin,Plate 1,2025-10-24 16:38:14,2,57 nm TO1-Biotin
+81,0 days 00:40:00,D5,470,D,5,TO1-Biotin,Plate 1,2025-10-24 16:43:14,2,57 nm TO1-Biotin
+82,0 days 00:45:00,D5,480,D,5,TO1-Biotin,Plate 1,2025-10-24 16:48:14,2,57 nm TO1-Biotin
+83,0 days 00:50:00,D5,512,D,5,TO1-Biotin,Plate 1,2025-10-24 16:53:14,2,57 nm TO1-Biotin
+84,0 days 00:55:00,D5,520,D,5,TO1-Biotin,Plate 1,2025-10-24 16:58:14,2,57 nm TO1-Biotin
+85,0 days 01:00:00,D5,527,D,5,TO1-Biotin,Plate 1,2025-10-24 17:03:14,2,57 nm TO1-Biotin
+86,0 days 01:05:00,D5,528,D,5,TO1-Biotin,Plate 1,2025-10-24 17:08:14,2,57 nm TO1-Biotin
+87,0 days 01:10:00,D5,562,D,5,TO1-Biotin,Plate 1,2025-10-24 17:13:14,2,57 nm TO1-Biotin
+88,0 days 01:15:00,D5,611,D,5,TO1-Biotin,Plate 1,2025-10-24 17:18:14,2,57 nm TO1-Biotin
+89,0 days 01:20:00,D5,584,D,5,TO1-Biotin,Plate 1,2025-10-24 17:23:14,2,57 nm TO1-Biotin
+90,0 days 01:25:00,D5,565,D,5,TO1-Biotin,Plate 1,2025-10-24 17:28:14,2,57 nm TO1-Biotin
+91,0 days 01:30:00,D5,573,D,5,TO1-Biotin,Plate 1,2025-10-24 17:33:14,2,57 nm TO1-Biotin
+92,0 days 01:35:00,D5,583,D,5,TO1-Biotin,Plate 1,2025-10-24 17:38:14,2,57 nm TO1-Biotin
+93,0 days 01:40:00,D5,593,D,5,TO1-Biotin,Plate 1,2025-10-24 17:43:14,2,57 nm TO1-Biotin
+94,0 days 01:45:00,D5,587,D,5,TO1-Biotin,Plate 1,2025-10-24 17:48:14,2,57 nm TO1-Biotin
+95,0 days 01:50:00,D5,578,D,5,TO1-Biotin,Plate 1,2025-10-24 17:53:14,2,57 nm TO1-Biotin
+96,0 days 01:55:00,D5,604,D,5,TO1-Biotin,Plate 1,2025-10-24 17:58:14,2,57 nm TO1-Biotin
+97,0 days 02:00:00,D5,613,D,5,TO1-Biotin,Plate 1,2025-10-24 18:03:14,2,57 nm TO1-Biotin
+98,0 days 02:05:00,D5,613,D,5,TO1-Biotin,Plate 1,2025-10-24 18:08:14,2,57 nm TO1-Biotin
+99,0 days 02:10:00,D5,634,D,5,TO1-Biotin,Plate 1,2025-10-24 18:13:14,2,57 nm TO1-Biotin
+100,0 days 02:15:00,D5,611,D,5,TO1-Biotin,Plate 1,2025-10-24 18:18:14,2,57 nm TO1-Biotin
+101,0 days 02:20:00,D5,617,D,5,TO1-Biotin,Plate 1,2025-10-24 18:23:14,2,57 nm TO1-Biotin
+102,0 days 02:25:00,D5,614,D,5,TO1-Biotin,Plate 1,2025-10-24 18:28:14,2,57 nm TO1-Biotin
+103,0 days 02:30:00,D5,604,D,5,TO1-Biotin,Plate 1,2025-10-24 18:33:14,2,57 nm TO1-Biotin
+104,0 days 02:35:00,D5,614,D,5,TO1-Biotin,Plate 1,2025-10-24 18:38:14,2,57 nm TO1-Biotin
+105,0 days 02:40:00,D5,607,D,5,TO1-Biotin,Plate 1,2025-10-24 18:43:14,2,57 nm TO1-Biotin
+106,0 days 02:45:00,D5,601,D,5,TO1-Biotin,Plate 1,2025-10-24 18:48:14,2,57 nm TO1-Biotin
+107,0 days 02:50:00,D5,613,D,5,TO1-Biotin,Plate 1,2025-10-24 18:53:14,2,57 nm TO1-Biotin
+108,0 days 02:55:00,D5,624,D,5,TO1-Biotin,Plate 1,2025-10-24 18:58:14,2,57 nm TO1-Biotin
+109,0 days 03:00:00,D5,586,D,5,TO1-Biotin,Plate 1,2025-10-24 19:03:14,2,57 nm TO1-Biotin
+110,0 days 03:05:00,D5,625,D,5,TO1-Biotin,Plate 1,2025-10-24 19:08:14,2,57 nm TO1-Biotin
+111,0 days 03:10:00,D5,607,D,5,TO1-Biotin,Plate 1,2025-10-24 19:13:14,2,57 nm TO1-Biotin
+112,0 days 03:15:00,D5,633,D,5,TO1-Biotin,Plate 1,2025-10-24 19:18:14,2,57 nm TO1-Biotin
+113,0 days 03:20:00,D5,625,D,5,TO1-Biotin,Plate 1,2025-10-24 19:23:14,2,57 nm TO1-Biotin
+114,0 days 03:25:00,D5,601,D,5,TO1-Biotin,Plate 1,2025-10-24 19:28:14,2,57 nm TO1-Biotin
+115,0 days 03:30:00,D5,609,D,5,TO1-Biotin,Plate 1,2025-10-24 19:33:14,2,57 nm TO1-Biotin
+116,0 days 03:35:00,D5,612,D,5,TO1-Biotin,Plate 1,2025-10-24 19:38:14,2,57 nm TO1-Biotin
+117,0 days 03:40:00,D5,605,D,5,TO1-Biotin,Plate 1,2025-10-24 19:43:14,2,57 nm TO1-Biotin
+118,0 days 03:45:00,D5,633,D,5,TO1-Biotin,Plate 1,2025-10-24 19:48:14,2,57 nm TO1-Biotin
+119,0 days 03:50:00,D5,582,D,5,TO1-Biotin,Plate 1,2025-10-24 19:53:14,2,57 nm TO1-Biotin
+120,0 days 03:55:00,D5,629,D,5,TO1-Biotin,Plate 1,2025-10-24 19:58:14,2,57 nm TO1-Biotin
+121,0 days 04:00:00,D5,606,D,5,TO1-Biotin,Plate 1,2025-10-24 20:03:14,2,57 nm TO1-Biotin
+122,0 days 04:05:00,D5,564,D,5,TO1-Biotin,Plate 1,2025-10-24 20:08:14,2,57 nm TO1-Biotin
+123,0 days 04:10:00,D5,574,D,5,TO1-Biotin,Plate 1,2025-10-24 20:13:14,2,57 nm TO1-Biotin
+124,0 days 04:15:00,D5,581,D,5,TO1-Biotin,Plate 1,2025-10-24 20:18:14,2,57 nm TO1-Biotin
+125,0 days 04:20:00,D5,582,D,5,TO1-Biotin,Plate 1,2025-10-24 20:23:14,2,57 nm TO1-Biotin
+126,0 days 04:25:00,D5,591,D,5,TO1-Biotin,Plate 1,2025-10-24 20:28:14,2,57 nm TO1-Biotin
+127,0 days 04:30:00,D5,591,D,5,TO1-Biotin,Plate 1,2025-10-24 20:33:14,2,57 nm TO1-Biotin
+128,0 days 04:35:00,D5,570,D,5,TO1-Biotin,Plate 1,2025-10-24 20:38:14,2,57 nm TO1-Biotin
+129,0 days 04:40:00,D5,570,D,5,TO1-Biotin,Plate 1,2025-10-24 20:43:14,2,57 nm TO1-Biotin
+130,0 days 04:45:00,D5,583,D,5,TO1-Biotin,Plate 1,2025-10-24 20:48:14,2,57 nm TO1-Biotin
+131,0 days 04:50:00,D5,582,D,5,TO1-Biotin,Plate 1,2025-10-24 20:53:14,2,57 nm TO1-Biotin
+132,0 days 04:55:00,D5,595,D,5,TO1-Biotin,Plate 1,2025-10-24 20:58:14,2,57 nm TO1-Biotin
+133,0 days 05:00:00,D5,590,D,5,TO1-Biotin,Plate 1,2025-10-24 21:03:14,2,57 nm TO1-Biotin
+134,0 days 05:05:00,D5,537,D,5,TO1-Biotin,Plate 1,2025-10-24 21:08:14,2,57 nm TO1-Biotin
+135,0 days 05:10:00,D5,542,D,5,TO1-Biotin,Plate 1,2025-10-24 21:13:14,2,57 nm TO1-Biotin
+136,0 days 05:15:00,D5,557,D,5,TO1-Biotin,Plate 1,2025-10-24 21:18:14,2,57 nm TO1-Biotin
+137,0 days 05:20:00,D5,574,D,5,TO1-Biotin,Plate 1,2025-10-24 21:23:14,2,57 nm TO1-Biotin
+138,0 days 05:25:00,D5,571,D,5,TO1-Biotin,Plate 1,2025-10-24 21:28:14,2,57 nm TO1-Biotin
+139,0 days 05:30:00,D5,562,D,5,TO1-Biotin,Plate 1,2025-10-24 21:33:14,2,57 nm TO1-Biotin
+140,0 days 05:35:00,D5,574,D,5,TO1-Biotin,Plate 1,2025-10-24 21:38:14,2,57 nm TO1-Biotin
+141,0 days 05:40:00,D5,568,D,5,TO1-Biotin,Plate 1,2025-10-24 21:43:14,2,57 nm TO1-Biotin
+142,0 days 05:45:00,D5,563,D,5,TO1-Biotin,Plate 1,2025-10-24 21:48:14,2,57 nm TO1-Biotin
+143,0 days 05:50:00,D5,558,D,5,TO1-Biotin,Plate 1,2025-10-24 21:53:14,2,57 nm TO1-Biotin
+144,0 days 05:55:00,D5,554,D,5,TO1-Biotin,Plate 1,2025-10-24 21:58:14,2,57 nm TO1-Biotin
+145,0 days 06:00:00,D5,578,D,5,TO1-Biotin,Plate 1,2025-10-24 22:03:14,2,57 nm TO1-Biotin
+146,0 days 00:00:00,D7,1311,D,7,TO1-Biotin,Plate 1,2025-10-24 16:03:14,3,142 nm TO1-Biotin
+147,0 days 00:05:00,D7,1183,D,7,TO1-Biotin,Plate 1,2025-10-24 16:08:14,3,142 nm TO1-Biotin
+148,0 days 00:10:00,D7,1137,D,7,TO1-Biotin,Plate 1,2025-10-24 16:13:14,3,142 nm TO1-Biotin
+149,0 days 00:15:00,D7,1266,D,7,TO1-Biotin,Plate 1,2025-10-24 16:18:14,3,142 nm TO1-Biotin
+150,0 days 00:20:00,D7,1576,D,7,TO1-Biotin,Plate 1,2025-10-24 16:23:14,3,142 nm TO1-Biotin
+151,0 days 00:25:00,D7,1788,D,7,TO1-Biotin,Plate 1,2025-10-24 16:28:14,3,142 nm TO1-Biotin
+152,0 days 00:30:00,D7,1940,D,7,TO1-Biotin,Plate 1,2025-10-24 16:33:14,3,142 nm TO1-Biotin
+153,0 days 00:35:00,D7,2122,D,7,TO1-Biotin,Plate 1,2025-10-24 16:38:14,3,142 nm TO1-Biotin
+154,0 days 00:40:00,D7,2295,D,7,TO1-Biotin,Plate 1,2025-10-24 16:43:14,3,142 nm TO1-Biotin
+155,0 days 00:45:00,D7,2398,D,7,TO1-Biotin,Plate 1,2025-10-24 16:48:14,3,142 nm TO1-Biotin
+156,0 days 00:50:00,D7,2501,D,7,TO1-Biotin,Plate 1,2025-10-24 16:53:14,3,142 nm TO1-Biotin
+157,0 days 00:55:00,D7,2538,D,7,TO1-Biotin,Plate 1,2025-10-24 16:58:14,3,142 nm TO1-Biotin
+158,0 days 01:00:00,D7,2678,D,7,TO1-Biotin,Plate 1,2025-10-24 17:03:14,3,142 nm TO1-Biotin
+159,0 days 01:05:00,D7,2658,D,7,TO1-Biotin,Plate 1,2025-10-24 17:08:14,3,142 nm TO1-Biotin
+160,0 days 01:10:00,D7,2775,D,7,TO1-Biotin,Plate 1,2025-10-24 17:13:14,3,142 nm TO1-Biotin
+161,0 days 01:15:00,D7,2819,D,7,TO1-Biotin,Plate 1,2025-10-24 17:18:14,3,142 nm TO1-Biotin
+162,0 days 01:20:00,D7,2832,D,7,TO1-Biotin,Plate 1,2025-10-24 17:23:14,3,142 nm TO1-Biotin
+163,0 days 01:25:00,D7,2947,D,7,TO1-Biotin,Plate 1,2025-10-24 17:28:14,3,142 nm TO1-Biotin
+164,0 days 01:30:00,D7,2913,D,7,TO1-Biotin,Plate 1,2025-10-24 17:33:14,3,142 nm TO1-Biotin
+165,0 days 01:35:00,D7,2916,D,7,TO1-Biotin,Plate 1,2025-10-24 17:38:14,3,142 nm TO1-Biotin
+166,0 days 01:40:00,D7,3024,D,7,TO1-Biotin,Plate 1,2025-10-24 17:43:14,3,142 nm TO1-Biotin
+167,0 days 01:45:00,D7,3018,D,7,TO1-Biotin,Plate 1,2025-10-24 17:48:14,3,142 nm TO1-Biotin
+168,0 days 01:50:00,D7,2999,D,7,TO1-Biotin,Plate 1,2025-10-24 17:53:14,3,142 nm TO1-Biotin
+169,0 days 01:55:00,D7,3029,D,7,TO1-Biotin,Plate 1,2025-10-24 17:58:14,3,142 nm TO1-Biotin
+170,0 days 02:00:00,D7,2940,D,7,TO1-Biotin,Plate 1,2025-10-24 18:03:14,3,142 nm TO1-Biotin
+171,0 days 02:05:00,D7,2937,D,7,TO1-Biotin,Plate 1,2025-10-24 18:08:14,3,142 nm TO1-Biotin
+172,0 days 02:10:00,D7,3041,D,7,TO1-Biotin,Plate 1,2025-10-24 18:13:14,3,142 nm TO1-Biotin
+173,0 days 02:15:00,D7,2886,D,7,TO1-Biotin,Plate 1,2025-10-24 18:18:14,3,142 nm TO1-Biotin
+174,0 days 02:20:00,D7,2996,D,7,TO1-Biotin,Plate 1,2025-10-24 18:23:14,3,142 nm TO1-Biotin
+175,0 days 02:25:00,D7,3058,D,7,TO1-Biotin,Plate 1,2025-10-24 18:28:14,3,142 nm TO1-Biotin
+176,0 days 02:30:00,D7,2979,D,7,TO1-Biotin,Plate 1,2025-10-24 18:33:14,3,142 nm TO1-Biotin
+177,0 days 02:35:00,D7,3009,D,7,TO1-Biotin,Plate 1,2025-10-24 18:38:14,3,142 nm TO1-Biotin
+178,0 days 02:40:00,D7,2953,D,7,TO1-Biotin,Plate 1,2025-10-24 18:43:14,3,142 nm TO1-Biotin
+179,0 days 02:45:00,D7,3038,D,7,TO1-Biotin,Plate 1,2025-10-24 18:48:14,3,142 nm TO1-Biotin
+180,0 days 02:50:00,D7,3034,D,7,TO1-Biotin,Plate 1,2025-10-24 18:53:14,3,142 nm TO1-Biotin
+181,0 days 02:55:00,D7,2948,D,7,TO1-Biotin,Plate 1,2025-10-24 18:58:14,3,142 nm TO1-Biotin
+182,0 days 03:00:00,D7,2958,D,7,TO1-Biotin,Plate 1,2025-10-24 19:03:14,3,142 nm TO1-Biotin
+183,0 days 03:05:00,D7,2875,D,7,TO1-Biotin,Plate 1,2025-10-24 19:08:14,3,142 nm TO1-Biotin
+184,0 days 03:10:00,D7,2955,D,7,TO1-Biotin,Plate 1,2025-10-24 19:13:14,3,142 nm TO1-Biotin
+185,0 days 03:15:00,D7,2926,D,7,TO1-Biotin,Plate 1,2025-10-24 19:18:14,3,142 nm TO1-Biotin
+186,0 days 03:20:00,D7,2902,D,7,TO1-Biotin,Plate 1,2025-10-24 19:23:14,3,142 nm TO1-Biotin
+187,0 days 03:25:00,D7,2927,D,7,TO1-Biotin,Plate 1,2025-10-24 19:28:14,3,142 nm TO1-Biotin
+188,0 days 03:30:00,D7,2892,D,7,TO1-Biotin,Plate 1,2025-10-24 19:33:14,3,142 nm TO1-Biotin
+189,0 days 03:35:00,D7,2862,D,7,TO1-Biotin,Plate 1,2025-10-24 19:38:14,3,142 nm TO1-Biotin
+190,0 days 03:40:00,D7,2808,D,7,TO1-Biotin,Plate 1,2025-10-24 19:43:14,3,142 nm TO1-Biotin
+191,0 days 03:45:00,D7,2817,D,7,TO1-Biotin,Plate 1,2025-10-24 19:48:14,3,142 nm TO1-Biotin
+192,0 days 03:50:00,D7,2780,D,7,TO1-Biotin,Plate 1,2025-10-24 19:53:14,3,142 nm TO1-Biotin
+193,0 days 03:55:00,D7,2748,D,7,TO1-Biotin,Plate 1,2025-10-24 19:58:14,3,142 nm TO1-Biotin
+194,0 days 04:00:00,D7,2725,D,7,TO1-Biotin,Plate 1,2025-10-24 20:03:14,3,142 nm TO1-Biotin
+195,0 days 04:05:00,D7,2785,D,7,TO1-Biotin,Plate 1,2025-10-24 20:08:14,3,142 nm TO1-Biotin
+196,0 days 04:10:00,D7,2709,D,7,TO1-Biotin,Plate 1,2025-10-24 20:13:14,3,142 nm TO1-Biotin
+197,0 days 04:15:00,D7,2659,D,7,TO1-Biotin,Plate 1,2025-10-24 20:18:14,3,142 nm TO1-Biotin
+198,0 days 04:20:00,D7,2628,D,7,TO1-Biotin,Plate 1,2025-10-24 20:23:14,3,142 nm TO1-Biotin
+199,0 days 04:25:00,D7,2661,D,7,TO1-Biotin,Plate 1,2025-10-24 20:28:14,3,142 nm TO1-Biotin
+200,0 days 04:30:00,D7,2681,D,7,TO1-Biotin,Plate 1,2025-10-24 20:33:14,3,142 nm TO1-Biotin
+201,0 days 04:35:00,D7,2568,D,7,TO1-Biotin,Plate 1,2025-10-24 20:38:14,3,142 nm TO1-Biotin
+202,0 days 04:40:00,D7,2576,D,7,TO1-Biotin,Plate 1,2025-10-24 20:43:14,3,142 nm TO1-Biotin
+203,0 days 04:45:00,D7,2591,D,7,TO1-Biotin,Plate 1,2025-10-24 20:48:14,3,142 nm TO1-Biotin
+204,0 days 04:50:00,D7,2513,D,7,TO1-Biotin,Plate 1,2025-10-24 20:53:14,3,142 nm TO1-Biotin
+205,0 days 04:55:00,D7,2463,D,7,TO1-Biotin,Plate 1,2025-10-24 20:58:14,3,142 nm TO1-Biotin
+206,0 days 05:00:00,D7,2483,D,7,TO1-Biotin,Plate 1,2025-10-24 21:03:14,3,142 nm TO1-Biotin
+207,0 days 05:05:00,D7,2436,D,7,TO1-Biotin,Plate 1,2025-10-24 21:08:14,3,142 nm TO1-Biotin
+208,0 days 05:10:00,D7,2432,D,7,TO1-Biotin,Plate 1,2025-10-24 21:13:14,3,142 nm TO1-Biotin
+209,0 days 05:15:00,D7,2366,D,7,TO1-Biotin,Plate 1,2025-10-24 21:18:14,3,142 nm TO1-Biotin
+210,0 days 05:20:00,D7,2346,D,7,TO1-Biotin,Plate 1,2025-10-24 21:23:14,3,142 nm TO1-Biotin
+211,0 days 05:25:00,D7,2282,D,7,TO1-Biotin,Plate 1,2025-10-24 21:28:14,3,142 nm TO1-Biotin
+212,0 days 05:30:00,D7,2311,D,7,TO1-Biotin,Plate 1,2025-10-24 21:33:14,3,142 nm TO1-Biotin
+213,0 days 05:35:00,D7,2303,D,7,TO1-Biotin,Plate 1,2025-10-24 21:38:14,3,142 nm TO1-Biotin
+214,0 days 05:40:00,D7,2295,D,7,TO1-Biotin,Plate 1,2025-10-24 21:43:14,3,142 nm TO1-Biotin
+215,0 days 05:45:00,D7,2256,D,7,TO1-Biotin,Plate 1,2025-10-24 21:48:14,3,142 nm TO1-Biotin
+216,0 days 05:50:00,D7,2239,D,7,TO1-Biotin,Plate 1,2025-10-24 21:53:14,3,142 nm TO1-Biotin
+217,0 days 05:55:00,D7,2180,D,7,TO1-Biotin,Plate 1,2025-10-24 21:58:14,3,142 nm TO1-Biotin
+218,0 days 06:00:00,D7,2157,D,7,TO1-Biotin,Plate 1,2025-10-24 22:03:14,3,142 nm TO1-Biotin
+219,0 days 00:00:00,D9,1914,D,9,TO1-Biotin,Plate 1,2025-10-24 16:03:14,4,286 nm TO1-Biotin
+220,0 days 00:05:00,D9,1693,D,9,TO1-Biotin,Plate 1,2025-10-24 16:08:14,4,286 nm TO1-Biotin
+221,0 days 00:10:00,D9,1673,D,9,TO1-Biotin,Plate 1,2025-10-24 16:13:14,4,286 nm TO1-Biotin
+222,0 days 00:15:00,D9,1906,D,9,TO1-Biotin,Plate 1,2025-10-24 16:18:14,4,286 nm TO1-Biotin
+223,0 days 00:20:00,D9,2225,D,9,TO1-Biotin,Plate 1,2025-10-24 16:23:14,4,286 nm TO1-Biotin
+224,0 days 00:25:00,D9,2597,D,9,TO1-Biotin,Plate 1,2025-10-24 16:28:14,4,286 nm TO1-Biotin
+225,0 days 00:30:00,D9,2884,D,9,TO1-Biotin,Plate 1,2025-10-24 16:33:14,4,286 nm TO1-Biotin
+226,0 days 00:35:00,D9,3145,D,9,TO1-Biotin,Plate 1,2025-10-24 16:38:14,4,286 nm TO1-Biotin
+227,0 days 00:40:00,D9,3377,D,9,TO1-Biotin,Plate 1,2025-10-24 16:43:14,4,286 nm TO1-Biotin
+228,0 days 00:45:00,D9,3521,D,9,TO1-Biotin,Plate 1,2025-10-24 16:48:14,4,286 nm TO1-Biotin
+229,0 days 00:50:00,D9,3790,D,9,TO1-Biotin,Plate 1,2025-10-24 16:53:14,4,286 nm TO1-Biotin
+230,0 days 00:55:00,D9,3812,D,9,TO1-Biotin,Plate 1,2025-10-24 16:58:14,4,286 nm TO1-Biotin
+231,0 days 01:00:00,D9,3874,D,9,TO1-Biotin,Plate 1,2025-10-24 17:03:14,4,286 nm TO1-Biotin
+232,0 days 01:05:00,D9,4000,D,9,TO1-Biotin,Plate 1,2025-10-24 17:08:14,4,286 nm TO1-Biotin
+233,0 days 01:10:00,D9,4160,D,9,TO1-Biotin,Plate 1,2025-10-24 17:13:14,4,286 nm TO1-Biotin
+234,0 days 01:15:00,D9,4170,D,9,TO1-Biotin,Plate 1,2025-10-24 17:18:14,4,286 nm TO1-Biotin
+235,0 days 01:20:00,D9,4181,D,9,TO1-Biotin,Plate 1,2025-10-24 17:23:14,4,286 nm TO1-Biotin
+236,0 days 01:25:00,D9,4279,D,9,TO1-Biotin,Plate 1,2025-10-24 17:28:14,4,286 nm TO1-Biotin
+237,0 days 01:30:00,D9,4282,D,9,TO1-Biotin,Plate 1,2025-10-24 17:33:14,4,286 nm TO1-Biotin
+238,0 days 01:35:00,D9,4384,D,9,TO1-Biotin,Plate 1,2025-10-24 17:38:14,4,286 nm TO1-Biotin
+239,0 days 01:40:00,D9,4428,D,9,TO1-Biotin,Plate 1,2025-10-24 17:43:14,4,286 nm TO1-Biotin
+240,0 days 01:45:00,D9,4392,D,9,TO1-Biotin,Plate 1,2025-10-24 17:48:14,4,286 nm TO1-Biotin
+241,0 days 01:50:00,D9,4508,D,9,TO1-Biotin,Plate 1,2025-10-24 17:53:14,4,286 nm TO1-Biotin
+242,0 days 01:55:00,D9,4508,D,9,TO1-Biotin,Plate 1,2025-10-24 17:58:14,4,286 nm TO1-Biotin
+243,0 days 02:00:00,D9,4515,D,9,TO1-Biotin,Plate 1,2025-10-24 18:03:14,4,286 nm TO1-Biotin
+244,0 days 02:05:00,D9,4462,D,9,TO1-Biotin,Plate 1,2025-10-24 18:08:14,4,286 nm TO1-Biotin
+245,0 days 02:10:00,D9,4569,D,9,TO1-Biotin,Plate 1,2025-10-24 18:13:14,4,286 nm TO1-Biotin
+246,0 days 02:15:00,D9,4522,D,9,TO1-Biotin,Plate 1,2025-10-24 18:18:14,4,286 nm TO1-Biotin
+247,0 days 02:20:00,D9,4557,D,9,TO1-Biotin,Plate 1,2025-10-24 18:23:14,4,286 nm TO1-Biotin
+248,0 days 02:25:00,D9,4546,D,9,TO1-Biotin,Plate 1,2025-10-24 18:28:14,4,286 nm TO1-Biotin
+249,0 days 02:30:00,D9,4493,D,9,TO1-Biotin,Plate 1,2025-10-24 18:33:14,4,286 nm TO1-Biotin
+250,0 days 02:35:00,D9,4464,D,9,TO1-Biotin,Plate 1,2025-10-24 18:38:14,4,286 nm TO1-Biotin
+251,0 days 02:40:00,D9,4517,D,9,TO1-Biotin,Plate 1,2025-10-24 18:43:14,4,286 nm TO1-Biotin
+252,0 days 02:45:00,D9,4472,D,9,TO1-Biotin,Plate 1,2025-10-24 18:48:14,4,286 nm TO1-Biotin
+253,0 days 02:50:00,D9,4510,D,9,TO1-Biotin,Plate 1,2025-10-24 18:53:14,4,286 nm TO1-Biotin
+254,0 days 02:55:00,D9,4429,D,9,TO1-Biotin,Plate 1,2025-10-24 18:58:14,4,286 nm TO1-Biotin
+255,0 days 03:00:00,D9,4419,D,9,TO1-Biotin,Plate 1,2025-10-24 19:03:14,4,286 nm TO1-Biotin
+256,0 days 03:05:00,D9,4407,D,9,TO1-Biotin,Plate 1,2025-10-24 19:08:14,4,286 nm TO1-Biotin
+257,0 days 03:10:00,D9,4405,D,9,TO1-Biotin,Plate 1,2025-10-24 19:13:14,4,286 nm TO1-Biotin
+258,0 days 03:15:00,D9,4375,D,9,TO1-Biotin,Plate 1,2025-10-24 19:18:14,4,286 nm TO1-Biotin
+259,0 days 03:20:00,D9,4334,D,9,TO1-Biotin,Plate 1,2025-10-24 19:23:14,4,286 nm TO1-Biotin
+260,0 days 03:25:00,D9,4384,D,9,TO1-Biotin,Plate 1,2025-10-24 19:28:14,4,286 nm TO1-Biotin
+261,0 days 03:30:00,D9,4264,D,9,TO1-Biotin,Plate 1,2025-10-24 19:33:14,4,286 nm TO1-Biotin
+262,0 days 03:35:00,D9,4225,D,9,TO1-Biotin,Plate 1,2025-10-24 19:38:14,4,286 nm TO1-Biotin
+263,0 days 03:40:00,D9,4198,D,9,TO1-Biotin,Plate 1,2025-10-24 19:43:14,4,286 nm TO1-Biotin
+264,0 days 03:45:00,D9,4177,D,9,TO1-Biotin,Plate 1,2025-10-24 19:48:14,4,286 nm TO1-Biotin
+265,0 days 03:50:00,D9,4102,D,9,TO1-Biotin,Plate 1,2025-10-24 19:53:14,4,286 nm TO1-Biotin
+266,0 days 03:55:00,D9,4127,D,9,TO1-Biotin,Plate 1,2025-10-24 19:58:14,4,286 nm TO1-Biotin
+267,0 days 04:00:00,D9,4134,D,9,TO1-Biotin,Plate 1,2025-10-24 20:03:14,4,286 nm TO1-Biotin
+268,0 days 04:05:00,D9,4078,D,9,TO1-Biotin,Plate 1,2025-10-24 20:08:14,4,286 nm TO1-Biotin
+269,0 days 04:10:00,D9,4032,D,9,TO1-Biotin,Plate 1,2025-10-24 20:13:14,4,286 nm TO1-Biotin
+270,0 days 04:15:00,D9,4035,D,9,TO1-Biotin,Plate 1,2025-10-24 20:18:14,4,286 nm TO1-Biotin
+271,0 days 04:20:00,D9,3976,D,9,TO1-Biotin,Plate 1,2025-10-24 20:23:14,4,286 nm TO1-Biotin
+272,0 days 04:25:00,D9,4046,D,9,TO1-Biotin,Plate 1,2025-10-24 20:28:14,4,286 nm TO1-Biotin
+273,0 days 04:30:00,D9,3869,D,9,TO1-Biotin,Plate 1,2025-10-24 20:33:14,4,286 nm TO1-Biotin
+274,0 days 04:35:00,D9,3924,D,9,TO1-Biotin,Plate 1,2025-10-24 20:38:14,4,286 nm TO1-Biotin
+275,0 days 04:40:00,D9,3821,D,9,TO1-Biotin,Plate 1,2025-10-24 20:43:14,4,286 nm TO1-Biotin
+276,0 days 04:45:00,D9,3807,D,9,TO1-Biotin,Plate 1,2025-10-24 20:48:14,4,286 nm TO1-Biotin
+277,0 days 04:50:00,D9,3726,D,9,TO1-Biotin,Plate 1,2025-10-24 20:53:14,4,286 nm TO1-Biotin
+278,0 days 04:55:00,D9,3765,D,9,TO1-Biotin,Plate 1,2025-10-24 20:58:14,4,286 nm TO1-Biotin
+279,0 days 05:00:00,D9,3648,D,9,TO1-Biotin,Plate 1,2025-10-24 21:03:14,4,286 nm TO1-Biotin
+280,0 days 05:05:00,D9,3648,D,9,TO1-Biotin,Plate 1,2025-10-24 21:08:14,4,286 nm TO1-Biotin
+281,0 days 05:10:00,D9,3633,D,9,TO1-Biotin,Plate 1,2025-10-24 21:13:14,4,286 nm TO1-Biotin
+282,0 days 05:15:00,D9,3573,D,9,TO1-Biotin,Plate 1,2025-10-24 21:18:14,4,286 nm TO1-Biotin
+283,0 days 05:20:00,D9,3529,D,9,TO1-Biotin,Plate 1,2025-10-24 21:23:14,4,286 nm TO1-Biotin
+284,0 days 05:25:00,D9,3466,D,9,TO1-Biotin,Plate 1,2025-10-24 21:28:14,4,286 nm TO1-Biotin
+285,0 days 05:30:00,D9,3408,D,9,TO1-Biotin,Plate 1,2025-10-24 21:33:14,4,286 nm TO1-Biotin
+286,0 days 05:35:00,D9,3319,D,9,TO1-Biotin,Plate 1,2025-10-24 21:38:14,4,286 nm TO1-Biotin
+287,0 days 05:40:00,D9,3359,D,9,TO1-Biotin,Plate 1,2025-10-24 21:43:14,4,286 nm TO1-Biotin
+288,0 days 05:45:00,D9,3245,D,9,TO1-Biotin,Plate 1,2025-10-24 21:48:14,4,286 nm TO1-Biotin
+289,0 days 05:50:00,D9,3279,D,9,TO1-Biotin,Plate 1,2025-10-24 21:53:14,4,286 nm TO1-Biotin
+290,0 days 05:55:00,D9,3206,D,9,TO1-Biotin,Plate 1,2025-10-24 21:58:14,4,286 nm TO1-Biotin
+291,0 days 06:00:00,D9,3259,D,9,TO1-Biotin,Plate 1,2025-10-24 22:03:14,4,286 nm TO1-Biotin
+292,0 days 00:00:00,D11,7438,D,11,TO1-Biotin,Plate 1,2025-10-24 16:03:14,5,1430 nm TO1-Biotin
+293,0 days 00:05:00,D11,6308,D,11,TO1-Biotin,Plate 1,2025-10-24 16:08:14,5,1430 nm TO1-Biotin
+294,0 days 00:10:00,D11,6154,D,11,TO1-Biotin,Plate 1,2025-10-24 16:13:14,5,1430 nm TO1-Biotin
+295,0 days 00:15:00,D11,7278,D,11,TO1-Biotin,Plate 1,2025-10-24 16:18:14,5,1430 nm TO1-Biotin
+296,0 days 00:20:00,D11,8692,D,11,TO1-Biotin,Plate 1,2025-10-24 16:23:14,5,1430 nm TO1-Biotin
+297,0 days 00:25:00,D11,10171,D,11,TO1-Biotin,Plate 1,2025-10-24 16:28:14,5,1430 nm TO1-Biotin
+298,0 days 00:30:00,D11,11510,D,11,TO1-Biotin,Plate 1,2025-10-24 16:33:14,5,1430 nm TO1-Biotin
+299,0 days 00:35:00,D11,12549,D,11,TO1-Biotin,Plate 1,2025-10-24 16:38:14,5,1430 nm TO1-Biotin
+300,0 days 00:40:00,D11,13381,D,11,TO1-Biotin,Plate 1,2025-10-24 16:43:14,5,1430 nm TO1-Biotin
+301,0 days 00:45:00,D11,14228,D,11,TO1-Biotin,Plate 1,2025-10-24 16:48:14,5,1430 nm TO1-Biotin
+302,0 days 00:50:00,D11,14821,D,11,TO1-Biotin,Plate 1,2025-10-24 16:53:14,5,1430 nm TO1-Biotin
+303,0 days 00:55:00,D11,15342,D,11,TO1-Biotin,Plate 1,2025-10-24 16:58:14,5,1430 nm TO1-Biotin
+304,0 days 01:00:00,D11,15910,D,11,TO1-Biotin,Plate 1,2025-10-24 17:03:14,5,1430 nm TO1-Biotin
+305,0 days 01:05:00,D11,16174,D,11,TO1-Biotin,Plate 1,2025-10-24 17:08:14,5,1430 nm TO1-Biotin
+306,0 days 01:10:00,D11,16541,D,11,TO1-Biotin,Plate 1,2025-10-24 17:13:14,5,1430 nm TO1-Biotin
+307,0 days 01:15:00,D11,16835,D,11,TO1-Biotin,Plate 1,2025-10-24 17:18:14,5,1430 nm TO1-Biotin
+308,0 days 01:20:00,D11,17103,D,11,TO1-Biotin,Plate 1,2025-10-24 17:23:14,5,1430 nm TO1-Biotin
+309,0 days 01:25:00,D11,17400,D,11,TO1-Biotin,Plate 1,2025-10-24 17:28:14,5,1430 nm TO1-Biotin
+310,0 days 01:30:00,D11,17619,D,11,TO1-Biotin,Plate 1,2025-10-24 17:33:14,5,1430 nm TO1-Biotin
+311,0 days 01:35:00,D11,17517,D,11,TO1-Biotin,Plate 1,2025-10-24 17:38:14,5,1430 nm TO1-Biotin
+312,0 days 01:40:00,D11,17925,D,11,TO1-Biotin,Plate 1,2025-10-24 17:43:14,5,1430 nm TO1-Biotin
+313,0 days 01:45:00,D11,17918,D,11,TO1-Biotin,Plate 1,2025-10-24 17:48:14,5,1430 nm TO1-Biotin
+314,0 days 01:50:00,D11,17964,D,11,TO1-Biotin,Plate 1,2025-10-24 17:53:14,5,1430 nm TO1-Biotin
+315,0 days 01:55:00,D11,18275,D,11,TO1-Biotin,Plate 1,2025-10-24 17:58:14,5,1430 nm TO1-Biotin
+316,0 days 02:00:00,D11,18175,D,11,TO1-Biotin,Plate 1,2025-10-24 18:03:14,5,1430 nm TO1-Biotin
+317,0 days 02:05:00,D11,18282,D,11,TO1-Biotin,Plate 1,2025-10-24 18:08:14,5,1430 nm TO1-Biotin
+318,0 days 02:10:00,D11,18170,D,11,TO1-Biotin,Plate 1,2025-10-24 18:13:14,5,1430 nm TO1-Biotin
+319,0 days 02:15:00,D11,18152,D,11,TO1-Biotin,Plate 1,2025-10-24 18:18:14,5,1430 nm TO1-Biotin
+320,0 days 02:20:00,D11,18082,D,11,TO1-Biotin,Plate 1,2025-10-24 18:23:14,5,1430 nm TO1-Biotin
+321,0 days 02:25:00,D11,18266,D,11,TO1-Biotin,Plate 1,2025-10-24 18:28:14,5,1430 nm TO1-Biotin
+322,0 days 02:30:00,D11,18247,D,11,TO1-Biotin,Plate 1,2025-10-24 18:33:14,5,1430 nm TO1-Biotin
+323,0 days 02:35:00,D11,18282,D,11,TO1-Biotin,Plate 1,2025-10-24 18:38:14,5,1430 nm TO1-Biotin
+324,0 days 02:40:00,D11,18053,D,11,TO1-Biotin,Plate 1,2025-10-24 18:43:14,5,1430 nm TO1-Biotin
+325,0 days 02:45:00,D11,18168,D,11,TO1-Biotin,Plate 1,2025-10-24 18:48:14,5,1430 nm TO1-Biotin
+326,0 days 02:50:00,D11,18185,D,11,TO1-Biotin,Plate 1,2025-10-24 18:53:14,5,1430 nm TO1-Biotin
+327,0 days 02:55:00,D11,18105,D,11,TO1-Biotin,Plate 1,2025-10-24 18:58:14,5,1430 nm TO1-Biotin
+328,0 days 03:00:00,D11,17750,D,11,TO1-Biotin,Plate 1,2025-10-24 19:03:14,5,1430 nm TO1-Biotin
+329,0 days 03:05:00,D11,17794,D,11,TO1-Biotin,Plate 1,2025-10-24 19:08:14,5,1430 nm TO1-Biotin
+330,0 days 03:10:00,D11,17842,D,11,TO1-Biotin,Plate 1,2025-10-24 19:13:14,5,1430 nm TO1-Biotin
+331,0 days 03:15:00,D11,17561,D,11,TO1-Biotin,Plate 1,2025-10-24 19:18:14,5,1430 nm TO1-Biotin
+332,0 days 03:20:00,D11,17611,D,11,TO1-Biotin,Plate 1,2025-10-24 19:23:14,5,1430 nm TO1-Biotin
+333,0 days 03:25:00,D11,17236,D,11,TO1-Biotin,Plate 1,2025-10-24 19:28:14,5,1430 nm TO1-Biotin
+334,0 days 03:30:00,D11,17329,D,11,TO1-Biotin,Plate 1,2025-10-24 19:33:14,5,1430 nm TO1-Biotin
+335,0 days 03:35:00,D11,17172,D,11,TO1-Biotin,Plate 1,2025-10-24 19:38:14,5,1430 nm TO1-Biotin
+336,0 days 03:40:00,D11,17096,D,11,TO1-Biotin,Plate 1,2025-10-24 19:43:14,5,1430 nm TO1-Biotin
+337,0 days 03:45:00,D11,17033,D,11,TO1-Biotin,Plate 1,2025-10-24 19:48:14,5,1430 nm TO1-Biotin
+338,0 days 03:50:00,D11,17052,D,11,TO1-Biotin,Plate 1,2025-10-24 19:53:14,5,1430 nm TO1-Biotin
+339,0 days 03:55:00,D11,16799,D,11,TO1-Biotin,Plate 1,2025-10-24 19:58:14,5,1430 nm TO1-Biotin
+340,0 days 04:00:00,D11,16527,D,11,TO1-Biotin,Plate 1,2025-10-24 20:03:14,5,1430 nm TO1-Biotin
+341,0 days 04:05:00,D11,16505,D,11,TO1-Biotin,Plate 1,2025-10-24 20:08:14,5,1430 nm TO1-Biotin
+342,0 days 04:10:00,D11,16285,D,11,TO1-Biotin,Plate 1,2025-10-24 20:13:14,5,1430 nm TO1-Biotin
+343,0 days 04:15:00,D11,16546,D,11,TO1-Biotin,Plate 1,2025-10-24 20:18:14,5,1430 nm TO1-Biotin
+344,0 days 04:20:00,D11,16190,D,11,TO1-Biotin,Plate 1,2025-10-24 20:23:14,5,1430 nm TO1-Biotin
+345,0 days 04:25:00,D11,16014,D,11,TO1-Biotin,Plate 1,2025-10-24 20:28:14,5,1430 nm TO1-Biotin
+346,0 days 04:30:00,D11,15861,D,11,TO1-Biotin,Plate 1,2025-10-24 20:33:14,5,1430 nm TO1-Biotin
+347,0 days 04:35:00,D11,15663,D,11,TO1-Biotin,Plate 1,2025-10-24 20:38:14,5,1430 nm TO1-Biotin
+348,0 days 04:40:00,D11,15566,D,11,TO1-Biotin,Plate 1,2025-10-24 20:43:14,5,1430 nm TO1-Biotin
+349,0 days 04:45:00,D11,15443,D,11,TO1-Biotin,Plate 1,2025-10-24 20:48:14,5,1430 nm TO1-Biotin
+350,0 days 04:50:00,D11,15348,D,11,TO1-Biotin,Plate 1,2025-10-24 20:53:14,5,1430 nm TO1-Biotin
+351,0 days 04:55:00,D11,15034,D,11,TO1-Biotin,Plate 1,2025-10-24 20:58:14,5,1430 nm TO1-Biotin
+352,0 days 05:00:00,D11,14796,D,11,TO1-Biotin,Plate 1,2025-10-24 21:03:14,5,1430 nm TO1-Biotin
+353,0 days 05:05:00,D11,14741,D,11,TO1-Biotin,Plate 1,2025-10-24 21:08:14,5,1430 nm TO1-Biotin
+354,0 days 05:10:00,D11,14360,D,11,TO1-Biotin,Plate 1,2025-10-24 21:13:14,5,1430 nm TO1-Biotin
+355,0 days 05:15:00,D11,14329,D,11,TO1-Biotin,Plate 1,2025-10-24 21:18:14,5,1430 nm TO1-Biotin
+356,0 days 05:20:00,D11,14183,D,11,TO1-Biotin,Plate 1,2025-10-24 21:23:14,5,1430 nm TO1-Biotin
+357,0 days 05:25:00,D11,13990,D,11,TO1-Biotin,Plate 1,2025-10-24 21:28:14,5,1430 nm TO1-Biotin
+358,0 days 05:30:00,D11,13594,D,11,TO1-Biotin,Plate 1,2025-10-24 21:33:14,5,1430 nm TO1-Biotin
+359,0 days 05:35:00,D11,13522,D,11,TO1-Biotin,Plate 1,2025-10-24 21:38:14,5,1430 nm TO1-Biotin
+360,0 days 05:40:00,D11,13348,D,11,TO1-Biotin,Plate 1,2025-10-24 21:43:14,5,1430 nm TO1-Biotin
+361,0 days 05:45:00,D11,13227,D,11,TO1-Biotin,Plate 1,2025-10-24 21:48:14,5,1430 nm TO1-Biotin
+362,0 days 05:50:00,D11,13021,D,11,TO1-Biotin,Plate 1,2025-10-24 21:53:14,5,1430 nm TO1-Biotin
+363,0 days 05:55:00,D11,13041,D,11,TO1-Biotin,Plate 1,2025-10-24 21:58:14,5,1430 nm TO1-Biotin
+364,0 days 06:00:00,D11,12793,D,11,TO1-Biotin,Plate 1,2025-10-24 22:03:14,5,1430 nm TO1-Biotin
+365,0 days 00:00:00,F3,1256,F,3,TO1-Biotin,Plate 1,2025-10-24 16:03:14,1,Negative
+366,0 days 00:05:00,F3,948,F,3,TO1-Biotin,Plate 1,2025-10-24 16:08:14,1,Negative
+367,0 days 00:10:00,F3,735,F,3,TO1-Biotin,Plate 1,2025-10-24 16:13:14,1,Negative
+368,0 days 00:15:00,F3,734,F,3,TO1-Biotin,Plate 1,2025-10-24 16:18:14,1,Negative
+369,0 days 00:20:00,F3,681,F,3,TO1-Biotin,Plate 1,2025-10-24 16:23:14,1,Negative
+370,0 days 00:25:00,F3,692,F,3,TO1-Biotin,Plate 1,2025-10-24 16:28:14,1,Negative
+371,0 days 00:30:00,F3,674,F,3,TO1-Biotin,Plate 1,2025-10-24 16:33:14,1,Negative
+372,0 days 00:35:00,F3,670,F,3,TO1-Biotin,Plate 1,2025-10-24 16:38:14,1,Negative
+373,0 days 00:40:00,F3,654,F,3,TO1-Biotin,Plate 1,2025-10-24 16:43:14,1,Negative
+374,0 days 00:45:00,F3,682,F,3,TO1-Biotin,Plate 1,2025-10-24 16:48:14,1,Negative
+375,0 days 00:50:00,F3,648,F,3,TO1-Biotin,Plate 1,2025-10-24 16:53:14,1,Negative
+376,0 days 00:55:00,F3,621,F,3,TO1-Biotin,Plate 1,2025-10-24 16:58:14,1,Negative
+377,0 days 01:00:00,F3,635,F,3,TO1-Biotin,Plate 1,2025-10-24 17:03:14,1,Negative
+378,0 days 01:05:00,F3,667,F,3,TO1-Biotin,Plate 1,2025-10-24 17:08:14,1,Negative
+379,0 days 01:10:00,F3,673,F,3,TO1-Biotin,Plate 1,2025-10-24 17:13:14,1,Negative
+380,0 days 01:15:00,F3,644,F,3,TO1-Biotin,Plate 1,2025-10-24 17:18:14,1,Negative
+381,0 days 01:20:00,F3,654,F,3,TO1-Biotin,Plate 1,2025-10-24 17:23:14,1,Negative
+382,0 days 01:25:00,F3,617,F,3,TO1-Biotin,Plate 1,2025-10-24 17:28:14,1,Negative
+383,0 days 01:30:00,F3,639,F,3,TO1-Biotin,Plate 1,2025-10-24 17:33:14,1,Negative
+384,0 days 01:35:00,F3,634,F,3,TO1-Biotin,Plate 1,2025-10-24 17:38:14,1,Negative
+385,0 days 01:40:00,F3,683,F,3,TO1-Biotin,Plate 1,2025-10-24 17:43:14,1,Negative
+386,0 days 01:45:00,F3,640,F,3,TO1-Biotin,Plate 1,2025-10-24 17:48:14,1,Negative
+387,0 days 01:50:00,F3,641,F,3,TO1-Biotin,Plate 1,2025-10-24 17:53:14,1,Negative
+388,0 days 01:55:00,F3,656,F,3,TO1-Biotin,Plate 1,2025-10-24 17:58:14,1,Negative
+389,0 days 02:00:00,F3,650,F,3,TO1-Biotin,Plate 1,2025-10-24 18:03:14,1,Negative
+390,0 days 02:05:00,F3,652,F,3,TO1-Biotin,Plate 1,2025-10-24 18:08:14,1,Negative
+391,0 days 02:10:00,F3,655,F,3,TO1-Biotin,Plate 1,2025-10-24 18:13:14,1,Negative
+392,0 days 02:15:00,F3,635,F,3,TO1-Biotin,Plate 1,2025-10-24 18:18:14,1,Negative
+393,0 days 02:20:00,F3,620,F,3,TO1-Biotin,Plate 1,2025-10-24 18:23:14,1,Negative
+394,0 days 02:25:00,F3,646,F,3,TO1-Biotin,Plate 1,2025-10-24 18:28:14,1,Negative
+395,0 days 02:30:00,F3,632,F,3,TO1-Biotin,Plate 1,2025-10-24 18:33:14,1,Negative
+396,0 days 02:35:00,F3,639,F,3,TO1-Biotin,Plate 1,2025-10-24 18:38:14,1,Negative
+397,0 days 02:40:00,F3,634,F,3,TO1-Biotin,Plate 1,2025-10-24 18:43:14,1,Negative
+398,0 days 02:45:00,F3,640,F,3,TO1-Biotin,Plate 1,2025-10-24 18:48:14,1,Negative
+399,0 days 02:50:00,F3,636,F,3,TO1-Biotin,Plate 1,2025-10-24 18:53:14,1,Negative
+400,0 days 02:55:00,F3,639,F,3,TO1-Biotin,Plate 1,2025-10-24 18:58:14,1,Negative
+401,0 days 03:00:00,F3,673,F,3,TO1-Biotin,Plate 1,2025-10-24 19:03:14,1,Negative
+402,0 days 03:05:00,F3,643,F,3,TO1-Biotin,Plate 1,2025-10-24 19:08:14,1,Negative
+403,0 days 03:10:00,F3,707,F,3,TO1-Biotin,Plate 1,2025-10-24 19:13:14,1,Negative
+404,0 days 03:15:00,F3,677,F,3,TO1-Biotin,Plate 1,2025-10-24 19:18:14,1,Negative
+405,0 days 03:20:00,F3,637,F,3,TO1-Biotin,Plate 1,2025-10-24 19:23:14,1,Negative
+406,0 days 03:25:00,F3,656,F,3,TO1-Biotin,Plate 1,2025-10-24 19:28:14,1,Negative
+407,0 days 03:30:00,F3,641,F,3,TO1-Biotin,Plate 1,2025-10-24 19:33:14,1,Negative
+408,0 days 03:35:00,F3,632,F,3,TO1-Biotin,Plate 1,2025-10-24 19:38:14,1,Negative
+409,0 days 03:40:00,F3,689,F,3,TO1-Biotin,Plate 1,2025-10-24 19:43:14,1,Negative
+410,0 days 03:45:00,F3,654,F,3,TO1-Biotin,Plate 1,2025-10-24 19:48:14,1,Negative
+411,0 days 03:50:00,F3,680,F,3,TO1-Biotin,Plate 1,2025-10-24 19:53:14,1,Negative
+412,0 days 03:55:00,F3,662,F,3,TO1-Biotin,Plate 1,2025-10-24 19:58:14,1,Negative
+413,0 days 04:00:00,F3,676,F,3,TO1-Biotin,Plate 1,2025-10-24 20:03:14,1,Negative
+414,0 days 04:05:00,F3,695,F,3,TO1-Biotin,Plate 1,2025-10-24 20:08:14,1,Negative
+415,0 days 04:10:00,F3,639,F,3,TO1-Biotin,Plate 1,2025-10-24 20:13:14,1,Negative
+416,0 days 04:15:00,F3,690,F,3,TO1-Biotin,Plate 1,2025-10-24 20:18:14,1,Negative
+417,0 days 04:20:00,F3,704,F,3,TO1-Biotin,Plate 1,2025-10-24 20:23:14,1,Negative
+418,0 days 04:25:00,F3,690,F,3,TO1-Biotin,Plate 1,2025-10-24 20:28:14,1,Negative
+419,0 days 04:30:00,F3,638,F,3,TO1-Biotin,Plate 1,2025-10-24 20:33:14,1,Negative
+420,0 days 04:35:00,F3,680,F,3,TO1-Biotin,Plate 1,2025-10-24 20:38:14,1,Negative
+421,0 days 04:40:00,F3,669,F,3,TO1-Biotin,Plate 1,2025-10-24 20:43:14,1,Negative
+422,0 days 04:45:00,F3,636,F,3,TO1-Biotin,Plate 1,2025-10-24 20:48:14,1,Negative
+423,0 days 04:50:00,F3,698,F,3,TO1-Biotin,Plate 1,2025-10-24 20:53:14,1,Negative
+424,0 days 04:55:00,F3,692,F,3,TO1-Biotin,Plate 1,2025-10-24 20:58:14,1,Negative
+425,0 days 05:00:00,F3,698,F,3,TO1-Biotin,Plate 1,2025-10-24 21:03:14,1,Negative
+426,0 days 05:05:00,F3,706,F,3,TO1-Biotin,Plate 1,2025-10-24 21:08:14,1,Negative
+427,0 days 05:10:00,F3,697,F,3,TO1-Biotin,Plate 1,2025-10-24 21:13:14,1,Negative
+428,0 days 05:15:00,F3,690,F,3,TO1-Biotin,Plate 1,2025-10-24 21:18:14,1,Negative
+429,0 days 05:20:00,F3,706,F,3,TO1-Biotin,Plate 1,2025-10-24 21:23:14,1,Negative
+430,0 days 05:25:00,F3,729,F,3,TO1-Biotin,Plate 1,2025-10-24 21:28:14,1,Negative
+431,0 days 05:30:00,F3,691,F,3,TO1-Biotin,Plate 1,2025-10-24 21:33:14,1,Negative
+432,0 days 05:35:00,F3,732,F,3,TO1-Biotin,Plate 1,2025-10-24 21:38:14,1,Negative
+433,0 days 05:40:00,F3,684,F,3,TO1-Biotin,Plate 1,2025-10-24 21:43:14,1,Negative
+434,0 days 05:45:00,F3,731,F,3,TO1-Biotin,Plate 1,2025-10-24 21:48:14,1,Negative
+435,0 days 05:50:00,F3,737,F,3,TO1-Biotin,Plate 1,2025-10-24 21:53:14,1,Negative
+436,0 days 05:55:00,F3,713,F,3,TO1-Biotin,Plate 1,2025-10-24 21:58:14,1,Negative
+437,0 days 06:00:00,F3,688,F,3,TO1-Biotin,Plate 1,2025-10-24 22:03:14,1,Negative
+438,0 days 00:00:00,F5,367,F,5,TO1-Biotin,Plate 1,2025-10-24 16:03:14,2,57 nm TO1-Biotin
+439,0 days 00:05:00,F5,309,F,5,TO1-Biotin,Plate 1,2025-10-24 16:08:14,2,57 nm TO1-Biotin
+440,0 days 00:10:00,F5,306,F,5,TO1-Biotin,Plate 1,2025-10-24 16:13:14,2,57 nm TO1-Biotin
+441,0 days 00:15:00,F5,344,F,5,TO1-Biotin,Plate 1,2025-10-24 16:18:14,2,57 nm TO1-Biotin
+442,0 days 00:20:00,F5,380,F,5,TO1-Biotin,Plate 1,2025-10-24 16:23:14,2,57 nm TO1-Biotin
+443,0 days 00:25:00,F5,402,F,5,TO1-Biotin,Plate 1,2025-10-24 16:28:14,2,57 nm TO1-Biotin
+444,0 days 00:30:00,F5,432,F,5,TO1-Biotin,Plate 1,2025-10-24 16:33:14,2,57 nm TO1-Biotin
+445,0 days 00:35:00,F5,467,F,5,TO1-Biotin,Plate 1,2025-10-24 16:38:14,2,57 nm TO1-Biotin
+446,0 days 00:40:00,F5,529,F,5,TO1-Biotin,Plate 1,2025-10-24 16:43:14,2,57 nm TO1-Biotin
+447,0 days 00:45:00,F5,534,F,5,TO1-Biotin,Plate 1,2025-10-24 16:48:14,2,57 nm TO1-Biotin
+448,0 days 00:50:00,F5,548,F,5,TO1-Biotin,Plate 1,2025-10-24 16:53:14,2,57 nm TO1-Biotin
+449,0 days 00:55:00,F5,540,F,5,TO1-Biotin,Plate 1,2025-10-24 16:58:14,2,57 nm TO1-Biotin
+450,0 days 01:00:00,F5,549,F,5,TO1-Biotin,Plate 1,2025-10-24 17:03:14,2,57 nm TO1-Biotin
+451,0 days 01:05:00,F5,598,F,5,TO1-Biotin,Plate 1,2025-10-24 17:08:14,2,57 nm TO1-Biotin
+452,0 days 01:10:00,F5,583,F,5,TO1-Biotin,Plate 1,2025-10-24 17:13:14,2,57 nm TO1-Biotin
+453,0 days 01:15:00,F5,610,F,5,TO1-Biotin,Plate 1,2025-10-24 17:18:14,2,57 nm TO1-Biotin
+454,0 days 01:20:00,F5,574,F,5,TO1-Biotin,Plate 1,2025-10-24 17:23:14,2,57 nm TO1-Biotin
+455,0 days 01:25:00,F5,639,F,5,TO1-Biotin,Plate 1,2025-10-24 17:28:14,2,57 nm TO1-Biotin
+456,0 days 01:30:00,F5,630,F,5,TO1-Biotin,Plate 1,2025-10-24 17:33:14,2,57 nm TO1-Biotin
+457,0 days 01:35:00,F5,641,F,5,TO1-Biotin,Plate 1,2025-10-24 17:38:14,2,57 nm TO1-Biotin
+458,0 days 01:40:00,F5,597,F,5,TO1-Biotin,Plate 1,2025-10-24 17:43:14,2,57 nm TO1-Biotin
+459,0 days 01:45:00,F5,626,F,5,TO1-Biotin,Plate 1,2025-10-24 17:48:14,2,57 nm TO1-Biotin
+460,0 days 01:50:00,F5,647,F,5,TO1-Biotin,Plate 1,2025-10-24 17:53:14,2,57 nm TO1-Biotin
+461,0 days 01:55:00,F5,615,F,5,TO1-Biotin,Plate 1,2025-10-24 17:58:14,2,57 nm TO1-Biotin
+462,0 days 02:00:00,F5,635,F,5,TO1-Biotin,Plate 1,2025-10-24 18:03:14,2,57 nm TO1-Biotin
+463,0 days 02:05:00,F5,628,F,5,TO1-Biotin,Plate 1,2025-10-24 18:08:14,2,57 nm TO1-Biotin
+464,0 days 02:10:00,F5,637,F,5,TO1-Biotin,Plate 1,2025-10-24 18:13:14,2,57 nm TO1-Biotin
+465,0 days 02:15:00,F5,656,F,5,TO1-Biotin,Plate 1,2025-10-24 18:18:14,2,57 nm TO1-Biotin
+466,0 days 02:20:00,F5,658,F,5,TO1-Biotin,Plate 1,2025-10-24 18:23:14,2,57 nm TO1-Biotin
+467,0 days 02:25:00,F5,631,F,5,TO1-Biotin,Plate 1,2025-10-24 18:28:14,2,57 nm TO1-Biotin
+468,0 days 02:30:00,F5,640,F,5,TO1-Biotin,Plate 1,2025-10-24 18:33:14,2,57 nm TO1-Biotin
+469,0 days 02:35:00,F5,652,F,5,TO1-Biotin,Plate 1,2025-10-24 18:38:14,2,57 nm TO1-Biotin
+470,0 days 02:40:00,F5,674,F,5,TO1-Biotin,Plate 1,2025-10-24 18:43:14,2,57 nm TO1-Biotin
+471,0 days 02:45:00,F5,657,F,5,TO1-Biotin,Plate 1,2025-10-24 18:48:14,2,57 nm TO1-Biotin
+472,0 days 02:50:00,F5,649,F,5,TO1-Biotin,Plate 1,2025-10-24 18:53:14,2,57 nm TO1-Biotin
+473,0 days 02:55:00,F5,636,F,5,TO1-Biotin,Plate 1,2025-10-24 18:58:14,2,57 nm TO1-Biotin
+474,0 days 03:00:00,F5,633,F,5,TO1-Biotin,Plate 1,2025-10-24 19:03:14,2,57 nm TO1-Biotin
+475,0 days 03:05:00,F5,649,F,5,TO1-Biotin,Plate 1,2025-10-24 19:08:14,2,57 nm TO1-Biotin
+476,0 days 03:10:00,F5,630,F,5,TO1-Biotin,Plate 1,2025-10-24 19:13:14,2,57 nm TO1-Biotin
+477,0 days 03:15:00,F5,636,F,5,TO1-Biotin,Plate 1,2025-10-24 19:18:14,2,57 nm TO1-Biotin
+478,0 days 03:20:00,F5,642,F,5,TO1-Biotin,Plate 1,2025-10-24 19:23:14,2,57 nm TO1-Biotin
+479,0 days 03:25:00,F5,635,F,5,TO1-Biotin,Plate 1,2025-10-24 19:28:14,2,57 nm TO1-Biotin
+480,0 days 03:30:00,F5,623,F,5,TO1-Biotin,Plate 1,2025-10-24 19:33:14,2,57 nm TO1-Biotin
+481,0 days 03:35:00,F5,648,F,5,TO1-Biotin,Plate 1,2025-10-24 19:38:14,2,57 nm TO1-Biotin
+482,0 days 03:40:00,F5,610,F,5,TO1-Biotin,Plate 1,2025-10-24 19:43:14,2,57 nm TO1-Biotin
+483,0 days 03:45:00,F5,637,F,5,TO1-Biotin,Plate 1,2025-10-24 19:48:14,2,57 nm TO1-Biotin
+484,0 days 03:50:00,F5,605,F,5,TO1-Biotin,Plate 1,2025-10-24 19:53:14,2,57 nm TO1-Biotin
+485,0 days 03:55:00,F5,621,F,5,TO1-Biotin,Plate 1,2025-10-24 19:58:14,2,57 nm TO1-Biotin
+486,0 days 04:00:00,F5,642,F,5,TO1-Biotin,Plate 1,2025-10-24 20:03:14,2,57 nm TO1-Biotin
+487,0 days 04:05:00,F5,601,F,5,TO1-Biotin,Plate 1,2025-10-24 20:08:14,2,57 nm TO1-Biotin
+488,0 days 04:10:00,F5,644,F,5,TO1-Biotin,Plate 1,2025-10-24 20:13:14,2,57 nm TO1-Biotin
+489,0 days 04:15:00,F5,637,F,5,TO1-Biotin,Plate 1,2025-10-24 20:18:14,2,57 nm TO1-Biotin
+490,0 days 04:20:00,F5,598,F,5,TO1-Biotin,Plate 1,2025-10-24 20:23:14,2,57 nm TO1-Biotin
+491,0 days 04:25:00,F5,599,F,5,TO1-Biotin,Plate 1,2025-10-24 20:28:14,2,57 nm TO1-Biotin
+492,0 days 04:30:00,F5,634,F,5,TO1-Biotin,Plate 1,2025-10-24 20:33:14,2,57 nm TO1-Biotin
+493,0 days 04:35:00,F5,608,F,5,TO1-Biotin,Plate 1,2025-10-24 20:38:14,2,57 nm TO1-Biotin
+494,0 days 04:40:00,F5,589,F,5,TO1-Biotin,Plate 1,2025-10-24 20:43:14,2,57 nm TO1-Biotin
+495,0 days 04:45:00,F5,615,F,5,TO1-Biotin,Plate 1,2025-10-24 20:48:14,2,57 nm TO1-Biotin
+496,0 days 04:50:00,F5,610,F,5,TO1-Biotin,Plate 1,2025-10-24 20:53:14,2,57 nm TO1-Biotin
+497,0 days 04:55:00,F5,617,F,5,TO1-Biotin,Plate 1,2025-10-24 20:58:14,2,57 nm TO1-Biotin
+498,0 days 05:00:00,F5,600,F,5,TO1-Biotin,Plate 1,2025-10-24 21:03:14,2,57 nm TO1-Biotin
+499,0 days 05:05:00,F5,617,F,5,TO1-Biotin,Plate 1,2025-10-24 21:08:14,2,57 nm TO1-Biotin
+500,0 days 05:10:00,F5,581,F,5,TO1-Biotin,Plate 1,2025-10-24 21:13:14,2,57 nm TO1-Biotin
+501,0 days 05:15:00,F5,582,F,5,TO1-Biotin,Plate 1,2025-10-24 21:18:14,2,57 nm TO1-Biotin
+502,0 days 05:20:00,F5,604,F,5,TO1-Biotin,Plate 1,2025-10-24 21:23:14,2,57 nm TO1-Biotin
+503,0 days 05:25:00,F5,588,F,5,TO1-Biotin,Plate 1,2025-10-24 21:28:14,2,57 nm TO1-Biotin
+504,0 days 05:30:00,F5,614,F,5,TO1-Biotin,Plate 1,2025-10-24 21:33:14,2,57 nm TO1-Biotin
+505,0 days 05:35:00,F5,563,F,5,TO1-Biotin,Plate 1,2025-10-24 21:38:14,2,57 nm TO1-Biotin
+506,0 days 05:40:00,F5,577,F,5,TO1-Biotin,Plate 1,2025-10-24 21:43:14,2,57 nm TO1-Biotin
+507,0 days 05:45:00,F5,586,F,5,TO1-Biotin,Plate 1,2025-10-24 21:48:14,2,57 nm TO1-Biotin
+508,0 days 05:50:00,F5,587,F,5,TO1-Biotin,Plate 1,2025-10-24 21:53:14,2,57 nm TO1-Biotin
+509,0 days 05:55:00,F5,637,F,5,TO1-Biotin,Plate 1,2025-10-24 21:58:14,2,57 nm TO1-Biotin
+510,0 days 06:00:00,F5,545,F,5,TO1-Biotin,Plate 1,2025-10-24 22:03:14,2,57 nm TO1-Biotin
+511,0 days 00:00:00,F7,1492,F,7,TO1-Biotin,Plate 1,2025-10-24 16:03:14,3,142 nm TO1-Biotin
+512,0 days 00:05:00,F7,1223,F,7,TO1-Biotin,Plate 1,2025-10-24 16:08:14,3,142 nm TO1-Biotin
+513,0 days 00:10:00,F7,1223,F,7,TO1-Biotin,Plate 1,2025-10-24 16:13:14,3,142 nm TO1-Biotin
+514,0 days 00:15:00,F7,1424,F,7,TO1-Biotin,Plate 1,2025-10-24 16:18:14,3,142 nm TO1-Biotin
+515,0 days 00:20:00,F7,1691,F,7,TO1-Biotin,Plate 1,2025-10-24 16:23:14,3,142 nm TO1-Biotin
+516,0 days 00:25:00,F7,1870,F,7,TO1-Biotin,Plate 1,2025-10-24 16:28:14,3,142 nm TO1-Biotin
+517,0 days 00:30:00,F7,2108,F,7,TO1-Biotin,Plate 1,2025-10-24 16:33:14,3,142 nm TO1-Biotin
+518,0 days 00:35:00,F7,2290,F,7,TO1-Biotin,Plate 1,2025-10-24 16:38:14,3,142 nm TO1-Biotin
+519,0 days 00:40:00,F7,2411,F,7,TO1-Biotin,Plate 1,2025-10-24 16:43:14,3,142 nm TO1-Biotin
+520,0 days 00:45:00,F7,2542,F,7,TO1-Biotin,Plate 1,2025-10-24 16:48:14,3,142 nm TO1-Biotin
+521,0 days 00:50:00,F7,2690,F,7,TO1-Biotin,Plate 1,2025-10-24 16:53:14,3,142 nm TO1-Biotin
+522,0 days 00:55:00,F7,2799,F,7,TO1-Biotin,Plate 1,2025-10-24 16:58:14,3,142 nm TO1-Biotin
+523,0 days 01:00:00,F7,2867,F,7,TO1-Biotin,Plate 1,2025-10-24 17:03:14,3,142 nm TO1-Biotin
+524,0 days 01:05:00,F7,2865,F,7,TO1-Biotin,Plate 1,2025-10-24 17:08:14,3,142 nm TO1-Biotin
+525,0 days 01:10:00,F7,2971,F,7,TO1-Biotin,Plate 1,2025-10-24 17:13:14,3,142 nm TO1-Biotin
+526,0 days 01:15:00,F7,2996,F,7,TO1-Biotin,Plate 1,2025-10-24 17:18:14,3,142 nm TO1-Biotin
+527,0 days 01:20:00,F7,3041,F,7,TO1-Biotin,Plate 1,2025-10-24 17:23:14,3,142 nm TO1-Biotin
+528,0 days 01:25:00,F7,3174,F,7,TO1-Biotin,Plate 1,2025-10-24 17:28:14,3,142 nm TO1-Biotin
+529,0 days 01:30:00,F7,3132,F,7,TO1-Biotin,Plate 1,2025-10-24 17:33:14,3,142 nm TO1-Biotin
+530,0 days 01:35:00,F7,3139,F,7,TO1-Biotin,Plate 1,2025-10-24 17:38:14,3,142 nm TO1-Biotin
+531,0 days 01:40:00,F7,3237,F,7,TO1-Biotin,Plate 1,2025-10-24 17:43:14,3,142 nm TO1-Biotin
+532,0 days 01:45:00,F7,3165,F,7,TO1-Biotin,Plate 1,2025-10-24 17:48:14,3,142 nm TO1-Biotin
+533,0 days 01:50:00,F7,3264,F,7,TO1-Biotin,Plate 1,2025-10-24 17:53:14,3,142 nm TO1-Biotin
+534,0 days 01:55:00,F7,3204,F,7,TO1-Biotin,Plate 1,2025-10-24 17:58:14,3,142 nm TO1-Biotin
+535,0 days 02:00:00,F7,3234,F,7,TO1-Biotin,Plate 1,2025-10-24 18:03:14,3,142 nm TO1-Biotin
+536,0 days 02:05:00,F7,3206,F,7,TO1-Biotin,Plate 1,2025-10-24 18:08:14,3,142 nm TO1-Biotin
+537,0 days 02:10:00,F7,3247,F,7,TO1-Biotin,Plate 1,2025-10-24 18:13:14,3,142 nm TO1-Biotin
+538,0 days 02:15:00,F7,3226,F,7,TO1-Biotin,Plate 1,2025-10-24 18:18:14,3,142 nm TO1-Biotin
+539,0 days 02:20:00,F7,3194,F,7,TO1-Biotin,Plate 1,2025-10-24 18:23:14,3,142 nm TO1-Biotin
+540,0 days 02:25:00,F7,3281,F,7,TO1-Biotin,Plate 1,2025-10-24 18:28:14,3,142 nm TO1-Biotin
+541,0 days 02:30:00,F7,3248,F,7,TO1-Biotin,Plate 1,2025-10-24 18:33:14,3,142 nm TO1-Biotin
+542,0 days 02:35:00,F7,3244,F,7,TO1-Biotin,Plate 1,2025-10-24 18:38:14,3,142 nm TO1-Biotin
+543,0 days 02:40:00,F7,3152,F,7,TO1-Biotin,Plate 1,2025-10-24 18:43:14,3,142 nm TO1-Biotin
+544,0 days 02:45:00,F7,3147,F,7,TO1-Biotin,Plate 1,2025-10-24 18:48:14,3,142 nm TO1-Biotin
+545,0 days 02:50:00,F7,3225,F,7,TO1-Biotin,Plate 1,2025-10-24 18:53:14,3,142 nm TO1-Biotin
+546,0 days 02:55:00,F7,3181,F,7,TO1-Biotin,Plate 1,2025-10-24 18:58:14,3,142 nm TO1-Biotin
+547,0 days 03:00:00,F7,3208,F,7,TO1-Biotin,Plate 1,2025-10-24 19:03:14,3,142 nm TO1-Biotin
+548,0 days 03:05:00,F7,3117,F,7,TO1-Biotin,Plate 1,2025-10-24 19:08:14,3,142 nm TO1-Biotin
+549,0 days 03:10:00,F7,3172,F,7,TO1-Biotin,Plate 1,2025-10-24 19:13:14,3,142 nm TO1-Biotin
+550,0 days 03:15:00,F7,3122,F,7,TO1-Biotin,Plate 1,2025-10-24 19:18:14,3,142 nm TO1-Biotin
+551,0 days 03:20:00,F7,3182,F,7,TO1-Biotin,Plate 1,2025-10-24 19:23:14,3,142 nm TO1-Biotin
+552,0 days 03:25:00,F7,3116,F,7,TO1-Biotin,Plate 1,2025-10-24 19:28:14,3,142 nm TO1-Biotin
+553,0 days 03:30:00,F7,3100,F,7,TO1-Biotin,Plate 1,2025-10-24 19:33:14,3,142 nm TO1-Biotin
+554,0 days 03:35:00,F7,3080,F,7,TO1-Biotin,Plate 1,2025-10-24 19:38:14,3,142 nm TO1-Biotin
+555,0 days 03:40:00,F7,3082,F,7,TO1-Biotin,Plate 1,2025-10-24 19:43:14,3,142 nm TO1-Biotin
+556,0 days 03:45:00,F7,3002,F,7,TO1-Biotin,Plate 1,2025-10-24 19:48:14,3,142 nm TO1-Biotin
+557,0 days 03:50:00,F7,2994,F,7,TO1-Biotin,Plate 1,2025-10-24 19:53:14,3,142 nm TO1-Biotin
+558,0 days 03:55:00,F7,2919,F,7,TO1-Biotin,Plate 1,2025-10-24 19:58:14,3,142 nm TO1-Biotin
+559,0 days 04:00:00,F7,3000,F,7,TO1-Biotin,Plate 1,2025-10-24 20:03:14,3,142 nm TO1-Biotin
+560,0 days 04:05:00,F7,2877,F,7,TO1-Biotin,Plate 1,2025-10-24 20:08:14,3,142 nm TO1-Biotin
+561,0 days 04:10:00,F7,2862,F,7,TO1-Biotin,Plate 1,2025-10-24 20:13:14,3,142 nm TO1-Biotin
+562,0 days 04:15:00,F7,2861,F,7,TO1-Biotin,Plate 1,2025-10-24 20:18:14,3,142 nm TO1-Biotin
+563,0 days 04:20:00,F7,2926,F,7,TO1-Biotin,Plate 1,2025-10-24 20:23:14,3,142 nm TO1-Biotin
+564,0 days 04:25:00,F7,2829,F,7,TO1-Biotin,Plate 1,2025-10-24 20:28:14,3,142 nm TO1-Biotin
+565,0 days 04:30:00,F7,2803,F,7,TO1-Biotin,Plate 1,2025-10-24 20:33:14,3,142 nm TO1-Biotin
+566,0 days 04:35:00,F7,2777,F,7,TO1-Biotin,Plate 1,2025-10-24 20:38:14,3,142 nm TO1-Biotin
+567,0 days 04:40:00,F7,2766,F,7,TO1-Biotin,Plate 1,2025-10-24 20:43:14,3,142 nm TO1-Biotin
+568,0 days 04:45:00,F7,2748,F,7,TO1-Biotin,Plate 1,2025-10-24 20:48:14,3,142 nm TO1-Biotin
+569,0 days 04:50:00,F7,2706,F,7,TO1-Biotin,Plate 1,2025-10-24 20:53:14,3,142 nm TO1-Biotin
+570,0 days 04:55:00,F7,2679,F,7,TO1-Biotin,Plate 1,2025-10-24 20:58:14,3,142 nm TO1-Biotin
+571,0 days 05:00:00,F7,2694,F,7,TO1-Biotin,Plate 1,2025-10-24 21:03:14,3,142 nm TO1-Biotin
+572,0 days 05:05:00,F7,2630,F,7,TO1-Biotin,Plate 1,2025-10-24 21:08:14,3,142 nm TO1-Biotin
+573,0 days 05:10:00,F7,2556,F,7,TO1-Biotin,Plate 1,2025-10-24 21:13:14,3,142 nm TO1-Biotin
+574,0 days 05:15:00,F7,2561,F,7,TO1-Biotin,Plate 1,2025-10-24 21:18:14,3,142 nm TO1-Biotin
+575,0 days 05:20:00,F7,2561,F,7,TO1-Biotin,Plate 1,2025-10-24 21:23:14,3,142 nm TO1-Biotin
+576,0 days 05:25:00,F7,2513,F,7,TO1-Biotin,Plate 1,2025-10-24 21:28:14,3,142 nm TO1-Biotin
+577,0 days 05:30:00,F7,2465,F,7,TO1-Biotin,Plate 1,2025-10-24 21:33:14,3,142 nm TO1-Biotin
+578,0 days 05:35:00,F7,2429,F,7,TO1-Biotin,Plate 1,2025-10-24 21:38:14,3,142 nm TO1-Biotin
+579,0 days 05:40:00,F7,2362,F,7,TO1-Biotin,Plate 1,2025-10-24 21:43:14,3,142 nm TO1-Biotin
+580,0 days 05:45:00,F7,2357,F,7,TO1-Biotin,Plate 1,2025-10-24 21:48:14,3,142 nm TO1-Biotin
+581,0 days 05:50:00,F7,2384,F,7,TO1-Biotin,Plate 1,2025-10-24 21:53:14,3,142 nm TO1-Biotin
+582,0 days 05:55:00,F7,2319,F,7,TO1-Biotin,Plate 1,2025-10-24 21:58:14,3,142 nm TO1-Biotin
+583,0 days 06:00:00,F7,2277,F,7,TO1-Biotin,Plate 1,2025-10-24 22:03:14,3,142 nm TO1-Biotin
+584,0 days 00:00:00,F9,2107,F,9,TO1-Biotin,Plate 1,2025-10-24 16:03:14,4,286 nm TO1-Biotin
+585,0 days 00:05:00,F9,1647,F,9,TO1-Biotin,Plate 1,2025-10-24 16:08:14,4,286 nm TO1-Biotin
+586,0 days 00:10:00,F9,1584,F,9,TO1-Biotin,Plate 1,2025-10-24 16:13:14,4,286 nm TO1-Biotin
+587,0 days 00:15:00,F9,1847,F,9,TO1-Biotin,Plate 1,2025-10-24 16:18:14,4,286 nm TO1-Biotin
+588,0 days 00:20:00,F9,2227,F,9,TO1-Biotin,Plate 1,2025-10-24 16:23:14,4,286 nm TO1-Biotin
+589,0 days 00:25:00,F9,2559,F,9,TO1-Biotin,Plate 1,2025-10-24 16:28:14,4,286 nm TO1-Biotin
+590,0 days 00:30:00,F9,2884,F,9,TO1-Biotin,Plate 1,2025-10-24 16:33:14,4,286 nm TO1-Biotin
+591,0 days 00:35:00,F9,3099,F,9,TO1-Biotin,Plate 1,2025-10-24 16:38:14,4,286 nm TO1-Biotin
+592,0 days 00:40:00,F9,3339,F,9,TO1-Biotin,Plate 1,2025-10-24 16:43:14,4,286 nm TO1-Biotin
+593,0 days 00:45:00,F9,3553,F,9,TO1-Biotin,Plate 1,2025-10-24 16:48:14,4,286 nm TO1-Biotin
+594,0 days 00:50:00,F9,3684,F,9,TO1-Biotin,Plate 1,2025-10-24 16:53:14,4,286 nm TO1-Biotin
+595,0 days 00:55:00,F9,3793,F,9,TO1-Biotin,Plate 1,2025-10-24 16:58:14,4,286 nm TO1-Biotin
+596,0 days 01:00:00,F9,3966,F,9,TO1-Biotin,Plate 1,2025-10-24 17:03:14,4,286 nm TO1-Biotin
+597,0 days 01:05:00,F9,3994,F,9,TO1-Biotin,Plate 1,2025-10-24 17:08:14,4,286 nm TO1-Biotin
+598,0 days 01:10:00,F9,4120,F,9,TO1-Biotin,Plate 1,2025-10-24 17:13:14,4,286 nm TO1-Biotin
+599,0 days 01:15:00,F9,4146,F,9,TO1-Biotin,Plate 1,2025-10-24 17:18:14,4,286 nm TO1-Biotin
+600,0 days 01:20:00,F9,4199,F,9,TO1-Biotin,Plate 1,2025-10-24 17:23:14,4,286 nm TO1-Biotin
+601,0 days 01:25:00,F9,4270,F,9,TO1-Biotin,Plate 1,2025-10-24 17:28:14,4,286 nm TO1-Biotin
+602,0 days 01:30:00,F9,4366,F,9,TO1-Biotin,Plate 1,2025-10-24 17:33:14,4,286 nm TO1-Biotin
+603,0 days 01:35:00,F9,4371,F,9,TO1-Biotin,Plate 1,2025-10-24 17:38:14,4,286 nm TO1-Biotin
+604,0 days 01:40:00,F9,4439,F,9,TO1-Biotin,Plate 1,2025-10-24 17:43:14,4,286 nm TO1-Biotin
+605,0 days 01:45:00,F9,4416,F,9,TO1-Biotin,Plate 1,2025-10-24 17:48:14,4,286 nm TO1-Biotin
+606,0 days 01:50:00,F9,4439,F,9,TO1-Biotin,Plate 1,2025-10-24 17:53:14,4,286 nm TO1-Biotin
+607,0 days 01:55:00,F9,4459,F,9,TO1-Biotin,Plate 1,2025-10-24 17:58:14,4,286 nm TO1-Biotin
+608,0 days 02:00:00,F9,4495,F,9,TO1-Biotin,Plate 1,2025-10-24 18:03:14,4,286 nm TO1-Biotin
+609,0 days 02:05:00,F9,4515,F,9,TO1-Biotin,Plate 1,2025-10-24 18:08:14,4,286 nm TO1-Biotin
+610,0 days 02:10:00,F9,4526,F,9,TO1-Biotin,Plate 1,2025-10-24 18:13:14,4,286 nm TO1-Biotin
+611,0 days 02:15:00,F9,4471,F,9,TO1-Biotin,Plate 1,2025-10-24 18:18:14,4,286 nm TO1-Biotin
+612,0 days 02:20:00,F9,4478,F,9,TO1-Biotin,Plate 1,2025-10-24 18:23:14,4,286 nm TO1-Biotin
+613,0 days 02:25:00,F9,4557,F,9,TO1-Biotin,Plate 1,2025-10-24 18:28:14,4,286 nm TO1-Biotin
+614,0 days 02:30:00,F9,4548,F,9,TO1-Biotin,Plate 1,2025-10-24 18:33:14,4,286 nm TO1-Biotin
+615,0 days 02:35:00,F9,4486,F,9,TO1-Biotin,Plate 1,2025-10-24 18:38:14,4,286 nm TO1-Biotin
+616,0 days 02:40:00,F9,4556,F,9,TO1-Biotin,Plate 1,2025-10-24 18:43:14,4,286 nm TO1-Biotin
+617,0 days 02:45:00,F9,4521,F,9,TO1-Biotin,Plate 1,2025-10-24 18:48:14,4,286 nm TO1-Biotin
+618,0 days 02:50:00,F9,4461,F,9,TO1-Biotin,Plate 1,2025-10-24 18:53:14,4,286 nm TO1-Biotin
+619,0 days 02:55:00,F9,4485,F,9,TO1-Biotin,Plate 1,2025-10-24 18:58:14,4,286 nm TO1-Biotin
+620,0 days 03:00:00,F9,4441,F,9,TO1-Biotin,Plate 1,2025-10-24 19:03:14,4,286 nm TO1-Biotin
+621,0 days 03:05:00,F9,4433,F,9,TO1-Biotin,Plate 1,2025-10-24 19:08:14,4,286 nm TO1-Biotin
+622,0 days 03:10:00,F9,4412,F,9,TO1-Biotin,Plate 1,2025-10-24 19:13:14,4,286 nm TO1-Biotin
+623,0 days 03:15:00,F9,4434,F,9,TO1-Biotin,Plate 1,2025-10-24 19:18:14,4,286 nm TO1-Biotin
+624,0 days 03:20:00,F9,4342,F,9,TO1-Biotin,Plate 1,2025-10-24 19:23:14,4,286 nm TO1-Biotin
+625,0 days 03:25:00,F9,4306,F,9,TO1-Biotin,Plate 1,2025-10-24 19:28:14,4,286 nm TO1-Biotin
+626,0 days 03:30:00,F9,4337,F,9,TO1-Biotin,Plate 1,2025-10-24 19:33:14,4,286 nm TO1-Biotin
+627,0 days 03:35:00,F9,4252,F,9,TO1-Biotin,Plate 1,2025-10-24 19:38:14,4,286 nm TO1-Biotin
+628,0 days 03:40:00,F9,4285,F,9,TO1-Biotin,Plate 1,2025-10-24 19:43:14,4,286 nm TO1-Biotin
+629,0 days 03:45:00,F9,4217,F,9,TO1-Biotin,Plate 1,2025-10-24 19:48:14,4,286 nm TO1-Biotin
+630,0 days 03:50:00,F9,4088,F,9,TO1-Biotin,Plate 1,2025-10-24 19:53:14,4,286 nm TO1-Biotin
+631,0 days 03:55:00,F9,4157,F,9,TO1-Biotin,Plate 1,2025-10-24 19:58:14,4,286 nm TO1-Biotin
+632,0 days 04:00:00,F9,4128,F,9,TO1-Biotin,Plate 1,2025-10-24 20:03:14,4,286 nm TO1-Biotin
+633,0 days 04:05:00,F9,4124,F,9,TO1-Biotin,Plate 1,2025-10-24 20:08:14,4,286 nm TO1-Biotin
+634,0 days 04:10:00,F9,4140,F,9,TO1-Biotin,Plate 1,2025-10-24 20:13:14,4,286 nm TO1-Biotin
+635,0 days 04:15:00,F9,3971,F,9,TO1-Biotin,Plate 1,2025-10-24 20:18:14,4,286 nm TO1-Biotin
+636,0 days 04:20:00,F9,4071,F,9,TO1-Biotin,Plate 1,2025-10-24 20:23:14,4,286 nm TO1-Biotin
+637,0 days 04:25:00,F9,3923,F,9,TO1-Biotin,Plate 1,2025-10-24 20:28:14,4,286 nm TO1-Biotin
+638,0 days 04:30:00,F9,3925,F,9,TO1-Biotin,Plate 1,2025-10-24 20:33:14,4,286 nm TO1-Biotin
+639,0 days 04:35:00,F9,3861,F,9,TO1-Biotin,Plate 1,2025-10-24 20:38:14,4,286 nm TO1-Biotin
+640,0 days 04:40:00,F9,3826,F,9,TO1-Biotin,Plate 1,2025-10-24 20:43:14,4,286 nm TO1-Biotin
+641,0 days 04:45:00,F9,3761,F,9,TO1-Biotin,Plate 1,2025-10-24 20:48:14,4,286 nm TO1-Biotin
+642,0 days 04:50:00,F9,3733,F,9,TO1-Biotin,Plate 1,2025-10-24 20:53:14,4,286 nm TO1-Biotin
+643,0 days 04:55:00,F9,3712,F,9,TO1-Biotin,Plate 1,2025-10-24 20:58:14,4,286 nm TO1-Biotin
+644,0 days 05:00:00,F9,3687,F,9,TO1-Biotin,Plate 1,2025-10-24 21:03:14,4,286 nm TO1-Biotin
+645,0 days 05:05:00,F9,3658,F,9,TO1-Biotin,Plate 1,2025-10-24 21:08:14,4,286 nm TO1-Biotin
+646,0 days 05:10:00,F9,3590,F,9,TO1-Biotin,Plate 1,2025-10-24 21:13:14,4,286 nm TO1-Biotin
+647,0 days 05:15:00,F9,3591,F,9,TO1-Biotin,Plate 1,2025-10-24 21:18:14,4,286 nm TO1-Biotin
+648,0 days 05:20:00,F9,3505,F,9,TO1-Biotin,Plate 1,2025-10-24 21:23:14,4,286 nm TO1-Biotin
+649,0 days 05:25:00,F9,3366,F,9,TO1-Biotin,Plate 1,2025-10-24 21:28:14,4,286 nm TO1-Biotin
+650,0 days 05:30:00,F9,3456,F,9,TO1-Biotin,Plate 1,2025-10-24 21:33:14,4,286 nm TO1-Biotin
+651,0 days 05:35:00,F9,3401,F,9,TO1-Biotin,Plate 1,2025-10-24 21:38:14,4,286 nm TO1-Biotin
+652,0 days 05:40:00,F9,3381,F,9,TO1-Biotin,Plate 1,2025-10-24 21:43:14,4,286 nm TO1-Biotin
+653,0 days 05:45:00,F9,3302,F,9,TO1-Biotin,Plate 1,2025-10-24 21:48:14,4,286 nm TO1-Biotin
+654,0 days 05:50:00,F9,3306,F,9,TO1-Biotin,Plate 1,2025-10-24 21:53:14,4,286 nm TO1-Biotin
+655,0 days 05:55:00,F9,3278,F,9,TO1-Biotin,Plate 1,2025-10-24 21:58:14,4,286 nm TO1-Biotin
+656,0 days 06:00:00,F9,3171,F,9,TO1-Biotin,Plate 1,2025-10-24 22:03:14,4,286 nm TO1-Biotin
+657,0 days 00:00:00,F11,8677,F,11,TO1-Biotin,Plate 1,2025-10-24 16:03:14,5,1430 nm TO1-Biotin
+658,0 days 00:05:00,F11,6672,F,11,TO1-Biotin,Plate 1,2025-10-24 16:08:14,5,1430 nm TO1-Biotin
+659,0 days 00:10:00,F11,6350,F,11,TO1-Biotin,Plate 1,2025-10-24 16:13:14,5,1430 nm TO1-Biotin
+660,0 days 00:15:00,F11,7464,F,11,TO1-Biotin,Plate 1,2025-10-24 16:18:14,5,1430 nm TO1-Biotin
+661,0 days 00:20:00,F11,9089,F,11,TO1-Biotin,Plate 1,2025-10-24 16:23:14,5,1430 nm TO1-Biotin
+662,0 days 00:25:00,F11,10344,F,11,TO1-Biotin,Plate 1,2025-10-24 16:28:14,5,1430 nm TO1-Biotin
+663,0 days 00:30:00,F11,11724,F,11,TO1-Biotin,Plate 1,2025-10-24 16:33:14,5,1430 nm TO1-Biotin
+664,0 days 00:35:00,F11,12731,F,11,TO1-Biotin,Plate 1,2025-10-24 16:38:14,5,1430 nm TO1-Biotin
+665,0 days 00:40:00,F11,13661,F,11,TO1-Biotin,Plate 1,2025-10-24 16:43:14,5,1430 nm TO1-Biotin
+666,0 days 00:45:00,F11,14433,F,11,TO1-Biotin,Plate 1,2025-10-24 16:48:14,5,1430 nm TO1-Biotin
+667,0 days 00:50:00,F11,15177,F,11,TO1-Biotin,Plate 1,2025-10-24 16:53:14,5,1430 nm TO1-Biotin
+668,0 days 00:55:00,F11,15663,F,11,TO1-Biotin,Plate 1,2025-10-24 16:58:14,5,1430 nm TO1-Biotin
+669,0 days 01:00:00,F11,16329,F,11,TO1-Biotin,Plate 1,2025-10-24 17:03:14,5,1430 nm TO1-Biotin
+670,0 days 01:05:00,F11,16530,F,11,TO1-Biotin,Plate 1,2025-10-24 17:08:14,5,1430 nm TO1-Biotin
+671,0 days 01:10:00,F11,16908,F,11,TO1-Biotin,Plate 1,2025-10-24 17:13:14,5,1430 nm TO1-Biotin
+672,0 days 01:15:00,F11,16977,F,11,TO1-Biotin,Plate 1,2025-10-24 17:18:14,5,1430 nm TO1-Biotin
+673,0 days 01:20:00,F11,17414,F,11,TO1-Biotin,Plate 1,2025-10-24 17:23:14,5,1430 nm TO1-Biotin
+674,0 days 01:25:00,F11,17712,F,11,TO1-Biotin,Plate 1,2025-10-24 17:28:14,5,1430 nm TO1-Biotin
+675,0 days 01:30:00,F11,17857,F,11,TO1-Biotin,Plate 1,2025-10-24 17:33:14,5,1430 nm TO1-Biotin
+676,0 days 01:35:00,F11,17979,F,11,TO1-Biotin,Plate 1,2025-10-24 17:38:14,5,1430 nm TO1-Biotin
+677,0 days 01:40:00,F11,18118,F,11,TO1-Biotin,Plate 1,2025-10-24 17:43:14,5,1430 nm TO1-Biotin
+678,0 days 01:45:00,F11,18223,F,11,TO1-Biotin,Plate 1,2025-10-24 17:48:14,5,1430 nm TO1-Biotin
+679,0 days 01:50:00,F11,18401,F,11,TO1-Biotin,Plate 1,2025-10-24 17:53:14,5,1430 nm TO1-Biotin
+680,0 days 01:55:00,F11,18583,F,11,TO1-Biotin,Plate 1,2025-10-24 17:58:14,5,1430 nm TO1-Biotin
+681,0 days 02:00:00,F11,18394,F,11,TO1-Biotin,Plate 1,2025-10-24 18:03:14,5,1430 nm TO1-Biotin
+682,0 days 02:05:00,F11,18543,F,11,TO1-Biotin,Plate 1,2025-10-24 18:08:14,5,1430 nm TO1-Biotin
+683,0 days 02:10:00,F11,18568,F,11,TO1-Biotin,Plate 1,2025-10-24 18:13:14,5,1430 nm TO1-Biotin
+684,0 days 02:15:00,F11,18419,F,11,TO1-Biotin,Plate 1,2025-10-24 18:18:14,5,1430 nm TO1-Biotin
+685,0 days 02:20:00,F11,18607,F,11,TO1-Biotin,Plate 1,2025-10-24 18:23:14,5,1430 nm TO1-Biotin
+686,0 days 02:25:00,F11,18569,F,11,TO1-Biotin,Plate 1,2025-10-24 18:28:14,5,1430 nm TO1-Biotin
+687,0 days 02:30:00,F11,18645,F,11,TO1-Biotin,Plate 1,2025-10-24 18:33:14,5,1430 nm TO1-Biotin
+688,0 days 02:35:00,F11,18540,F,11,TO1-Biotin,Plate 1,2025-10-24 18:38:14,5,1430 nm TO1-Biotin
+689,0 days 02:40:00,F11,18652,F,11,TO1-Biotin,Plate 1,2025-10-24 18:43:14,5,1430 nm TO1-Biotin
+690,0 days 02:45:00,F11,18456,F,11,TO1-Biotin,Plate 1,2025-10-24 18:48:14,5,1430 nm TO1-Biotin
+691,0 days 02:50:00,F11,18561,F,11,TO1-Biotin,Plate 1,2025-10-24 18:53:14,5,1430 nm TO1-Biotin
+692,0 days 02:55:00,F11,18365,F,11,TO1-Biotin,Plate 1,2025-10-24 18:58:14,5,1430 nm TO1-Biotin
+693,0 days 03:00:00,F11,18423,F,11,TO1-Biotin,Plate 1,2025-10-24 19:03:14,5,1430 nm TO1-Biotin
+694,0 days 03:05:00,F11,18343,F,11,TO1-Biotin,Plate 1,2025-10-24 19:08:14,5,1430 nm TO1-Biotin
+695,0 days 03:10:00,F11,18228,F,11,TO1-Biotin,Plate 1,2025-10-24 19:13:14,5,1430 nm TO1-Biotin
+696,0 days 03:15:00,F11,18008,F,11,TO1-Biotin,Plate 1,2025-10-24 19:18:14,5,1430 nm TO1-Biotin
+697,0 days 03:20:00,F11,17975,F,11,TO1-Biotin,Plate 1,2025-10-24 19:23:14,5,1430 nm TO1-Biotin
+698,0 days 03:25:00,F11,17901,F,11,TO1-Biotin,Plate 1,2025-10-24 19:28:14,5,1430 nm TO1-Biotin
+699,0 days 03:30:00,F11,17811,F,11,TO1-Biotin,Plate 1,2025-10-24 19:33:14,5,1430 nm TO1-Biotin
+700,0 days 03:35:00,F11,17672,F,11,TO1-Biotin,Plate 1,2025-10-24 19:38:14,5,1430 nm TO1-Biotin
+701,0 days 03:40:00,F11,17613,F,11,TO1-Biotin,Plate 1,2025-10-24 19:43:14,5,1430 nm TO1-Biotin
+702,0 days 03:45:00,F11,17424,F,11,TO1-Biotin,Plate 1,2025-10-24 19:48:14,5,1430 nm TO1-Biotin
+703,0 days 03:50:00,F11,17433,F,11,TO1-Biotin,Plate 1,2025-10-24 19:53:14,5,1430 nm TO1-Biotin
+704,0 days 03:55:00,F11,17091,F,11,TO1-Biotin,Plate 1,2025-10-24 19:58:14,5,1430 nm TO1-Biotin
+705,0 days 04:00:00,F11,16894,F,11,TO1-Biotin,Plate 1,2025-10-24 20:03:14,5,1430 nm TO1-Biotin
+706,0 days 04:05:00,F11,16913,F,11,TO1-Biotin,Plate 1,2025-10-24 20:08:14,5,1430 nm TO1-Biotin
+707,0 days 04:10:00,F11,16713,F,11,TO1-Biotin,Plate 1,2025-10-24 20:13:14,5,1430 nm TO1-Biotin
+708,0 days 04:15:00,F11,16509,F,11,TO1-Biotin,Plate 1,2025-10-24 20:18:14,5,1430 nm TO1-Biotin
+709,0 days 04:20:00,F11,16432,F,11,TO1-Biotin,Plate 1,2025-10-24 20:23:14,5,1430 nm TO1-Biotin
+710,0 days 04:25:00,F11,16402,F,11,TO1-Biotin,Plate 1,2025-10-24 20:28:14,5,1430 nm TO1-Biotin
+711,0 days 04:30:00,F11,16077,F,11,TO1-Biotin,Plate 1,2025-10-24 20:33:14,5,1430 nm TO1-Biotin
+712,0 days 04:35:00,F11,16045,F,11,TO1-Biotin,Plate 1,2025-10-24 20:38:14,5,1430 nm TO1-Biotin
+713,0 days 04:40:00,F11,15718,F,11,TO1-Biotin,Plate 1,2025-10-24 20:43:14,5,1430 nm TO1-Biotin
+714,0 days 04:45:00,F11,15773,F,11,TO1-Biotin,Plate 1,2025-10-24 20:48:14,5,1430 nm TO1-Biotin
+715,0 days 04:50:00,F11,15496,F,11,TO1-Biotin,Plate 1,2025-10-24 20:53:14,5,1430 nm TO1-Biotin
+716,0 days 04:55:00,F11,15443,F,11,TO1-Biotin,Plate 1,2025-10-24 20:58:14,5,1430 nm TO1-Biotin
+717,0 days 05:00:00,F11,15231,F,11,TO1-Biotin,Plate 1,2025-10-24 21:03:14,5,1430 nm TO1-Biotin
+718,0 days 05:05:00,F11,14906,F,11,TO1-Biotin,Plate 1,2025-10-24 21:08:14,5,1430 nm TO1-Biotin
+719,0 days 05:10:00,F11,14797,F,11,TO1-Biotin,Plate 1,2025-10-24 21:13:14,5,1430 nm TO1-Biotin
+720,0 days 05:15:00,F11,14657,F,11,TO1-Biotin,Plate 1,2025-10-24 21:18:14,5,1430 nm TO1-Biotin
+721,0 days 05:20:00,F11,14268,F,11,TO1-Biotin,Plate 1,2025-10-24 21:23:14,5,1430 nm TO1-Biotin
+722,0 days 05:25:00,F11,14287,F,11,TO1-Biotin,Plate 1,2025-10-24 21:28:14,5,1430 nm TO1-Biotin
+723,0 days 05:30:00,F11,14174,F,11,TO1-Biotin,Plate 1,2025-10-24 21:33:14,5,1430 nm TO1-Biotin
+724,0 days 05:35:00,F11,13838,F,11,TO1-Biotin,Plate 1,2025-10-24 21:38:14,5,1430 nm TO1-Biotin
+725,0 days 05:40:00,F11,13526,F,11,TO1-Biotin,Plate 1,2025-10-24 21:43:14,5,1430 nm TO1-Biotin
+726,0 days 05:45:00,F11,13538,F,11,TO1-Biotin,Plate 1,2025-10-24 21:48:14,5,1430 nm TO1-Biotin
+727,0 days 05:50:00,F11,13292,F,11,TO1-Biotin,Plate 1,2025-10-24 21:53:14,5,1430 nm TO1-Biotin
+728,0 days 05:55:00,F11,13276,F,11,TO1-Biotin,Plate 1,2025-10-24 21:58:14,5,1430 nm TO1-Biotin
+729,0 days 06:00:00,F11,13034,F,11,TO1-Biotin,Plate 1,2025-10-24 22:03:14,5,1430 nm TO1-Biotin
+730,0 days 00:00:00,H3,1457,H,3,TO1-Biotin,Plate 1,2025-10-24 16:03:14,1,Negative
+731,0 days 00:05:00,H3,983,H,3,TO1-Biotin,Plate 1,2025-10-24 16:08:14,1,Negative
+732,0 days 00:10:00,H3,807,H,3,TO1-Biotin,Plate 1,2025-10-24 16:13:14,1,Negative
+733,0 days 00:15:00,H3,777,H,3,TO1-Biotin,Plate 1,2025-10-24 16:18:14,1,Negative
+734,0 days 00:20:00,H3,738,H,3,TO1-Biotin,Plate 1,2025-10-24 16:23:14,1,Negative
+735,0 days 00:25:00,H3,711,H,3,TO1-Biotin,Plate 1,2025-10-24 16:28:14,1,Negative
+736,0 days 00:30:00,H3,750,H,3,TO1-Biotin,Plate 1,2025-10-24 16:33:14,1,Negative
+737,0 days 00:35:00,H3,699,H,3,TO1-Biotin,Plate 1,2025-10-24 16:38:14,1,Negative
+738,0 days 00:40:00,H3,695,H,3,TO1-Biotin,Plate 1,2025-10-24 16:43:14,1,Negative
+739,0 days 00:45:00,H3,707,H,3,TO1-Biotin,Plate 1,2025-10-24 16:48:14,1,Negative
+740,0 days 00:50:00,H3,715,H,3,TO1-Biotin,Plate 1,2025-10-24 16:53:14,1,Negative
+741,0 days 00:55:00,H3,694,H,3,TO1-Biotin,Plate 1,2025-10-24 16:58:14,1,Negative
+742,0 days 01:00:00,H3,675,H,3,TO1-Biotin,Plate 1,2025-10-24 17:03:14,1,Negative
+743,0 days 01:05:00,H3,678,H,3,TO1-Biotin,Plate 1,2025-10-24 17:08:14,1,Negative
+744,0 days 01:10:00,H3,700,H,3,TO1-Biotin,Plate 1,2025-10-24 17:13:14,1,Negative
+745,0 days 01:15:00,H3,679,H,3,TO1-Biotin,Plate 1,2025-10-24 17:18:14,1,Negative
+746,0 days 01:20:00,H3,678,H,3,TO1-Biotin,Plate 1,2025-10-24 17:23:14,1,Negative
+747,0 days 01:25:00,H3,662,H,3,TO1-Biotin,Plate 1,2025-10-24 17:28:14,1,Negative
+748,0 days 01:30:00,H3,695,H,3,TO1-Biotin,Plate 1,2025-10-24 17:33:14,1,Negative
+749,0 days 01:35:00,H3,693,H,3,TO1-Biotin,Plate 1,2025-10-24 17:38:14,1,Negative
+750,0 days 01:40:00,H3,707,H,3,TO1-Biotin,Plate 1,2025-10-24 17:43:14,1,Negative
+751,0 days 01:45:00,H3,696,H,3,TO1-Biotin,Plate 1,2025-10-24 17:48:14,1,Negative
+752,0 days 01:50:00,H3,699,H,3,TO1-Biotin,Plate 1,2025-10-24 17:53:14,1,Negative
+753,0 days 01:55:00,H3,666,H,3,TO1-Biotin,Plate 1,2025-10-24 17:58:14,1,Negative
+754,0 days 02:00:00,H3,669,H,3,TO1-Biotin,Plate 1,2025-10-24 18:03:14,1,Negative
+755,0 days 02:05:00,H3,668,H,3,TO1-Biotin,Plate 1,2025-10-24 18:08:14,1,Negative
+756,0 days 02:10:00,H3,683,H,3,TO1-Biotin,Plate 1,2025-10-24 18:13:14,1,Negative
+757,0 days 02:15:00,H3,652,H,3,TO1-Biotin,Plate 1,2025-10-24 18:18:14,1,Negative
+758,0 days 02:20:00,H3,680,H,3,TO1-Biotin,Plate 1,2025-10-24 18:23:14,1,Negative
+759,0 days 02:25:00,H3,699,H,3,TO1-Biotin,Plate 1,2025-10-24 18:28:14,1,Negative
+760,0 days 02:30:00,H3,653,H,3,TO1-Biotin,Plate 1,2025-10-24 18:33:14,1,Negative
+761,0 days 02:35:00,H3,657,H,3,TO1-Biotin,Plate 1,2025-10-24 18:38:14,1,Negative
+762,0 days 02:40:00,H3,665,H,3,TO1-Biotin,Plate 1,2025-10-24 18:43:14,1,Negative
+763,0 days 02:45:00,H3,690,H,3,TO1-Biotin,Plate 1,2025-10-24 18:48:14,1,Negative
+764,0 days 02:50:00,H3,667,H,3,TO1-Biotin,Plate 1,2025-10-24 18:53:14,1,Negative
+765,0 days 02:55:00,H3,728,H,3,TO1-Biotin,Plate 1,2025-10-24 18:58:14,1,Negative
+766,0 days 03:00:00,H3,670,H,3,TO1-Biotin,Plate 1,2025-10-24 19:03:14,1,Negative
+767,0 days 03:05:00,H3,687,H,3,TO1-Biotin,Plate 1,2025-10-24 19:08:14,1,Negative
+768,0 days 03:10:00,H3,656,H,3,TO1-Biotin,Plate 1,2025-10-24 19:13:14,1,Negative
+769,0 days 03:15:00,H3,681,H,3,TO1-Biotin,Plate 1,2025-10-24 19:18:14,1,Negative
+770,0 days 03:20:00,H3,673,H,3,TO1-Biotin,Plate 1,2025-10-24 19:23:14,1,Negative
+771,0 days 03:25:00,H3,661,H,3,TO1-Biotin,Plate 1,2025-10-24 19:28:14,1,Negative
+772,0 days 03:30:00,H3,681,H,3,TO1-Biotin,Plate 1,2025-10-24 19:33:14,1,Negative
+773,0 days 03:35:00,H3,678,H,3,TO1-Biotin,Plate 1,2025-10-24 19:38:14,1,Negative
+774,0 days 03:40:00,H3,676,H,3,TO1-Biotin,Plate 1,2025-10-24 19:43:14,1,Negative
+775,0 days 03:45:00,H3,685,H,3,TO1-Biotin,Plate 1,2025-10-24 19:48:14,1,Negative
+776,0 days 03:50:00,H3,659,H,3,TO1-Biotin,Plate 1,2025-10-24 19:53:14,1,Negative
+777,0 days 03:55:00,H3,708,H,3,TO1-Biotin,Plate 1,2025-10-24 19:58:14,1,Negative
+778,0 days 04:00:00,H3,716,H,3,TO1-Biotin,Plate 1,2025-10-24 20:03:14,1,Negative
+779,0 days 04:05:00,H3,714,H,3,TO1-Biotin,Plate 1,2025-10-24 20:08:14,1,Negative
+780,0 days 04:10:00,H3,705,H,3,TO1-Biotin,Plate 1,2025-10-24 20:13:14,1,Negative
+781,0 days 04:15:00,H3,697,H,3,TO1-Biotin,Plate 1,2025-10-24 20:18:14,1,Negative
+782,0 days 04:20:00,H3,721,H,3,TO1-Biotin,Plate 1,2025-10-24 20:23:14,1,Negative
+783,0 days 04:25:00,H3,714,H,3,TO1-Biotin,Plate 1,2025-10-24 20:28:14,1,Negative
+784,0 days 04:30:00,H3,703,H,3,TO1-Biotin,Plate 1,2025-10-24 20:33:14,1,Negative
+785,0 days 04:35:00,H3,687,H,3,TO1-Biotin,Plate 1,2025-10-24 20:38:14,1,Negative
+786,0 days 04:40:00,H3,708,H,3,TO1-Biotin,Plate 1,2025-10-24 20:43:14,1,Negative
+787,0 days 04:45:00,H3,698,H,3,TO1-Biotin,Plate 1,2025-10-24 20:48:14,1,Negative
+788,0 days 04:50:00,H3,742,H,3,TO1-Biotin,Plate 1,2025-10-24 20:53:14,1,Negative
+789,0 days 04:55:00,H3,691,H,3,TO1-Biotin,Plate 1,2025-10-24 20:58:14,1,Negative
+790,0 days 05:00:00,H3,716,H,3,TO1-Biotin,Plate 1,2025-10-24 21:03:14,1,Negative
+791,0 days 05:05:00,H3,724,H,3,TO1-Biotin,Plate 1,2025-10-24 21:08:14,1,Negative
+792,0 days 05:10:00,H3,712,H,3,TO1-Biotin,Plate 1,2025-10-24 21:13:14,1,Negative
+793,0 days 05:15:00,H3,717,H,3,TO1-Biotin,Plate 1,2025-10-24 21:18:14,1,Negative
+794,0 days 05:20:00,H3,715,H,3,TO1-Biotin,Plate 1,2025-10-24 21:23:14,1,Negative
+795,0 days 05:25:00,H3,751,H,3,TO1-Biotin,Plate 1,2025-10-24 21:28:14,1,Negative
+796,0 days 05:30:00,H3,715,H,3,TO1-Biotin,Plate 1,2025-10-24 21:33:14,1,Negative
+797,0 days 05:35:00,H3,740,H,3,TO1-Biotin,Plate 1,2025-10-24 21:38:14,1,Negative
+798,0 days 05:40:00,H3,709,H,3,TO1-Biotin,Plate 1,2025-10-24 21:43:14,1,Negative
+799,0 days 05:45:00,H3,702,H,3,TO1-Biotin,Plate 1,2025-10-24 21:48:14,1,Negative
+800,0 days 05:50:00,H3,748,H,3,TO1-Biotin,Plate 1,2025-10-24 21:53:14,1,Negative
+801,0 days 05:55:00,H3,744,H,3,TO1-Biotin,Plate 1,2025-10-24 21:58:14,1,Negative
+802,0 days 06:00:00,H3,714,H,3,TO1-Biotin,Plate 1,2025-10-24 22:03:14,1,Negative
+803,0 days 00:00:00,H5,319,H,5,TO1-Biotin,Plate 1,2025-10-24 16:03:14,2,57 nm TO1-Biotin
+804,0 days 00:05:00,H5,279,H,5,TO1-Biotin,Plate 1,2025-10-24 16:08:14,2,57 nm TO1-Biotin
+805,0 days 00:10:00,H5,285,H,5,TO1-Biotin,Plate 1,2025-10-24 16:13:14,2,57 nm TO1-Biotin
+806,0 days 00:15:00,H5,274,H,5,TO1-Biotin,Plate 1,2025-10-24 16:18:14,2,57 nm TO1-Biotin
+807,0 days 00:20:00,H5,335,H,5,TO1-Biotin,Plate 1,2025-10-24 16:23:14,2,57 nm TO1-Biotin
+808,0 days 00:25:00,H5,389,H,5,TO1-Biotin,Plate 1,2025-10-24 16:28:14,2,57 nm TO1-Biotin
+809,0 days 00:30:00,H5,393,H,5,TO1-Biotin,Plate 1,2025-10-24 16:33:14,2,57 nm TO1-Biotin
+810,0 days 00:35:00,H5,439,H,5,TO1-Biotin,Plate 1,2025-10-24 16:38:14,2,57 nm TO1-Biotin
+811,0 days 00:40:00,H5,453,H,5,TO1-Biotin,Plate 1,2025-10-24 16:43:14,2,57 nm TO1-Biotin
+812,0 days 00:45:00,H5,468,H,5,TO1-Biotin,Plate 1,2025-10-24 16:48:14,2,57 nm TO1-Biotin
+813,0 days 00:50:00,H5,509,H,5,TO1-Biotin,Plate 1,2025-10-24 16:53:14,2,57 nm TO1-Biotin
+814,0 days 00:55:00,H5,504,H,5,TO1-Biotin,Plate 1,2025-10-24 16:58:14,2,57 nm TO1-Biotin
+815,0 days 01:00:00,H5,523,H,5,TO1-Biotin,Plate 1,2025-10-24 17:03:14,2,57 nm TO1-Biotin
+816,0 days 01:05:00,H5,527,H,5,TO1-Biotin,Plate 1,2025-10-24 17:08:14,2,57 nm TO1-Biotin
+817,0 days 01:10:00,H5,547,H,5,TO1-Biotin,Plate 1,2025-10-24 17:13:14,2,57 nm TO1-Biotin
+818,0 days 01:15:00,H5,567,H,5,TO1-Biotin,Plate 1,2025-10-24 17:18:14,2,57 nm TO1-Biotin
+819,0 days 01:20:00,H5,569,H,5,TO1-Biotin,Plate 1,2025-10-24 17:23:14,2,57 nm TO1-Biotin
+820,0 days 01:25:00,H5,563,H,5,TO1-Biotin,Plate 1,2025-10-24 17:28:14,2,57 nm TO1-Biotin
+821,0 days 01:30:00,H5,574,H,5,TO1-Biotin,Plate 1,2025-10-24 17:33:14,2,57 nm TO1-Biotin
+822,0 days 01:35:00,H5,587,H,5,TO1-Biotin,Plate 1,2025-10-24 17:38:14,2,57 nm TO1-Biotin
+823,0 days 01:40:00,H5,568,H,5,TO1-Biotin,Plate 1,2025-10-24 17:43:14,2,57 nm TO1-Biotin
+824,0 days 01:45:00,H5,567,H,5,TO1-Biotin,Plate 1,2025-10-24 17:48:14,2,57 nm TO1-Biotin
+825,0 days 01:50:00,H5,579,H,5,TO1-Biotin,Plate 1,2025-10-24 17:53:14,2,57 nm TO1-Biotin
+826,0 days 01:55:00,H5,573,H,5,TO1-Biotin,Plate 1,2025-10-24 17:58:14,2,57 nm TO1-Biotin
+827,0 days 02:00:00,H5,586,H,5,TO1-Biotin,Plate 1,2025-10-24 18:03:14,2,57 nm TO1-Biotin
+828,0 days 02:05:00,H5,583,H,5,TO1-Biotin,Plate 1,2025-10-24 18:08:14,2,57 nm TO1-Biotin
+829,0 days 02:10:00,H5,588,H,5,TO1-Biotin,Plate 1,2025-10-24 18:13:14,2,57 nm TO1-Biotin
+830,0 days 02:15:00,H5,594,H,5,TO1-Biotin,Plate 1,2025-10-24 18:18:14,2,57 nm TO1-Biotin
+831,0 days 02:20:00,H5,615,H,5,TO1-Biotin,Plate 1,2025-10-24 18:23:14,2,57 nm TO1-Biotin
+832,0 days 02:25:00,H5,597,H,5,TO1-Biotin,Plate 1,2025-10-24 18:28:14,2,57 nm TO1-Biotin
+833,0 days 02:30:00,H5,588,H,5,TO1-Biotin,Plate 1,2025-10-24 18:33:14,2,57 nm TO1-Biotin
+834,0 days 02:35:00,H5,585,H,5,TO1-Biotin,Plate 1,2025-10-24 18:38:14,2,57 nm TO1-Biotin
+835,0 days 02:40:00,H5,585,H,5,TO1-Biotin,Plate 1,2025-10-24 18:43:14,2,57 nm TO1-Biotin
+836,0 days 02:45:00,H5,612,H,5,TO1-Biotin,Plate 1,2025-10-24 18:48:14,2,57 nm TO1-Biotin
+837,0 days 02:50:00,H5,591,H,5,TO1-Biotin,Plate 1,2025-10-24 18:53:14,2,57 nm TO1-Biotin
+838,0 days 02:55:00,H5,598,H,5,TO1-Biotin,Plate 1,2025-10-24 18:58:14,2,57 nm TO1-Biotin
+839,0 days 03:00:00,H5,601,H,5,TO1-Biotin,Plate 1,2025-10-24 19:03:14,2,57 nm TO1-Biotin
+840,0 days 03:05:00,H5,551,H,5,TO1-Biotin,Plate 1,2025-10-24 19:08:14,2,57 nm TO1-Biotin
+841,0 days 03:10:00,H5,607,H,5,TO1-Biotin,Plate 1,2025-10-24 19:13:14,2,57 nm TO1-Biotin
+842,0 days 03:15:00,H5,595,H,5,TO1-Biotin,Plate 1,2025-10-24 19:18:14,2,57 nm TO1-Biotin
+843,0 days 03:20:00,H5,586,H,5,TO1-Biotin,Plate 1,2025-10-24 19:23:14,2,57 nm TO1-Biotin
+844,0 days 03:25:00,H5,586,H,5,TO1-Biotin,Plate 1,2025-10-24 19:28:14,2,57 nm TO1-Biotin
+845,0 days 03:30:00,H5,601,H,5,TO1-Biotin,Plate 1,2025-10-24 19:33:14,2,57 nm TO1-Biotin
+846,0 days 03:35:00,H5,609,H,5,TO1-Biotin,Plate 1,2025-10-24 19:38:14,2,57 nm TO1-Biotin
+847,0 days 03:40:00,H5,595,H,5,TO1-Biotin,Plate 1,2025-10-24 19:43:14,2,57 nm TO1-Biotin
+848,0 days 03:45:00,H5,580,H,5,TO1-Biotin,Plate 1,2025-10-24 19:48:14,2,57 nm TO1-Biotin
+849,0 days 03:50:00,H5,596,H,5,TO1-Biotin,Plate 1,2025-10-24 19:53:14,2,57 nm TO1-Biotin
+850,0 days 03:55:00,H5,585,H,5,TO1-Biotin,Plate 1,2025-10-24 19:58:14,2,57 nm TO1-Biotin
+851,0 days 04:00:00,H5,583,H,5,TO1-Biotin,Plate 1,2025-10-24 20:03:14,2,57 nm TO1-Biotin
+852,0 days 04:05:00,H5,580,H,5,TO1-Biotin,Plate 1,2025-10-24 20:08:14,2,57 nm TO1-Biotin
+853,0 days 04:10:00,H5,576,H,5,TO1-Biotin,Plate 1,2025-10-24 20:13:14,2,57 nm TO1-Biotin
+854,0 days 04:15:00,H5,540,H,5,TO1-Biotin,Plate 1,2025-10-24 20:18:14,2,57 nm TO1-Biotin
+855,0 days 04:20:00,H5,595,H,5,TO1-Biotin,Plate 1,2025-10-24 20:23:14,2,57 nm TO1-Biotin
+856,0 days 04:25:00,H5,558,H,5,TO1-Biotin,Plate 1,2025-10-24 20:28:14,2,57 nm TO1-Biotin
+857,0 days 04:30:00,H5,559,H,5,TO1-Biotin,Plate 1,2025-10-24 20:33:14,2,57 nm TO1-Biotin
+858,0 days 04:35:00,H5,575,H,5,TO1-Biotin,Plate 1,2025-10-24 20:38:14,2,57 nm TO1-Biotin
+859,0 days 04:40:00,H5,565,H,5,TO1-Biotin,Plate 1,2025-10-24 20:43:14,2,57 nm TO1-Biotin
+860,0 days 04:45:00,H5,537,H,5,TO1-Biotin,Plate 1,2025-10-24 20:48:14,2,57 nm TO1-Biotin
+861,0 days 04:50:00,H5,568,H,5,TO1-Biotin,Plate 1,2025-10-24 20:53:14,2,57 nm TO1-Biotin
+862,0 days 04:55:00,H5,561,H,5,TO1-Biotin,Plate 1,2025-10-24 20:58:14,2,57 nm TO1-Biotin
+863,0 days 05:00:00,H5,553,H,5,TO1-Biotin,Plate 1,2025-10-24 21:03:14,2,57 nm TO1-Biotin
+864,0 days 05:05:00,H5,537,H,5,TO1-Biotin,Plate 1,2025-10-24 21:08:14,2,57 nm TO1-Biotin
+865,0 days 05:10:00,H5,565,H,5,TO1-Biotin,Plate 1,2025-10-24 21:13:14,2,57 nm TO1-Biotin
+866,0 days 05:15:00,H5,529,H,5,TO1-Biotin,Plate 1,2025-10-24 21:18:14,2,57 nm TO1-Biotin
+867,0 days 05:20:00,H5,559,H,5,TO1-Biotin,Plate 1,2025-10-24 21:23:14,2,57 nm TO1-Biotin
+868,0 days 05:25:00,H5,551,H,5,TO1-Biotin,Plate 1,2025-10-24 21:28:14,2,57 nm TO1-Biotin
+869,0 days 05:30:00,H5,543,H,5,TO1-Biotin,Plate 1,2025-10-24 21:33:14,2,57 nm TO1-Biotin
+870,0 days 05:35:00,H5,538,H,5,TO1-Biotin,Plate 1,2025-10-24 21:38:14,2,57 nm TO1-Biotin
+871,0 days 05:40:00,H5,532,H,5,TO1-Biotin,Plate 1,2025-10-24 21:43:14,2,57 nm TO1-Biotin
+872,0 days 05:45:00,H5,574,H,5,TO1-Biotin,Plate 1,2025-10-24 21:48:14,2,57 nm TO1-Biotin
+873,0 days 05:50:00,H5,560,H,5,TO1-Biotin,Plate 1,2025-10-24 21:53:14,2,57 nm TO1-Biotin
+874,0 days 05:55:00,H5,551,H,5,TO1-Biotin,Plate 1,2025-10-24 21:58:14,2,57 nm TO1-Biotin
+875,0 days 06:00:00,H5,505,H,5,TO1-Biotin,Plate 1,2025-10-24 22:03:14,2,57 nm TO1-Biotin
+876,0 days 00:00:00,H7,1604,H,7,TO1-Biotin,Plate 1,2025-10-24 16:03:14,3,142 nm TO1-Biotin
+877,0 days 00:05:00,H7,1218,H,7,TO1-Biotin,Plate 1,2025-10-24 16:08:14,3,142 nm TO1-Biotin
+878,0 days 00:10:00,H7,1179,H,7,TO1-Biotin,Plate 1,2025-10-24 16:13:14,3,142 nm TO1-Biotin
+879,0 days 00:15:00,H7,1351,H,7,TO1-Biotin,Plate 1,2025-10-24 16:18:14,3,142 nm TO1-Biotin
+880,0 days 00:20:00,H7,1625,H,7,TO1-Biotin,Plate 1,2025-10-24 16:23:14,3,142 nm TO1-Biotin
+881,0 days 00:25:00,H7,1822,H,7,TO1-Biotin,Plate 1,2025-10-24 16:28:14,3,142 nm TO1-Biotin
+882,0 days 00:30:00,H7,2076,H,7,TO1-Biotin,Plate 1,2025-10-24 16:33:14,3,142 nm TO1-Biotin
+883,0 days 00:35:00,H7,2238,H,7,TO1-Biotin,Plate 1,2025-10-24 16:38:14,3,142 nm TO1-Biotin
+884,0 days 00:40:00,H7,2387,H,7,TO1-Biotin,Plate 1,2025-10-24 16:43:14,3,142 nm TO1-Biotin
+885,0 days 00:45:00,H7,2492,H,7,TO1-Biotin,Plate 1,2025-10-24 16:48:14,3,142 nm TO1-Biotin
+886,0 days 00:50:00,H7,2632,H,7,TO1-Biotin,Plate 1,2025-10-24 16:53:14,3,142 nm TO1-Biotin
+887,0 days 00:55:00,H7,2748,H,7,TO1-Biotin,Plate 1,2025-10-24 16:58:14,3,142 nm TO1-Biotin
+888,0 days 01:00:00,H7,2776,H,7,TO1-Biotin,Plate 1,2025-10-24 17:03:14,3,142 nm TO1-Biotin
+889,0 days 01:05:00,H7,2869,H,7,TO1-Biotin,Plate 1,2025-10-24 17:08:14,3,142 nm TO1-Biotin
+890,0 days 01:10:00,H7,2912,H,7,TO1-Biotin,Plate 1,2025-10-24 17:13:14,3,142 nm TO1-Biotin
+891,0 days 01:15:00,H7,2974,H,7,TO1-Biotin,Plate 1,2025-10-24 17:18:14,3,142 nm TO1-Biotin
+892,0 days 01:20:00,H7,3001,H,7,TO1-Biotin,Plate 1,2025-10-24 17:23:14,3,142 nm TO1-Biotin
+893,0 days 01:25:00,H7,3080,H,7,TO1-Biotin,Plate 1,2025-10-24 17:28:14,3,142 nm TO1-Biotin
+894,0 days 01:30:00,H7,3127,H,7,TO1-Biotin,Plate 1,2025-10-24 17:33:14,3,142 nm TO1-Biotin
+895,0 days 01:35:00,H7,3222,H,7,TO1-Biotin,Plate 1,2025-10-24 17:38:14,3,142 nm TO1-Biotin
+896,0 days 01:40:00,H7,3001,H,7,TO1-Biotin,Plate 1,2025-10-24 17:43:14,3,142 nm TO1-Biotin
+897,0 days 01:45:00,H7,3172,H,7,TO1-Biotin,Plate 1,2025-10-24 17:48:14,3,142 nm TO1-Biotin
+898,0 days 01:50:00,H7,3186,H,7,TO1-Biotin,Plate 1,2025-10-24 17:53:14,3,142 nm TO1-Biotin
+899,0 days 01:55:00,H7,3224,H,7,TO1-Biotin,Plate 1,2025-10-24 17:58:14,3,142 nm TO1-Biotin
+900,0 days 02:00:00,H7,3157,H,7,TO1-Biotin,Plate 1,2025-10-24 18:03:14,3,142 nm TO1-Biotin
+901,0 days 02:05:00,H7,3182,H,7,TO1-Biotin,Plate 1,2025-10-24 18:08:14,3,142 nm TO1-Biotin
+902,0 days 02:10:00,H7,3193,H,7,TO1-Biotin,Plate 1,2025-10-24 18:13:14,3,142 nm TO1-Biotin
+903,0 days 02:15:00,H7,3201,H,7,TO1-Biotin,Plate 1,2025-10-24 18:18:14,3,142 nm TO1-Biotin
+904,0 days 02:20:00,H7,3189,H,7,TO1-Biotin,Plate 1,2025-10-24 18:23:14,3,142 nm TO1-Biotin
+905,0 days 02:25:00,H7,3173,H,7,TO1-Biotin,Plate 1,2025-10-24 18:28:14,3,142 nm TO1-Biotin
+906,0 days 02:30:00,H7,3203,H,7,TO1-Biotin,Plate 1,2025-10-24 18:33:14,3,142 nm TO1-Biotin
+907,0 days 02:35:00,H7,3169,H,7,TO1-Biotin,Plate 1,2025-10-24 18:38:14,3,142 nm TO1-Biotin
+908,0 days 02:40:00,H7,3215,H,7,TO1-Biotin,Plate 1,2025-10-24 18:43:14,3,142 nm TO1-Biotin
+909,0 days 02:45:00,H7,3121,H,7,TO1-Biotin,Plate 1,2025-10-24 18:48:14,3,142 nm TO1-Biotin
+910,0 days 02:50:00,H7,3265,H,7,TO1-Biotin,Plate 1,2025-10-24 18:53:14,3,142 nm TO1-Biotin
+911,0 days 02:55:00,H7,3129,H,7,TO1-Biotin,Plate 1,2025-10-24 18:58:14,3,142 nm TO1-Biotin
+912,0 days 03:00:00,H7,3114,H,7,TO1-Biotin,Plate 1,2025-10-24 19:03:14,3,142 nm TO1-Biotin
+913,0 days 03:05:00,H7,3177,H,7,TO1-Biotin,Plate 1,2025-10-24 19:08:14,3,142 nm TO1-Biotin
+914,0 days 03:10:00,H7,3101,H,7,TO1-Biotin,Plate 1,2025-10-24 19:13:14,3,142 nm TO1-Biotin
+915,0 days 03:15:00,H7,3122,H,7,TO1-Biotin,Plate 1,2025-10-24 19:18:14,3,142 nm TO1-Biotin
+916,0 days 03:20:00,H7,3019,H,7,TO1-Biotin,Plate 1,2025-10-24 19:23:14,3,142 nm TO1-Biotin
+917,0 days 03:25:00,H7,2990,H,7,TO1-Biotin,Plate 1,2025-10-24 19:28:14,3,142 nm TO1-Biotin
+918,0 days 03:30:00,H7,3046,H,7,TO1-Biotin,Plate 1,2025-10-24 19:33:14,3,142 nm TO1-Biotin
+919,0 days 03:35:00,H7,3033,H,7,TO1-Biotin,Plate 1,2025-10-24 19:38:14,3,142 nm TO1-Biotin
+920,0 days 03:40:00,H7,2997,H,7,TO1-Biotin,Plate 1,2025-10-24 19:43:14,3,142 nm TO1-Biotin
+921,0 days 03:45:00,H7,2900,H,7,TO1-Biotin,Plate 1,2025-10-24 19:48:14,3,142 nm TO1-Biotin
+922,0 days 03:50:00,H7,2955,H,7,TO1-Biotin,Plate 1,2025-10-24 19:53:14,3,142 nm TO1-Biotin
+923,0 days 03:55:00,H7,2904,H,7,TO1-Biotin,Plate 1,2025-10-24 19:58:14,3,142 nm TO1-Biotin
+924,0 days 04:00:00,H7,2916,H,7,TO1-Biotin,Plate 1,2025-10-24 20:03:14,3,142 nm TO1-Biotin
+925,0 days 04:05:00,H7,2902,H,7,TO1-Biotin,Plate 1,2025-10-24 20:08:14,3,142 nm TO1-Biotin
+926,0 days 04:10:00,H7,2872,H,7,TO1-Biotin,Plate 1,2025-10-24 20:13:14,3,142 nm TO1-Biotin
+927,0 days 04:15:00,H7,2888,H,7,TO1-Biotin,Plate 1,2025-10-24 20:18:14,3,142 nm TO1-Biotin
+928,0 days 04:20:00,H7,2830,H,7,TO1-Biotin,Plate 1,2025-10-24 20:23:14,3,142 nm TO1-Biotin
+929,0 days 04:25:00,H7,2818,H,7,TO1-Biotin,Plate 1,2025-10-24 20:28:14,3,142 nm TO1-Biotin
+930,0 days 04:30:00,H7,2803,H,7,TO1-Biotin,Plate 1,2025-10-24 20:33:14,3,142 nm TO1-Biotin
+931,0 days 04:35:00,H7,2755,H,7,TO1-Biotin,Plate 1,2025-10-24 20:38:14,3,142 nm TO1-Biotin
+932,0 days 04:40:00,H7,2696,H,7,TO1-Biotin,Plate 1,2025-10-24 20:43:14,3,142 nm TO1-Biotin
+933,0 days 04:45:00,H7,2710,H,7,TO1-Biotin,Plate 1,2025-10-24 20:48:14,3,142 nm TO1-Biotin
+934,0 days 04:50:00,H7,2685,H,7,TO1-Biotin,Plate 1,2025-10-24 20:53:14,3,142 nm TO1-Biotin
+935,0 days 04:55:00,H7,2651,H,7,TO1-Biotin,Plate 1,2025-10-24 20:58:14,3,142 nm TO1-Biotin
+936,0 days 05:00:00,H7,2592,H,7,TO1-Biotin,Plate 1,2025-10-24 21:03:14,3,142 nm TO1-Biotin
+937,0 days 05:05:00,H7,2609,H,7,TO1-Biotin,Plate 1,2025-10-24 21:08:14,3,142 nm TO1-Biotin
+938,0 days 05:10:00,H7,2549,H,7,TO1-Biotin,Plate 1,2025-10-24 21:13:14,3,142 nm TO1-Biotin
+939,0 days 05:15:00,H7,2519,H,7,TO1-Biotin,Plate 1,2025-10-24 21:18:14,3,142 nm TO1-Biotin
+940,0 days 05:20:00,H7,2541,H,7,TO1-Biotin,Plate 1,2025-10-24 21:23:14,3,142 nm TO1-Biotin
+941,0 days 05:25:00,H7,2443,H,7,TO1-Biotin,Plate 1,2025-10-24 21:28:14,3,142 nm TO1-Biotin
+942,0 days 05:30:00,H7,2446,H,7,TO1-Biotin,Plate 1,2025-10-24 21:33:14,3,142 nm TO1-Biotin
+943,0 days 05:35:00,H7,2367,H,7,TO1-Biotin,Plate 1,2025-10-24 21:38:14,3,142 nm TO1-Biotin
+944,0 days 05:40:00,H7,2331,H,7,TO1-Biotin,Plate 1,2025-10-24 21:43:14,3,142 nm TO1-Biotin
+945,0 days 05:45:00,H7,2316,H,7,TO1-Biotin,Plate 1,2025-10-24 21:48:14,3,142 nm TO1-Biotin
+946,0 days 05:50:00,H7,2321,H,7,TO1-Biotin,Plate 1,2025-10-24 21:53:14,3,142 nm TO1-Biotin
+947,0 days 05:55:00,H7,2280,H,7,TO1-Biotin,Plate 1,2025-10-24 21:58:14,3,142 nm TO1-Biotin
+948,0 days 06:00:00,H7,2292,H,7,TO1-Biotin,Plate 1,2025-10-24 22:03:14,3,142 nm TO1-Biotin
+949,0 days 00:00:00,H9,2397,H,9,TO1-Biotin,Plate 1,2025-10-24 16:03:14,4,286 nm TO1-Biotin
+950,0 days 00:05:00,H9,1782,H,9,TO1-Biotin,Plate 1,2025-10-24 16:08:14,4,286 nm TO1-Biotin
+951,0 days 00:10:00,H9,1782,H,9,TO1-Biotin,Plate 1,2025-10-24 16:13:14,4,286 nm TO1-Biotin
+952,0 days 00:15:00,H9,2066,H,9,TO1-Biotin,Plate 1,2025-10-24 16:18:14,4,286 nm TO1-Biotin
+953,0 days 00:20:00,H9,2435,H,9,TO1-Biotin,Plate 1,2025-10-24 16:23:14,4,286 nm TO1-Biotin
+954,0 days 00:25:00,H9,2841,H,9,TO1-Biotin,Plate 1,2025-10-24 16:28:14,4,286 nm TO1-Biotin
+955,0 days 00:30:00,H9,3129,H,9,TO1-Biotin,Plate 1,2025-10-24 16:33:14,4,286 nm TO1-Biotin
+956,0 days 00:35:00,H9,3469,H,9,TO1-Biotin,Plate 1,2025-10-24 16:38:14,4,286 nm TO1-Biotin
+957,0 days 00:40:00,H9,3788,H,9,TO1-Biotin,Plate 1,2025-10-24 16:43:14,4,286 nm TO1-Biotin
+958,0 days 00:45:00,H9,3980,H,9,TO1-Biotin,Plate 1,2025-10-24 16:48:14,4,286 nm TO1-Biotin
+959,0 days 00:50:00,H9,4088,H,9,TO1-Biotin,Plate 1,2025-10-24 16:53:14,4,286 nm TO1-Biotin
+960,0 days 00:55:00,H9,4221,H,9,TO1-Biotin,Plate 1,2025-10-24 16:58:14,4,286 nm TO1-Biotin
+961,0 days 01:00:00,H9,4254,H,9,TO1-Biotin,Plate 1,2025-10-24 17:03:14,4,286 nm TO1-Biotin
+962,0 days 01:05:00,H9,4487,H,9,TO1-Biotin,Plate 1,2025-10-24 17:08:14,4,286 nm TO1-Biotin
+963,0 days 01:10:00,H9,4586,H,9,TO1-Biotin,Plate 1,2025-10-24 17:13:14,4,286 nm TO1-Biotin
+964,0 days 01:15:00,H9,4679,H,9,TO1-Biotin,Plate 1,2025-10-24 17:18:14,4,286 nm TO1-Biotin
+965,0 days 01:20:00,H9,4684,H,9,TO1-Biotin,Plate 1,2025-10-24 17:23:14,4,286 nm TO1-Biotin
+966,0 days 01:25:00,H9,4704,H,9,TO1-Biotin,Plate 1,2025-10-24 17:28:14,4,286 nm TO1-Biotin
+967,0 days 01:30:00,H9,4756,H,9,TO1-Biotin,Plate 1,2025-10-24 17:33:14,4,286 nm TO1-Biotin
+968,0 days 01:35:00,H9,4810,H,9,TO1-Biotin,Plate 1,2025-10-24 17:38:14,4,286 nm TO1-Biotin
+969,0 days 01:40:00,H9,4846,H,9,TO1-Biotin,Plate 1,2025-10-24 17:43:14,4,286 nm TO1-Biotin
+970,0 days 01:45:00,H9,4913,H,9,TO1-Biotin,Plate 1,2025-10-24 17:48:14,4,286 nm TO1-Biotin
+971,0 days 01:50:00,H9,4826,H,9,TO1-Biotin,Plate 1,2025-10-24 17:53:14,4,286 nm TO1-Biotin
+972,0 days 01:55:00,H9,4903,H,9,TO1-Biotin,Plate 1,2025-10-24 17:58:14,4,286 nm TO1-Biotin
+973,0 days 02:00:00,H9,4934,H,9,TO1-Biotin,Plate 1,2025-10-24 18:03:14,4,286 nm TO1-Biotin
+974,0 days 02:05:00,H9,4878,H,9,TO1-Biotin,Plate 1,2025-10-24 18:08:14,4,286 nm TO1-Biotin
+975,0 days 02:10:00,H9,4883,H,9,TO1-Biotin,Plate 1,2025-10-24 18:13:14,4,286 nm TO1-Biotin
+976,0 days 02:15:00,H9,4908,H,9,TO1-Biotin,Plate 1,2025-10-24 18:18:14,4,286 nm TO1-Biotin
+977,0 days 02:20:00,H9,4988,H,9,TO1-Biotin,Plate 1,2025-10-24 18:23:14,4,286 nm TO1-Biotin
+978,0 days 02:25:00,H9,5043,H,9,TO1-Biotin,Plate 1,2025-10-24 18:28:14,4,286 nm TO1-Biotin
+979,0 days 02:30:00,H9,4857,H,9,TO1-Biotin,Plate 1,2025-10-24 18:33:14,4,286 nm TO1-Biotin
+980,0 days 02:35:00,H9,4867,H,9,TO1-Biotin,Plate 1,2025-10-24 18:38:14,4,286 nm TO1-Biotin
+981,0 days 02:40:00,H9,4852,H,9,TO1-Biotin,Plate 1,2025-10-24 18:43:14,4,286 nm TO1-Biotin
+982,0 days 02:45:00,H9,4939,H,9,TO1-Biotin,Plate 1,2025-10-24 18:48:14,4,286 nm TO1-Biotin
+983,0 days 02:50:00,H9,4969,H,9,TO1-Biotin,Plate 1,2025-10-24 18:53:14,4,286 nm TO1-Biotin
+984,0 days 02:55:00,H9,4879,H,9,TO1-Biotin,Plate 1,2025-10-24 18:58:14,4,286 nm TO1-Biotin
+985,0 days 03:00:00,H9,4808,H,9,TO1-Biotin,Plate 1,2025-10-24 19:03:14,4,286 nm TO1-Biotin
+986,0 days 03:05:00,H9,4896,H,9,TO1-Biotin,Plate 1,2025-10-24 19:08:14,4,286 nm TO1-Biotin
+987,0 days 03:10:00,H9,4778,H,9,TO1-Biotin,Plate 1,2025-10-24 19:13:14,4,286 nm TO1-Biotin
+988,0 days 03:15:00,H9,4700,H,9,TO1-Biotin,Plate 1,2025-10-24 19:18:14,4,286 nm TO1-Biotin
+989,0 days 03:20:00,H9,4732,H,9,TO1-Biotin,Plate 1,2025-10-24 19:23:14,4,286 nm TO1-Biotin
+990,0 days 03:25:00,H9,4610,H,9,TO1-Biotin,Plate 1,2025-10-24 19:28:14,4,286 nm TO1-Biotin
+991,0 days 03:30:00,H9,4625,H,9,TO1-Biotin,Plate 1,2025-10-24 19:33:14,4,286 nm TO1-Biotin
+992,0 days 03:35:00,H9,4743,H,9,TO1-Biotin,Plate 1,2025-10-24 19:38:14,4,286 nm TO1-Biotin
+993,0 days 03:40:00,H9,4682,H,9,TO1-Biotin,Plate 1,2025-10-24 19:43:14,4,286 nm TO1-Biotin
+994,0 days 03:45:00,H9,4638,H,9,TO1-Biotin,Plate 1,2025-10-24 19:48:14,4,286 nm TO1-Biotin
+995,0 days 03:50:00,H9,4540,H,9,TO1-Biotin,Plate 1,2025-10-24 19:53:14,4,286 nm TO1-Biotin
+996,0 days 03:55:00,H9,4626,H,9,TO1-Biotin,Plate 1,2025-10-24 19:58:14,4,286 nm TO1-Biotin
+997,0 days 04:00:00,H9,4476,H,9,TO1-Biotin,Plate 1,2025-10-24 20:03:14,4,286 nm TO1-Biotin
+998,0 days 04:05:00,H9,4425,H,9,TO1-Biotin,Plate 1,2025-10-24 20:08:14,4,286 nm TO1-Biotin
+999,0 days 04:10:00,H9,4388,H,9,TO1-Biotin,Plate 1,2025-10-24 20:13:14,4,286 nm TO1-Biotin
+1000,0 days 04:15:00,H9,4399,H,9,TO1-Biotin,Plate 1,2025-10-24 20:18:14,4,286 nm TO1-Biotin
+1001,0 days 04:20:00,H9,4262,H,9,TO1-Biotin,Plate 1,2025-10-24 20:23:14,4,286 nm TO1-Biotin
+1002,0 days 04:25:00,H9,4329,H,9,TO1-Biotin,Plate 1,2025-10-24 20:28:14,4,286 nm TO1-Biotin
+1003,0 days 04:30:00,H9,4261,H,9,TO1-Biotin,Plate 1,2025-10-24 20:33:14,4,286 nm TO1-Biotin
+1004,0 days 04:35:00,H9,4253,H,9,TO1-Biotin,Plate 1,2025-10-24 20:38:14,4,286 nm TO1-Biotin
+1005,0 days 04:40:00,H9,4148,H,9,TO1-Biotin,Plate 1,2025-10-24 20:43:14,4,286 nm TO1-Biotin
+1006,0 days 04:45:00,H9,4157,H,9,TO1-Biotin,Plate 1,2025-10-24 20:48:14,4,286 nm TO1-Biotin
+1007,0 days 04:50:00,H9,4138,H,9,TO1-Biotin,Plate 1,2025-10-24 20:53:14,4,286 nm TO1-Biotin
+1008,0 days 04:55:00,H9,4038,H,9,TO1-Biotin,Plate 1,2025-10-24 20:58:14,4,286 nm TO1-Biotin
+1009,0 days 05:00:00,H9,4126,H,9,TO1-Biotin,Plate 1,2025-10-24 21:03:14,4,286 nm TO1-Biotin
+1010,0 days 05:05:00,H9,3984,H,9,TO1-Biotin,Plate 1,2025-10-24 21:08:14,4,286 nm TO1-Biotin
+1011,0 days 05:10:00,H9,3874,H,9,TO1-Biotin,Plate 1,2025-10-24 21:13:14,4,286 nm TO1-Biotin
+1012,0 days 05:15:00,H9,3952,H,9,TO1-Biotin,Plate 1,2025-10-24 21:18:14,4,286 nm TO1-Biotin
+1013,0 days 05:20:00,H9,3810,H,9,TO1-Biotin,Plate 1,2025-10-24 21:23:14,4,286 nm TO1-Biotin
+1014,0 days 05:25:00,H9,3842,H,9,TO1-Biotin,Plate 1,2025-10-24 21:28:14,4,286 nm TO1-Biotin
+1015,0 days 05:30:00,H9,3766,H,9,TO1-Biotin,Plate 1,2025-10-24 21:33:14,4,286 nm TO1-Biotin
+1016,0 days 05:35:00,H9,3716,H,9,TO1-Biotin,Plate 1,2025-10-24 21:38:14,4,286 nm TO1-Biotin
+1017,0 days 05:40:00,H9,3679,H,9,TO1-Biotin,Plate 1,2025-10-24 21:43:14,4,286 nm TO1-Biotin
+1018,0 days 05:45:00,H9,3622,H,9,TO1-Biotin,Plate 1,2025-10-24 21:48:14,4,286 nm TO1-Biotin
+1019,0 days 05:50:00,H9,3582,H,9,TO1-Biotin,Plate 1,2025-10-24 21:53:14,4,286 nm TO1-Biotin
+1020,0 days 05:55:00,H9,3480,H,9,TO1-Biotin,Plate 1,2025-10-24 21:58:14,4,286 nm TO1-Biotin
+1021,0 days 06:00:00,H9,3506,H,9,TO1-Biotin,Plate 1,2025-10-24 22:03:14,4,286 nm TO1-Biotin
+1022,0 days 00:00:00,H11,8061,H,11,TO1-Biotin,Plate 1,2025-10-24 16:03:14,5,1430 nm TO1-Biotin
+1023,0 days 00:05:00,H11,6160,H,11,TO1-Biotin,Plate 1,2025-10-24 16:08:14,5,1430 nm TO1-Biotin
+1024,0 days 00:10:00,H11,6166,H,11,TO1-Biotin,Plate 1,2025-10-24 16:13:14,5,1430 nm TO1-Biotin
+1025,0 days 00:15:00,H11,7239,H,11,TO1-Biotin,Plate 1,2025-10-24 16:18:14,5,1430 nm TO1-Biotin
+1026,0 days 00:20:00,H11,8612,H,11,TO1-Biotin,Plate 1,2025-10-24 16:23:14,5,1430 nm TO1-Biotin
+1027,0 days 00:25:00,H11,9991,H,11,TO1-Biotin,Plate 1,2025-10-24 16:28:14,5,1430 nm TO1-Biotin
+1028,0 days 00:30:00,H11,11419,H,11,TO1-Biotin,Plate 1,2025-10-24 16:33:14,5,1430 nm TO1-Biotin
+1029,0 days 00:35:00,H11,12399,H,11,TO1-Biotin,Plate 1,2025-10-24 16:38:14,5,1430 nm TO1-Biotin
+1030,0 days 00:40:00,H11,13158,H,11,TO1-Biotin,Plate 1,2025-10-24 16:43:14,5,1430 nm TO1-Biotin
+1031,0 days 00:45:00,H11,14155,H,11,TO1-Biotin,Plate 1,2025-10-24 16:48:14,5,1430 nm TO1-Biotin
+1032,0 days 00:50:00,H11,14734,H,11,TO1-Biotin,Plate 1,2025-10-24 16:53:14,5,1430 nm TO1-Biotin
+1033,0 days 00:55:00,H11,15162,H,11,TO1-Biotin,Plate 1,2025-10-24 16:58:14,5,1430 nm TO1-Biotin
+1034,0 days 01:00:00,H11,15778,H,11,TO1-Biotin,Plate 1,2025-10-24 17:03:14,5,1430 nm TO1-Biotin
+1035,0 days 01:05:00,H11,16024,H,11,TO1-Biotin,Plate 1,2025-10-24 17:08:14,5,1430 nm TO1-Biotin
+1036,0 days 01:10:00,H11,16263,H,11,TO1-Biotin,Plate 1,2025-10-24 17:13:14,5,1430 nm TO1-Biotin
+1037,0 days 01:15:00,H11,16776,H,11,TO1-Biotin,Plate 1,2025-10-24 17:18:14,5,1430 nm TO1-Biotin
+1038,0 days 01:20:00,H11,16864,H,11,TO1-Biotin,Plate 1,2025-10-24 17:23:14,5,1430 nm TO1-Biotin
+1039,0 days 01:25:00,H11,17221,H,11,TO1-Biotin,Plate 1,2025-10-24 17:28:14,5,1430 nm TO1-Biotin
+1040,0 days 01:30:00,H11,17412,H,11,TO1-Biotin,Plate 1,2025-10-24 17:33:14,5,1430 nm TO1-Biotin
+1041,0 days 01:35:00,H11,17380,H,11,TO1-Biotin,Plate 1,2025-10-24 17:38:14,5,1430 nm TO1-Biotin
+1042,0 days 01:40:00,H11,17466,H,11,TO1-Biotin,Plate 1,2025-10-24 17:43:14,5,1430 nm TO1-Biotin
+1043,0 days 01:45:00,H11,17681,H,11,TO1-Biotin,Plate 1,2025-10-24 17:48:14,5,1430 nm TO1-Biotin
+1044,0 days 01:50:00,H11,17682,H,11,TO1-Biotin,Plate 1,2025-10-24 17:53:14,5,1430 nm TO1-Biotin
+1045,0 days 01:55:00,H11,17786,H,11,TO1-Biotin,Plate 1,2025-10-24 17:58:14,5,1430 nm TO1-Biotin
+1046,0 days 02:00:00,H11,17846,H,11,TO1-Biotin,Plate 1,2025-10-24 18:03:14,5,1430 nm TO1-Biotin
+1047,0 days 02:05:00,H11,18141,H,11,TO1-Biotin,Plate 1,2025-10-24 18:08:14,5,1430 nm TO1-Biotin
+1048,0 days 02:10:00,H11,18092,H,11,TO1-Biotin,Plate 1,2025-10-24 18:13:14,5,1430 nm TO1-Biotin
+1049,0 days 02:15:00,H11,18196,H,11,TO1-Biotin,Plate 1,2025-10-24 18:18:14,5,1430 nm TO1-Biotin
+1050,0 days 02:20:00,H11,17961,H,11,TO1-Biotin,Plate 1,2025-10-24 18:23:14,5,1430 nm TO1-Biotin
+1051,0 days 02:25:00,H11,18119,H,11,TO1-Biotin,Plate 1,2025-10-24 18:28:14,5,1430 nm TO1-Biotin
+1052,0 days 02:30:00,H11,17974,H,11,TO1-Biotin,Plate 1,2025-10-24 18:33:14,5,1430 nm TO1-Biotin
+1053,0 days 02:35:00,H11,18204,H,11,TO1-Biotin,Plate 1,2025-10-24 18:38:14,5,1430 nm TO1-Biotin
+1054,0 days 02:40:00,H11,17930,H,11,TO1-Biotin,Plate 1,2025-10-24 18:43:14,5,1430 nm TO1-Biotin
+1055,0 days 02:45:00,H11,17973,H,11,TO1-Biotin,Plate 1,2025-10-24 18:48:14,5,1430 nm TO1-Biotin
+1056,0 days 02:50:00,H11,17997,H,11,TO1-Biotin,Plate 1,2025-10-24 18:53:14,5,1430 nm TO1-Biotin
+1057,0 days 02:55:00,H11,17672,H,11,TO1-Biotin,Plate 1,2025-10-24 18:58:14,5,1430 nm TO1-Biotin
+1058,0 days 03:00:00,H11,17746,H,11,TO1-Biotin,Plate 1,2025-10-24 19:03:14,5,1430 nm TO1-Biotin
+1059,0 days 03:05:00,H11,17787,H,11,TO1-Biotin,Plate 1,2025-10-24 19:08:14,5,1430 nm TO1-Biotin
+1060,0 days 03:10:00,H11,17697,H,11,TO1-Biotin,Plate 1,2025-10-24 19:13:14,5,1430 nm TO1-Biotin
+1061,0 days 03:15:00,H11,17516,H,11,TO1-Biotin,Plate 1,2025-10-24 19:18:14,5,1430 nm TO1-Biotin
+1062,0 days 03:20:00,H11,17359,H,11,TO1-Biotin,Plate 1,2025-10-24 19:23:14,5,1430 nm TO1-Biotin
+1063,0 days 03:25:00,H11,17359,H,11,TO1-Biotin,Plate 1,2025-10-24 19:28:14,5,1430 nm TO1-Biotin
+1064,0 days 03:30:00,H11,17211,H,11,TO1-Biotin,Plate 1,2025-10-24 19:33:14,5,1430 nm TO1-Biotin
+1065,0 days 03:35:00,H11,17310,H,11,TO1-Biotin,Plate 1,2025-10-24 19:38:14,5,1430 nm TO1-Biotin
+1066,0 days 03:40:00,H11,16786,H,11,TO1-Biotin,Plate 1,2025-10-24 19:43:14,5,1430 nm TO1-Biotin
+1067,0 days 03:45:00,H11,17060,H,11,TO1-Biotin,Plate 1,2025-10-24 19:48:14,5,1430 nm TO1-Biotin
+1068,0 days 03:50:00,H11,16791,H,11,TO1-Biotin,Plate 1,2025-10-24 19:53:14,5,1430 nm TO1-Biotin
+1069,0 days 03:55:00,H11,16617,H,11,TO1-Biotin,Plate 1,2025-10-24 19:58:14,5,1430 nm TO1-Biotin
+1070,0 days 04:00:00,H11,16629,H,11,TO1-Biotin,Plate 1,2025-10-24 20:03:14,5,1430 nm TO1-Biotin
+1071,0 days 04:05:00,H11,16414,H,11,TO1-Biotin,Plate 1,2025-10-24 20:08:14,5,1430 nm TO1-Biotin
+1072,0 days 04:10:00,H11,16331,H,11,TO1-Biotin,Plate 1,2025-10-24 20:13:14,5,1430 nm TO1-Biotin
+1073,0 days 04:15:00,H11,16107,H,11,TO1-Biotin,Plate 1,2025-10-24 20:18:14,5,1430 nm TO1-Biotin
+1074,0 days 04:20:00,H11,16028,H,11,TO1-Biotin,Plate 1,2025-10-24 20:23:14,5,1430 nm TO1-Biotin
+1075,0 days 04:25:00,H11,15773,H,11,TO1-Biotin,Plate 1,2025-10-24 20:28:14,5,1430 nm TO1-Biotin
+1076,0 days 04:30:00,H11,15584,H,11,TO1-Biotin,Plate 1,2025-10-24 20:33:14,5,1430 nm TO1-Biotin
+1077,0 days 04:35:00,H11,15565,H,11,TO1-Biotin,Plate 1,2025-10-24 20:38:14,5,1430 nm TO1-Biotin
+1078,0 days 04:40:00,H11,15420,H,11,TO1-Biotin,Plate 1,2025-10-24 20:43:14,5,1430 nm TO1-Biotin
+1079,0 days 04:45:00,H11,15280,H,11,TO1-Biotin,Plate 1,2025-10-24 20:48:14,5,1430 nm TO1-Biotin
+1080,0 days 04:50:00,H11,15080,H,11,TO1-Biotin,Plate 1,2025-10-24 20:53:14,5,1430 nm TO1-Biotin
+1081,0 days 04:55:00,H11,14874,H,11,TO1-Biotin,Plate 1,2025-10-24 20:58:14,5,1430 nm TO1-Biotin
+1082,0 days 05:00:00,H11,14789,H,11,TO1-Biotin,Plate 1,2025-10-24 21:03:14,5,1430 nm TO1-Biotin
+1083,0 days 05:05:00,H11,14618,H,11,TO1-Biotin,Plate 1,2025-10-24 21:08:14,5,1430 nm TO1-Biotin
+1084,0 days 05:10:00,H11,14288,H,11,TO1-Biotin,Plate 1,2025-10-24 21:13:14,5,1430 nm TO1-Biotin
+1085,0 days 05:15:00,H11,14041,H,11,TO1-Biotin,Plate 1,2025-10-24 21:18:14,5,1430 nm TO1-Biotin
+1086,0 days 05:20:00,H11,13838,H,11,TO1-Biotin,Plate 1,2025-10-24 21:23:14,5,1430 nm TO1-Biotin
+1087,0 days 05:25:00,H11,13884,H,11,TO1-Biotin,Plate 1,2025-10-24 21:28:14,5,1430 nm TO1-Biotin
+1088,0 days 05:30:00,H11,13588,H,11,TO1-Biotin,Plate 1,2025-10-24 21:33:14,5,1430 nm TO1-Biotin
+1089,0 days 05:35:00,H11,13366,H,11,TO1-Biotin,Plate 1,2025-10-24 21:38:14,5,1430 nm TO1-Biotin
+1090,0 days 05:40:00,H11,13335,H,11,TO1-Biotin,Plate 1,2025-10-24 21:43:14,5,1430 nm TO1-Biotin
+1091,0 days 05:45:00,H11,12959,H,11,TO1-Biotin,Plate 1,2025-10-24 21:48:14,5,1430 nm TO1-Biotin
+1092,0 days 05:50:00,H11,12811,H,11,TO1-Biotin,Plate 1,2025-10-24 21:53:14,5,1430 nm TO1-Biotin
+1093,0 days 05:55:00,H11,12750,H,11,TO1-Biotin,Plate 1,2025-10-24 21:58:14,5,1430 nm TO1-Biotin
+1094,0 days 06:00:00,H11,12687,H,11,TO1-Biotin,Plate 1,2025-10-24 22:03:14,5,1430 nm TO1-Biotin

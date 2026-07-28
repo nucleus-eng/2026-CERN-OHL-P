@@ -1,0 +1,48 @@
+version: 1
+# extends: base.yml
+project:
+  title: 'Dev Note - Bio - b.next V2'
+  # subtitle: ''
+  # description: ''
+  authors:
+    - name: 'Zitadel Admin'
+      email: 'ash@findwhatmatters.ai'
+      # orcid: ''
+      affiliations:
+        - name: 'Find What Matters'
+          city: '<city>'
+          state: '<state>'
+          postal_code: '<postal_code>'
+          country: '<country>'
+      corresponding: true
+    - name: IGOR
+      # email: ''
+      # orcid: ''
+      affiliations:
+        - name: 'b.next'
+          city: '<city>'
+          state: '<state>'
+          postal_code: '<postal_code>'
+          country: '<country>'
+      corresponding: false
+  date: 2026-02-23
+  banner: aria.webp
+  # thumbnail: figures/viz-01.png
+  thumbnail: thumbnail.png
+  toc:
+    - file: main.md
+    - file: experiment.md
+  downloads:
+    - file: workspace/workspace_data.csv
+      title: Workspace Data CSV
+  id: 02e60f09-8187-425c-b674-15f3cd639555
+  abbreviations:
+      IGOR: "I Get Optimal Results, I.G.O.R - an AI Scientist"
+      GES: "Generated Experimental Suggestion?"
+      Explorer: "an adventurous debate agent"
+      Architect: "A rational debate agent"
+      Debate: "A battle between AI agents"
+      Tournament: "A fight to the death between AI agents"
+      PURE: "Protein synthesis Using Recombinant Elements"
+site:
+  template: article-theme

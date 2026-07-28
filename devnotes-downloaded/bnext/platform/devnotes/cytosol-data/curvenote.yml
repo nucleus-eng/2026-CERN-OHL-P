@@ -1,0 +1,39 @@
+version: 1
+extends: base.yml
+project:
+  title: 'What Data'
+  authors:
+    - name: Jay Bhasin
+      email: jay@bnext.bio
+      orcid: 0000-0000-0000-0001
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
+      corresponding: true
+    - name: Sharon Newman
+      email: sharon@bnext.bio
+      orcid: 0000-0000-0000-0001
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107
+          country: USA
+      corresponding: true
+  date: 2026-01-10T00:00:00.000Z
+  banner: banner.webp
+  thumbnail: general/schematic-FA_metabolism.png
+  toc:
+    - file: main.md
+    - file: experiments/experiment-01/20250220-analysis.ipynb
+  downloads:
+    - file: experiments/experiment-01/MTHFS-labnotebook.pdf
+      title: Lab Notebook Entry
+  id: 019d6e3a-c618-77bc-853c-fe4694511f53
+site:
+  template: https://github.com/curvenote-themes/spa-preview/archive/refs/heads/main.zip
+  options:
+    site_id: bnext-devnotes

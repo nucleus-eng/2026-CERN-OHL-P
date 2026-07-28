@@ -1,0 +1,80 @@
+LOCUS       pT7-ClpP                 858 bp ds-DNA     circular     12-JUN-2026
+DEFINITION  .
+KEYWORDS    "creator:SnapGene License" "marker:AmpR"
+FEATURES             Location/Qualifiers
+     misc_feature    4..7
+                     /label="MC1-TU-L"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: MC1-TU-L"
+     misc_feature    8..18
+                     /label="CAST 0 [TAAC]"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: CAST 0 [TAAC]"
+     primer_bind     19..38
+                     /label="pT7"
+                     /ApEinfo_revcolor="#a020f0"
+                     /ApEinfo_fwdcolor="#a020f0"
+                     /note="label: pT7"
+     misc_feature    39..66
+                     /label="UTR1"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: UTR1"
+     misc_feature    67..72
+                     /label="BsaI_Bind"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: BsaI_Bind"
+     misc_feature    67..74
+                     /label="MC0U-SP"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: MC0U-SP label: CDS Prefix"
+     CDS             75..695
+                     /label="ATP-dependent protease (clpP)"
+                     /ApEinfo_revcolor="#993366"
+                     /ApEinfo_fwdcolor="#993366"
+                     /note="codon_start: 1 note: ATP-dependent protease (clpP) protein_id: AAA23588.1 transl_table: 11 translation: MSYSGERDNFAPHMALVPMVIEQTSRGERSFDIYSRLLKERVIFLTGQVEDHMANLIVAQMLFLEAENPEKDIYLYINSPGGVITAGMSIYDTMQFIKPDVSTICMGQAASMGAFLLTAGAKGKRFCLPNSRVMIHQPLGGYQGQATDIEIHAREILKVKGRMNELMALHTGQSLEQIERDTERDRFLSAPEAVEYGLVDSILTHRN"
+     misc_feature    227..227
+                     /label="C->T"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+     CDS             696..710
+                     /label="Linker"
+                     /ApEinfo_revcolor="#993366"
+                     /ApEinfo_fwdcolor="#993366"
+                     /note="codon_start: 1 label: Linker transl_table: 1 translation: GGGGS"
+     CDS             711..728
+                     /label="His6"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="codon_start: 1 label: His6 transl_table: 1 translation: HHHHHH"
+     misc_feature    735..752
+                     /label="CDS Suffix"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: CDS Suffix"
+     terminator      790..837
+                     /label="T7 terminator"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="label: T7 terminator note: pLannotate note: /database=snapgene note: /fragment=False note: /identity=100.0 note: /match_length=100.0 note: /other=terminator"
+ORIGIN
+        1 gtgggagcgt ctcataacta atacgactca ctatagggaa taattttgtt taactttaag
+       61 aaggagggtc tctaatgtca tacagcggcg aacgagataa ctttgcaccc catatggcgc
+      121 tggtgccgat ggtcattgaa cagacctcac gcggtgagcg ctcttttgat atctattctc
+      181 gtctacttaa ggaacgcgtc atttttctga ctggccaggt tgaagaTcac atggctaacc
+      241 tgattgtggc gcagatgctg ttcctggaag cggaaaaccc agaaaaagat atctatctgt
+      301 acattaactc cccaggcggg gtgatcactg ccgggatgtc tatctatgac accatgcagt
+      361 ttatcaagcc tgatgtcagc accatctgta tgggccaggc ggcctcgatg ggcgctttct
+      421 tgctgaccgc aggggcaaaa ggtaaacgtt tttgcctgcc gaattcgcgc gtgatgattc
+      481 accaaccgtt gggcggctac cagggccagg cgaccgatat cgaaattcat gcccgtgaaa
+      541 ttctgaaagt taaagggcgc atgaatgaac ttatggcgct tcatacgggt caatcattag
+      601 aacagattga acgtgatacc gagcgcgatc gcttcctttc cgcccctgaa gcggtggaat
+      661 acggtctggt cgattcgatt ctgacccatc gtaatggagg cggtggatct caccatcacc
+      721 accatcattg ataatgaaga gcttagagac cgcgctgagg tgtcaatcgt cggagccgct
+      781 gagcaataac tagcataacc ccttggggcc tctaaacggg tcttgagggg ttttttgcat
+      841 ggtcatagct gtttcctg
+//

@@ -1,0 +1,72 @@
+version: 1
+extends: base.yml
+project:
+  title: BCECF pH Sensor
+  banner: banner.webp
+  authors:
+    - name: David Garenne
+      email: build@bnext.bio
+      orcid: 0000-0000-0000-0001
+      affiliations:
+        - name: University of Minnesota
+          city: Minneapolis
+          state: Minnesota
+          postal_code: 94107
+          country: USA
+      corresponding: true
+  date: '2026-07-09'
+  downloads:
+    - id: article
+      title: Download Article PDF
+  thumbnail: bcecf.png
+  toc:
+    - file: main.md
+    - file: experiments/ms-ph_sensor/ph_calibration.ipynb
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      articles:
+        - file: main.md
+      output: devnote.pdf
+      id: article
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - general/**/*
+    - General/**/*
+    - experiments/**/*
+    - Experiments/**/*
+    - resources/**/*
+    - Resources/**/*
+    - plasmids/**/*
+    - Plasmids/**/*
+  plugins:
+    - type: javascript
+      path: lorem.mjs
+  id: 019d661b-b50a-7cbd-bac5-1359ad376c62
+site:
+  nav: []
+  template: article-theme
+extend:
+  - /home/jovyan/projects/metapure/ph-sensor/base.yml

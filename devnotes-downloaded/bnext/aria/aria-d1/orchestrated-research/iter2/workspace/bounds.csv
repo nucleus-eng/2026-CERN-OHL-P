@@ -1,0 +1,5 @@
+,Note,Experiment Type,Experiment,NEB in Pmix,[PMix] (mg/mL),[Ribosome] (uM),[tRNA] (ug/uL),[DNA] (nM),[Magnesium acetate] (mM),[Creatine phosphate] (mM),[Potassium glutamate] (mM),[ATP] (mM),[GTP] (mM),[Amino acid mix] (mM),[PPK] (uM),[PolyP] (mM),[RNase Inhib] (U/mL),Reader Type,Gain,Read Type,[PEG] (%),Product,Condition,success,sigmoid_steady_state,sigmoid_rate (1/h),drift_rate (1/h)
+,note,experiment_type,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,output,output,output,output
+,,,categorical,binary,real,real,real,real,real,real,real,real,real,real,real,real,real,categorical,categorical,categorical,real,categorical,categorical,binary,real,real,real
+_bounds_lower,,,20260319-DiscoveryPlate-R2,0,1.8,1.8,1.365,5,0,0,40,1.7,1.4,0.1505,0,0,2000,Cytation5,ext,M,0,deGFP,Labcraft,0,3,0,-0.000323381
+_bounds_upper,,,20260319-DiscoveryPlate-R2,0,1.8,1.8,3.99,5,25,60,200,3.7,3.3,0.399,2.0125,30,2000,Cytation5,ext,M,0,deGFP,Labcraft,1,100,10,1

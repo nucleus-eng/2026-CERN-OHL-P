@@ -1,0 +1,10 @@
+Date,Experiment Name,Well,Name,Sample Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMix ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (ng/uL),[Mg-Ace] (mM),[polyP] (mM),[PPK2] (uM),PMix Vol (uL),Ribosome Vol (uL),SMix Vol (uL),tRNA Vol (uL),DNA Vol (uL),RNase Inhib Vol (uL),PPK Vol (uL),polyP Vol (uL),Mg-Ace Vol (uL),Water vol (uL),Rxn Volume (uL)
+20251212,triggerDNA-test,B2,Cytosol Positive Control,Positive Control,Pmix,15,Ribo,10,Smix,tRNA,35,pOpen-deGFP,231,,,,1.2,1.8,3,1,0.242857143,0.5,,,,2.257142857,10
+20251212,triggerDNA-test,B4,Cytosol Positive Control,Positive Control,Pmix,15,Ribo,10,Smix,tRNA,35,pOpen-deGFP,231,,,,1.2,1.8,3,1,0.242857143,0.5,,,,2.257142857,10
+20251212,triggerDNA-test,B6,Cytosol Positive Control,Positive Control,Pmix,15,Ribo,10,Smix,tRNA,35,pOpen-deGFP,231,,,,1.2,1.8,3,1,0.242857143,0.5,,,,2.257142857,10
+20251212,triggerDNA-test,D2,toehold-pHtdGFP + trigger ssDNA,Sample,Pmix,15,Ribo,10,Smix,tRNA,35,toehold-pHtdGFP + trigger ssDNA,,,,,1.2,1.8,3,1,,0.5,,,,,10
+20251212,triggerDNA-test,D4,toehold-pHtdGFP + trigger ssDNA,Sample,Pmix,15,Ribo,10,Smix,tRNA,35,toehold-pHtdGFP + trigger ssDNA,,,,,1.2,1.8,3,1,,0.5,,,,,10
+20251212,triggerDNA-test,D6,toehold-pHtdGFP + trigger ssDNA,Sample,Pmix,15,Ribo,10,Smix,tRNA,35,toehold-pHtdGFP + trigger ssDNA,,,,,1.2,1.8,3,1,,0.5,,,,,10
+20251212,triggerDNA-test,F2,toehold-pHtdGFP,Sample,Pmix,15,Ribo,10,Smix,tRNA,35,toehold-pHtdGFP,,,,,1.2,1.8,3,1,,0.5,,,,,10
+20251212,triggerDNA-test,F4,toehold-pHtdGFP,Sample,Pmix,15,Ribo,10,Smix,tRNA,35,toehold-pHtdGFP,,,,,1.2,1.8,3,1,,0.5,,,,,10
+20251212,triggerDNA-test,F6,toehold-pHtdGFP,Sample,Pmix,15,Ribo,10,Smix,tRNA,35,toehold-pHtdGFP,,,,,1.2,1.8,3,1,,0.5,,,,,10
