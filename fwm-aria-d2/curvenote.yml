@@ -18,4 +18,10 @@ project:
   downloads:
     - file: experiments/experiment-01/MTHFS-labnotebook.pdf
       title: Lab Notebook Entry
+    - id: meca
+      title: Computational Archive
+      filename: fwm-aria-d2.zip
+  exports:
+    - format: meca
+      id: meca
   id: 019f6db2-e060-710d-8984-6bcd5747d775

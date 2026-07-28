@@ -13,4 +13,10 @@ project:
   toc:
     - file: main.md
   downloads:
+    - id: meca
+      title: Computational Archive
+      filename: fwm-batch-bo.zip
+  exports:
+    - format: meca
+      id: meca
   id: 019f9b60-cc79-7008-9c25-4a46b53b8604
