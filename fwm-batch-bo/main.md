@@ -74,4 +74,4 @@ Manifold batch optimization reduces the choice of many batch elements to the cho
 
 # Conclusions
 
-We've outlined a few representiative batch optimization strategies as well as their various tradeoffs. The choice of strategy for a single scientific application may be made on an ad hoc basis (especially to adapt to complicated intra-batch constraints). These techniques also provide a starting point for the design of a general batch-optimization strategy for an AI co-scientist. 
+We've outlined a few representiative batch optimization strategies as well as their various tradeoffs. The choice of strategy for a single scientific application may be made on an ad hoc basis (especially to adapt to complicated intra-batch constraints). These techniques also provide a starting point for the design of a general batch-optimization strategy for an AI co-scientist.  
