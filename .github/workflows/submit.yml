@@ -12,7 +12,7 @@ jobs:
       kind: devnote
       collection: developer-cells
       path: ./*
-      id-pattern-regex: '^nucleus-devnote-core-(?:[a-zA-Z0-9-_]{3,50})$'
+      id-pattern-regex: ^(nucleus-devnote-core-[a-zA-Z0-9-_]{3,50}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})$
     secrets:
       CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
       GITHUB: ${{ secrets.GITHUB_TOKEN }}
