@@ -1,0 +1,47 @@
+LOCUS       fragment_pET28a_lineari 2119 bp ds-DNA     linear       08-SEP-2023
+DEFINITION  .
+COMMENT     This sequence was created via bulk assembly, and represents a
+            fragment of a larger assembly. The original sequence is His-GlyRSb.
+            The full assembled sequence is pET28a linearized
+            backbone_His-GlyRSb It was joined to the previous sequence, pET28a
+            linearized backbone, through Gibson assembly. It was joined to the
+            next sequence, pET28a linearized backbone, through Gibson assembly.
+FEATURES             Location/Qualifiers
+ORIGIN
+        1 CTTTAAGAAG GAGATATACC gaggcggcta tgtctgagaa aacttttctg gtggaaatcg
+       61 gcactgaaga gctgccacca aaagcactgc gcagcctggc tgagtccttt gctgcgaact
+      121 ttactgcgga gctggataac gctggcctcg cacacggcac cgttcaatgg tttgctgctc
+      181 cgcgtcgtct ggcgctgaaa gtagctaacc tggcggaagc gcaaccggat cgtgaaatcg
+      241 aaaaacgcgg cccggcgatt gcccaggcgt tcgacgctga aggcaaaccg agcaaagcgg
+      301 cagaaggttg ggcgcgtggt tgcggtatta ccgttgacca ggctgagcgt ctgactaccg
+      361 ataaaggcga atggctgctg tatcgcgccc atgtgaaggg cgaaagcacc gaagcactgc
+      421 tgccgaatat ggttgcgact tctctggcga aactgccgat cccgaaactg atgcgttggg
+      481 gcgcaagcga cgtgcacttc gtgcgtccgg tgcacaccgt gaccctgctg ctgggcgaca
+      541 aagtcattcc ggcaaccatt ctgggcattc agtccgatcg cgtgattcgc ggccaccgct
+      601 ttatgggcga gccggaattc accatcgata acgccgatca gtatccggaa attctgcgtg
+      661 agcgtgggaa agtcatcgcc gattacgaag aacgtaaggc gaagattaaa gccgatgccg
+      721 aagaagcagc gcgtaagatt ggcggtaacg ctgacttaag cgaaagcctg ctggaagaag
+      781 tggcttcgct ggtggagtgg ccggtcgttc tgaccgcaaa attcgaagag aaattcctcg
+      841 cggtgccggc tgaagcgctg gtttacacca tgaaaggtga ccagaaatac ttcccggtgt
+      901 atgcgaacga cggcaaactg ctgccgaact ttatcttcgt tgccaacatc gaatcgaaag
+      961 atccgcagca gattatctcc ggtaacgaga aagtcgttcg tccgcgtctg gcggatgccg
+     1021 agttcttctt caacaccgac cgtaaaaaac gtcttgaaga taacctgccg cgcctgcaaa
+     1081 ccgtgttgtt ccagcaacag ttggggacgc tgcgcgacaa aactgaccgc atccaggcgc
+     1141 tggctggctg gattgctgaa cagattggcg ctgacgttaa ccacgctacc cgtgcgggtc
+     1201 tgctgtctaa gtgcgacctg atgaccaaca tggtcttcga gttcaccgac acccagggcg
+     1261 ttatggggat gcactatgcg cgtcacgatg gcgaagcgga agatgtcgcg gtggcgctga
+     1321 atgagcagta tcagccgcgt tttgctggtg atgacctgcc gtccaaccca gtagcttgtg
+     1381 cgctggcgat tgctgacaag atggataccc tggcgggtat cttcggtatc ggtcagcatc
+     1441 cgaaaggcga caaagacccg tttgcgctgc gtcgtgccgc gcttggcgtg ctgcgaatta
+     1501 tcgttgagaa gaacctcaac cttgatctgc aaacgctgac cgaagaagcg gtgcgtctgt
+     1561 atggcgataa gctgactaat gccaacgtag ttgatgatgt tatcgacttt atgctcggtc
+     1621 gcttccgcgc ctggtatcag gacgaaggtt ataccgttga caccatccag gcggtactgg
+     1681 cgcgtcgtcc gactcgtccg gctgatttcg atgcccgtat gaaagcggta tcgcatttcc
+     1741 gtaccctgga tgcagctgct gcactggcgg cggcgaacaa acgtgtatct aacattctgg
+     1801 cgaaatctga cgaagtgctg agcgaccgcg tgaatgcctc taccctgaaa gagccggaag
+     1861 aaattaaact ggcgatgcag gttgtggtgc tacgtgacaa gctggagccg tactttacgg
+     1921 aaggtcgtta ccaggatgcg ctggtcgaac tggctgagct gcgtgaaccg gttgatgctt
+     1981 tcttcgataa agtgatggtc atggttgatg acaaagaatt gcgtatcaac cgtctgacca
+     2041 tgctggagaa actgcgcgaa ctgttcctgc gcgttgcgga tatttcgctg ttgcaataaG
+     2101 ATCCGGCTGC TAACAAAGC
+//

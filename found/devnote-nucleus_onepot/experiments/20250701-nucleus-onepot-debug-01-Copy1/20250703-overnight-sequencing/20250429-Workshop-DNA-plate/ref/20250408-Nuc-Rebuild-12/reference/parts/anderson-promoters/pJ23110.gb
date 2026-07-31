@@ -1,0 +1,15 @@
+LOCUS       pJ23110                   35 bp    DNA              UNK 01-JAN-1980
+DEFINITION  A member of the Anderson Promoter Collection
+            (https://parts.igem.org/Promoters/Catalog/Anderson). Strength =
+            0.33.
+ACCESSION   BBa_J23110
+VERSION     BBa_J23110
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     promoter        1..35
+ORIGIN
+        1 tttacggcta gctcagtcct aggtacaatg ctagc
+//

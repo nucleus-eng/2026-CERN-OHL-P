@@ -1,0 +1,12 @@
+version: 1
+extends: base.yml
+project:
+  title: 'London Exchange Meeting: Liposome Protocol Survey'
+  authors:
+    - name: London Exchange Meeting Participants
+  date: 2026-04-27
+  banner: banner.webp
+  thumbnail: thumbnail.png
+  toc:
+    - file: main.md
+  id: 019dcea0-91e3-78da-be6d-6450c2ff8308

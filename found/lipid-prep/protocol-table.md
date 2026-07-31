@@ -1,0 +1,13 @@
+:::{table}
+
+| **Name** | **Lipid preparation (film vs oil-CHCl3 mix)** | **Lipid composition / concentration** | **Oil phase** | **Outer solution (matched to cytosol)** | **Density medium** | **W/o emulsions** | **Column conditions** | **Monolayer incubation** | **Centrifugation** | **Temperature** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lab 1 | Film | POPC - 3 mg/mL | Thermo Scientific(415080010) | 1.1 M glucose + 50 mM HEPES (˜1150 mOsm) | 5% Optiprep | 10 µL inner solution, 250 µL oil | 260 µl emulsions, 120 µL Lipid oil, 300 µL outer solution | 1 hour | 30 mins, 9000 x g | R/T |
+| Lab 2 | Lipid film | 90/10 POPC/Cholesterol - 0.5mM (~0.4mg/mL) | Mineral oil, light oil (sigma-Aldrich) Cat # M5904 | non-CFE: PBS (~300mOsm) CFE: 0.5M Tris- 1.7M HEPES buffer stock (resulting pH 7.4 with ~2400 mOsm) diluted to ~1180 mOsm | OptiPrep (4% for CFE) | 10 µL inner solution, 600 µL oil-lipid mix | 600 µL emulsions, 300 µL lipid oil, 400 µL outer solution | 15 min | 10 mins, 3000 x *g* | R/T (emulsion); 15C for CFE encapsulation (centrifuge) |
+| Lab 3 | Lipid film | DOPC or POPC - 4mg/mL | Mineral oil | 0.5M glucose in PBS solution | 5% optiprep or 0.2M maltotriose | 10uL inner solution in 100uL lipid oil | 100uL oil on 150uL glucose solution | 5-10mins | 30 minutes at 9000g | RT |
+| Lab 4 | Lipid film | 2 mg/mL, 97% POPC, 3% Biotin by mass | Mineral oil (sigma-Aldrich) | 1086mM Glucose, 50mM HEPES if buffering necessary | 5% Optiprep when using Cytosol, sucrose when not | 20uL inner in 200uL L/O | 120uL lipid/oil on 300uL outer solution, drop emulsion on top | >30 min | 10m, 9000g (without pure), 30m with pure |  |
+| Lab 5 | Thin film | 20 mM (15 mg/mL) POPC, 2:1 Chol:POPC, 9:1 POPC:Chol (also with DOPC instead of POPC) | Bioultra mineral oil | 400 mM Glucose in 1 M HEPES | 400 mM Sucrose | 20 uL inner in 200 uL L/O | Entire L/O emulsion layered on 100 uL OS | 5-10 min | 15 minutes, 18,000 xg (rcf) | 4C |
+| Lab 6 | Thin film | 20 mM: 60/30/10 POPC/Chol/(POPC or POPE or POPA or POPG) | Bioultra mineral oil | Feeder solution (sMix) + 100 mM Glucose + 100 mM HEPES | 100 mM Sucrose | 40 µL inner solution using washboard method in 200 µL lipid oil slurry | Entire inner solution layered over 240 uL outer solution | 5 min on ice | 15 minutes, 18,000 xg | 4C |
+| Base Cell Protocol | oil-CHCl3 mix | 70/30 POPC/Cholesterol (3 mg/mL) | Thermo Scientific(415080010) | 850 mM Osm (glucose) | Optiprep | 30 uL inner solution in 150 ul lipid-oil mix | Complete transfer; 300 uL outer solution | 5-10 mins | 10 mins, 9000 g | RT |
+
+:::

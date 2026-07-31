@@ -1,0 +1,28 @@
+LOCUS       fragment_pET28a_lineari 1012 bp ds-DNA     linear       08-SEP-2023
+DEFINITION  .
+COMMENT     This sequence was created via bulk assembly, and represents a
+            fragment of a larger assembly. The original sequence is His-GlyRSa.
+            The full assembled sequence is pET28a linearized
+            backbone_His-GlyRSa It was joined to the previous sequence, pET28a
+            linearized backbone, through Gibson assembly. It was joined to the
+            next sequence, pET28a linearized backbone, through Gibson assembly.
+FEATURES             Location/Qualifiers
+ORIGIN
+        1 CTTTAAGAAG GAGATATACC atgggcagca gccatcatca tcatcatcac agcagcggcc
+       61 tggtgccgcg cggcagccat atgcaaaagt ttgataccag gaccttccag ggcttgatcc
+      121 tgaccttaca ggattactgg gctcgccagg gctgcaccat tgttcaacca ttggacatgg
+      181 aagtcggcgc gggaacctct cacccaatga cctgtctgcg cgagctgggg ccagaaccga
+      241 tggcggctgc ttatgttcag ccttctcgtc gcccgaccga tggtcgctac ggcgaaaacc
+      301 ccaaccgttt acagcactac tatcagttcc aggtggtcat taagccatcg ccggacaata
+      361 ttcaggagct gtacctcggt tctctgaaag agctgggcat ggacccgact attcacgaca
+      421 tccgtttcgt ggaagataac tgggaaaacc cgacgctggg tgcctgggga ctgggctggg
+      481 aagtgtggct gaacggcatg gaagtgacgc agttcactta cttccagcag gttggtggtc
+      541 tggagtgtaa accggttacc ggcgagatca cctacggtct ggaacgtctg gccatgtaca
+      601 ttcagggcgt agacagcgtt tacgacctgg tctggagcga cggcccgctg ggtaaaacca
+      661 cctacggcga cgtgttccat cagaacgaag tggagcagtc cacttacaac ttcgaatacg
+      721 cggatgtgga cttcctgttc acctgcttcg agcagtacga gaaagaagcg cagcagctgc
+      781 tggcgctgga aaatccgctg ccgctgccag cctacgagcg tattctgaaa gccgcccaca
+      841 gcttcaacct gctggatgcg cgtaaagcca tctccgtcac cgagcgtcag cgctacattc
+      901 tgcgcattcg caccctgacc aaagcagtgg cagaagcata ctacgcttcc cgtgaagccc
+      961 tcggcttccc gatgtgcaac aaagataagt aaGATCCGGC TGCTAACAAA GC
+//

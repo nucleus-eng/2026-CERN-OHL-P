@@ -1,0 +1,27 @@
+LOCUS       hly                      885 bp ds-DNA     linear       08-JAN-2020
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     CDS             1..885
+                     /label="Translation 1-885"
+                     /translation="MADSDINIKTGTTDIGSNTTVKTGDLVTYDKENGMHKKVFYSFIDDKNHNKKLLVIRTKGTIAGQYRVYSEEGANKSGLAWPSAFKVQLQLPDNEVAQISDYYPRNSIDTKEYMSTLTYGFNGNVTGDDTGKIGGLIGANVSIGHTLKYVQPDFKTILESPTDKKVGWKVIFNNMVNQNWGPYDRDSWNPVYGNQLFMKTRNGSMKAADNFLDPNKASSLLSSGFSPDFATVITMDRKASKQQTNIDVIYERVRDDYQLHWTSTNWKGTNTKDKWTDRSSERYKIDWEKEEMTN*"
+     mat_peptide     4..882
+                     /label="mat_peptide (put. mature alpha toxin (aa 1-293))"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+ORIGIN
+        1 ATGgcagatt ctgatattaa tattaaaacc ggtactacag atattggaag caatactaca
+       61 gtaaaaacag gtgatttagt cacttatgat aaagaaaatg gcatgcacaa aaaagtattt
+      121 tatagtttta tcgatgataa aaatcacaat aaaaaactgc tagttattag aacgaaaggt
+      181 accattgctg gtcaatatag agtttatagc gaagaaggtg ctaacaaaag tggtttagcc
+      241 tggccttcag cctttaaggt acagttgcaa ctacctgata atgaagtagc tcaaatatct
+      301 gattactatc caagaaattc gattgataca aaagagtata tgagtacttt aacttatgga
+      361 ttcaacggta atgttactgg tgatgataca ggaaaaattg gcggccttat tggtgcaaat
+      421 gtttcgattg gtcatacact gaaatatgtt caacctgatt tcaaaacaat tttagagagc
+      481 ccaactgata aaaaagtagg ctggaaagtg atatttaaca atatggtgaa tcaaaattgg
+      541 ggaccatatg atagagattc ttggaacccg gtatatggca atcaactttt catgaaaact
+      601 agaaatggtt ctatgaaagc agcagataac ttccttgatc ctaacaaagc aagttctcta
+      661 ttatcttcag ggttttcacc agacttcgct acagttatta ctatggatag aaaagcatcc
+      721 aaacaacaaa caaatataga tgtaatatac gaacgagttc gtgatgatta ccaattgcat
+      781 tggacttcaa caaattggaa aggtaccaat actaaagata aatggacaga tcgttcttca
+      841 gaaagatata aaatcgattg ggaaaaagaa gaaatgacaa atTGA
+//

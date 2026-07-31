@@ -1,0 +1,4 @@
+pET28a-ccdB3_fwd	tgtgcacctggcttgatccggctgctaac	25nm	STD
+pET28a-ccdB3_rev	atgaggacatatttcgcgggatcgagatc	25nm	STD
+pT5-IF2-3_fwd	cccgcgaaatatgtcctcatagtttgaacaag	25nm	STD
+pT5-IF2-3_rev	cggatcaagccaggtgcacattaagcaatg	25nm	STD

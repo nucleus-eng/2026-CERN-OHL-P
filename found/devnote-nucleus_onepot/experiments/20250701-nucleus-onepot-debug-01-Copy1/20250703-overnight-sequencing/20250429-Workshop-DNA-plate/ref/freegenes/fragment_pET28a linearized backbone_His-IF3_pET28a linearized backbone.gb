@@ -1,0 +1,22 @@
+LOCUS       fragment_pET28a_lineariz 643 bp ds-DNA     linear       08-SEP-2023
+DEFINITION  .
+COMMENT     This sequence was created via bulk assembly, and represents a
+            fragment of a larger assembly. The original sequence is His-IF3.
+            The full assembled sequence is pET28a linearized backbone_His-IF3
+            It was joined to the previous sequence, pET28a linearized backbone,
+            through Gibson assembly. It was joined to the next sequence, pET28a
+            linearized backbone, through Gibson assembly.
+FEATURES             Location/Qualifiers
+ORIGIN
+        1 CTTTAAGAAG GAGATATACC atgggcagca gccatcatca tcatcatcac agcagcggcc
+       61 tggtgccgcg cggcagccat atgaaaggcg gaaaacgagt tcaaacggcg cgccctaacc
+      121 gtatcaatgg cgaaattcgc gcccaggaag ttcgcttaac aggtctggaa ggcgagcagc
+      181 ttggtattgt gagtctgaga gaagctctgg agaaagcaga agaagccgga gtagacttag
+      241 tcgagatcag ccctaacgcc gagccgccgg tttgtcgtat aatggattac ggcaaattcc
+      301 tctatgaaaa gagcaagtct tctaaggaac agaagaaaaa gcaaaaagtt atccaggtta
+      361 aggaaattaa attccgtcct ggtacagatg aaggcgacta tcaggtaaaa ctccgcagcc
+      421 tgattcgctt tctcgaagag ggtgataaag ccaaaatcac gctgcgtttc cgcggtcgtg
+      481 agatggcgca ccagcaaatc ggtatggaag tgcttaatcg cgtgaaagac gatttgcaag
+      541 aactggcagt ggtcgaatcc ttcccaacga agatcgaagg ccgccagatg atcatggtgc
+      601 tcgctcctaa gaagaaacag taaGATCCGG CTGCTAACAA AGC
+//

@@ -1,0 +1,364 @@
+LOCUS       pET28a-pT5-IF2          7933 bp    DNA     circular SYN 10-APR-2025
+DEFINITION  synthetic circular DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 7933)
+  AUTHORS   
+  TITLE     Direct Submission
+  JOURNAL   Exported May 19, 2025 from SnapGene 8.0.3
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..7933
+                     /mol_type="other DNA"
+                     /organism="synthetic DNA construct"
+     promoter        1..45
+                     /label=T5 promoter
+     protein_bind    21..37
+                     /label=lac operator
+     protein_bind    53..69
+                     /label=lac operator
+     RBS             88..99
+                     /label=RBS
+     misc_feature    106..141
+                     /label=N-term_6xHis
+                     /label=nonstandard type: purification_tag
+     CDS             118..135
+                     /codon_start=1
+                     /label=6xHis
+                     /translation="HHHHHH"
+     gene            142..2814
+                     /label=IF2
+     misc_feature    2815..2834
+                     /label=pET28a Downstream
+     primer_bind     2815..2834
+                     /label=pET28a-Backbone-Hifi-CDSEntry F
+     primer_bind     2815..2834
+                     /label=pET28a-HiFi-CDSEntry-2 F
+     CDS             2815..2828
+                     /codon_start=1
+                     /label=FG terminal sequence
+                     /translation="DPAA"
+     terminator      2822..2950
+                     /label=T7_terminator
+     misc_feature    2826..2828
+                     /label=Stop Codon
+     primer_bind     complement(2836..2855)
+                     /label=CPCR pET28a-TUEntry-mScarlet-3 R
+     terminator      2878..2925
+                     /label=T7 terminator
+                     /note="Color: #ffffff NCBI Feature Key: terminator 
+                     Transferred From: T7_terminator Transferred Similarity: 
+                     100.00%"
+     rep_origin      2962..3390
+                     /label=f1 ori
+                     /note="direction: RIGHT note: arrow indicates direction of 
+                     (+) strand synthesis; color: #ffff00; f1 bacteriophage 
+                     origin of replication NCBI Feature Key: rep_origin 
+                     Transferred From: f1_ori_(4) Transferred Similarity: 
+                     100.00%"
+     rep_origin      2962..3320
+                     /label=f1 ori
+                     /note="direction: RIGHT note: arrow indicates direction of 
+                     (+) strand synthesis; color: #ffff00; f1 bacteriophage 
+                     origin of replication NCBI Feature Key: rep_origin 
+                     Transferred From: f1_ori_(3) Transferred Similarity: 
+                     100.00%"
+     rep_origin      2979..3285
+                     /label=F1 ori
+     primer_bind     3391..3421
+                     /label=pET28a-Backbone-Hifi F
+     primer_bind     3391..3421
+                     /label=pET28a-Backbone-Hifi-2 F
+     primer_bind     3391..3421
+                     /label=pET28a-Backbone-Hifi-TUEntry F
+     primer_bind     3391..3421
+                     /label=pET28a-Backbone-Hifi-TUEntry-2 F
+     primer_bind     3405..3426
+                     /label=CPCR pET28a-TUEntry-mScarlet-4 F
+     CDS             complement(3510..4325)
+                     /codon_start=1
+                     /label=KanR2
+                     /translation="MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYG
+                     KPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGK
+                     TAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDA
+                     SDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGI
+                     ADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF"
+     primer_bind     complement(3743..3762)
+                     /label=CPCR pET28a-TUEntry-mScarlet-4 R
+     rep_origin      4371..5053
+                     /label=ColE1 origin
+     misc_feature    4416..4442
+                     /label=downstream anneal
+     misc_feature    4431..5050
+                     /label=pBR322_origin
+                     /label=nonstandard type: origin
+     misc_feature    4438..4456
+                     /label=Predicted Terminator
+                     /note="Predicted with ARNold; deltaG = -9.00"
+     misc_feature    4443..4470
+                     /label=upstream anneal
+     rep_origin      4447..5035
+                     /direction=RIGHT
+                     /label=ori
+                     /note="high-copy-number ColE1/pMB1/pBR322/pUC origin of 
+                     replication"
+     promoter        4447..4475
+                     /label=RNAII promoter
+                     /note="Color: #ffffff NCBI Feature Key: promoter NCBI Join 
+                     Type: join Transferred From: RNAII_promoter Transferred 
+                     Similarity: 100.00%"
+     misc_RNA        4483..5035
+                     /label=RNAII transcript (complementary strand)
+                     /note="RNAII transcript (complementary strand)"
+     misc_RNA        complement(4486..4593)
+                     /label=RNAI transcript
+                     /note="RNAI transcript"
+     misc_feature    4496..4514
+                     /label=Predicted Terminator
+                     /note="Predicted with ARNold; deltaG = -14.00"
+     promoter        complement(4600..4629)
+                     /label=RNA I promoter
+                     /note="Color: #ffffff NCBI Feature Key: promoter NCBI Join 
+                     Type: join Transferred From: RNA_I_promoter Transferred 
+                     Similarity: 100.00%"
+     misc_feature    4621..4644
+                     /label=BB seq FOR
+     primer_bind     complement(4657..4678)
+                     /label=ASS_mc1chk.cole1.REV
+                     /note="Sequence: TGGTAACAGGATTAGCAGAGCG %GC: 50.0 
+                     Transferred From: ASS_mc1chk.cole1.REV Transferred 
+                     Similarity: 100.00%"
+     misc_feature    4930..4949
+                     /label=Predicted Terminator
+                     /note="Predicted with ARNold; deltaG = -8.2"
+     primer_bind     4957..4975
+                     /label=Cole1.FOR
+                     /note="Sequence: TAGTCCTGTCGGGTTTCGC Hairpin Tm: 39.1 Tm: 
+                     59.4 Self Dimer Tm: None %GC: 57.9 created by: primer3 
+                     Transferred From: ASS_Cole1.FOR Transferred Similarity: 
+                     100.00%"
+     terminator      5039..5082
+                     /label=rop/bom terminator
+     misc_binding    5122..5130
+                     /label=dnaA binding site
+                     /bound_moiety="dnaA"
+     primer_bind     5136..5156
+                     /label=Part.Seq.REV
+                     /note="Sequence: TTACCGCCTTTGAGTGAGCTG Hairpin Tm: None Tm:
+                     60.6 Self Dimer Tm: None %GC: 52.4 created by: primer3 
+                     modified by: andrey Transferred From: Part.Seq.REV 
+                     Transferred Similarity: 100.00%"
+     misc_feature    5155..5218
+                     /label=L-strand Y effector site
+                     /note="L-strand Y effector site"
+     misc_feature    5404..5560
+                     /label=H-strand Y effector site
+                     /note="H-strand Y effector site"
+     misc_feature    complement(5465..5656)
+                     /direction=LEFT
+                     /label=ROP
+                     /label=nonstandard type: feature
+     CDS             complement(5465..5656)
+                     /label=rop
+                     /note="Transferred Translation: 
+                     MTKQEKTALNMARFIRSQTLTLLEKLNELDADEQADICESLHDHADELYRSCLARFGDD
+                     GENL Color: #993366 modified by: Andrey Transferred From: 
+                     rop Transferred Similarity: 100.00%"
+     gene            complement(5465..5656)
+                     /gene="rop"
+                     /label=rop
+     RBS             5657..5666
+     misc_feature    5662..5677
+                     /label=Predicted Terminator
+                     /note="Predicted terminator (ARNold)"
+     misc_feature    5667..5702
+                     /label=Conserved
+     misc_feature    complement(5732..5750)
+                     /label=ROP calculated promoter
+     primer_bind     6028..6047
+                     /label=CPCR-pET28a2 F
+     gene            complement(6131..6406)
+                     /label=tet (576 - 851)
+     primer_bind     complement(6389..6408)
+                     /label=CPCR-pET28a2 R
+     regulatory      complement(6465..7556)
+                     /label=lacI
+     CDS             complement(6465..7547)
+                     /codon_start=1
+                     /gene="lacI"
+                     /product="lac repressor"
+                     /label=lacI
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+                     /translation="MKPVTLYDVAEYAGVSYQTVSRVVNQASHVSAKTREKVEAAMAEL
+                     NYIPNRVAQQLAGKQSLLIGVATSSLALHAPSQIVAAIKSRADQLGASVVVSMVERSGV
+                     EACKAAVHNLLAQRVSGLIINYPLDDQDAIAVEAACTNVPALFLDVSDQTPINSIIFSH
+                     EDGTRLGVEHLVALGHQQIALLAGPLSSVSARLRLAGWHKYLTRNQIQPIAEREGDWSA
+                     MSGFQQTMQMLNEGIVPTAMLVANDQMALGAMRAITESGLRVGADISVVGYDDTEDSSC
+                     YIPPLTTIKQDFRLLGQTSVDRLLQLSQGQAVKGNQLLPVSLVKRKTTLAPNTQTASPR
+                     ALADSLMQLARQVSRLESGQ"
+     primer_bind     6509..6528
+                     /label=CPCR-pET28a3 F
+     primer_bind     complement(6912..6932)
+                     /label=CPCR-pET28a3 R
+     primer_bind     7422..7441
+                     /label=CPCR-pET28a4 F
+     primer_bind     7448..7467
+                     /label=CPCR pET28a-TUEntry-mScarlet F
+     promoter        complement(7548..7625)
+                     /label=lacI promoter
+                     /note="Color: #ffffff NCBI Feature Key: promoter 
+                     Transferred From: lacI_promoter Transferred Similarity: 
+                     100.00%"
+     gene            complement(7639..7902)
+                     /label=tet (300 - 563)
+     primer_bind     complement(7827..7846)
+                     /label=CPCR pET28a-TUEntry-mScarlet R
+     primer_bind     complement(7915..7933)
+                     /label=pET28a-Backbone-Hifi R
+     primer_bind     complement(7915..7933)
+                     /label=pET28a-Backbone-Hifi-2 R
+     primer_bind     complement(7915..7933)
+                     /label=pET28a-Backbone-Hifi-TUEntry R
+     primer_bind     complement(7915..7933)
+                     /label=pET28a-Backbone-Hifi-TUEntry-2 R
+ORIGIN
+        1 tcataaaaaa tttatttgct ttgtgagcgg ataacaatta taatagattc aattgtgagc
+       61 ggataacaat ttcacacaga attcattaaa gaggagaaat taactatgag aggatcgcat
+      121 caccatcacc atcacggatc catgacagat gtaacgatta aaacgctggc cgcagagcga
+      181 cagacctccg tggaacgcct ggtacagcaa tttgctgatg caggtatccg gaagtctgct
+      241 gacgactctg tgtctgcaca agagaaacag actttgattg accacctgaa tcagaaaaat
+      301 tcaggcccgg acaaattgac gctgcaacgt aaaacacgca gcacccttaa cattcctggt
+      361 accggtggaa aaagcaaatc ggtacaaatc gaagtccgca agaaacgcac ctttgtgaaa
+      421 cgcgatccgc aagaggctga acgccttgca gcggaagagc aagcgcagcg tgaagcggaa
+      481 gagcaagccc gtcgtgaggc agaagaatcg gctaaacgcg aggcgcaaca aaaagctgaa
+      541 cgtgaggccg cagaacaagc taagcgtgaa gctgctgaac aagcgaaacg tgaagctgcg
+      601 gaaaaagaca aagtgagcaa tcaacaagac gatatgacta aaaacgccca ggctgaaaaa
+      661 gcccgccgtg agcaggaagc tgcagagctc aagcgtaaag ctgaagaaga agcgcgtcgt
+      721 aaactcgaag aagaagcacg tcgcgttgct gaagaagcac gtcgtatggc ggaagaaaac
+      781 aaatggactg ataacgcgga accgactgaa gattccagcg attatcacgt cactacttct
+      841 caacatgctc gccaggcaga agacgaaagc gatcgtgaag tcgaaggcgg ccgtggccgt
+      901 ggtcgtaacg cgaaagcagc gcgtccgaag aaaggcaaca aacacgctga atcaaaagct
+      961 gatcgtgaag aagcacgcgc agcagtacgt ggcggtaaag gcggaaaacg taaaggttct
+     1021 tcgctgcagc aaggcttcca gaagcctgct caggccgtta accgtgacgt tgtgatcggc
+     1081 gaaactatca ccgttggcga actggcgaac aagatggcgg ttaaaggctc tcaggtcatc
+     1141 aaagcgatga tgaaactggg cgcaatggca accatcaacc aggttatcga tcaggaaacc
+     1201 gcacagctgg ttgctgaaga gatgggccat aaagttatcc tgcgtcgtga aaacgagctg
+     1261 gaagaggcgg taatgagcga ccgtgacacg ggtgctgcgg ctgaaccgcg cgcgccggtt
+     1321 gtgaccatca tgggtcacgt tgaccacggt aaaacctctc tgctggacta cattcgttca
+     1381 acgaaagtgg cctctggcga agcgggcggc attacccagc acattggtgc ataccacgtt
+     1441 gaaactgaaa acggcatgat caccttcctg gacaccccgg ggcacgccgc gtttacttca
+     1501 atgcgtgctc gtggtgcgca ggcaacggac atcgtagtcc tggttgttgc tgccgacgac
+     1561 ggtgtgatgc cgcagaccat cgaagcaatc cagcacgcga aagcggcgca ggtaccggtg
+     1621 gtggttgcag tgaacaagat cgataaacca gaagctgatc cggatcgcgt taagaacgaa
+     1681 ctctcccagt acggcatcct gccggaagag tggggcggtg aaagccagtt cgtacacgta
+     1741 tctgcgaaag cgggtaccgg tatcgatgaa ctgctggacg ctatcctgct gcaggcggaa
+     1801 gttctggagc tgaaagcggt acgtaaaggt atggcgagcg gtgcggttat cgaatccttc
+     1861 ctcgataaag gtcgtggtcc ggttgctacc gttctggtac gtgaaggtac tctgcacaag
+     1921 ggcgatatcg ttctgtgtgg cttcgaatac ggtcgtgttc gtgcgatgcg taacgaactg
+     1981 ggtcaggaag tgctggaagc gggtccgtcc attccggtgg aaatcctcgg cctgtccggc
+     2041 gtaccggctg cgggtgatga agttaccgtt gtacgtgacg agaagaaagc gcgtgaagtt
+     2101 gcactctatc gtcagggtaa attccgcgaa gttaaactgg cgcgtcagca gaaatctaaa
+     2161 ctcgagaaca tgttcgccaa catgaccgaa ggcgaagttc acgaagtgaa tatcgtcctg
+     2221 aaggcagacg tacagggttc tgtcgaagcg atctccgact ccttgctgaa actgtctact
+     2281 gacgaagtta aagtgaagat catcggttct ggcgtaggtg gtatcaccga aaccgacgcc
+     2341 accctggctg cggcgtccaa cgccatcctg gttggcttta acgtacgtgc tgatgcctct
+     2401 gcacgtaaag tgattgaagc ggaaagcctg gatctgcgtt actactccgt catctataac
+     2461 ctgattgacg aagtgaaagc ggcgatgagc ggtatgctgt ctccggaact gaaacagcag
+     2521 attatcggtc tggcggaagt tcgtgacgtg ttcaaatcgc cgaaatttgg tgccatcgca
+     2581 ggctgtatgg ttaccgaagg tgtggttaaa cgtcacaacc cgatccgcgt tctgcgtgac
+     2641 aacgtggtta tctacgaagg cgagctggag tccctgcgcc gcttcaaaga tgacgttaac
+     2701 gaagtccgta acggtatgga atgtggtatc ggcgttaaga actacaacga cgtccgcact
+     2761 ggcgatgtga tcgaagtatt cgaaatcatc gagatccaac gtaccattgc ttaagatccg
+     2821 gctgctaaca aagcccgaaa ggaagctgag ttggctgctg ccaccgctga gcaataacta
+     2881 gcataacccc ttggggcctc taaacgggtc ttgaggggtt ttttgctgaa aggaggaact
+     2941 atatccggat tggcgaatgg gacgcgccct gtagcggcgc attaagcgcg gcgggtgtgg
+     3001 tggttacgcg cagcgtgacc gctacacttg ccagcgccct agcgcccgct cctttcgctt
+     3061 tcttcccttc ctttctcgcc acgttcgccg gctttccccg tcaagctcta aatcgggggc
+     3121 tccctttagg gttccgattt agtgctttac ggcacctcga ccccaaaaaa cttgattagg
+     3181 gtgatggttc acgtagtggg ccatcgccct gatagacggt ttttcgccct ttgacgttgg
+     3241 agtccacgtt ctttaatagt ggactcttgt tccaaactgg aacaacactc aaccctatct
+     3301 cggtctattc ttttgattta taagggattt tgccgatttc ggcctattgg ttaaaaaatg
+     3361 agctgattta acaaaaattt aacgcgaatt ttaacaaaat attaacgttt acaatttcag
+     3421 gtggcacttt tcggggaaat gtgcgcggaa cccctatttg tttatttttc taaatacatt
+     3481 caaatatgta tccgctcatg aattaattct tagaaaaact catcgagcat caaatgaaac
+     3541 tgcaatttat tcatatcagg attatcaata ccatattttt gaaaaagccg tttctgtaat
+     3601 gaaggagaaa actcaccgag gcagttccat aggatggcaa gatcctggta tcggtctgcg
+     3661 attccgactc gtccaacatc aatacaacct attaatttcc cctcgtcaaa aataaggtta
+     3721 tcaagtgaga aatcaccatg agtgacgact gaatccggtg agaatggcaa aagtttatgc
+     3781 atttctttcc agacttgttc aacaggccag ccattacgct cgtcatcaaa atcactcgca
+     3841 tcaaccaaac cgttattcat tcgtgattgc gcctgagcga gacgaaatac gcgatcgctg
+     3901 ttaaaaggac aattacaaac aggaatcgaa tgcaaccggc gcaggaacac tgccagcgca
+     3961 tcaacaatat tttcacctga atcaggatat tcttctaata cctggaatgc tgttttcccg
+     4021 gggatcgcag tggtgagtaa ccatgcatca tcaggagtac ggataaaatg cttgatggtc
+     4081 ggaagaggca taaattccgt cagccagttt agtctgacca tctcatctgt aacatcattg
+     4141 gcaacgctac ctttgccatg tttcagaaac aactctggcg catcgggctt cccatacaat
+     4201 cgatagattg tcgcacctga ttgcccgaca ttatcgcgag cccatttata cccatataaa
+     4261 tcagcatcca tgttggaatt taatcgcggc ctagagcaag acgtttcccg ttgaatatgg
+     4321 ctcataacac cccttgtatt actgtttatg taagcagaca gttttattgt tcatgaccaa
+     4381 aatcccttaa cgtgagtttt cgttccactg agcgtcagac cccgtagaaa agatcaaagg
+     4441 atcttcttga gatccttttt ttctgcgcgt aatctgctgc ttgcaaacaa aaaaaccacc
+     4501 gctaccagcg gtggtttgtt tgccggatca agagctacca actctttttc cgaaggtaac
+     4561 tggcttcagc agagcgcaga taccaaatac tgtccttcta gtgtagccgt agttaggcca
+     4621 ccacttcaag aactctgtag caccgcctac atacctcgct ctgctaatcc tgttaccagt
+     4681 ggctgctgcc agtggcgata agtcgtgtct taccgggttg gactcaagac gatagttacc
+     4741 ggataaggcg cagcggtcgg gctgaacggg gggttcgtgc acacagccca gcttggagcg
+     4801 aacgacctac accgaactga gatacctaca gcgtgagcta tgagaaagcg ccacgcttcc
+     4861 cgaagggaga aaggcggaca ggtatccggt aagcggcagg gtcggaacag gagagcgcac
+     4921 gagggagctt ccagggggaa acgcctggta tctttatagt cctgtcgggt ttcgccacct
+     4981 ctgacttgag cgtcgatttt tgtgatgctc gtcagggggg cggagcctat ggaaaaacgc
+     5041 cagcaacgcg gcctttttac ggttcctggc cttttgctgg ccttttgctc acatgttctt
+     5101 tcctgcgtta tcccctgatt ctgtggataa ccgtattacc gcctttgagt gagctgatac
+     5161 cgctcgccgc agccgaacga ccgagcgcag cgagtcagtg agcgaggaag cggaagagcg
+     5221 cctgatgcgg tattttctcc ttacgcatct gtgcggtatt tcacaccgca tatatggtgc
+     5281 actctcagta caatctgctc tgatgccgca tagttaagcc agtatacact ccgctatcgc
+     5341 tacgtgactg ggtcatggct gcgccccgac acccgccaac acccgctgac gcgccctgac
+     5401 gggcttgtct gctcccggca tccgcttaca gacaagctgt gaccgtctcc gggagctgca
+     5461 tgtgtcagag gttttcaccg tcatcaccga aacgcgcgag gcagctgcgg taaagctcat
+     5521 cagcgtggtc gtgaagcgat tcacagatgt ctgcctgttc atccgcgtcc agctcgttga
+     5581 gtttctccag aagcgttaat gtctggcttc tgataaagcg ggccatgtta agggcggttt
+     5641 tttcctgttt ggtcactgat gcctccgtgt aagggggatt tctgttcatg ggggtaatga
+     5701 taccgatgaa acgagagagg atgctcacga tacgggttac tgatgatgaa catgcccggt
+     5761 tactggaacg ttgtgagggt aaacaactgg cggtatggat gcggcgggac cagagaaaaa
+     5821 tcactcaggg tcaatgccag cgcttcgtta atacagatgt aggtgttcca cagggtagcc
+     5881 agcagcatcc tgcgatgcag atccggaaca taatggtgca gggcgctgac ttccgcgttt
+     5941 ccagacttta cgaaacacgg aaaccgaaga ccattcatgt tgttgctcag gtcgcagacg
+     6001 ttttgcagca gcagtcgctt cacgttcgct cgcgtatcgg tgattcattc tgctaaccag
+     6061 taaggcaacc ccgccagcct agccgggtcc tcaacgacag gagcacgatc atgcgcaccc
+     6121 gtggggccgc catgccggcg ataatggcct gcttctcgcc gaaacgtttg gtggcgggac
+     6181 cagtgacgaa ggcttgagcg agggcgtgca agattccgaa taccgcaagc gacaggccga
+     6241 tcatcgtcgc gctccagcga aagcggtcct cgccgaaaat gacccagagc gctgccggca
+     6301 cctgtcctac gagttgcatg ataaagaaga cagtcataag tgcggcgacg atagtcatgc
+     6361 cccgcgccca ccggaaggag ctgactgggt tgaaggctct caagggcatc ggtcgagatc
+     6421 ccggtgccta atgagtgagc taacttacat taattgcgtt gcgctcactg cccgctttcc
+     6481 agtcgggaaa cctgtcgtgc cagctgcatt aatgaatcgg ccaacgcgcg gggagaggcg
+     6541 gtttgcgtat tgggcgccag ggtggttttt cttttcacca gtgagacggg caacagctga
+     6601 ttgcccttca ccgcctggcc ctgagagagt tgcagcaagc ggtccacgct ggtttgcccc
+     6661 agcaggcgaa aatcctgttt gatggtggtt aacggcggga tataacatga gctgtcttcg
+     6721 gtatcgtcgt atcccactac cgagatatcc gcaccaacgc gcagcccgga ctcggtaatg
+     6781 gcgcgcattg cgcccagcgc catctgatcg ttggcaacca gcatcgcagt gggaacgatg
+     6841 ccctcattca gcatttgcat ggtttgttga aaaccggaca tggcactcca gtcgccttcc
+     6901 cgttccgcta tcggctgaat ttgattgcga gtgagatatt tatgccagcc agccagacgc
+     6961 agacgcgccg agacagaact taatgggccc gctaacagcg cgatttgctg gtgacccaat
+     7021 gcgaccagat gctccacgcc cagtcgcgta ccgtcttcat gggagaaaat aatactgttg
+     7081 atgggtgtct ggtcagagac atcaagaaat aacgccggaa cattagtgca ggcagcttcc
+     7141 acagcaatgg catcctggtc atccagcgga tagttaatga tcagcccact gacgcgttgc
+     7201 gcgagaagat tgtgcaccgc cgctttacag gcttcgacgc cgcttcgttc taccatcgac
+     7261 accaccacgc tggcacccag ttgatcggcg cgagatttaa tcgccgcgac aatttgcgac
+     7321 ggcgcgtgca gggccagact ggaggtggca acgccaatca gcaacgactg tttgcccgcc
+     7381 agttgttgtg ccacgcggtt gggaatgtaa ttcagctccg ccatcgccgc ttccactttt
+     7441 tcccgcgttt tcgcagaaac gtggctggcc tggttcacca cgcgggaaac ggtctgataa
+     7501 gagacaccgg catactctgc gacatcgtat aacgttactg gtttcacatt caccaccctg
+     7561 aattgactct cttccgggcg ctatcatgcc ataccgcgaa aggttttgcg ccattcgatg
+     7621 gtgtccggga tctcgacgct ctcccttatg cgactcctgc attaggaagc agcccagtag
+     7681 taggttgagg ccgttgagca ccgccgccgc aaggaatggt gcatgcaagg agatggcgcc
+     7741 caacagtccc ccggccacgg ggcctgccac catacccacg ccgaaacaag cgctcatgag
+     7801 cccgaagtgg cgagcccgat cttccccatc ggtgatgtcg gcgatatagg cgccagcaac
+     7861 cgcacctgtg gcgccggtga tgccggccac gatgcgtccg gcgtagagga tcgagatctc
+     7921 gatcccgcga aat
+//

@@ -1,0 +1,60 @@
+LOCUS       His-GlyRSb              2079 bp ds-DNA     linear       08-SEP-2023
+DEFINITION  .
+KEYWORDS    "creator:Qiagen" "marker:KanR, CmR" "organism:Escherichia coli"
+FEATURES             Location/Qualifiers
+     CDS             1..2079
+                     /label="Translation 1099-4163"
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="EAAMSEKTFLVEIGTEELPPKALRSLAESFAANFTAELDNAGLAHGTVQWFAAPRRLALKVANLAEAQPDREIEKRGPAIAQAFDAEGKPSKAAEGWARGCGITVDQAERLTTDKGEWLLYRAHVKGESTEALLPNMVATSLAKLPIPKLMRWGASDVHFVRPVHTVTLLLGDKVIPATILGIQSDRVIRGHRFMGEPEFTIDNADQYPEILRERGKVIADYEERKAKIKADAEEAARKIGGNADLSESLLEEVASLVEWPVVLTAKFEEKFLAVPAEALVYTMKGDQKYFPVYANDGKLLPNFIFVANIESKDPQQIISGNEKVVRPRLADAEFFFNTDRKKRLEDNLPRLQTVLFQQQLGTLRDKTDRIQALAGWIAEQIGADVNHATRAGLLSKCDLMTNMVFEFTDTQGVMGMHYARHDGEAEDVAVALNEQYQPRFAGDDLPSNPVACALAIADKMDTLAGIFGIGQHPKGDKDPFALRRAALGVLRIIVEKNLNLDLQTLTEEAVRLYGDKLTNANVVDDVIDFMLGRFRAWYQDEGYTVDTIQAVLARRPTRPADFDARMKAVSHFRTLDAAAALAAANKRVSNILAKSDEVLSDRVNASTLKEPEEIKLAMQVVVLRDKLEPYFTEGRYQDALVELAELREPVDAFFDKVMVMVDDKELRINRLTMLEKLRELFLRVADISLLQ*"
+     gene            10..2079
+                     /label="glyS gene"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     CDS             10..2079
+                     /label="glyS CDS (glycine tRNA synthetase, beta subunit)"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+                     /translation="MSEKTFLVEIGTEELPPKALRSLAESFAANFTAELDNAGLAHGTVQWFAAPRRLALKVANLAEAQPDREIEKRGPAIAQAFDAEGKPSKAAEGWARGCGITVDQAERLTTDKGEWLLYRAHVKGESTEALLPNMVATSLAKLPIPKLMRWGASDVHFVRPVHTVTLLLGDKVIPATILGIQSDRVIRGHRFMGEPEFTIDNADQYPEILRERGKVIADYEERKAKIKADAEEAARKIGGNADLSESLLEEVASLVEWPVVLTAKFEEKFLAVPAEALVYTMKGDQKYFPVYANDGKLLPNFIFVANIESKDPQQIISGNEKVVRPRLADAEFFFNTDRKKRLEDNLPRLQTVLFQQQLGTLRDKTDRIQALAGWIAEQIGADVNHATRAGLLSKCDLMTNMVFEFTDTQGVMGMHYARHDGEAEDVAVALNEQYQPRFAGDDLPSNPVACALAIADKMDTLAGIFGIGQHPKGDKDPFALRRAALGVLRIIVEKNLNLDLQTLTEEAVRLYGDKLTNANVVDDVIDFMLGRFRAWYQDEGYTVDTIQAVLARRPTRPADFDARMKAVSHFRTLDAAAALAAANKRVSNILAKSDEVLSDRVNASTLKEPEEIKLAMQVVVLRDKLEPYFTEGRYQDALVELAELREPVDAFFDKVMVMVDDKELRINRLTMLEKLRELFLRVADISLLQ*"
+     primer          complement(2051..2072)
+                     /label="GlyN REV"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+                     /note="sequence: cttcctttcgggctttgttagcagccggatcttattgcaacagcgaaatatccgcaacgc"
+ORIGIN
+        1 gaggcggcta tgtctgagaa aacttttctg gtggaaatcg gcactgaaga gctgccacca
+       61 aaagcactgc gcagcctggc tgagtccttt gctgcgaact ttactgcgga gctggataac
+      121 gctggcctcg cacacggcac cgttcaatgg tttgctgctc cgcgtcgtct ggcgctgaaa
+      181 gtagctaacc tggcggaagc gcaaccggat cgtgaaatcg aaaaacgcgg cccggcgatt
+      241 gcccaggcgt tcgacgctga aggcaaaccg agcaaagcgg cagaaggttg ggcgcgtggt
+      301 tgcggtatta ccgttgacca ggctgagcgt ctgactaccg ataaaggcga atggctgctg
+      361 tatcgcgccc atgtgaaggg cgaaagcacc gaagcactgc tgccgaatat ggttgcgact
+      421 tctctggcga aactgccgat cccgaaactg atgcgttggg gcgcaagcga cgtgcacttc
+      481 gtgcgtccgg tgcacaccgt gaccctgctg ctgggcgaca aagtcattcc ggcaaccatt
+      541 ctgggcattc agtccgatcg cgtgattcgc ggccaccgct ttatgggcga gccggaattc
+      601 accatcgata acgccgatca gtatccggaa attctgcgtg agcgtgggaa agtcatcgcc
+      661 gattacgaag aacgtaaggc gaagattaaa gccgatgccg aagaagcagc gcgtaagatt
+      721 ggcggtaacg ctgacttaag cgaaagcctg ctggaagaag tggcttcgct ggtggagtgg
+      781 ccggtcgttc tgaccgcaaa attcgaagag aaattcctcg cggtgccggc tgaagcgctg
+      841 gtttacacca tgaaaggtga ccagaaatac ttcccggtgt atgcgaacga cggcaaactg
+      901 ctgccgaact ttatcttcgt tgccaacatc gaatcgaaag atccgcagca gattatctcc
+      961 ggtaacgaga aagtcgttcg tccgcgtctg gcggatgccg agttcttctt caacaccgac
+     1021 cgtaaaaaac gtcttgaaga taacctgccg cgcctgcaaa ccgtgttgtt ccagcaacag
+     1081 ttggggacgc tgcgcgacaa aactgaccgc atccaggcgc tggctggctg gattgctgaa
+     1141 cagattggcg ctgacgttaa ccacgctacc cgtgcgggtc tgctgtctaa gtgcgacctg
+     1201 atgaccaaca tggtcttcga gttcaccgac acccagggcg ttatggggat gcactatgcg
+     1261 cgtcacgatg gcgaagcgga agatgtcgcg gtggcgctga atgagcagta tcagccgcgt
+     1321 tttgctggtg atgacctgcc gtccaaccca gtagcttgtg cgctggcgat tgctgacaag
+     1381 atggataccc tggcgggtat cttcggtatc ggtcagcatc cgaaaggcga caaagacccg
+     1441 tttgcgctgc gtcgtgccgc gcttggcgtg ctgcgaatta tcgttgagaa gaacctcaac
+     1501 cttgatctgc aaacgctgac cgaagaagcg gtgcgtctgt atggcgataa gctgactaat
+     1561 gccaacgtag ttgatgatgt tatcgacttt atgctcggtc gcttccgcgc ctggtatcag
+     1621 gacgaaggtt ataccgttga caccatccag gcggtactgg cgcgtcgtcc gactcgtccg
+     1681 gctgatttcg atgcccgtat gaaagcggta tcgcatttcc gtaccctgga tgcagctgct
+     1741 gcactggcgg cggcgaacaa acgtgtatct aacattctgg cgaaatctga cgaagtgctg
+     1801 agcgaccgcg tgaatgcctc taccctgaaa gagccggaag aaattaaact ggcgatgcag
+     1861 gttgtggtgc tacgtgacaa gctggagccg tactttacgg aaggtcgtta ccaggatgcg
+     1921 ctggtcgaac tggctgagct gcgtgaaccg gttgatgctt tcttcgataa agtgatggtc
+     1981 atggttgatg acaaagaatt gcgtatcaac cgtctgacca tgctggagaa actgcgcgaa
+     2041 ctgttcctgc gcgttgcgga tatttcgctg ttgcaataa
+//
