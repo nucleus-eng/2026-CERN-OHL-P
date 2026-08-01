@@ -1,4 +1,0 @@
-pET28a-ccdB4_fwd	tgtgcacctggcttgatccggctgctaac	25nm	STD
-pET28a-ccdB4_rev	tatgaggacaatttcgcgggatcgagatc	25nm	STD
-pT5-T7RNAP4_fwd	cccgcgaaattgtcctcatagtttgaacaag	25nm	STD
-pT5-T7RNAP4_rev	cggatcaagccaggtgcacattaagcttg	25nm	STD
