@@ -1,0 +1,89 @@
+version: 1
+project:
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-clpxp_module_cytosol-01
+  # Ensure your title is the same as in your `main.md`
+  title: "ClpXP Control Module: Deployment in PURE"
+  subtitle:  
+  description: "ClpXP Control Module: Deployment in PURE"
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Yen-Yu Hsu
+      email: yenyu@bnext.bio
+      orcid: 0000-0003-0866-6184
+      affiliations:
+       - name: b.next, San Francisco, California, 94107, USA
+         city: San Francisco
+         state: California
+         postal_code: 94107
+         country: USA
+      corresponding: true
+  keywords:
+    - Developer Cell
+    - Control Module
+    - Cytosol
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2025-12-13
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+    - file: experiments/20250919-ClpXP/20250919-analysis.ipynb
+    - file: experiments/20251016-ClpXP-two DNA/20251016-analysis.ipynb
+    - file: experiments/20251021-ClpXP/20251021-analysis.ipynb
+    - file: experiments/20251120-ClpXP-all proteins/20251120-Analysis.ipynb
+    - file: experiments/20251205_ClpXP-ClpX DNA/20251205-analysis.ipynb
+    - file: experiments/20251212-ClpXP/20251212-analysis.ipynb
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: devnote.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - experimental/**/*
+    - experiments/**/*
+    - figures/**/*
+    - general/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: module-clpxp-cytosol.zip
+    - file: experiments/ClpXP Control Module - Research Notebook.pdf
+      title: Lab Notebook Entry
+    - file: ./general/clpxp-module-plasmids-01.zip
+      title: Module Plasmids
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
+site:
+  template: article-theme
+  nav: []

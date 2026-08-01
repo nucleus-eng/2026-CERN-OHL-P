@@ -1,0 +1,13 @@
+_build/
+.ipynb_checkpoints/
+.DS_Store
+experiments/**/ref/
+experiments/**/SH2HYJ_results/
+experiments/**/plasmid-maps/
+experiments/**/ChemiDoc Images*/
+*.tif
+*.scn
+*.xpt
+*.xlsx
+~$*
+src/

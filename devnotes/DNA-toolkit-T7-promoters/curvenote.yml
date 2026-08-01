@@ -1,0 +1,95 @@
+version: 1
+project:
+  # doi: 10.63765/djnv7772
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-dna-toolkit-promoter
+  # Ensure your title is the same as in your `main.md`
+  title: "DNA toolkit - The T7 promoter collection"
+  subtitle: "The first entry to a DNA resource specific to PURE" 
+  description: "The first entry to a DNA resource specific to PURE" 
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Charlie Newell
+      email: charlie.newell@bnext.bio
+      orcid: 0000-0001-9208-7542
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107  
+          country: USA        
+      corresponding: true        
+
+    - name: Astrid Joergensen
+      email: astrid@bnext.bio
+      orcid: 0009-0007-8019-7251
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: 94107  
+          country: USA        
+      corresponding: false       
+  keywords:                   
+    - DNA toolkit
+    - Promoters
+    - Reporters
+  # Add the abbreviations that you use in your paper here
+  # abbreviations:
+  #   MyST: Markedly Structured Text
+  #   CDK: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2025-11-18
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  thumbnail: ./00-General/Thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+    - file: ./03-Analysis/Promoter_collection_plamGFP_deGFP.ipynb
+    - file: ./03-Analysis/amajLime_analysis.ipynb
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: bnext-template.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - 00-General/**/*
+    - 01-Platemap/**/*
+    - 02-Data/**/*
+    - 03-Analysis/**/*
+    - 04-Figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: dna-toolkit-t7-promoters.zip
+    - file: ./00-General/RN_DNA_toolkit_T7_promoter_collection.pdf
+      title: Lab Notebook Entry
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
+site:
+  template: article-theme
+  nav: []

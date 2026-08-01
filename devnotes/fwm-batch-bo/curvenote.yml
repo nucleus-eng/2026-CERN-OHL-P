@@ -1,0 +1,22 @@
+version: 1
+extends: base.yml
+project:
+  title: 'Batch Bayesian Optimization'
+  authors:
+    - name: Joseph Lozier
+      email: joseph@findwhatmatters.ai
+      orcid: 0009-0003-1646-8003
+      corresponding: true
+  date: 2026-07-27
+  banner: general/batch-opt-3.png
+  thumbnail: general/batch-opt-3.png
+  toc:
+    - file: main.md
+  downloads:
+    - id: meca
+      title: Computational Archive
+      filename: fwm-batch-bo.zip
+  exports:
+    - format: meca
+      id: meca
+  id: 019f9b60-cc79-7008-9c25-4a46b53b8604

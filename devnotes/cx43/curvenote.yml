@@ -1,0 +1,68 @@
+version: 1
+project:
+  # Update this to match `nucleus-devnote-core-<folder>` the folder should be `???`
+  id: nucleus-devnote-core-01_contrib_cx43_cell
+  # Ensure your title is the same as in your `main.md`
+  title: "Cx43 Cell" 
+  subtitle: "Cx43 spontaneously inserts into the cell membrane and facilitates the exchange of different molecules between the cell and the environment"
+  description: "Cx43 spontaneously inserts into the cell membrane and facilitates the exchange of different molecules between the cell and the environment"
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: Ahmed Z. Sihorwala
+      email: asihorwala@utexas.edu
+      affiliations:
+        - name: Belardi Lab, University of Texas at Austin, Austin, Texas
+          city: Austin
+          state: Texas
+          postal_code: 78712
+          country: USA
+      corresponding: true
+  keywords:
+    - Cells
+    - Modules
+    - Contribution
+  # Add the abbreviations that you use in your paper here
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  # Add specs here for any additional content you want to cross reference
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # Set an initial publisation date for the note
+  date: 2025-03-12
+  # Reference a specific thumbnail if you are not happy with the automatically selected one
+  #thumbnail: thumbnail.png
+  # A create a banner image for your publication, use this is a placeholder as a guide (webp or png)
+  banner: banner.webp
+  # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
+  toc:
+    - file: main.md
+  # The rest of the information shouldn't be modified
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - experimental/**/*
+    - figures/**/*
+    - general/**/*
+  downloads:
+    - id: meca
+      title: Computational Archive
+      filename: cx43.zip
+    - file: ./general/prset_cx43-egfp_predicted.gb
+      title: pT7-Cx43-eGFP
+site:
+  template: article-theme
+  nav: []
