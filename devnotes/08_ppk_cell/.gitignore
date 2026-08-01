@@ -1,4 +1,5 @@
 _build/
 .ipynb_checkpoints/
 .DS_Store
-bnext-ppk-cell.pdfsrc/cdk/
+bnext-ppk-cell.pdf
+src/cdk/
