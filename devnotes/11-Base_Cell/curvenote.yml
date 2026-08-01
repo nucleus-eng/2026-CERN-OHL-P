@@ -40,10 +40,6 @@ project:
   # Add any supporting files to the toc, but ensure that your main manuscript is first is the list
   toc:
     - file: main.md
-    #- file: experiments/20251104-NucleusPURE_deGFP/Analysis.ipynb
-    #  title: Analysis Notebook 1
-    #- file: experiments/20251107-NucleusPURE_deGFP_MgSweep/Analysis.ipynb
-    #  title: Analysis Notebook 2
   # The rest of the information shouldn't be modified
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0

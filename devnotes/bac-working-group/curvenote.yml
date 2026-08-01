@@ -1,0 +1,61 @@
+version: 1
+extends: base.yml
+project:
+  title: "Energy Metabolism Working Group at Build-a-Cell #15"
+  description: "Build-a-Cell Energy Metabolism Working Group Summary"
+  subtitle: "Current limitations and potential opportunities in SynCell Energy Metabolism"
+  banner: banner.webp
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - Energy Regeneration
+    - Synthetic Cell
+    - ATP 
+  authors:
+      - name: Energy Metabolism Working Group
+  date: '2026-05-02'
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  #downloads:
+    #- url: experiments/experimental-01/00-general/MTHFS-labnotebook.pdf
+    #  title: Lab Notebook Entry
+  id: bac-working-group
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  toc:
+    - file: main.md
+    #- file: experiments/experimental-01/20250220-analysis.ipynb
+  requirements:
+    - environment.yml
+  resources:
+    #- src/**/*
+    #- figures/**/*
+    #- experiments/**/*
+  plugins:
+    - type: javascript
+      path: /home/jovyan/devnotes/BAC Energy Metabolism/lorem.mjs
+site:
+  nav: []
+  template: article-theme
+  title: My cool new template
+  options:
+    logo_text: My cool new template
+  actions:
+    - title: Learn More
+      url: https://curvenote.com/docs/web
+  domains:
+    - suri.curve.space
+extend:
+  - base.yml

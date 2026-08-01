@@ -1,0 +1,13 @@
+Date,Experiment Name,Well,Name,Sample Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMix ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (nM),[Mg-Ace] (mM),[CP] (mM),[polyP] (mM),[PPK2] (uM),[PEG] (%),PMix Vol (uL),Ribosome Vol (uL),SMix Vol (uL),tRNA Vol (uL),DNA Vol (uL),RNase Inhib Vol (uL),CP Vol (uL),PPK Vol (uL),polyP Vol (uL),Mg-Ace Vol (uL),PEG Vol (uL),Water vol (uL),Rxn Volume (uL)
+20260121,OnePot-Optimization2,B8,14 mM Mg + 2% PEG,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.3,0.5,0.697142857,10
+20260121,OnePot-Optimization2,B10,14 mM Mg + 2% PEG,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.3,0.5,0.697142857,10
+20260121,OnePot-Optimization2,B12,14 mM Mg + 2% PEG,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.3,0.5,0.697142857,10
+20260121,OnePot-Optimization2,D8,14 mM Mg with 2.4 uM Ribo,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,2.4,3,1,0.242857143,0.5,0.3,,,0.3,,0.597142857,10
+20260121,OnePot-Optimization2,D10,14 mM Mg with 2.4 uM Ribo,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,2.4,3,1,0.242857143,0.5,0.3,,,0.3,,0.597142857,10
+20260121,OnePot-Optimization2,D12,14 mM Mg with 2.4 uM Ribo,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,2.4,3,1,0.242857143,0.5,0.3,,,0.3,,0.597142857,10
+20260121,OnePot-Optimization2,F8,14 mM Mg with 4.5 mg/mL tRNA,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1.28,0.242857143,0.5,0.3,,,0.3,,0.917142857,10
+20260121,OnePot-Optimization2,F10,14 mM Mg with 4.5 mg/mL tRNA,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1.28,0.242857143,0.5,0.3,,,0.3,,0.917142857,10
+20260121,OnePot-Optimization2,F12,14 mM Mg with 4.5 mg/mL tRNA,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1.28,0.242857143,0.5,0.3,,,0.3,,0.917142857,10
+20260121,OnePot-Optimization2,H8,PURExpress Control,Control,,,,,,,,pOpen-deGFP,124,,,,,,3,,4,,0.242857143,,,,,,,2.757142857,10
+20260121,OnePot-Optimization2,H10,PURExpress Control,Control,,,,,,,,pOpen-deGFP,124,,,,,,3,,4,,0.242857143,,,,,,,2.757142857,10
+20260121,OnePot-Optimization2,H12,PURExpress Control,Control,,,,,,,,pOpen-deGFP,124,,,,,,3,,4,,0.242857143,,,,,,,2.757142857,10

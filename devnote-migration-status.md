@@ -13,7 +13,7 @@
 | SecYEG-Based Membrane Translation Module in Synthetic Cells | Yen-Yu Hsu | 019e896a-6e0d-76d5-99ef-2df38c5ebd7f | Core | TODO |
 | Using platemaps to analyze and share data | Jay Bhasin | 019d6e3a-c618-77bc-853c-fe4694511f53 | Core | TODO |
 | Intro to Kinetics Analysis of Plate Reader Experiments | Sharon Newman | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Core | TODO |
-| Nucleus OnePot PURE | Surendra Yadav | onepot-sy | Core | found (sy-devnotes-download/OnePot-PURE), not staged |
+| Nucleus OnePot PURE | Surendra Yadav | onepot-sy | Core | staged, untested (devnotes/onepot-sy) |
 | ClpXP Control Module: Deployment in PURE Cells | Yen-Yu Hsu | nucleus-devnote-core-clpxp_module_cells-01 | Core | TODO |
 | ClpXP Control Module: Deployment in PURE | Yen-Yu Hsu | nucleus-devnote-core-clpxp_module_cytosol-01 | Core | staged, untested (devnotes/module-Clpxp-Cytosol) |
 | DNA toolkit - The T7 promoter collection | Charlie Newell, Astrid Joergensen | nucleus-devnote-core-dna-toolkit-promoter | Core | staged, untested (devnotes/DNA-toolkit-T7-promoters) |
@@ -25,7 +25,7 @@
 | DevCells: Kickoff Workshop | DevCells Kickoff Workshop | b6272c31-dae6-4c60-bf48-a86466349d86 | Workshops and Courses | TODO |
 | Tunable protein expression strength with toehold exchange riboregulators | Samuel Schaffter, Fernanda Piorino, Eugenia Romantseva | 7b6aaa00-7351-4a7e-ba45-ade3f7332335 | Community | TODO |
 | DNA toolkit - The T7 terminator collection | Charlie Newell | cn-05272026-terminators | Community | TODO |
-| Energy Metabolism Working Group at Build-a-Cell #15 | Energy Metabolism Working Group | bac-working-group | Community | found (sy-devnotes-download/BAC Energy Metabolism), not staged |
+| Energy Metabolism Working Group at Build-a-Cell #15 | Energy Metabolism Working Group | bac-working-group | Community | staged, untested (devnotes/bac-working-group) |
 | London Exchange Meeting: Liposome Protocol Survey | London Exchange Meeting Participants | 019dcea0-91e3-78da-be6d-6450c2ff8308 | Community | staged, untested (devnotes/lipid-prep) |
 | Cx43 Cell | Ahmed Z. Sihorwala | nucleus-devnote-core-01_contrib_cx43_cell | Community | staged, untested (devnotes/cx43) |
 
@@ -38,7 +38,7 @@
 | Liposome encapsulation: A tractable and reproducible approach | Chris Falcon, Katie Drew | `9e302e31-3dbb-494a-b8e3-5fc6d91ea941` | Workshops and Courses |
 | Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation | Javin P Oza | `118a7ada-92d1-448f-adc2-f19c2da16b16` | Workshops and Courses |
 
-Note: the two "found (sy-devnotes-download/...), not staged" rows above (`onepot-sy`, `bac-working-group`) are unaffected by Anton's work — still sitting in the raw download, not yet staged into `devnotes/`. Also new on this branch, outside the original tracker scope: `devnotes/fwm-aria-d2` (ARIA/IGOR optimization) and `devnotes/fwm-batch-bo` (Batch Bayesian Optimization) — new devnotes, not migrations of tracked TODO rows.
+Note: the two rows above (`onepot-sy`, `bac-working-group`) were previously "found (sy-devnotes-download/...), not staged"; both have since been staged into `devnotes/onepot-sy` and `devnotes/bac-working-group` (Step 1 of the migration plan), excluding `onepot-sy`'s `plasmids/PURE_plasmids.tar.gz` DNA archive, which is handled by a separate DNA-reconciliation workstream. Also new on this branch, outside the original tracker scope: `devnotes/fwm-aria-d2` (ARIA/IGOR optimization) and `devnotes/fwm-batch-bo` (Batch Bayesian Optimization) — new devnotes, not migrations of tracked TODO rows.
 
 ## Data-quality flags from `sy-devnotes-download/` audit
 
