@@ -50,9 +50,9 @@ All purified proteins are ordered from GenScript:
 
 | **Proteins** | **Description** |
 | --- | --- |
-| ClpX | Purified ClpX protein expressed using pET30a plasmid |
-| ClpP | Purified ClpP protein expressed using pET30a plasmid |
-| deGFP-ssRA | Purified GFP protein wtih ssrA tag expressed using pET30a plasmid |
+| [ClpX](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-ClpX-CHis.gb) | Purified ClpX protein expressed using pET28a plasmid |
+| [ClpP](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-ClpP-CHis.gb) | Purified ClpP protein expressed using pET28a plasmid |
+| [deGFP-ssRA](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-deGFP-CHis-ssrA.gb) | Purified GFP protein wtih ssrA tag expressed using pET28a plasmid |
 
 
 
