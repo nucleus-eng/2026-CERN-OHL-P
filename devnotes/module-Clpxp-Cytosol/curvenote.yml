@@ -56,6 +56,7 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
@@ -72,6 +73,9 @@ project:
   downloads:
     - id: article
       title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: module-clpxp-cytosol.zip
     - file: experiments/ClpXP Control Module - Research Notebook.pdf
       title: Lab Notebook Entry
     - file: ./general/clpxp-module-plasmids-01.zip

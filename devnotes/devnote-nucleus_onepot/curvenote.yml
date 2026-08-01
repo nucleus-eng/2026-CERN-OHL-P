@@ -62,6 +62,7 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
     # - format: typst
     #   template: https://github.com/curvenote-templates/bnext.git
     #   article: main.md
@@ -75,6 +76,9 @@ project:
     - figures/**/*
     - general/**/*
   downloads:
+    - id: meca
+      title: Computational Archive
+      filename: nucleus-onepot-pure-replication.zip
     # - id: article
     #   title: Download Article PDF
     # funding:

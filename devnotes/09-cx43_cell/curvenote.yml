@@ -53,6 +53,7 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
@@ -73,6 +74,9 @@ project:
       title: Plasmid Designs
     - id: article
       title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: cx43-cell.zip
 site:
   template: article-theme
   nav: []

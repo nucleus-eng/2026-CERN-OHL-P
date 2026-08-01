@@ -64,6 +64,7 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
@@ -80,6 +81,9 @@ project:
   downloads:
     - id: article
       title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: dna-toolkit-t7-promoters.zip
     - file: ./00-General/RN_DNA_toolkit_T7_promoter_collection.pdf
       title: Lab Notebook Entry
   funding:

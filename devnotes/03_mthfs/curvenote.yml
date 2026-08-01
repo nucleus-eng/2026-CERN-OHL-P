@@ -51,6 +51,7 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
@@ -65,6 +66,9 @@ project:
   downloads:
     - id: article
       title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: mthfs.zip
     - file: experiments/20250220-experimental/00-general/MTHFS-labnotebook.pdf
       title: Lab Notebook Entry
 site:

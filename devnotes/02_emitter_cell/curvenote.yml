@@ -42,10 +42,15 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
   # requirements:
   #   - environment.yml
   resources:
     - data/**/*
+  downloads:
+    - id: meca
+      title: Computational Archive
+      filename: emitter-cell.zip
 site:
   template: article-theme
   nav: []

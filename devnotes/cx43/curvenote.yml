@@ -49,6 +49,7 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
   requirements:
     - environment.yml
   resources:
@@ -57,6 +58,9 @@ project:
     - figures/**/*
     - general/**/*
   downloads:
+    - id: meca
+      title: Computational Archive
+      filename: cx43.zip
     - file: ./general/prset_cx43-egfp_predicted.gb
       title: pT7-Cx43-eGFP
 site:

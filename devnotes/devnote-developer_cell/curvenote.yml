@@ -59,12 +59,17 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
   requirements:
     - environment.yml
   resources:
     - src/**/*
     - experimental/**/*
     - figures/**/*
+  downloads:
+    - id: meca
+      title: Computational Archive
+      filename: developer-cell.zip
 site:
   template: article-theme
   nav: []

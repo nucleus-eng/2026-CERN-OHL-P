@@ -56,6 +56,7 @@ project:
   jupyter: true
   exports:
     - format: meca
+      id: meca
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       article: main.md
@@ -72,6 +73,9 @@ project:
   downloads:
     - id: article
       title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: nucleus-cytosol-v05.zip
     - file: ./experiments/DevNote_Cytosol_v0.5.pdf
       title: Lab Notebook Entry
     - file: ./experiments/EtOH_DNA_Precipitation.pdf
