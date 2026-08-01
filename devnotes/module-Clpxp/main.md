@@ -70,8 +70,8 @@ All DNA constructs are designed to be used in PURE reactions for protein express
 
 | **DNA Constructs** | **Description** | 
 | --- | --- |
-| pOpen-pT7-ClpP-CHis | Express ClpP protein in the pOpen plasmid |
-| pOpen-pT7-deGFP-ssrA | Express GFP protein wtih ssrA tag in the pOpen plasmid |
+| [pOpen-pT7-ClpP-CHis](https://github.com/nucleus-eng/DNA/blob/f24a8eed499ba6e06dfbefe576453e5d9b548b31/control/pOpen-ClpP-CHis.gb) | Express ClpP protein in the pOpen plasmid |
+| [pOpen-pT7-deGFP-ssrA](https://github.com/nucleus-eng/DNA/blob/f24a8eed499ba6e06dfbefe576453e5d9b548b31/control/pOpen-deGFP-ssrA.gb) | Express GFP protein wtih ssrA tag in the pOpen plasmid |
 | Linear pT7-deGFP-ssrA | Express deGFP protein wtih ssrA tag using linear DNA |
 | Linear pT7-deGFP |Express deGFP protein using linear DNA |
 

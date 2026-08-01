@@ -7,7 +7,7 @@ abstract: |
 
 # Preliminary Work
 
-DNA sequences of the expression plasmids used for the preparation of OnePot PURE are attached to this DevNote and are available for download. *E. coli* BL21(DE3) was used as the expression strain for all 36 PURE proteins in the protocol.
+DNA sequences of the expression plasmids used for the preparation of OnePot PURE are maintained in the [nucleus-eng/DNA](https://github.com/nucleus-eng/DNA/tree/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression) registry (`PURE/expression/`) rather than attached here. *E. coli* BL21(DE3) was used as the expression strain for all 36 PURE proteins in the protocol.
 
 ## Starter Plate Preparation
 
@@ -357,12 +357,12 @@ The results showed only a slight improvement in protein yield (~5%) compared to 
 | Product | Manufacturer |
 | --- | --- |
 | BL21(DE3) Competent Cells | NEB (C2527H) |
-| Nucleus PURE DNA constructs | b.next |
+| [Nucleus PURE DNA constructs](https://github.com/nucleus-eng/DNA/tree/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression) | b.next |
 | Creatine phosphate | Sigma-Aldrich (27920) |
 | *E. coli* Ribosomes |	b.next |
 | *E. coli* tRNAs |	b.next |
 | Magnesium acetate | Sigma-Aldrich (M5661) |
-| pOpen-deGFP DNA template | b.next |
+| [pOpen-deGFP DNA template](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/reporters/pOpen-deGFP.gbk) | b.next |
 | RNAse Inhibitor, Murine | NEB (M0314S) |
 | 96-well Polypropylene DeepWell Plates | Nunc (260251) |
 | Amicon Ultra 0.5 mL - 3 KDa | Merck Millipore (UFC500324) |
