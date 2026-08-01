@@ -7,7 +7,7 @@ abstract: |
 
 # Preliminary Work
 
-DNA sequences of the expression plasmids used for the preparation of OnePot PURE are maintained in the [nucleus-eng/DNA](https://github.com/nucleus-eng/DNA/tree/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression) registry (`PURE/expression/`) rather than attached here. *E. coli* BL21(DE3) was used as the expression strain for all 36 PURE proteins in the protocol.
+DNA sequences of the expression plasmids used for the preparation of OnePot PURE are attached to this DevNote and are available for download. *E. coli* BL21(DE3) was used as the expression strain for all 36 PURE proteins in the protocol.
 
 ## Starter Plate Preparation
 

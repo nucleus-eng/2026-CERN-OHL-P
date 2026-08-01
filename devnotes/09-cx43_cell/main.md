@@ -35,7 +35,7 @@ Cx43 does not function as a standalone component in the PURE system; it requires
 
 :::{table}
 :label: tbl:dna
-Design files are maintained in the [nucleus-eng/DNA](https://github.com/nucleus-eng/DNA) registry (sequence-confirmed identical to the original design files previously attached here).
+The design files are available for download at the top of this DevNote.
 | **Construct** | **Description** |
 | --- | --- |
 | [`pOpen-pT7-Cx43`](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/pores/pOpen-Cx43.gb) | Express WT Cx43 protein in the pOpen plasmid |
