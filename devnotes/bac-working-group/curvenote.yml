@@ -45,7 +45,7 @@ project:
     #- experiments/**/*
   plugins:
     - type: javascript
-      path: /home/jovyan/devnotes/BAC Energy Metabolism/lorem.mjs
+      path: ./lorem.mjs
 site:
   nav: []
   template: article-theme
