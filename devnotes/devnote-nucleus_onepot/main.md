@@ -36,7 +36,7 @@ The sequencing results returned with almost-perfect sequences for all constructs
 
 ::::{tab-item} Transformed cells
 :sync: tab0-1
-:::{figure} ./experiments/20250701-nucleus-onepot-debug-01/20250703-overnight-sequencing/20250701-cell-transforms.png
+:::{figure} ./experiments/20250701-nucleus-onepot-debug/20250703-overnight-sequencing/20250701-cell-transforms.png
 :label: fig:cell-culture
 :width: 75%
 
@@ -207,7 +207,7 @@ Using the A280 to determine protein mix concentration is a somewhat fraught and 
 
 ::::{tab-item} Lysate and Flowthrough
 :sync: tab2-1
-:::{figure} ./experiments/20250701-nucleus-onepot-debug-01/20250707-purification-gel/20250707-Purification-QA-2.jpg
+:::{figure} ./experiments/20250701-nucleus-onepot-debug/20250707-purification-gel/20250707-Purification-QA-2.jpg
 :label: fig:QA-gel-1
 :width: 75%
 
@@ -217,7 +217,7 @@ Annotated protein gel showing clarified lysate and flowthrough fractions for sam
 
 ::::{tab-item} Wash and Elution
 :sync: tab2-2
-:::{figure} ./experiments/20250701-nucleus-onepot-debug-01/20250707-purification-gel/20250707-Purification-QA-1.png
+:::{figure} ./experiments/20250701-nucleus-onepot-debug/20250707-purification-gel/20250707-Purification-QA-1.png
 :label: fig:QA-gel-2
 :width: 75%
 
