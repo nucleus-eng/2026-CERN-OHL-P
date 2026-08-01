@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 .git.disable/
 *.mp4
+archive/
