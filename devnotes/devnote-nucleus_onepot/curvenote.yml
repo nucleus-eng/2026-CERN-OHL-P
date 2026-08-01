@@ -71,7 +71,7 @@ project:
     - environment.yml
   resources:
     - src/**/*
-    - experimental/**/*
+    - experiments/**/*
     - figures/**/*
     - general/**/*
   downloads:
