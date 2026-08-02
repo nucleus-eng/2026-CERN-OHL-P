@@ -51,7 +51,7 @@ project:
   subject: Developer Note
   plugins:
     - lorem.mjs
-    - seqviz.mjs
+    - ../../plugins/seqviz/seqviz.mjs
   # compute configuration, see: https://curvenote.com/docs/publish/live-compute#configuration-via-frontmatter
   jupyter: true
   exports:
