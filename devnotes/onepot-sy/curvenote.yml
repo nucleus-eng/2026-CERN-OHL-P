@@ -1,0 +1,77 @@
+version: 1
+extends: base.yml
+project:
+  title: Nucleus OnePot PURE
+  description: Nucleus OnePot PURE Protocol and Results
+  subtitle: Nucleus OnePot PURE Protocol and Results
+  banner: banner.webp
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - OnePot PURE
+  authors:
+    - name: Surendra Yadav
+      corresponding: true
+      email: surendra@bnext.bio
+      orcid: 0009-0009-5630-957X
+      affiliations:
+          name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: '94107'
+          country: USA
+  date: '2026-04-07'
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  exports:
+    #- format: meca
+  downloads:
+    - url: plasmids/pOpen-deGFP.gb
+      title: pOpen-deGFP DNA
+    - url: plasmids/PURE_plasmids.tar.gz
+      title: PURE Plasmid Sequences
+  id: onepot-sy
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  thebe:
+    binder:
+      url: https://mybinder.org/
+      provider: github
+      repo: https://github.com/bnext-bio/nucleus-developer-notes
+      ref: HEAD
+  toc:
+    - file: main.md
+    - file: experiments/20260120-OnePot-Opt1/20260120-Analysis.ipynb
+      title: 20260120-Analysis.ipynb
+    - file: experiments/20260121-OnePot-Opt2/20260121-Analysis.ipynb
+      title: 20260121-Analysis.ipynb
+    - file: experiments/20260123-OnePot-Opt4/20260123-Analysis.ipynb
+      title: 20260123-Analysis.ipynb
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - experiments/**/*
+    - plasmids/**/*
+  plugins:
+    - lorem.mjs
+site:
+  nav: []
+  template: article-theme
+  title: My cool new template
+  options:
+    logo_text: My cool new template
+  actions:
+    - title: Learn More
+      url: https://curvenote.com/docs/web
+  domains:
+    - suri.curve.space
+extend:
+  - base.yml
