@@ -40,6 +40,53 @@
 
 Note: the two rows above (`onepot-sy`, `bac-working-group`) were previously "found (sy-devnotes-download/...), not staged"; both have since been staged into `devnotes/onepot-sy` and `devnotes/bac-working-group` (Step 1 of the migration plan), excluding `onepot-sy`'s `plasmids/PURE_plasmids.tar.gz` DNA archive, which is handled by a separate DNA-reconciliation workstream. Also new on this branch, outside the original tracker scope: `devnotes/fwm-aria-d2` (ARIA/IGOR optimization) and `devnotes/fwm-batch-bo` (Batch Bayesian Optimization) — new devnotes, not migrations of tracked TODO rows.
 
+## Manual review checklist (all 19 devnotes currently in `devnotes/`)
+
+Three review steps per devnote, each its own column: **notebooks run** (have the
+notebooks actually been executed/re-executed and outputs checked), **content
+reviewed** (has a human actually read `main.md` end to end), **submitted** (a
+REAL, non-draft `curvenote submit` — an editor can't act on a draft, so a
+draft build does not count as submitted here). Draft URL is the most recent
+`https://scms.curvenote.com/build/...` link — draft or real — open it to see
+the live preview; it does not by itself mean "submitted."
+
+Run `./manual-submit-all.sh` (repo root) to (re-)submit **drafts** for every
+devnote in one pass and get fresh preview URLs; it discovers devnotes
+dynamically rather than a fixed list, so it stays correct as devnotes are
+added. That script is for review/preview only — it deliberately does not mark
+anything as "submitted" here, since drafts aren't real submissions. Marking a
+row ☑ under "submitted" requires an actual `curvenote submit` run without
+`--draft`, which is a real, curator-visible action — do that deliberately per
+devnote, not as a batch script.
+
+| Devnote (dir) | Myst Key | Author(s) | Notebooks run | Content reviewed | Submitted (real) | Draft/preview URL |
+|---|---|---|---|---|---|---|
+| 02_emitter_cell | nucleus-devnote-core-02_emitter_cell | Yen-Yu Hsu | ☐ | ☐ | ☐ | |
+| 03_mthfs | nucleus-devnote-core-03_mthfs | Yemo Ku | ☐ | ☐ | ☐ | |
+| 04_ppk | nucleus-devnote-core-04_ppk | Surendra Yadav | ☐ | ☐ | ☐ | |
+| 05_pure_workshop | nucleus-devnote-core-09_pure-workshop | OnePot Workshop | ☐ | ☐ | ☐ | |
+| 08_ppk_cell | nucleus-devnote-core-08_ppk-module-in-pure-cell | Yen-Yu Hsu | ☐ | ☐ | ☐ | |
+| 09-cx43_cell | nucleus-devnote-core-cx43_01 | Yen-Yu Hsu | ☐ | ☐ | ☐ | https://scms.curvenote.com/build/019fc02a-19bf-784b-af8f-93f08fa3edc7 (draft) |
+| 10-nucleus_cytosol_v05 | nucleus-devnote-core-NucelusPURE_deGFP | Surendra Yadav | ☐ | ☐ | ☐ | https://scms.curvenote.com/build/019fc02c-3e48-7812-8082-1f6b362b9632 (draft) |
+| 11-Base_Cell | nucleus-devnote-core-Base_Cell | Surendra Yadav | ☐ | ☐ | ☐ | https://scms.curvenote.com/build/019fc02b-f140-7434-945e-365ae2323b0b (draft) |
+| DNA-toolkit-T7-promoters | nucleus-devnote-core-dna-toolkit-promoter | Charlie Newell, Astrid Joergensen | ☐ | ☐ | ☐ | |
+| bac-working-group | bac-working-group | Energy Metabolism Working Group | ☐ | ☐ | ☑ | https://scms.curvenote.com/build/019fc034-3f41-7bc8-b207-3cd4979b1aea (real submission) |
+| cx43 | nucleus-devnote-core-01_contrib_cx43_cell | Ahmed Z. Sihorwala | ☐ | ☐ | ☐ | |
+| devnote-developer_cell | nucleus-devnote-core-05_devcell_01 | Anton Jackson-Smith, Akshay Maheshwari | ☐ | ☐ | ☐ | |
+| devnote-nucleus_onepot | nucleus-devnote-core-07_bnext-onepot-pure-replication | Anton Molina, Anton Jackson-Smith | ☐ | ☐ | ☐ | https://scms.curvenote.com/build/019fc029-64f5-73ce-b2f5-0a8ab298fc78 (draft) |
+| fwm-aria-d2 | 019f6db2-e060-710d-8984-6bcd5747d775 | b.next, Find What Matters | ☐ | ☐ | ☐ | https://scms.curvenote.com/build/019fc029-bd16-7c3d-8825-90835da5c5b9 (draft) |
+| fwm-batch-bo | 019f9b60-cc79-7008-9c25-4a46b53b8604 | Joseph Lozier | ☐ | ☐ | ☐ | |
+| lipid-prep | 019dcea0-91e3-78da-be6d-6450c2ff8308 | London Exchange Meeting Participants | ☐ | ☐ | ☐ | |
+| module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | ☐ | ☐ | ☐ | https://scms.curvenote.com/build/019fc02e-f178-7ad8-af75-1575d8adb1fd (draft) |
+| module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☐ | ☐ | ☐ | https://scms.curvenote.com/build/019fc02b-a5b5-7f3c-8f26-dccb332a376c (draft) |
+| onepot-sy | onepot-sy | Surendra Yadav | ☐ | ☐ | ☑ | https://scms.curvenote.com/build/019fc034-5ab6-7f11-948f-9e5c6e096f02 (real submission) |
+
+**Note on `bac-working-group`/`onepot-sy`:** these are the only two rows with a real, non-draft submission on file — made while testing whether the CLI path worked at all, not a mistake to undo. Every other row's URL (where present) is a draft/preview build only and does NOT count as submitted.
+
+**Note on `module-Clpxp`/`module-Clpxp-Cytosol`/`11-Base_Cell`/`10-nucleus_cytosol_v05`:** these draft URLs were built from the `fix-typst-seqviz-plugins` branch (PR #9, not yet merged), which fixes real typst-compile and seqviz bugs in these four — the draft link reflects the fixed version, not what's currently on `main`.
+
+**Known non-transient issue found during this pass:** `bac-working-group`'s only author, "Energy Metabolism Working Group," has no `email` field in `curvenote.yml` — `curvenote check` fails this specific rule every time (`No authors provided an email`). Not something to guess at; needs a real contact from whoever owns that devnote before "content reviewed" can be meaningfully checked off for it.
+
 ## Data-quality flags from `sy-devnotes-download/` audit
 
 - **Duplicate/near-empty directories**: `trial/`, `pla1/`, `cytosol-lifetime/` are completely empty (no files, no `curvenote.yml`) despite matching names of real devnotes already accounted for elsewhere (`pla1` and `cytosol-lifetime` both appear — with actual content — in `devnotes-downloaded/`). `devnote-template/` is also near-empty after bloat removal — its lone surviving `main.md` is an unfinished draft stub of the MTHFS story (title matches `devnote-test/`'s real content, but body says "Abstract TODO" / "Caption TODO" placeholders), and it has no `curvenote.yml`. None of these four contribute real content.
