@@ -10,7 +10,7 @@ This DevNote represents a Work In Progress. All conclusions are preliminary and 
 
 # Background
 
-The [Nucleus OnePot PURE Protocol](https://nucleus.bnext.bio/pure-protocols/make-onepot-protein-mix) was released during a [workshop](https://nucleus.bnext.bio/) held at Nucleus Labs from May 12th—16th where participants attempted to make all components of PURE, including protein mix, energy mix, tRNA, and ribosomes. With the exception of the protein mix, all other components exhibited a performance in PURE that matched or exceeded the benchmarks set by commercially available reagents. During the workshop, most protein mix preps had performance of ~1% of the commercially available equivalent; with debugging, some of these rose to 5%. Our strongest hypothesis for this performance was that the initial *E. coli* protein expression strains contained sequence errors for some proteins, or that some strains dropped out during the one pot co-culture. We set out to replicate the Nucleus OnePot protocol, particularly the production of protein mix, starting fresh from newly-transformed strains and with careful quality control on the expression strains and co-culture.
+The [Nucleus OnePot PURE Protocol](devnotes/devnote-nucleus_onepot/experiments/Make_OnePot_Protein_Mix.pdf) (also available [online](https://nucleus.bnext.bio/pure-protocols/make-onepot-protein-mix)) was released during a [workshop](https://nucleus.bnext.bio/) held at Nucleus Labs from May 12th—16th where participants attempted to make all components of PURE, including protein mix, energy mix, tRNA, and ribosomes. With the exception of the protein mix, all other components exhibited a performance in PURE that matched or exceeded the benchmarks set by commercially available reagents. During the workshop, most protein mix preps had performance of ~1% of the commercially available equivalent; with debugging, some of these rose to 5%. Our strongest hypothesis for this performance was that the initial *E. coli* protein expression strains contained sequence errors for some proteins, or that some strains dropped out during the one pot co-culture. We set out to replicate the Nucleus OnePot protocol, particularly the production of protein mix, starting fresh from newly-transformed strains and with careful quality control on the expression strains and co-culture.
 
 The purpose of this Developer Note is to document the process of validating the Nucleus OnePot PURE protocol and identify improvements so that the protocol delivers a performance of >80% consistently. This note will be updated periodically as we make progress. Improvements described here will be fed back into the protocol for the benefit of others.
 
@@ -73,56 +73,56 @@ ArgRS sequence showing the two point mutations in the pET28a backbone of `pET28a
 
 | # | Name | Length | Reference | Status |
 | --- | --- | --- | --- | --- |
-| 1 | AlaRS | 7.9 Kbp | [pET28a-AlaRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-AlaRS.gb) | ✅ |
-| 2 | ArgRS | 7.0 Kbp | [pET28a-ArgRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-ArgRS.gb) | ⛔ |
-| 3 | AsnRS | 6.6 Kbp | [pET28a-AsnRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-AsnRS.gb) | ✅ |
-| 4 | AspRS | 7.0 Kbp | [pET28a-AspRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-AspRS.gb) | ✅ |
-| 5 | CysRS | 6.6 Kbp | [pET28a-CysRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-CysRS.gb) | ✅ |
-| 6 | GlnRS | 6.9 Kbp | [pET28a-GlnRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-GlnRS.gb) | ✅ |
-| 7 | GluRS | 6.7 Kbp | [pET28a-GluRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-GluRS.gb) | ✅ |
-| 8 | GlyRS | 8.3 Kbp | [pET28a-GlyRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-GlyRS.gb) | ✅ |
-| 9 | HisRS | 6.5 Kbp | [pET28a-HisRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-HisRS.gb) | ✅ |
-| 10 | IleRS | 8.1 Kbp | [pET28a-IleRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-IleRS.gb) | ✅ |
-| 11 | LeuRS | 7.8 Kbp | [pET28a-LeuRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-LeuRS.gb) | ✅ |
-| 12 | LysRS | 6.8 Kbp | [pET28a-LysRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-LysRS.gb) | ✅ |
-| 13 | MetRS | 7.3 Kbp | [pET28a-MetRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-MetRS.gb) | ✅ |
-| 14 | PheRS | 8.6 Kbp | [pET28a-PheRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-PheRS.gb) | ✅ |
-| 15 | ProRS | 7.0 Kbp | [pET28a-ProRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-ProRS.gb) | ✅ |
-| 16 | SerRS | 6.5 Kbp | [pET28a-SerRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-SerRS.gb) | ✅ |
-| 17 | ThrRS | 7.2 Kbp | [pET28a-ThrRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-ThrRS.gb) | ✅ |
-| 18 | TrpRS | 6.2 Kbp | [pET28a-TrpRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-TrpRS.gb) | ✅ |
-| 19 | TyrRS | 6.5 Kbp | [pET28a-TyrRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-TyrRS.gb) | ✅ |
-| 20 | ValRS | 8.1 Kbp | [pET28a-ValRS.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-ValRS.gb) | ✅ |
-| 21 | MTF | 6.2 Kbp | [pET28a-MTF.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-MTF.gb) | ✅ |
-| 22 | IF1 | 5.5 Kbp | [pET28a-IF1.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-IF1.gb) | ✅ |
-| 23 | pT5-IF2 | 7.9 Kbp | [pET28a-pT5-IF2.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-pT5-IF2.gb) | ✅ |
-| 24 | IF3 | 5.8 Kbp | [pET28a-IF3.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-IF3.gb) | ✅ |
-| 25 | EF-G | 7.4 Kbp | [pET28a-EFG.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFG.gb) | ✅ |
-| 26 | EF-Tu | 6.4 Kbp | [pET28a-EFTu.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFTu.gb) | ✅ |
-| 27 | EF-Ts | 6.1 Kbp | [pET28a-EFTs.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFTs.gb) | ✅ |
-| 28 | RF1 | 6.3 Kbp | [pET28a-RF1.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RF1.gb) | ✅ |
-| 29 | RF2 | 6.3 Kbp | [pET28a-RF2.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RF2.gb) | ✅ |
-| 30 | RF3 | 6.8 Kbp | [pET28a-RF3.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RF3.gb) | ✅ |
-| 31 | RRF | 5.8 Kbp | [pET28a-RRF.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RRF.gb) | ✅ |
-| 32 | AK-Gg | 5.8 Kbp | [pET28a-AK-Gg.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-AK-Gg.gb) | ✅ |
-| 33 | CK-Gg | 6.4 Kbp | [pET28a-CK-Gg.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-CK-Gg.gb) | ✅ |
-| 34 | NDK | 5.7 Kbp | [pET28a-NDK.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-NDK.gb) | ✅ |
-| 35 | PPiase | 6.1 Kbp | [pET28a-PPiase.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-PPiase.gb) | ✅ |
-| 36 | pT5-T7RNAP | 7.9 Kbp | [pET28a-pT5-T7RNAP.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-pT5-T7RNAP.gb) | ✅ |
-| 37 | EF-G-LBKAN | 7.4 Kbp | [pET28a-EFG.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFG.gb) | ✅ |
-| 38 | EF-Tu-LBKAN | 6.4 Kbp | [pET28a-EFTu.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFTu.gb) | ✅ |
-| 39 | EF-Ts-LBKAN | 6.1 Kbp | [pET28a-EFTs.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFTs.gb) | ✅ |
-| 40 | RF1-LBKAN | 6.3 Kbp | [pET28a-RF1.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RF1.gb) | ✅ |
-| 41 | RF2-LBKAN | 6.3 Kbp | [pET28a-RF2.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RF2.gb) | ✅ |
-| 42 | RF3-LBKAN | 6.8 Kbp | [pET28a-RF3.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RF3.gb) | ✅ |
-| 43 | RRF-LBKAN | 5.8 Kbp | [pET28a-RRF.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-RRF.gb) | ✅ |
-| 44 | AK-Gg-LBKAN | 5.8 Kbp | [pET28a-AK-Gg.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-AK-Gg.gb) | ✅ |
-| 45 | CK-Gg-LBKAN | 6.4 Kbp | [pET28a-CK-Gg.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-CK-Gg.gb) | ✅ |
-| 46 | NDK-LBKAN | 5.7 Kbp | [pET28a-NDK.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-NDK.gb) | ✅ |
-| 47 | PPiase-LBKAN | 6.1 Kbp | [pET28a-PPiase.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-PPiase.gb) | ✅ |
-| 48 | pT5-T7RNAP-LBKAN | 7.9 Kbp | [pET28a-pT5-T7RNAP.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-pT5-T7RNAP.gb) | ✅ |
-| 49 | EF-Tu-5mL-1 | 6.4 Kbp | [pET28a-EFTu.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFTu.gb) | ✅ |
-| 50 | EF-Tu-5mL-2 | 6.4 Kbp | [pET28a-EFTu.gb](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/PURE/expression/pET28a-EFTu.gb) | ✅ |
+| 1 | AlaRS | 7.9 Kbp | [pET28a-AlaRS.gb](./general/nucleus-pure-workshop-01/pET28a-AlaRS.gb) | ✅ |
+| 2 | ArgRS | 7.0 Kbp | [pET28a-ArgRS.gb](./general/nucleus-pure-workshop-01/pET28a-ArgRS.gb) | ⛔ |
+| 3 | AsnRS | 6.6 Kbp | [pET28a-AsnRS.gb](./general/nucleus-pure-workshop-01/pET28a-AsnRS.gb) | ✅ |
+| 4 | AspRS | 7.0 Kbp | [pET28a-AspRS.gb](./general/nucleus-pure-workshop-01/pET28a-AspRS.gb) | ✅ |
+| 5 | CysRS | 6.6 Kbp | [pET28a-CysRS.gb](./general/nucleus-pure-workshop-01/pET28a-CysRS.gb) | ✅ |
+| 6 | GlnRS | 6.9 Kbp | [pET28a-GlnRS.gb](./general/nucleus-pure-workshop-01/pET28a-GlnRS.gb) | ✅ |
+| 7 | GluRS | 6.7 Kbp | [pET28a-GluRS.gb](./general/nucleus-pure-workshop-01/pET28a-GluRS.gb) | ✅ |
+| 8 | GlyRS | 8.3 Kbp | [pET28a-GlyRS.gb](./general/nucleus-pure-workshop-01/pET28a-GlyRS.gb) | ✅ |
+| 9 | HisRS | 6.5 Kbp | [pET28a-HisRS.gb](./general/nucleus-pure-workshop-01/pET28a-HisRS.gb) | ✅ |
+| 10 | IleRS | 8.1 Kbp | [pET28a-IleRS.gb](./general/nucleus-pure-workshop-01/pET28a-IleRS.gb) | ✅ |
+| 11 | LeuRS | 7.8 Kbp | [pET28a-LeuRS.gb](./general/nucleus-pure-workshop-01/pET28a-LeuRS.gb) | ✅ |
+| 12 | LysRS | 6.8 Kbp | [pET28a-LysRS.gb](./general/nucleus-pure-workshop-01/pET28a-LysRS.gb) | ✅ |
+| 13 | MetRS | 7.3 Kbp | [pET28a-MetRS.gb](./general/nucleus-pure-workshop-01/pET28a-MetRS.gb) | ✅ |
+| 14 | PheRS | 8.6 Kbp | [pET28a-PheRS.gb](./general/nucleus-pure-workshop-01/pET28a-PheRS.gb) | ✅ |
+| 15 | ProRS | 7.0 Kbp | [pET28a-ProRS.gb](./general/nucleus-pure-workshop-01/pET28a-ProRS.gb) | ✅ |
+| 16 | SerRS | 6.5 Kbp | [pET28a-SerRS.gb](./general/nucleus-pure-workshop-01/pET28a-SerRS.gb) | ✅ |
+| 17 | ThrRS | 7.2 Kbp | [pET28a-ThrRS.gb](./general/nucleus-pure-workshop-01/pET28a-ThrRS.gb) | ✅ |
+| 18 | TrpRS | 6.2 Kbp | [pET28a-TrpRS.gb](./general/nucleus-pure-workshop-01/pET28a-TrpRS.gb) | ✅ |
+| 19 | TyrRS | 6.5 Kbp | [pET28a-TyrRS.gb](./general/nucleus-pure-workshop-01/pET28a-TyrRS.gb) | ✅ |
+| 20 | ValRS | 8.1 Kbp | [pET28a-ValRS.gb](./general/nucleus-pure-workshop-01/pET28a-ValRS.gb) | ✅ |
+| 21 | MTF | 6.2 Kbp | [pET28a-MTF.gb](./general/nucleus-pure-workshop-01/pET28a-MTF.gb) | ✅ |
+| 22 | IF1 | 5.5 Kbp | [pET28a-IF1.gb](./general/nucleus-pure-workshop-01/pET28a-IF1.gb) | ✅ |
+| 23 | pT5-IF2 | 7.9 Kbp | [pET28a-pT5-IF2.gb](./general/nucleus-pure-workshop-01/pET28a-pT5-IF2.gb) | ✅ |
+| 24 | IF3 | 5.8 Kbp | [pET28a-IF3.gb](./general/nucleus-pure-workshop-01/pET28a-IF3.gb) | ✅ |
+| 25 | EF-G | 7.4 Kbp | [pET28a-EFG.gb](./general/nucleus-pure-workshop-01/pET28a-EFG.gb) | ✅ |
+| 26 | EF-Tu | 6.4 Kbp | [pET28a-EFTu.gb](./general/nucleus-pure-workshop-01/pET28a-EFTu.gb) | ✅ |
+| 27 | EF-Ts | 6.1 Kbp | [pET28a-EFTs.gb](./general/nucleus-pure-workshop-01/pET28a-EFTs.gb) | ✅ |
+| 28 | RF1 | 6.3 Kbp | [pET28a-RF1.gb](./general/nucleus-pure-workshop-01/pET28a-RF1.gb) | ✅ |
+| 29 | RF2 | 6.3 Kbp | [pET28a-RF2.gb](./general/nucleus-pure-workshop-01/pET28a-RF2.gb) | ✅ |
+| 30 | RF3 | 6.8 Kbp | [pET28a-RF3.gb](./general/nucleus-pure-workshop-01/pET28a-RF3.gb) | ✅ |
+| 31 | RRF | 5.8 Kbp | [pET28a-RRF.gb](./general/nucleus-pure-workshop-01/pET28a-RRF.gb) | ✅ |
+| 32 | AK-Gg | 5.8 Kbp | [pET28a-AK-Gg.gb](./general/nucleus-pure-workshop-01/pET28a-AK-Gg.gb) | ✅ |
+| 33 | CK-Gg | 6.4 Kbp | [pET28a-CK-Gg.gb](./general/nucleus-pure-workshop-01/pET28a-CK-Gg.gb) | ✅ |
+| 34 | NDK | 5.7 Kbp | [pET28a-NDK.gb](./general/nucleus-pure-workshop-01/pET28a-NDK.gb) | ✅ |
+| 35 | PPiase | 6.1 Kbp | [pET28a-PPiase.gb](./general/nucleus-pure-workshop-01/pET28a-PPiase-PPiase.gb) | ✅ |
+| 36 | pT5-T7RNAP | 7.9 Kbp | [pET28a-pT5-T7RNAP.gb](./general/nucleus-pure-workshop-01/pET28a-pT5-T7RNAP.gb) | ✅ |
+| 37 | EF-G-LBKAN | 7.4 Kbp | [pET28a-EFG.gb](./general/nucleus-pure-workshop-01/pET28a-EFG.gb) | ✅ |
+| 38 | EF-Tu-LBKAN | 6.4 Kbp | [pET28a-EFTu.gb](./general/nucleus-pure-workshop-01/pET28a-EFTu.gb) | ✅ |
+| 39 | EF-Ts-LBKAN | 6.1 Kbp | [pET28a-EFTs.gb](./general/nucleus-pure-workshop-01/pET28a-EFTs.gb) | ✅ |
+| 40 | RF1-LBKAN | 6.3 Kbp | [pET28a-RF1.gb](./general/nucleus-pure-workshop-01/pET28a-RF1.gb) | ✅ |
+| 41 | RF2-LBKAN | 6.3 Kbp | [pET28a-RF2.gb](./general/nucleus-pure-workshop-01/pET28a-RF2.gb) | ✅ |
+| 42 | RF3-LBKAN | 6.8 Kbp | [pET28a-RF3.gb](./general/nucleus-pure-workshop-01/pET28a-RF3.gb) | ✅ |
+| 43 | RRF-LBKAN | 5.8 Kbp | [pET28a-RRF.gb](./general/nucleus-pure-workshop-01/pET28a-RRF.gb) | ✅ |
+| 44 | AK-Gg-LBKAN | 5.8 Kbp | [pET28a-AK-Gg.gb](./general/nucleus-pure-workshop-01/pET28a-AK-Gg.gb) | ✅ |
+| 45 | CK-Gg-LBKAN | 6.4 Kbp | [pET28a-CK-Gg.gb](./general/nucleus-pure-workshop-01/pET28a-CK-Gg.gb) | ✅ |
+| 46 | NDK-LBKAN | 5.7 Kbp | [pET28a-NDK.gb](./general/nucleus-pure-workshop-01/pET28a-NDK.gb) | ✅ |
+| 47 | PPiase-LBKAN | 6.1 Kbp | [pET28a-PPiase.gb](./general/nucleus-pure-workshop-01/pET28a-PPiase.gb) | ✅ |
+| 48 | pT5-T7RNAP-LBKAN | 7.9 Kbp | [pET28a-pT5-T7RNAP.gb](./general/nucleus-pure-workshop-01/pET28a-pT5-T7RNAP.gb) | ✅ |
+| 49 | EF-Tu-5mL-1 | 6.4 Kbp | [pET28a-EFTu.gb](./general/nucleus-pure-workshop-01/pET28a-EFTu.gb) | ✅ |
+| 50 | EF-Tu-5mL-2 | 6.4 Kbp | [pET28a-EFTu.gb](./general/nucleus-pure-workshop-01/pET28a-EFTu.gb) | ✅ |
 
 :::
 ::::

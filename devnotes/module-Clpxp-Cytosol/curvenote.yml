@@ -78,6 +78,8 @@ project:
       filename: module-clpxp-cytosol.zip
     - file: experiments/ClpXP Control Module - Research Notebook.pdf
       title: Lab Notebook Entry
+    - file: ./general/clpxp-module-plasmids-01.zip
+      title: Module Plasmids
   funding:
     - id: G-2024-22735
       source:

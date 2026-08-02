@@ -38,8 +38,8 @@ Cx43 does not function as a standalone component in the PURE system; it requires
 The design files are available for download at the top of this DevNote.
 | **Construct** | **Description** |
 | --- | --- |
-| [`pOpen-pT7-Cx43`](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/pores/pOpen-Cx43.gb) | Express WT Cx43 protein in the pOpen plasmid |
-| [`pOpen-pT7-Cx43-eGFP`](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/pores/pOpen-Cx43-eGFP.gb) | Express Cx43-eGFP fusion protein in the pOpen plasmid |
+| `pOpen-pT7-Cx43` | Express WT Cx43 protein in the pOpen plasmid |
+| `pOpen-pT7-Cx43-eGFP` | Express Cx43-eGFP fusion protein in the pOpen plasmid |
 
 :::
 

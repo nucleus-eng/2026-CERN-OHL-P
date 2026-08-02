@@ -14,7 +14,10 @@ project:
   thumbnail: general/batch-opt.png
   toc:
     - file: main.md
+    - file: experiments/experiment-01/20250220-analysis.ipynb
   downloads:
+    - file: experiments/experiment-01/MTHFS-labnotebook.pdf
+      title: Lab Notebook Entry
     - id: meca
       title: Computational Archive
       filename: fwm-aria-d2.zip
