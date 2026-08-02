@@ -29,7 +29,7 @@ Assembly of the Base Cell requires preparation of three key components: the lipi
 | *E. coli* Ribosomes |	Ribosomes |	b.next |
 | *E. coli* tRNAs |	tRNAs |	b.next |
 | Magnesium acetate | Magnesium acetate | Sigma-Aldrich (M5661) |
-| DNA template | pOpen-deGFP | b.next |
+| DNA template | [pOpen-deGFP](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/reporters/pOpen-deGFP.gbk) | b.next |
 | RNAse Inhibitor, Murine |	RNAse Inhibitor, Murine | NEB (M0314S) |
 | Nuclease-free water |	Nuclease-free water | ThermoFisher Scientific (AM9916) |
 | Optical Adhesive Film | MicroAmp Optical Adhesive Film | ThermoFisher Scientific (4311971) |

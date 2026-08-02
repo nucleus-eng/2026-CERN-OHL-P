@@ -26,7 +26,7 @@ A schematic representation of PURE converting template DNA into a fluorescent re
 - **tRNAs and Ribosomes:** tRNAs and ribosomes are purified from the *E. coli* A19 strain, which is deficient in RNase I, an enzyme that degrades RNA. 
 
 
-- **pOpen-deGFP:** The pOpen-deGFP construct was designed to carry out deGFP expression via the T7 transcription system in Nucleus Cytosol {ref}`seq-degfp`. The plasmid sequence is attached to this DevNote.
+- **[pOpen-deGFP](https://github.com/nucleus-eng/DNA/blob/f7654f79d032efe157940e9ae388f5d405dcb29c/reporters/pOpen-deGFP.gbk):** The pOpen-deGFP construct was designed to carry out deGFP expression via the T7 transcription system in Nucleus Cytosol {ref}`seq-degfp`. The plasmid sequence is attached to this DevNote.
 
 Here, we demonstrate that Nucleus Cytosol performs comparably to commercial PURExpress system in terms of final protein yield. We also performed a magnesium acetate titration to determine the optimal Mg$^{2+}$ concentration for the system. Some component concentrations are still being standardized; therefore, detailed manufacturing protocols for each component of Nucleus Cytosol will be released later through Nucleus Distribution.
 

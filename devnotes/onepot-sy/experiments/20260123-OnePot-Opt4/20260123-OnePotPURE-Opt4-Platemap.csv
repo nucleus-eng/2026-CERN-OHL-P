@@ -1,0 +1,10 @@
+Date,Experiment Name,Well,Name,Sample Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMix ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (nM),[Mg-Ace] (mM),[CP] (mM),[polyP] (mM),[PPK2] (uM),[PEG] (%),PMix Vol (uL),Ribosome Vol (uL),SMix Vol (uL),tRNA Vol (uL),DNA Vol (uL),RNase Inhib Vol (uL),CP Vol (uL),PPK Vol (uL),polyP Vol (uL),Mg-Ace Vol (uL),PEG Vol (uL),Water vol (uL),Rxn Volume (uL)
+20260123,OnePot-Optimization4,H14,14 mM Mg + 3.24 uM Ribo (AR-907),Sample,OnePotPURE-1,14.45,AR-907,18,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.3,0.5,0.697142857,10
+20260123,OnePot-Optimization4,H16,14 mM Mg + 3.24 uM Ribo (AR-907),Sample,OnePotPURE-1,14.45,AR-907,18,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.3,0.5,0.697142857,10
+20260123,OnePot-Optimization4,H18,14 mM Mg + 3.24 uM Ribo (AR-907),Sample,OnePotPURE-1,14.45,AR-907,18,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.3,0.5,0.697142857,10
+20260123,OnePot-Optimization4,J14,14 mM Mg + 3.24 uM Ribo (AR-907) + 40 mM CP,Sample,OnePotPURE-1,14.45,AR-907,18,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.4,,,0.3,0.5,0.597142857,10
+20260123,OnePot-Optimization4,J16,14 mM Mg + 3.24 uM Ribo (AR-907) + 40 mM CP,Sample,OnePotPURE-1,14.45,AR-907,18,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.4,,,0.3,0.5,0.597142857,10
+20260123,OnePot-Optimization4,J18,14 mM Mg + 3.24 uM Ribo (AR-907) + 40 mM CP,Sample,OnePotPURE-1,14.45,AR-907,18,Smix-CP,tRNA,35,pOpen-deGFP,124,200,1000,,,40,1.66,1.8,3,1,0.242857143,0.5,0.4,,,0.3,0.5,0.597142857,10
+20260123,OnePot-Optimization4,L14,PURExpress Control,Control,,,,,,,,pOpen-deGFP,124,,,,,,3,,4,,0.242857143,,,,,,,2.757142857,10
+20260123,OnePot-Optimization4,L16,PURExpress Control,Control,,,,,,,,pOpen-deGFP,124,,,,,,3,,4,,0.242857143,,,,,,,2.757142857,10
+20260123,OnePot-Optimization4,L18,PURExpress Control,Control,,,,,,,,pOpen-deGFP,124,,,,,,3,,4,,0.242857143,,,,,,,2.757142857,10

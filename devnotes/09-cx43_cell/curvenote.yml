@@ -70,8 +70,6 @@ project:
   downloads:
     - file: ./Experiment/research-notebook-cx43-no_images.pdf
       title: Research Notebook
-    - file: ./Plasmids/plasmid-designs.zip
-      title: Plasmid Designs
     - id: article
       title: Download Article PDF
     - id: meca

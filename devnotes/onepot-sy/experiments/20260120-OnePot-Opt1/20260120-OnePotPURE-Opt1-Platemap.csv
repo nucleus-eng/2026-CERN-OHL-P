@@ -1,0 +1,16 @@
+Date,Experiment Name,Well,Name,Sample Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMix ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (ng/uL),[Mg-Ace] (mM),[CP] (mM),[polyP] (mM),[PPK2] (uM),PMix Vol (uL),Ribosome Vol (uL),SMix Vol (uL),tRNA Vol (uL),DNA Vol (uL),RNase Inhib Vol (uL),CP Vol (uL),PPK Vol (uL),polyP Vol (uL),Mg-Ace Vol (uL),Water vol (uL),Rxn Volume (uL)
+20260120,OnePot-Optimization1,B2,8 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,,1.497142857,10
+20260120,OnePot-Optimization1,B4,8 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,,1.497142857,10
+20260120,OnePot-Optimization1,B6,8 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,,1.497142857,10
+20260120,OnePot-Optimization1,D2,10 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.4,1.097142857,10
+20260120,OnePot-Optimization1,D4,10 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.4,1.097142857,10
+20260120,OnePot-Optimization1,D6,10 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.4,1.097142857,10
+20260120,OnePot-Optimization1,F2,12 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.8,0.697142857,10
+20260120,OnePot-Optimization1,F4,12 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.8,0.697142857,10
+20260120,OnePot-Optimization1,F6,12 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,0.8,0.697142857,10
+20260120,OnePot-Optimization1,H2,14 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,1.2,0.297142857,10
+20260120,OnePot-Optimization1,H4,14 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,1.2,0.297142857,10
+20260120,OnePot-Optimization1,H6,14 mM Mg,Sample,OnePotPURE-1,14.45,Ribo,10,Smix-CP,tRNA,35,pOpen-deGFP,231,50,1000,,,1.66,1.8,3,1,0.242857143,0.5,0.3,,,1.2,0.297142857,10
+20260120,OnePot-Optimization1,J2,PURExpress Control,Positive Control,PURExpress,,PURExpress,,PURExpress,PURExpress,,pOpen-deGFP,231,,,,,3,,4,,0.242857143,,,,,,2.757142857,10
+20260120,OnePot-Optimization1,J4,PURExpress Control,Positive Control,PURExpress,,PURExpress,,PURExpress,PURExpress,,pOpen-deGFP,231,,,,,3,,4,,0.242857143,,,,,,2.757142857,10
+20260120,OnePot-Optimization1,J6,PURExpress Control,Positive Control,PURExpress,,PURExpress,,PURExpress,PURExpress,,pOpen-deGFP,231,,,,,3,,4,,0.242857143,,,,,,2.757142857,10

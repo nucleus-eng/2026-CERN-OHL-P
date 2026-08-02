@@ -62,8 +62,6 @@ project:
     - id: meca
       title: Computational Archive
       filename: module-clpxp.zip
-    - file: ./general/clpxp-module-plasmids-01.zip
-      title: Module Plasmids
 site:
   template: article-theme
   nav: []
