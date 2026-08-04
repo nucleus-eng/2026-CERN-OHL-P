@@ -36,25 +36,18 @@ Schematic of IV-HSL emitter module.
 
 ## Protocol
 
-This protocol reconstitutes the BjaI/BjaR quorum sensing components from *Bradyrhizobium japonicum* to establish IV-HSL-producing synthetic cells (emitters) and IV-HSL-responsive *Escherichia coli* cells (receivers), implementing the IV-HSL Emitter Cell.
-
-BjaI is expressed inside Emitter Cells containing PURExpress to produce the enzyme BjaI from the template `pT7-bjaI`. BjaI will catalyze a reaction between the membrane impermeable IV-CoA and SAM substrates to yield membrane *permeable* IV-HSL.
-
-*E. coli* cells expressing BjaR act as receiver cells, providing an easy means to detect IV-HSL production. When BjaR binds IV-HSL, expression of a fluorescent reporter gene controlled by a BjaR-regulated promoter is triggered.
-
-Successfully built IV-HSL Emitter Cells will release IV-HSL and induce GFP expression in XL10-Gold cell with increasing green fluorescence over time.
-
 There are five key stages to making the IV-HSL Emitter Cell:
 
 :::{table}
 :label: tbl:protocol-stages
-| Step | Process | Hands-on Time | Total Time | Notes |
-| --- | --- | --- | --- | --- |
-| 1 | [**Pre-culture BjaR receiver cells**](#step-1) | 30 mins | 3.5 hr |  |
-| 2 | [**Prepare lipids-in-oil solution, outer solution, and substrate stock solutions**](#step-2) | 1 hr | 4 h | Buffers and lipids may be prepared in advance and used for experiments on subsequent days. |
-| 3 | [**Assemble PURE reactions**](#step-3) | 30 mins | 30 mins |  |
-| 4 | [**Encapsulate liposomes**](#step-4) | 30 mins | 30 mins |  |
-| 5 | [**Measure and image**](#step-5) | 30 mins | 6–12 h | Total time depends on the exact experiment and incubation conditions. GFP expression should be seen over the first 6 hours at 37C. |
+
+| Step | Process                                                                                      | Hands-on Time | Total Time | Notes                                                                                                                              |
+| ---- | -------------------------------------------------------------------------------------------- | ------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | [**Pre-culture BjaR receiver cells**](#step-1)                                               | 30 mins       | 3.5 hr     |                                                                                                                                    |
+| 2    | [**Prepare lipids-in-oil solution, outer solution, and substrate stock solutions**](#step-2) | 1 hr          | 4 h        | Buffers and lipids may be prepared in advance and used for experiments on subsequent days.                                         |
+| 3    | [**Assemble PURE reactions**](#step-3)                                                       | 30 mins       | 30 mins    |                                                                                                                                    |
+| 4    | [**Encapsulate liposomes**](#step-4)                                                         | 30 mins       | 30 mins    |                                                                                                                                    |
+| 5    | [**Measure and image**](#step-5)                                                             | 30 mins       | 6–12 h     | Total time depends on the exact experiment and incubation conditions. GFP expression should be seen over the first 6 hours at 37C. |
 :::
 
 (step-1)=
@@ -81,57 +74,54 @@ There are five key stages to making the IV-HSL Emitter Cell:
 
 :::{table}
 :label: tbl:osmolarity-balance
-|  | Volume to mix (uL) |
-| --- | --- |
-| **M9 media** | 1000 |
-| **3M Glucose** | 293.81 |
+
+|                | Volume to mix (uL) |
+| -------------- | ------------------ |
+| **M9 media**   | 1000               |
+| **3M Glucose** | 293.81             |
 :::
 
 (step-2)=
 ### Step 2: Prepare lipids-in-oil solution, outer solution, and substrate stock solutions
 
-**Prepare lipids-in-oil (mineral oil) solution**
-
-1. Clean glass syringes.
-   - Pour a small amount of 95% ethanol into a glass container (e.g. a 10 mL beaker).
-   - Assemble the glass syringe and prime it by drawing ethanol into the glass syringe, then empty into a waste bottle.
-2. Use glass syringes to add lipids, as shown in the table below, into the 10 ml glass vial containing 1 ml of mineral oil (final lipid concentration is 5 mg/ml).
+1. Prepare lipids-in-oil (mineral oil) solution.
+	- Clean glass syringes. Pour a small amount of 95% ethanol into a glass container (e.g. a 10 mL beaker).Assemble the glass syringe and prime it by drawing ethanol into the glass syringe, then empty into a waste bottle. 
+	- Use glass syringes to add lipids, as shown in the table below, into the 10 ml glass vial containing 1 ml of mineral oil (final lipid concentration is 5 mg/ml).
+	- Heat the lipids-in-oil mixture on a hotplate at 55 C for 3 hrs. 
+	- Vortex the lipids-in-oil mixture for 1 min. 
+	- The lipids-in-oil mixture can be stored at 4 C for up to 3 days.
 
 :::{table}
 :label: tbl:lipids-in-oil
-| Lipids | Stock Concentration (mg/mL) | Volume to add (uL) | Target percentage |
-| --- | --- | --- | --- |
-| **Egg PC** | 25 | 160 | 66.68 |
-| **Cholesterol** | 50 | 20 | 33.32 |
-| **18:0 Liss Rhod PE** | 1 | 5 | 0.01 |
+
+| Lipids                | Stock Concentration (mg/mL) | Volume to add (uL) | Target percentage |
+| --------------------- | --------------------------- | ------------------ | ----------------- |
+| **Egg PC**            | 25                          | 160                | 66.68             |
+| **Cholesterol**       | 50                          | 20                 | 33.32             |
+| **18:0 Liss Rhod PE** | 1                           | 5                  | 0.01              |
 :::
 
-3. Heat the lipids-in-oil mixture on a hotplate at 55 C for 3 hrs.
-4. Vortex the lipids-in-oil mixture for 1 min.
-
-- The lipids-in-oil mixture can be stored at 4 C for up to 3 days.
-
-**Prepare outer solution**
-
-Final concentration of sugar stock solution is 900 mM
+2.  Prepare outer solution. Final concentration of sugar stock solution is 900 mM
 
 :::{table}
 :label: tbl:outer-solution
-| Buffer | Volume to add (uL) |
-| --- | --- |
-| **3M Glucose Stock** | 700 |
-| **H2O** | 300 |
+
+| Buffer               | Volume to add (uL) |
+| -------------------- | ------------------ |
+| **3M Glucose Stock** | 700                |
+| **H2O**              | 300                |
 :::
 
-**Prepare substrate stock solutions**
+3. Prepare substrate stock solutions
 
 :::{table}
 :label: tbl:substrate-stocks
-| Substrate | Concentration (uM) | MW (g/mol) | Weight (g) | Final Volume (mL) |
-| --- | --- | --- | --- | --- |
-| **SAM** | 5000 | 398.44 | 1.99 | 1 |
-| **IV-CoA** | 5000 | 851.65 | 4.26 | 1 |
-| **IV-HSL** | 10 | 183.21 | 1.83 | 1 |
+
+| Substrate  | Concentration (uM) | MW (g/mol) | Weight (g) | Final Volume (mL) |
+| ---------- | ------------------ | ---------- | ---------- | ----------------- |
+| **SAM**    | 5000               | 398.44     | 1.99       | 1                 |
+| **IV-CoA** | 5000               | 851.65     | 4.26       | 1                 |
+| **IV-HSL** | 10                 | 183.21     | 1.83       | 1                 |
 :::
 
 (step-3)=
@@ -141,20 +131,21 @@ Final concentration of sugar stock solution is 900 mM
 
 :::{table}
 :label: tbl:pure-reaction-setup
-|  | Sample | Negative control | Positive control |  |
-| --- | --- | --- | --- | --- |
-| **Component** | **Volume (uL)** | **Volume (uL)** | **Volume (uL)** | **Notes** |
-| PURE Solution A | 12 | 12 | 0 | PURE energy solution: small molecules |
-| PURE Solution B | 9 | 9 | 0 | PURE proteins and ribosomes |
-| RNAse Inhibitor | 1.5 | 1.5 | 0 | Prevents RNAse activity |
-| [EM01-pOpen-pT7-BjaI](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/detectors/quorum-sensing/pOpen-pT7-bjaI.gb) (~200 ng/uL) | 1.5 | 0 | 0 | DNA encoding green fluorescent protein |
-| SAM (5mM) | 1.8 | 1.8 | 0 | Substrate for IV-HSL production. |
-| IV-CoA (5mM) | 0.48 | 0.48 | 0 | Substrate for IV-HSL production. |
-| OptiPrep | 1.5 | 1.5 | 1.5 | Adds density for phase-transfer |
-| IV-HSL (10 uM) | 0 | 0 | 0.3 | Commercial IV-HSL for positive control. |
-| 3M Glucose | 0 | 0 | 8.46 |  |
-| ddH2O | 2.22 | 3.72 | 19.74 |  |
-| **Total** | 30 | 30 | 30 |  |
+
+|                                                                                                                                                                 | Sample          | Negative control | Positive control |                                         |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------- | ---------------- | --------------------------------------- |
+| **Component**                                                                                                                                                   | **Volume (uL)** | **Volume (uL)**  | **Volume (uL)**  | **Notes**                               |
+| PURE Solution A                                                                                                                                                 | 12              | 12               | 0                | PURE energy solution: small molecules   |
+| PURE Solution B                                                                                                                                                 | 9               | 9                | 0                | PURE proteins and ribosomes             |
+| RNAse Inhibitor                                                                                                                                                 | 1.5             | 1.5              | 0                | Prevents RNAse activity                 |
+| [EM01-pOpen-pT7-BjaI](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/detectors/quorum-sensing/pOpen-pT7-bjaI.gb) (~200 ng/uL) | 1.5             | 0                | 0                | DNA encoding green fluorescent protein  |
+| SAM (5mM)                                                                                                                                                       | 1.8             | 1.8              | 0                | Substrate for IV-HSL production.        |
+| IV-CoA (5mM)                                                                                                                                                    | 0.48            | 0.48             | 0                | Substrate for IV-HSL production.        |
+| OptiPrep                                                                                                                                                        | 1.5             | 1.5              | 1.5              | Adds density for phase-transfer         |
+| IV-HSL (10 uM)                                                                                                                                                  | 0               | 0                | 0.3              | Commercial IV-HSL for positive control. |
+| 3M Glucose                                                                                                                                                      | 0               | 0                | 8.46             |                                         |
+| ddH2O                                                                                                                                                           | 2.22            | 3.72             | 19.74            |                                         |
+| **Total**                                                                                                                                                       | 30              | 30               | 30               |                                         |
 :::
 
 1. Thaw reagents on ice and then keep on ice.
@@ -163,7 +154,7 @@ Final concentration of sugar stock solution is 900 mM
 (step-4)=
 ### Step 4: Encapsulate PURE reactions into Liposomes
 
-*Some tips and tricks can be found in PURE Cell.*
+*Some tips and tricks can be found in [PURE Cell](https://docs.nucleus.engineering/docs/modules/base-cell/spec/).*
 
 1. Set up a microfuge tube rack, with three 1.5 mL microfuge tubes per liposome encapsulation:
    - Number the tubes per the number of reactions assembled in Step 3.
@@ -205,16 +196,6 @@ While microscopy setups may vary, our performance data was collected using the f
    - Excitation wavelength: 485 nm ; Emission wavelength: 528 nm
    - We capture a 6 h time lapse with 5 min intervals
 
-### Background Protocols
-
-- Prepare lipids for use in encapsulation: [Lipid Preparation](https://docs.nucleus.engineering/docs/processes/assemble-base-cell/main/#prepare-lipids-in-mineral-oil)
-- Prepare inner and outer buffers: [PURE inner and outer solution](https://docs.nucleus.engineering/docs/processes/assemble-base-cell/main/#assemble-outer-solutions)
-
-### Resources and References
-
-- **Papers**
-  - Smith, J. M., Hartmann, D. & Booth, M. J. Engineering cellular communication between light-activated synthetic cells and bacteria. *Nature Chemical Biology* **19,** 1138–1146 (2023). [https://www.nature.com/articles/s41589-023-01374-7](https://www.nature.com/articles/s41589-023-01374-7)
-
 ## Modules
 
 [IV-HSL Emitter Module](https://docs.nucleus.engineering/docs/modules/emitter-ivhsl/spec/)
@@ -223,6 +204,7 @@ While microscopy setups may vary, our performance data was collected using the f
 
 :::{table}
 :label: tbl:dna
+
 | **Name** | **Length (bp)** | **Description** | **Link** |
 | --- | --- | --- | --- |
 | `pT7-bjaI` | 2752 | _upcoming_. Expresses the BjaI enzyme to produce IV-HSL. | [pOpen-pT7-bjaI.gb](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/detectors/quorum-sensing/pOpen-pT7-bjaI.gb) |
@@ -233,30 +215,31 @@ While microscopy setups may vary, our performance data was collected using the f
 
 :::{table}
 :label: tbl:materials
-| **Name** | **Product** | **Manufacturer** | **Part #** | **Price** | **Link** |
-| --- | --- | --- | --- | --- | --- |
-| ***Buffers*** |  |  |  |  |  |
-| **Glucose** | D-(+)-Glucose, 99% | Thermo Scientific | A16828-36 | $41.65 | [[link](https://www.thermofisher.com/order/catalog/product/A16828.36)] |
-| **Sucrose** | Sucrose, bioultra, for molecular biology, ≥99.5% (HPLC) | Sigma-Aldrich | 84097-1KG | $170.00 | [[link](https://www.sigmaaldrich.com/US/en/product/sigma/84097)] |
-| ***Lipids*** |  |  |  |  |  |
-| **Egg PC** | 25mg/mL | Avanti Lipids | 840051C-200mg | $186 | [[link](https://www.avantiresearch.com/en-gb/products/product/840051-egg-pc)] |
-| **Cholesterol** | Cholesterol (plant) | Avanti Research | A80100 | $261.00 | [[link](https://www.avantiresearch.com/en-gb/products/product/700100-cholesterol-plant)] |
-| **Liss-Rhod-PE** | 18:0 Liss Rhod PE 1 mg/mL | Avanti Lipids | A81179 | $273.47 | [[link](https://www.avantiresearch.com/en-gb/products/product/810179-180-liss-rhod-pe)] |
-| **Mineral Oil** | Mineral oil, mixed weight | Thermo Scientific | AC415080010 | $53.40 | [[link](https://www.thermofisher.com/order/catalog/product/AC415080010)] |
-| **Glass Syringe 250 uL** | Hamilton glass syringe | Hamilton | 14-815-238 | $150.15 | [[link](https://www.fishersci.com/shop/products/800-microliter-syringes-rn-termination/14815238)] |
-| ***PURE*** |  |  |  |  |  |
-| **PURE** | PURExpress® _In Vitro_ Protein Synthesis Kit | NEB | E6800L | $2774.00 | [[link](https://www.neb.com/en-us/products/e6800-purexpress-invitro-protein-synthesis-kit)] |
-| **RNase Inhibitor** | RNase Inhibitor, Murine | NEB | M0314S | $87.00 | [[link](https://www.neb.com/en-us/products/m0314-rnase-inhibitor-murine)] |
-| **DNA** | `pT7-bjaI` | b. next |  |  | [[link](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/detectors/quorum-sensing/pOpen-pT7-bjaI.gb)] |
-|  | `bjaR-GFP-native` | b.next |  |  | [[link](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/detectors/quorum-sensing/pOpen-bjaR-GFP-native.gb)] |
-| **OptiPrep** | OptiPrep™ | STEMCELL Technologies | 07820 | $289.00 | [[link](https://www.stemcell.com/products/optipreptm.html)] |
-| **SAM** | S-adenosylmethionine (SAM) | NEB | B9003S | $45 | [[link](https://www.neb.com/en-us/products/b9003-s-adenosylmethionine-sam?srsltid=AfmBOoqDUA87yhYE4UrHnh7q8qMgLw8BGgGfFflrpBxYBfuL5juVceYZ)] |
-| **IV-CoA** | Isovaleryl coenzyme A lithium salt hydrate | Millipore Sigma | I9381-10MG | $348 | [[link](https://www.sigmaaldrich.com/US/en/product/sigma/i9381)] |
-| **IV-HSL** | 3-Methyl-N-[(3S)-tetrahydro-2-oxo-3-furanyl]butanamide | LGC | TRC-M282980-50MG | $171 | [[link](https://www.lgcstandards.com/US/en/p/TRC-M282980)] |
-| **DMSO** | Dimethyl sulfoxide | Thermo Scientific | 042780.M1 | $342 | [[link](https://www.thermofisher.com/order/catalog/product/042780.M1?SID=srch-srp-042780.M1)] |
-| ***Cell culture*** |  |  |  |  |  |
-| **XL10-Gold Cells** | XL10-Gold Ultracompetent Cells | Agilent | 200314 | $223 | [[link](https://www.agilent.com/en/product/mutagenesis-cloning/competent-cells-competent-cell-supplies/competent-cells-for-difficult-cloning/xl10-gold-ultracompetent-cells-233087)] |
-| **M9 Media** | M9, Minimal Salts, 5X, powder, minimal microbial growth medium | Sigma-Aldrich | M6030-1KG | $260 | [[link](https://www.sigmaaldrich.com/US/en/product/sigma/m6030)] |
+
+| **Name**                 | **Product**                                                    | **Manufacturer**      | **Part #**       | **Price** | **Link**                                                                                                                                                                             |
+| ------------------------ | -------------------------------------------------------------- | --------------------- | ---------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ***Buffers***            |                                                                |                       |                  |           |                                                                                                                                                                                      |
+| **Glucose**              | D-(+)-Glucose, 99%                                             | Thermo Scientific     | A16828-36        | $41.65    | [[link](https://www.thermofisher.com/order/catalog/product/A16828.36)]                                                                                                               |
+| **Sucrose**              | Sucrose, bioultra, for molecular biology, ≥99.5% (HPLC)        | Sigma-Aldrich         | 84097-1KG        | $170.00   | [[link](https://www.sigmaaldrich.com/US/en/product/sigma/84097)]                                                                                                                     |
+| ***Lipids***             |                                                                |                       |                  |           |                                                                                                                                                                                      |
+| **Egg PC**               | 25mg/mL                                                        | Avanti Lipids         | 840051C-200mg    | $186      | [[link](https://www.avantiresearch.com/en-gb/products/product/840051-egg-pc)]                                                                                                        |
+| **Cholesterol**          | Cholesterol (plant)                                            | Avanti Research       | A80100           | $261.00   | [[link](https://www.avantiresearch.com/en-gb/products/product/700100-cholesterol-plant)]                                                                                             |
+| **Liss-Rhod-PE**         | 18:0 Liss Rhod PE 1 mg/mL                                      | Avanti Lipids         | A81179           | $273.47   | [[link](https://www.avantiresearch.com/en-gb/products/product/810179-180-liss-rhod-pe)]                                                                                              |
+| **Mineral Oil**          | Mineral oil, mixed weight                                      | Thermo Scientific     | AC415080010      | $53.40    | [[link](https://www.thermofisher.com/order/catalog/product/AC415080010)]                                                                                                             |
+| **Glass Syringe 250 uL** | Hamilton glass syringe                                         | Hamilton              | 14-815-238       | $150.15   | [[link](https://www.fishersci.com/shop/products/800-microliter-syringes-rn-termination/14815238)]                                                                                    |
+| ***PURE***               |                                                                |                       |                  |           |                                                                                                                                                                                      |
+| **PURE**                 | PURExpress® _In Vitro_ Protein Synthesis Kit                   | NEB                   | E6800L           | $2774.00  | [[link](https://www.neb.com/en-us/products/e6800-purexpress-invitro-protein-synthesis-kit)]                                                                                          |
+| **RNase Inhibitor**      | RNase Inhibitor, Murine                                        | NEB                   | M0314S           | $87.00    | [[link](https://www.neb.com/en-us/products/m0314-rnase-inhibitor-murine)]                                                                                                            |
+| **DNA**                  | `pT7-bjaI`                                                     | b. next               |                  |           | [[link](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/detectors/quorum-sensing/pOpen-pT7-bjaI.gb)]                                                |
+|                          | `bjaR-GFP-native`                                              | b.next                |                  |           | [[link](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/detectors/quorum-sensing/pOpen-bjaR-GFP-native.gb)]                                         |
+| **OptiPrep**             | OptiPrep™                                                      | STEMCELL Technologies | 07820            | $289.00   | [[link](https://www.stemcell.com/products/optipreptm.html)]                                                                                                                          |
+| **SAM**                  | S-adenosylmethionine (SAM)                                     | NEB                   | B9003S           | $45       | [[link](https://www.neb.com/en-us/products/b9003-s-adenosylmethionine-sam?srsltid=AfmBOoqDUA87yhYE4UrHnh7q8qMgLw8BGgGfFflrpBxYBfuL5juVceYZ)]                                         |
+| **IV-CoA**               | Isovaleryl coenzyme A lithium salt hydrate                     | Millipore Sigma       | I9381-10MG       | $348      | [[link](https://www.sigmaaldrich.com/US/en/product/sigma/i9381)]                                                                                                                     |
+| **IV-HSL**               | 3-Methyl-N-[(3S)-tetrahydro-2-oxo-3-furanyl]butanamide         | LGC                   | TRC-M282980-50MG | $171      | [[link](https://www.lgcstandards.com/US/en/p/TRC-M282980)]                                                                                                                           |
+| **DMSO**                 | Dimethyl sulfoxide                                             | Thermo Scientific     | 042780.M1        | $342      | [[link](https://www.thermofisher.com/order/catalog/product/042780.M1?SID=srch-srp-042780.M1)]                                                                                        |
+| ***Cell culture***       |                                                                |                       |                  |           |                                                                                                                                                                                      |
+| **XL10-Gold Cells**      | XL10-Gold Ultracompetent Cells                                 | Agilent               | 200314           | $223      | [[link](https://www.agilent.com/en/product/mutagenesis-cloning/competent-cells-competent-cell-supplies/competent-cells-for-difficult-cloning/xl10-gold-ultracompetent-cells-233087)] |
+| **M9 Media**             | M9, Minimal Salts, 5X, powder, minimal microbial growth medium | Sigma-Aldrich         | M6030-1KG        | $260      | [[link](https://www.sigmaaldrich.com/US/en/product/sigma/m6030)]                                                                                                                     |
 :::
 
 # Performance Data
@@ -289,6 +272,11 @@ Emitter Cells were constructed following  and co-cultured with E. coli containin
 
 *Emitter Cell Endpoint Z-Stack.* Z-stack, single field of view of the Emitter Cell after the final timeseries timepoint (>8h). Liposomes preferentially form a layer on the surface of the cover slip, occluding many of the _E. coli_ cells from the bottom layer imaged during the timeseries. More activated _E. coli_ cells become visible at longer focal distances (higher in the liquid column of the well).
 :::
+
+# Background Protocols
+
+- Prepare lipids for use in encapsulation: [Lipid Preparation](https://docs.nucleus.engineering/docs/processes/assemble-base-cell/main/#prepare-lipids-in-mineral-oil)
+- Prepare inner and outer buffers: [PURE inner and outer solution](https://docs.nucleus.engineering/docs/processes/assemble-base-cell/main/#assemble-outer-solutions)
 
 # Credits
 
