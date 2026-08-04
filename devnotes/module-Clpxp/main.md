@@ -299,7 +299,7 @@ All purified proteins are ordered from GenScript:
 ## For Bulk Reactions:
 The first experiment (Experiment 1) involved mixing purified deGFP ssrA with purified ClpX and ClpP. We observed a clear decrease in GFP fluorescence over time, indicating that deGFP ssrA was efficiently degraded by the ClpXP protease. The degradation was rapid, with the GFP signal nearly disappearing within one and a half hours. In contrast, samples containing only purified ClpX or only purified ClpP did not show a significant decrease in fluorescence, confirming that degradation occurs only when both components of the ClpXP complex are present {ref}`fig:Protein`.
 
-After establishing the functionality of the purified ClpXP degradation system, we next incorporated the PURE system. In this experiment (Experiment 2), purified ClpP was replaced with pT7 ClpP DNA. Again, we observed a decrease in deGFP fluorescence over time, demonstrating that ClpP can be expressed in vitro by PURE and remains functional for deGFP degradation {ref}`fig:ClpP DNA`.
+After establishing the functionality of the purified ClpXP degradation system, we next incorporated the PURE system. In this experiment (Experiment 2), purified ClpP was replaced with pT7 ClpP DNA. Again, we observed a decrease in deGFP fluorescence over time, demonstrating that ClpP can be expressed in vitro by PURE and remains functional for deGFP degradation {ref}`fig:ClpP-DNA`.
 
 :::{figure} ./figures/ClpXP-protein.png
 :name: fig:Protein
@@ -310,7 +310,7 @@ GFP fluorescence of samples containing purified proteins incubated at 37 °C for
 :::
 
 :::{figure} ./figures/ClpP DNA with ClpX and GFP proteins.png
-:name: fig:ClpP DNA
+:name: fig:ClpP-DNA
 :align: center
 :width: 65%
 
@@ -335,10 +335,10 @@ GFP fluorescence signal in PURE reactions with addition of different amount of O
 GFP fluorescence signal in PURE reactions with addition of different amount of sucrose incubated at 37 °C for 6 hours. The reaction contains pT7-ClpP DNA, purified ClpX protein and purified deGFP-ssrA protein.
 :::
 
-Besides using ClpP DNA, we also tested ClpX DNA to express the ClpX protease using the PURE system (Experiment 4). When the reaction was supplemented with purified ClpP protein and purified deGFP-ssrA substrate, we again observed the expected decrease in deGFP fluorescence over time. In contrast, the control reaction lacking ClpX DNA maintained constant fluorescence, aside from the small initial drop consistently seen in earlier experiments {ref}`fig:ClpX DNA`. We also examined the effects of OptiPrep and sucrose on protein degradation (Experiment 5) and found that the addition of either component slowed the degradation rate, with Optiprep having a stronger inhibitory effect {ref}`fig:ClpX s`. These results suggest that an even greater delay in GFP signal loss should be expected when the system is encapsulated within liposomes, where sucrose or OptiPrep is typically included. 
+Besides using ClpP DNA, we also tested ClpX DNA to express the ClpX protease using the PURE system (Experiment 4). When the reaction was supplemented with purified ClpP protein and purified deGFP-ssrA substrate, we again observed the expected decrease in deGFP fluorescence over time. In contrast, the control reaction lacking ClpX DNA maintained constant fluorescence, aside from the small initial drop consistently seen in earlier experiments {ref}`fig:ClpX-DNA`. We also examined the effects of OptiPrep and sucrose on protein degradation (Experiment 5) and found that the addition of either component slowed the degradation rate, with Optiprep having a stronger inhibitory effect {ref}`fig:ClpX-S`. These results suggest that an even greater delay in GFP signal loss should be expected when the system is encapsulated within liposomes, where sucrose or OptiPrep is typically included. 
 
 :::{figure} ./figures/ClpX DNA with ClpP and GFP proteins.png
-:name: fig:ClpX DNA
+:name: fig:ClpX-DNA
 :align: center
 :width: 70%
 
@@ -346,7 +346,7 @@ GFP fluorescence signal in PURE reactions incubated at 37 °C for 6 hours. The r
 :::
 
 :::{figure} ./figures/ClpX-Sucrose-Optiprep.png
-:name: fig:ClpX S
+:name: fig:ClpX-S
 :align: center
 :width: 75%
 
@@ -354,30 +354,30 @@ GFP fluorescence signal in PURE reactions with addition of Optiprep or sucrose i
 :::
 
 
-Next, instead of using ClpP DNA, we replaced purified deGFP-ssrA with pT7-deGFP DNA for PURE-based expression and degradation (Experiment 6). By tuning the concentrations of purified ClpX and ClpP while keeping pT7-deGFP constant, we were able to control the GFP degradation kinetics. As expected, higher amounts of ClpXP resulted in faster decreases in GFP fluorescence. Interestingly, in a single PURE reaction, we could observe the fluorescence first rising (due to in vitro expression) and then declining (due to degradation) {ref}`fig:GFP DNA`. Notably, it's hard to see the GFP signal returning to its initial baseline in most of the reactions, suggesting that the system likely exhausted its available energy for continued protein degradation.
+Next, instead of using ClpP DNA, we replaced purified deGFP-ssrA with pT7-deGFP DNA for PURE-based expression and degradation (Experiment 6). By tuning the concentrations of purified ClpX and ClpP while keeping pT7-deGFP constant, we were able to control the GFP degradation kinetics. As expected, higher amounts of ClpXP resulted in faster decreases in GFP fluorescence. Interestingly, in a single PURE reaction, we could observe the fluorescence first rising (due to in vitro expression) and then declining (due to degradation) {ref}`fig:GFP-DNA`. Notably, it's hard to see the GFP signal returning to its initial baseline in most of the reactions, suggesting that the system likely exhausted its available energy for continued protein degradation.
 
 :::{figure} ./figures/ClpXP-GFP DNA.png
-:name: fig:GFP DNA
+:name: fig:GFP-DNA
 :align: center
 :width: 70%
 
 GFP fluorescence signal produced using pT7-deGFP-ssrA DNA in PURE reactions incubated at 37 °C for 6 hours. Purified ClpX protein and purified ClpP protein are added to the reactions.
 :::
 
-Besides expressing a single protein from DNA in PURE, I also attempted to express two proteins simultaneously in one PURE reaction using two plasmids, pT7 ClpP and pT7 deGFP ssrA (Experiment 7). Interestingly, we observed an oscillatory pattern in the GFP fluorescence over time. The fluorescence first increased strongly and then dropped quickly, which indicates rapid GFP degradation. After this initial decrease, the GFP signal increased again, although the second peak was lower than the first one, and it was then degraded again. Similar oscillations were observed even when we increased the total amount of DNA or tested different DNA concentrations in the PURE reactions {ref}`fig:Two DNA`.
+Besides expressing a single protein from DNA in PURE, I also attempted to express two proteins simultaneously in one PURE reaction using two plasmids, pT7 ClpP and pT7 deGFP ssrA (Experiment 7). Interestingly, we observed an oscillatory pattern in the GFP fluorescence over time. The fluorescence first increased strongly and then dropped quickly, which indicates rapid GFP degradation. After this initial decrease, the GFP signal increased again, although the second peak was lower than the first one, and it was then degraded again. Similar oscillations were observed even when we increased the total amount of DNA or tested different DNA concentrations in the PURE reactions {ref}`fig:Two-DNA`.
 
 :::{figure} ./figures/ClpXP-Two DNA.png
-:name: fig:Two DNA
+:name: fig:Two-DNA
 :align: center
 :width: 70%
 
 GFP fluorescence signal produced using pT7-deGFP-ssrA DNA in PURE reactions incubated at 37 °C for 6 hours. ClpP is co-expressed in the same PURE reaction using pT7-ClpP DNA. Purified ClpX protein is added to the reactions.
 :::
 
-Finally, we examined the simultaneous expression of three proteins within a single PURE reaction using three plasmids: pT7-ClpX, pT7-ClpP, and pT7-deGFP-ssrA (Experiment 8). By systematically tuning the concentrations of each DNA, we were able to modulate both the expression and degradation dynamics of deGFP-ssrA. As the ratio of ClpX and ClpP DNA relative to deGFP-ssrA DNA increased, the overall deGFP-ssrA fluorescence decreased and its degradation rate increased, consistent with enhanced proteolytic activity. Interestingly, after an initial phase of degradation, the deGFP signal exhibited a recovery (“bounce-back”) behavior. Both the rate and magnitude of this recovery were higher at lower ClpX/ClpP DNA concentrations, suggesting a shift toward deGFP-ssrA expression as protease levels became limiting. Despite these differences in dynamics, all PURE reactions eventually reached steady state. However, reactions with lower ClpXP-to-deGFP-ssrA ratios required a longer time to reach steady state compared with those containing higher ClpXP ratios {ref}`fig:Three DNA`.
+Finally, we examined the simultaneous expression of three proteins within a single PURE reaction using three plasmids: pT7-ClpX, pT7-ClpP, and pT7-deGFP-ssrA (Experiment 8). By systematically tuning the concentrations of each DNA, we were able to modulate both the expression and degradation dynamics of deGFP-ssrA. As the ratio of ClpX and ClpP DNA relative to deGFP-ssrA DNA increased, the overall deGFP-ssrA fluorescence decreased and its degradation rate increased, consistent with enhanced proteolytic activity. Interestingly, after an initial phase of degradation, the deGFP signal exhibited a recovery (“bounce-back”) behavior. Both the rate and magnitude of this recovery were higher at lower ClpX/ClpP DNA concentrations, suggesting a shift toward deGFP-ssrA expression as protease levels became limiting. Despite these differences in dynamics, all PURE reactions eventually reached steady state. However, reactions with lower ClpXP-to-deGFP-ssrA ratios required a longer time to reach steady state compared with those containing higher ClpXP ratios {ref}`fig:Three-DNA`.
 
 :::{figure} ./figures/ClpXP-3DNA.png
-:name: fig:Three DNA
+:name: fig:Three-DNA
 :align: center
 :width: 70%
 
