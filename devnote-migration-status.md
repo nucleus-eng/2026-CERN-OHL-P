@@ -79,7 +79,7 @@ devnote, not as a batch script.
 | lipid-prep | 019dcea0-91e3-78da-be6d-6450c2ff8308 | London Exchange Meeting Participants | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-0ce3-7786-a107-651e716e8acc (draft) |
 | module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb5a-2099-7526-91fb-efddaaac6f9c (draft) |
 | module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb5f-ee48-79fd-b314-5a56372276e1 (draft) |
-| onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☐ | ☑ | https://scms.curvenote.com/build/019fcb2d-92b3-7ace-8761-b0b04372baea (draft, most recent — use this for content review; older real submission is stale, predates this session's fixes: https://scms.curvenote.com/build/019fc034-5ab6-7f11-948f-9e5c6e096f02) |
+| onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☐ | ☑ | https://scms.curvenote.com/build/019fcb74-5a99-78d8-a078-36403e191604 (draft, most recent — use this for content review; older real submission is stale, predates this session's fixes: https://scms.curvenote.com/build/019fc034-5ab6-7f11-948f-9e5c6e096f02) |
 
 **Note on `bac-working-group`/`onepot-sy`:** these are the only two rows with a real, non-draft submission on file — made while testing whether the CLI path worked at all, not a mistake to undo. Every other row's URL is a draft/preview build only and does NOT count as submitted. A newer draft build exists for both from the full-sweep run below; linked alongside the original real submission.
 
