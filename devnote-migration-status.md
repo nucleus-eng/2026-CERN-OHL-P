@@ -37,15 +37,16 @@ Note: the two rows above (`onepot-sy`, `bac-working-group`) were previously "fou
 
 ## Manual review checklist (all 19 devnotes currently in `devnotes/`)
 
-**Status as of 2026-08-04: all 19 devnotes submitted for real** (`curvenote submit` without `--draft`) — each row's URL below is the real, curator-visible submission build, ready for per-devnote curator review/approval.
+**Status as of 2026-08-04: all 19 devnotes staged, all notebooks pass, all content has been reviewed. None are submitted (real) yet** — that's a deliberate, per-devnote curator action still to come, not a batch step.
 
 Three review steps per devnote, each its own column: **notebooks run** (have the
 notebooks actually been executed/re-executed and outputs checked), **content
 reviewed** (has a human actually read `main.md` end to end — now done for
 all 19), **submitted** (a REAL, non-draft `curvenote submit` — an editor
-can't act on a draft, so a draft build does not count as submitted here; all
-19 rows below are now checked, see build URL column). URL is the real
-submission's `https://scms.curvenote.com/build/...` build-report link.
+can't act on a draft, so a draft build does not count as submitted here, and
+none of the 19 rows below are checked). Draft URL is the most recent
+`https://scms.curvenote.com/build/...` link — draft or real — open it to see
+the live preview; it does not by itself mean "submitted."
 
 Run `./manual-submit-all.sh` (repo root) to (re-)submit **drafts** for every
 devnote in one pass and get fresh preview URLs; it discovers devnotes
@@ -56,31 +57,31 @@ row ☑ under "submitted" requires an actual `curvenote submit` run without
 `--draft`, which is a real, curator-visible action — do that deliberately per
 devnote, not as a batch script.
 
-| Devnote (dir) | Myst Key | Author(s) | Notebooks run | Content reviewed | Submitted (real) | Build URL |
+| Devnote (dir) | Myst Key | Author(s) | Notebooks run | Content reviewed | Submitted (real) | Draft/preview URL |
 |---|---|---|---|---|---|---|
-| 02_emitter_cell | nucleus-devnote-core-02_emitter_cell | Yen-Yu Hsu | n/a (no toc notebooks; 1 orphaned main.ipynb, no environment.yml either) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbe-5745-7f49-a3f6-68ef77450817 |
-| 03_mthfs | nucleus-devnote-core-03_mthfs | Yemo Ku | ☑ pass (1/1) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-7ece-7503-9897-c802441245ce |
-| 04_ppk | nucleus-devnote-core-04_ppk | Surendra Yadav | ☑ pass (5/5) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-84b4-7d12-9a9a-d4a101f3ff0b |
-| 05_pure_workshop | nucleus-devnote-core-09_pure-workshop | OnePot Workshop | ☑ pass (5/5) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-8559-7af4-b014-96363dd453b1 |
-| 08_ppk_cell | nucleus-devnote-core-08_ppk-module-in-pure-cell | Yen-Yu Hsu | ☑ pass (1/1) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-9fa1-70f6-8b2e-435401361614 |
-| 09-cx43_cell | nucleus-devnote-core-cx43_01 | Yen-Yu Hsu | ☑ pass (2/2) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbe-5ef0-7026-9610-99264e36e02a |
-| 10-nucleus_cytosol_v05 | nucleus-devnote-core-NucelusPURE_deGFP | Surendra Yadav | ☑ pass (2/2) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-c96c-7e3b-815d-b4c130a2f023 |
-| 11-Base_Cell | nucleus-devnote-core-Base_Cell | Surendra Yadav | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-8c20-7b08-bea8-967b2ea23099 |
-| DNA-toolkit-T7-promoters | nucleus-devnote-core-dna-toolkit-promoter | Charlie Newell, Astrid Joergensen | ☑ pass (2/2) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbe-6e19-7f44-a94f-2b18457e0f19 |
-| bac-working-group | bac-working-group | Energy Metabolism Working Group | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-d5e0-7602-bfb7-f1c75b3b30e1 |
-| cx43 | nucleus-devnote-core-01_contrib_cx43_cell | Ahmed Z. Sihorwala | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-a991-7f87-9dce-bdd7f07c9395 |
-| devnote-developer_cell | nucleus-devnote-core-05_devcell_01 | Anton Jackson-Smith, Akshay Maheshwari | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdc0-dfe4-7002-828e-29b43c285245 |
-| devnote-nucleus_onepot | nucleus-devnote-core-07_bnext-onepot-pure-replication | Anton Molina, Anton Jackson-Smith | ☑ pass (1/1) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-e4b6-7227-a6c7-c3ce474e1284 |
-| fwm-aria-d2 | 019f6db2-e060-710d-8984-6bcd5747d775 | b.next, Find What Matters | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbe-363a-77c5-936a-17af2178ef46 |
-| fwm-batch-bo | 019f9b60-cc79-7008-9c25-4a46b53b8604 | Joseph Lozier | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbe-1b37-7658-8b35-e8be01ca926f |
-| lipid-prep | 019dcea0-91e3-78da-be6d-6450c2ff8308 | London Exchange Meeting Participants | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-7f13-7cc3-b358-c42e0c6c3bcd |
-| module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdc0-9407-7fae-986e-2fefa44eb448 |
-| module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-8698-7638-9941-ae1285b2a831 |
-| onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-9f01-7488-839f-1c0979c0a693 |
+| 02_emitter_cell | nucleus-devnote-core-02_emitter_cell | Yen-Yu Hsu | n/a (no toc notebooks; 1 orphaned main.ipynb, no environment.yml either) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-1573-754b-b4ef-a1a6bd74c5b1 (draft) |
+| 03_mthfs | nucleus-devnote-core-03_mthfs | Yemo Ku | ☑ pass (1/1) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-f6b8-71d5-9b87-bb84fb2c9258 (draft) |
+| 04_ppk | nucleus-devnote-core-04_ppk | Surendra Yadav | ☑ pass (5/5) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-d2d3-7e16-9e7c-40ea8edbe394 (draft) |
+| 05_pure_workshop | nucleus-devnote-core-09_pure-workshop | OnePot Workshop | ☑ pass (5/5) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-7518-74f5-88b6-17122619cf03 (draft) |
+| 08_ppk_cell | nucleus-devnote-core-08_ppk-module-in-pure-cell | Yen-Yu Hsu | ☑ pass (1/1) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-2dbb-7669-94e4-499ef3d0044d (draft) |
+| 09-cx43_cell | nucleus-devnote-core-cx43_01 | Yen-Yu Hsu | ☑ pass (2/2) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-c741-7f2c-ae15-cd275d21d181 (draft) |
+| 10-nucleus_cytosol_v05 | nucleus-devnote-core-NucelusPURE_deGFP | Surendra Yadav | ☑ pass (2/2) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb41-9578-7c7f-a675-8a47afc40dd8 (draft) |
+| 11-Base_Cell | nucleus-devnote-core-Base_Cell | Surendra Yadav | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-2557-7d20-90dc-a0f7fedb9626 (draft) |
+| DNA-toolkit-T7-promoters | nucleus-devnote-core-dna-toolkit-promoter | Charlie Newell, Astrid Joergensen | ☑ pass (2/2) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-c028-7f0b-87eb-5f777b847f32 (draft) |
+| bac-working-group | bac-working-group | Energy Metabolism Working Group | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-5678-73d3-9cf4-f2674da30171 (draft, most recent — use this for content review; older real submission: https://scms.curvenote.com/build/019fc034-3f41-7bc8-b207-3cd4979b1aea) |
+| cx43 | nucleus-devnote-core-01_contrib_cx43_cell | Ahmed Z. Sihorwala | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb48-a364-7d01-8f59-3b4c3fa7c09c |
+| devnote-developer_cell | nucleus-devnote-core-05_devcell_01 | Anton Jackson-Smith, Akshay Maheshwari | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-43d5-7f8c-acef-9cb1d563336a (draft) |
+| devnote-nucleus_onepot | nucleus-devnote-core-07_bnext-onepot-pure-replication | Anton Molina, Anton Jackson-Smith | ☑ pass (1/1) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-88f3-7c28-a098-8adcceacb3a3 (draft) |
+| fwm-aria-d2 | 019f6db2-e060-710d-8984-6bcd5747d775 | b.next, Find What Matters | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-0e1f-70f3-941c-331bcaeb4b1e (draft) |
+| fwm-batch-bo | 019f9b60-cc79-7008-9c25-4a46b53b8604 | Joseph Lozier | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-3491-7c71-8b03-261b0ed1d3a8 (draft) |
+| lipid-prep | 019dcea0-91e3-78da-be6d-6450c2ff8308 | London Exchange Meeting Participants | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-0ce3-7786-a107-651e716e8acc (draft) |
+| module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb5a-2099-7526-91fb-efddaaac6f9c (draft) |
+| module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb5f-ee48-79fd-b314-5a56372276e1 (draft) |
+| onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb74-5a99-78d8-a078-36403e191604 (draft, most recent — use this for content review; older real submission is stale, predates this session's fixes: https://scms.curvenote.com/build/019fc034-5ab6-7f11-948f-9e5c6e096f02) |
 
-**Note on `bac-working-group`/`onepot-sy`:** each previously had an *older* real, non-draft submission on file from early testing of whether the CLI path worked at all. Both have now been superseded by the real submission above (2026-08-04), which reflects this session's fixes.
+**Note on `bac-working-group`/`onepot-sy`:** each has an *older* real, non-draft submission on file from early testing of whether the CLI path worked at all — not a mistake to undo, but also not the current, reviewed state of either devnote, so it does not count as "submitted" here and their checkbox is unchecked like every other row. The draft URL linked for both (not the older real-submission link) is the current, reviewed content.
 
-**All 19 real submissions above came from `migrate/debug-and-review` (PR #13, superseding the stale PR #10, itself stacked on the fix-typst-seqviz-plugins/PR #9 commit, not yet merged)** — so every row reflects the notebook fixes from the 2026-08-03/04 sessions (`module-Clpxp`/`module-Clpxp-Cytosol`/`11-Base_Cell`/`10-nucleus_cytosol_v05` also still carry the earlier PR #9 fixes), not what's currently on `main`. `./manual-submit-all.sh` now supports both modes: `--draft` (default, or explicit) for review/preview, `--final` (or `MODE=final`) for a real, curator-visible submission — both run all devnotes concurrently (`xargs -P`, default 6, override with `CONCURRENCY=n`). Ran `CONCURRENCY=19 ./manual-submit-all.sh --final` on 2026-08-04 (all 19 launched at once); 17/19 succeeded on the first pass, 2 (`module-Clpxp`, `devnote-developer_cell`) hit a transient `api.curvenote.com` login timeout under load and were retried individually — all 19 are now submitted for real. Each devnote's submission is now awaiting individual curator review/approval.
+**All 19 draft submissions above came from `migrate/debug-and-review` (tracking PR #10, itself stacked on the fix-typst-seqviz-plugins/PR #9 commit, not yet merged)** — so every row reflects the notebook fixes from the 2026-08-03 session below (`module-Clpxp`/`module-Clpxp-Cytosol`/`11-Base_Cell`/`10-nucleus_cytosol_v05` also still carry the earlier PR #9 fixes), not what's currently on `main`. `./manual-submit-all.sh` now submits all devnotes concurrently (`xargs -P`, default 6, override with `CONCURRENCY=n`). Re-ran on 2026-08-04 with `CONCURRENCY=19` (all 19 launched at once) after re-executing every toc-listed notebook to refresh stale saved outputs (see below) — all 19 succeeded on the first pass this time, no retries needed. URLs in the table above reflect this latest run. For `bac-working-group`/`onepot-sy`, the draft URL (not the older real submission) is the one to use for reviewing current content.
 
 ### First full notebook-execution sweep (2026-08-01 session)
 

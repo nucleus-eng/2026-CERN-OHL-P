@@ -3,20 +3,16 @@ set -uo pipefail
 # Deliberately not `set -e` - keep going after a failure so we get a
 # full pass/fail summary across every devnote, not just the first one.
 
-# Submits every devnote currently in devnotes/ (any directory with a
-# curvenote.yml), directly via the curvenote CLI - no git commits, no
-# GitHub Actions. Matches Anton's documented manual-submit command (same
-# venue/kind/collection as draft.yml/submit.yml), run from inside each
-# devnote's own directory.
+# Submits a DRAFT for every devnote currently in devnotes/ (any directory
+# with a curvenote.yml), directly via the curvenote CLI - no git commits,
+# no GitHub Actions. Matches Anton's documented manual-submit command
+# (same venue/kind/collection as draft.yml/submit.yml), run from inside
+# each devnote's own directory.
 #
-# Mode defaults to --draft (review/QA build link, not curator-visible).
-# Pass --final (or --real) as the first arg, or set MODE=final, to submit
-# for real instead - only do that deliberately.
-#
-#   ./manual-submit-all.sh            # draft (default)
-#   ./manual-submit-all.sh --draft    # draft, explicit
-#   ./manual-submit-all.sh --final    # real submission, all devnotes
-#   MODE=final ./manual-submit-all.sh # same, via env var
+# Uses --draft on purpose - this is for review/QA (getting a build/preview
+# link per devnote to manually check notebooks-ran/content/etc against),
+# not for real curator-visible submissions. Use a separate, deliberate
+# run without --draft when you actually want to submit for real.
 #
 # Requires `curvenote token set` already run in this shell/machine.
 # Uses curvenote@latest explicitly - `submit` enforces a minimum CLI
@@ -30,21 +26,6 @@ set -uo pipefail
 #
 # Run from anywhere inside a clone of nucleus-eng/2026-CERN-OHL-P.
 # Written for bash 3.2 (macOS default) - no associative arrays.
-
-MODE="${MODE:-draft}"
-case "${1:-}" in
-  --final|--real) MODE="final" ;;
-  --draft) MODE="draft" ;;
-  "") ;;
-  *) echo "Usage: $0 [--draft|--final]" >&2; exit 2 ;;
-esac
-
-case "$MODE" in
-  draft) SUBMIT_FLAG="--draft" ;;
-  final) SUBMIT_FLAG="" ;;
-  *) echo "Unknown MODE '$MODE' (expected draft or final)" >&2; exit 2 ;;
-esac
-export SUBMIT_FLAG
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 cd "$REPO_ROOT"
@@ -60,10 +41,7 @@ for path in devnotes/*/; do
   fi
 done
 
-echo "Found ${#DEVNOTES[@]} devnotes: ${DEVNOTES[*]} (mode=$MODE, concurrency=$CONCURRENCY)"
-if [ "$MODE" = "final" ]; then
-  echo "*** REAL, CURATOR-VISIBLE SUBMISSION - not a draft ***"
-fi
+echo "Found ${#DEVNOTES[@]} devnotes: ${DEVNOTES[*]} (concurrency=$CONCURRENCY)"
 
 RESULTS_DIR="$(mktemp -d "${TMPDIR:-/tmp}/curvenote-submit-XXXXXX")"
 trap 'rm -rf "$RESULTS_DIR"' EXIT
@@ -76,7 +54,7 @@ submit_one() {
   rm -f "$logfile"
   (
     cd "$path"
-    npx --yes curvenote@latest submit bnext-devnotes --kind devnote --collection developer-cells $SUBMIT_FLAG -y
+    npx --yes curvenote@latest submit bnext-devnotes --kind devnote --collection developer-cells --draft -y
   ) >"$outlog" 2>&1
   rc=$?
   url=""
