@@ -31,22 +31,20 @@
 
 ## Remaining TODO rows (2) — likely require contacting original authors
 
-**Update:** Anton's work on this branch (flat `devnotes/` restructure, commits `578ea19`..`8370dd9`) staged real, committed content for 7 of the previous 9 "genuinely missing" rows directly into `devnotes/` — not just found in a bulk download, but full devnote directories with `curvenote.yml`/`main.md`/notebooks matching the tracked Myst Key exactly. Verified by grep: no trace of the remaining 2 titles/authors anywhere in `devnotes/`, `devnotes-downloaded/`, or `sy-devnotes-download/`. Only these 2 rows still need outreach to the original authors:
-
-| Title | Author(s) | Myst Key | Collection |
-|---|---|---|---|
-| Liposome encapsulation: A tractable and reproducible approach | Chris Falcon, Katie Drew | `9e302e31-3dbb-494a-b8e3-5fc6d91ea941` | Workshops and Courses |
-| Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation | Javin P Oza | `118a7ada-92d1-448f-adc2-f19c2da16b16` | Workshops and Courses |
+**Update:** Anton's work on this branch (flat `devnotes/` restructure, commits `578ea19`..`8370dd9`) staged real, committed content for 7 of the previous 9 "genuinely missing" rows directly into `devnotes/` — not just found in a bulk download, but full devnote directories with `curvenote.yml`/`main.md`/notebooks matching the tracked Myst Key exactly. Verified by grep: no trace of the remaining 2 titles/authors anywhere in `devnotes/`, `devnotes-downloaded/`, or `sy-devnotes-download/`. Only two rows still need outreach to the original authors — "Liposome encapsulation: A tractable and reproducible approach" (Chris Falcon, Katie Drew) and "Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation" (Javin P Oza), both `Workshops and Courses` — see rows 23-24 in the table above for their Myst Keys.
 
 Note: the two rows above (`onepot-sy`, `bac-working-group`) were previously "found (sy-devnotes-download/...), not staged"; both have since been staged into `devnotes/onepot-sy` and `devnotes/bac-working-group` (Step 1 of the migration plan), excluding `onepot-sy`'s `plasmids/PURE_plasmids.tar.gz` DNA archive, which is handled by a separate DNA-reconciliation workstream. Also new on this branch, outside the original tracker scope: `devnotes/fwm-aria-d2` (ARIA/IGOR optimization) and `devnotes/fwm-batch-bo` (Batch Bayesian Optimization) — new devnotes, not migrations of tracked TODO rows.
 
 ## Manual review checklist (all 19 devnotes currently in `devnotes/`)
 
+**Status as of 2026-08-04: all 19 devnotes staged, all notebooks pass, all content has been reviewed. None are submitted (real) yet** — that's a deliberate, per-devnote curator action still to come, not a batch step.
+
 Three review steps per devnote, each its own column: **notebooks run** (have the
 notebooks actually been executed/re-executed and outputs checked), **content
-reviewed** (has a human actually read `main.md` end to end), **submitted** (a
-REAL, non-draft `curvenote submit` — an editor can't act on a draft, so a
-draft build does not count as submitted here). Draft URL is the most recent
+reviewed** (has a human actually read `main.md` end to end — now done for
+all 19), **submitted** (a REAL, non-draft `curvenote submit` — an editor
+can't act on a draft, so a draft build does not count as submitted here, and
+none of the 19 rows below are checked). Draft URL is the most recent
 `https://scms.curvenote.com/build/...` link — draft or real — open it to see
 the live preview; it does not by itself mean "submitted."
 
@@ -61,27 +59,27 @@ devnote, not as a batch script.
 
 | Devnote (dir) | Myst Key | Author(s) | Notebooks run | Content reviewed | Submitted (real) | Draft/preview URL |
 |---|---|---|---|---|---|---|
-| 02_emitter_cell | nucleus-devnote-core-02_emitter_cell | Yen-Yu Hsu | n/a (no toc notebooks; 1 orphaned main.ipynb, no environment.yml either) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-1573-754b-b4ef-a1a6bd74c5b1 (draft) |
-| 03_mthfs | nucleus-devnote-core-03_mthfs | Yemo Ku | ☑ pass (1/1) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-f6b8-71d5-9b87-bb84fb2c9258 (draft) |
-| 04_ppk | nucleus-devnote-core-04_ppk | Surendra Yadav | ☑ pass (5/5) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-d2d3-7e16-9e7c-40ea8edbe394 (draft) |
-| 05_pure_workshop | nucleus-devnote-core-09_pure-workshop | OnePot Workshop | ☑ pass (5/5) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-7518-74f5-88b6-17122619cf03 (draft) |
-| 08_ppk_cell | nucleus-devnote-core-08_ppk-module-in-pure-cell | Yen-Yu Hsu | ☑ pass (1/1) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-2dbb-7669-94e4-499ef3d0044d (draft) |
-| 09-cx43_cell | nucleus-devnote-core-cx43_01 | Yen-Yu Hsu | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-c741-7f2c-ae15-cd275d21d181 (draft) |
-| 10-nucleus_cytosol_v05 | nucleus-devnote-core-NucelusPURE_deGFP | Surendra Yadav | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb41-9578-7c7f-a675-8a47afc40dd8 (draft) |
-| 11-Base_Cell | nucleus-devnote-core-Base_Cell | Surendra Yadav | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-2557-7d20-90dc-a0f7fedb9626 (draft) |
-| DNA-toolkit-T7-promoters | nucleus-devnote-core-dna-toolkit-promoter | Charlie Newell, Astrid Joergensen | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-c028-7f0b-87eb-5f777b847f32 (draft) |
-| bac-working-group | bac-working-group | Energy Metabolism Working Group | n/a (no toc notebooks) | ☐ | ☑ | https://scms.curvenote.com/build/019fcb2d-5678-73d3-9cf4-f2674da30171 (draft, most recent — use this for content review; older real submission: https://scms.curvenote.com/build/019fc034-3f41-7bc8-b207-3cd4979b1aea) |
-| cx43 | nucleus-devnote-core-01_contrib_cx43_cell | Ahmed Z. Sihorwala | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb48-a364-7d01-8f59-3b4c3fa7c09c |
-| devnote-developer_cell | nucleus-devnote-core-05_devcell_01 | Anton Jackson-Smith, Akshay Maheshwari | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-43d5-7f8c-acef-9cb1d563336a (draft) |
-| devnote-nucleus_onepot | nucleus-devnote-core-07_bnext-onepot-pure-replication | Anton Molina, Anton Jackson-Smith | ☑ pass (1/1) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-88f3-7c28-a098-8adcceacb3a3 (draft) |
-| fwm-aria-d2 | 019f6db2-e060-710d-8984-6bcd5747d775 | b.next, Find What Matters | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-0e1f-70f3-941c-331bcaeb4b1e (draft) |
-| fwm-batch-bo | 019f9b60-cc79-7008-9c25-4a46b53b8604 | Joseph Lozier | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-3491-7c71-8b03-261b0ed1d3a8 (draft) |
-| lipid-prep | 019dcea0-91e3-78da-be6d-6450c2ff8308 | London Exchange Meeting Participants | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-0ce3-7786-a107-651e716e8acc (draft) |
-| module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb5a-2099-7526-91fb-efddaaac6f9c (draft) |
-| module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb5f-ee48-79fd-b314-5a56372276e1 (draft) |
-| onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☐ | ☑ | https://scms.curvenote.com/build/019fcb74-5a99-78d8-a078-36403e191604 (draft, most recent — use this for content review; older real submission is stale, predates this session's fixes: https://scms.curvenote.com/build/019fc034-5ab6-7f11-948f-9e5c6e096f02) |
+| 02_emitter_cell | nucleus-devnote-core-02_emitter_cell | Yen-Yu Hsu | n/a (no toc notebooks; 1 orphaned main.ipynb, no environment.yml either) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-1573-754b-b4ef-a1a6bd74c5b1 (draft) |
+| 03_mthfs | nucleus-devnote-core-03_mthfs | Yemo Ku | ☑ pass (1/1) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-f6b8-71d5-9b87-bb84fb2c9258 (draft) |
+| 04_ppk | nucleus-devnote-core-04_ppk | Surendra Yadav | ☑ pass (5/5) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-d2d3-7e16-9e7c-40ea8edbe394 (draft) |
+| 05_pure_workshop | nucleus-devnote-core-09_pure-workshop | OnePot Workshop | ☑ pass (5/5) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-7518-74f5-88b6-17122619cf03 (draft) |
+| 08_ppk_cell | nucleus-devnote-core-08_ppk-module-in-pure-cell | Yen-Yu Hsu | ☑ pass (1/1) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-2dbb-7669-94e4-499ef3d0044d (draft) |
+| 09-cx43_cell | nucleus-devnote-core-cx43_01 | Yen-Yu Hsu | ☑ pass (2/2) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-c741-7f2c-ae15-cd275d21d181 (draft) |
+| 10-nucleus_cytosol_v05 | nucleus-devnote-core-NucelusPURE_deGFP | Surendra Yadav | ☑ pass (2/2) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb41-9578-7c7f-a675-8a47afc40dd8 (draft) |
+| 11-Base_Cell | nucleus-devnote-core-Base_Cell | Surendra Yadav | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-2557-7d20-90dc-a0f7fedb9626 (draft) |
+| DNA-toolkit-T7-promoters | nucleus-devnote-core-dna-toolkit-promoter | Charlie Newell, Astrid Joergensen | ☑ pass (2/2) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-c028-7f0b-87eb-5f777b847f32 (draft) |
+| bac-working-group | bac-working-group | Energy Metabolism Working Group | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-5678-73d3-9cf4-f2674da30171 (draft, most recent — use this for content review; older real submission: https://scms.curvenote.com/build/019fc034-3f41-7bc8-b207-3cd4979b1aea) |
+| cx43 | nucleus-devnote-core-01_contrib_cx43_cell | Ahmed Z. Sihorwala | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb48-a364-7d01-8f59-3b4c3fa7c09c |
+| devnote-developer_cell | nucleus-devnote-core-05_devcell_01 | Anton Jackson-Smith, Akshay Maheshwari | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-43d5-7f8c-acef-9cb1d563336a (draft) |
+| devnote-nucleus_onepot | nucleus-devnote-core-07_bnext-onepot-pure-replication | Anton Molina, Anton Jackson-Smith | ☑ pass (1/1) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-88f3-7c28-a098-8adcceacb3a3 (draft) |
+| fwm-aria-d2 | 019f6db2-e060-710d-8984-6bcd5747d775 | b.next, Find What Matters | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-0e1f-70f3-941c-331bcaeb4b1e (draft) |
+| fwm-batch-bo | 019f9b60-cc79-7008-9c25-4a46b53b8604 | Joseph Lozier | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-3491-7c71-8b03-261b0ed1d3a8 (draft) |
+| lipid-prep | 019dcea0-91e3-78da-be6d-6450c2ff8308 | London Exchange Meeting Participants | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb2d-0ce3-7786-a107-651e716e8acc (draft) |
+| module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb5a-2099-7526-91fb-efddaaac6f9c (draft) |
+| module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb5f-ee48-79fd-b314-5a56372276e1 (draft) |
+| onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☑ | ☐ | https://scms.curvenote.com/build/019fcb74-5a99-78d8-a078-36403e191604 (draft, most recent — use this for content review; older real submission is stale, predates this session's fixes: https://scms.curvenote.com/build/019fc034-5ab6-7f11-948f-9e5c6e096f02) |
 
-**Note on `bac-working-group`/`onepot-sy`:** these are the only two rows with a real, non-draft submission on file — made while testing whether the CLI path worked at all, not a mistake to undo. Every other row's URL is a draft/preview build only and does NOT count as submitted. A newer draft build exists for both from the full-sweep run below; linked alongside the original real submission.
+**Note on `bac-working-group`/`onepot-sy`:** each has an *older* real, non-draft submission on file from early testing of whether the CLI path worked at all — not a mistake to undo, but also not the current, reviewed state of either devnote, so it does not count as "submitted" here and their checkbox is unchecked like every other row. The draft URL linked for both (not the older real-submission link) is the current, reviewed content.
 
 **All 19 draft submissions above came from `migrate/debug-and-review` (tracking PR #10, itself stacked on the fix-typst-seqviz-plugins/PR #9 commit, not yet merged)** — so every row reflects the notebook fixes from the 2026-08-03 session below (`module-Clpxp`/`module-Clpxp-Cytosol`/`11-Base_Cell`/`10-nucleus_cytosol_v05` also still carry the earlier PR #9 fixes), not what's currently on `main`. `./manual-submit-all.sh` now submits all devnotes concurrently (`xargs -P`, default 6, override with `CONCURRENCY=n`). Re-ran on 2026-08-04 with `CONCURRENCY=19` (all 19 launched at once) after re-executing every toc-listed notebook to refresh stale saved outputs (see below) — all 19 succeeded on the first pass this time, no retries needed. URLs in the table above reflect this latest run. For `bac-working-group`/`onepot-sy`, the draft URL (not the older real submission) is the one to use for reviewing current content.
 
@@ -91,28 +89,15 @@ Ran every `toc`-listed notebook via `nbclient`, in a shared conda env (`environm
 
 **Original sweep result: 19 pass / 9 fail across 28 notebooks** (every notebook listed in a `toc:` across all 19 devnotes; 6 devnotes have zero `toc`-listed notebooks, marked n/a above — that's a gap in coverage, not a pass). **Update: all 9 failures were debugged and fixed in a follow-up session — see "Notebook fixes" below. Current state: 28 pass / 0 fail.**
 
-| Devnote | Notebook | Original result | Error | Current status |
-|---|---|---|---|---|
-| 03_mthfs | `20250220-analysis.ipynb` | FAIL | `ValueError` in `pr.plot_kinetics(data, kinetics)` | fixed |
-| 04_ppk | `20250610-ppk-energy-solution-analysis.ipynb` | PASS | | pass |
-| 04_ppk | `20250611-analysis.ipynb` | FAIL | `OverflowError` in a `sns.barplot(...)` call on steady-state data | fixed |
-| 04_ppk | `20250612-analysis.ipynb` | FAIL | `OverflowError`, same `sns.barplot` pattern | fixed |
-| 04_ppk | `20250613-PPK_Mg_Opt.ipynb` | FAIL | `AttributeError` in `cdk`'s analysis module (inside `pr.plot_curves(data)`) | fixed |
-| 04_ppk | `20250616 PPK CP-CK Integration.ipynb` | PASS | | pass |
-| 05_pure_workshop | `nucleus-pure-energy-mix.ipynb` | PASS | | pass |
-| 05_pure_workshop | `nucleus-pure-protein-mix.ipynb` | PASS | | pass |
-| 05_pure_workshop | `nucleus-pure-protein-debug.ipynb` | FAIL | `OverflowError`, same `sns.barplot`/steady-state pattern as `04_ppk` | fixed |
-| 05_pure_workshop | `nucleus-pure-tRNA-dialysis.ipynb` | PASS | | pass |
-| 05_pure_workshop | `nucleus-pure-ribosomes.ipynb` | PASS | | pass |
-| 08_ppk_cell | `20250811-acjs-PPK.ipynb` | FAIL | `ValueError` (only notebook in this devnote's `toc`) | fixed |
-| 09-cx43_cell | both notebooks | PASS | | pass |
-| 10-nucleus_cytosol_v05 | both notebooks | PASS | | pass |
-| DNA-toolkit-T7-promoters | both notebooks | PASS | | pass |
-| devnote-nucleus_onepot | its 1 `toc` notebook | PASS | | pass |
-| module-Clpxp-Cytosol | all 6 | PASS | | pass |
-| onepot-sy | all 3 | FAIL | `TypeError` — real bug, see below | fixed |
+Of those 9, 3 turned out to be genuine upstream `nucleus-cdk` bugs (not fixable from the notebook side alone) and were filed against the real source repo, `bnext-bio/bnext`:
 
-Full raw logs from the original sweep (every executed cell's output/traceback) available in that session's scratch dir if needed for deeper debugging — not committed here to keep this file readable.
+| Devnote | Notebook | Error | Issue |
+|---|---|---|---|
+| 03_mthfs | `20250220-analysis.ipynb` | `pr.plot_kinetics`: `ax.axvline` compares a `pandas.Timedelta` against a float axis limit | [bnext-bio/bnext#66](https://github.com/bnext-bio/bnext/issues/66) |
+| 08_ppk_cell | `20250811-acjs-PPK.ipynb` | `pr.plot_steadystate`/`hue`/`col` regression: an earlier version merged the full platemap back in before plotting, a later commit removed that with no replacement | [bnext-bio/bnext#67](https://github.com/bnext-bio/bnext/issues/67) |
+| 04_ppk | `20250613-PPK_Mg_Opt.ipynb` | `pr.plot_curves`: `data.READ_COLUMN_NAME` instead of `data[READ_COLUMN_NAME]` — already fixed on `bnext-bio/bnext`'s `main`, published `nucleus-cdk==0.5.0rc2` pip package is just stale | [bnext-bio/bnext#69](https://github.com/bnext-bio/bnext/issues/69) |
+
+The other 6 failures were notebook-side bugs (typos, degenerate wells, stale variable references) — see "Notebook fixes" below for the full list and fixes.
 
 ### Notebook fixes (2026-08-03 session)
 
@@ -127,6 +112,21 @@ All 9 originally-failing notebooks were debugged live (in the `devnote-notebooks
 - **`08_ppk_cell/20250811-acjs-PPK.ipynb`:** 11 cells called `pr.plot_steadystate(data, x=A, hue=B, ...)` with `B != A` — confirmed via git history to be a real upstream regression (an earlier `nucleus-cdk` version merged the full platemap back in before plotting, so `hue`/`col` could reference any column; a later commit commented that merge out with no replacement). No notebook-side fix exists; commented out all 11, filed as [bnext-bio/bnext#67](https://github.com/bnext-bio/bnext/issues/67). Separately, `pr.find_steady_state(data, group_by="Well")` passed a bare string where a list was expected (a real notebook-side typo) — fixed to `group_by=["Well"]`.
 
 The draft/preview build URLs in the checklist table above have since been refreshed via `./manual-submit-all.sh` and reflect these fixes (see the note above the sweep table).
+
+### Second debugging session (2026-08-04): stale outputs, seqviz, and per-devnote polish
+
+This session started from a puzzling report: bugs already fixed and committed in the 2026-08-03 session (above) were still visibly showing up in fresh draft submissions. Root cause (commit `d3efa0e`): `curvenote submit` never re-executes a notebook — it only renders whatever cell outputs are already saved in the `.ipynb` file. The 2026-08-03 fix commit corrected the notebook *code*, but its own `git checkout -- devnotes/` cleanup step (used to discard the unrelated PNG diffs from a live debugging run) also discarded the newly-passing *execution outputs*, leaving the old pre-fix error tracebacks baked into the committed files. Fixed by re-executing all 28 `toc`-listed notebooks across every devnote and committing the refreshed outputs — confirmed via `git status` that all 28 files changed (i.e. every one had genuinely stale output, not just the one that was visibly reported).
+
+Other fixes made in this session, each its own commit:
+- **`onepot-sy/20260121-Analysis.ipynb` kernelspec** (`d3efa0e`): pointed at a never-registered custom kernel (`bnext-cdk`) unlike its sibling notebooks; switched to the standard `python3` kernel.
+- **`manual-submit-all.sh` parallelized** (`d3efa0e`): now submits all devnotes concurrently via `xargs -P` (default 6, override with `CONCURRENCY=n`) instead of one at a time.
+- **Stray per-devnote PDF exports** (`711d3ea`): `curvenote submit` drops an untracked PDF export into each devnote's own directory per its `curvenote.yml` `exports:` config (e.g. `bnext-ppk.pdf`, `devnote.pdf`). Deleted the accumulated ones; a permanent fix (disable the export, or have the script clean up after itself) is deferred — see memory `manual-submit-generates-stray-pdfs`.
+- **`10-nucleus_cytosol_v05` seqviz plugin failure** (`871e92c`): the pOpen-deGFP plasmid-map tab showed "seqviz - Unknown Directive" / `ERR_MODULE_NOT_FOUND: seqparse`. This branch forked before PR #9 (`fix-typst-seqviz-plugins`)'s seqviz fix landed and was never rebased onto or merged with it. Cherry-picked that fix (`eb74b0d`): moves the plugin + its npm dependency into a shared `plugins/seqviz/` at the repo root with `node_modules` committed (CI never runs `npm install` for a devnote's own `package.json`), removes `11-Base_Cell`'s dead unused plugin declaration, and renames 6 space-containing figure labels in `module-Clpxp{,-Cytosol}` that broke the Typst compile step (Typst labels can't contain spaces), plus fixes one pre-existing case-mismatch dangling reference. Verified locally: plugin now loads, plasmid map renders.
+- **`_build/` leaking untracked in `10-nucleus_cytosol_v05`** (`573e30d`): its devnote-local `.gitignore` was the only one of 19 missing the standard `_build/`/`.ipynb_checkpoints/`/`.DS_Store`/`node_modules/` entries (each devnote's `.gitignore` was carried over as-is from before the flat-restructure, from whatever template it started with — not corruption, just an inconsistent starting point). Brought it in line with its siblings and added a repo-wide `_build/` backstop rule.
+- **`module-Clpxp`/`module-Clpxp-Cytosol` tab-set formatting** (`f16711e`, `08052bd`): wrapped DNA-Constructs/Purified-Proteins tables, the per-experiment protocol tables (Experiment 1–8 in `module-Clpxp`; 1–6 in `module-Clpxp-Cytosol`, converted from `{tip}` dropdown toggles), and three figure pairs in `module-Clpxp` (Figs 2/3, 4/5, 6/7) into MyST `tab-set`s. Structural only, no prose changed; also fixed a pre-existing bug where `module-Clpxp`'s "Experiment 4" heading was misplaced inside its table fence.
+- **`onepot-sy` blank Figure 4 + embed conversion** (`d555f12`): `summary_plot.png` was silently blank. Root cause: `pr.plot_summary()` calls `plt.show()` internally, which closes the figure in Jupyter's inline backend — so the notebook's own subsequent `plt.savefig("summary_plot.png")` saved a brand-new *empty* figure (confirmed live: `plt.gcf()` had 0 axes at save time). Fixed by converting `main.md` to embed all four data-plot figures directly from their source notebook cells (`#fig:kinetics-opt1`, `#fig:kinetics-opt2`, `#fig:opt2_summary`, `#fig:kinetics-opt4`) instead of separately-saved PNGs — a pattern already established elsewhere in this repo (`03_mthfs`, `04_ppk`, etc.) that sidesteps this failure mode entirely. The plate-layout photo (`fig:OnePotPURE-platemap`) is a real static image, not notebook-derived, and stays as one. Deleted the now-orphaned `g.png`/`summary_plot.png`/`summary-normalized.png` files.
+
+All of the above are on `migrate/debug-and-review`, not yet merged to `main`.
 
 ### `onepot-sy` original bug detail (for reference)
 
