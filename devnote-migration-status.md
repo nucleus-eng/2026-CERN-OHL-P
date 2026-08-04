@@ -77,7 +77,7 @@ devnote, not as a batch script.
 | fwm-aria-d2 | 019f6db2-e060-710d-8984-6bcd5747d775 | b.next, Find What Matters | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-0e1f-70f3-941c-331bcaeb4b1e (draft) |
 | fwm-batch-bo | 019f9b60-cc79-7008-9c25-4a46b53b8604 | Joseph Lozier | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-3491-7c71-8b03-261b0ed1d3a8 (draft) |
 | lipid-prep | 019dcea0-91e3-78da-be6d-6450c2ff8308 | London Exchange Meeting Participants | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-0ce3-7786-a107-651e716e8acc (draft) |
-| module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-0b17-790f-96be-90c471b5c9fa (draft) |
+| module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb5a-2099-7526-91fb-efddaaac6f9c (draft) |
 | module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-e639-7185-9719-b851028aadd5 (draft) |
 | onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☐ | ☑ | https://scms.curvenote.com/build/019fcb2d-92b3-7ace-8761-b0b04372baea (draft, most recent — use this for content review; older real submission is stale, predates this session's fixes: https://scms.curvenote.com/build/019fc034-5ab6-7f11-948f-9e5c6e096f02) |
 
