@@ -71,7 +71,7 @@ devnote, not as a batch script.
 | 11-Base_Cell | nucleus-devnote-core-Base_Cell | Surendra Yadav | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-2557-7d20-90dc-a0f7fedb9626 (draft) |
 | DNA-toolkit-T7-promoters | nucleus-devnote-core-dna-toolkit-promoter | Charlie Newell, Astrid Joergensen | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-c028-7f0b-87eb-5f777b847f32 (draft) |
 | bac-working-group | bac-working-group | Energy Metabolism Working Group | n/a (no toc notebooks) | ☐ | ☑ | https://scms.curvenote.com/build/019fcb2d-5678-73d3-9cf4-f2674da30171 (draft, most recent — use this for content review; older real submission: https://scms.curvenote.com/build/019fc034-3f41-7bc8-b207-3cd4979b1aea) |
-| cx43 | nucleus-devnote-core-01_contrib_cx43_cell | Ahmed Z. Sihorwala | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-09c1-79ed-8245-de71e5f4508f (draft) |
+| cx43 | nucleus-devnote-core-01_contrib_cx43_cell | Ahmed Z. Sihorwala | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb48-a364-7d01-8f59-3b4c3fa7c09c |
 | devnote-developer_cell | nucleus-devnote-core-05_devcell_01 | Anton Jackson-Smith, Akshay Maheshwari | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-43d5-7f8c-acef-9cb1d563336a (draft) |
 | devnote-nucleus_onepot | nucleus-devnote-core-07_bnext-onepot-pure-replication | Anton Molina, Anton Jackson-Smith | ☑ pass (1/1) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-88f3-7c28-a098-8adcceacb3a3 (draft) |
 | fwm-aria-d2 | 019f6db2-e060-710d-8984-6bcd5747d775 | b.next, Find What Matters | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-0e1f-70f3-941c-331bcaeb4b1e (draft) |
