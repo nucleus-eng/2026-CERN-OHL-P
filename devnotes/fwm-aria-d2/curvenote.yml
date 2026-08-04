@@ -1,6 +1,7 @@
 version: 1
 extends: base.yml
 project:
+  doi: 10.63765/kxfm6388
   title: 'Defining AI Scientific Workflows: Using IGOR for Optimization of PURE'
   authors:
     - name: b.next
@@ -9,7 +10,7 @@ project:
     - name: Find What Matters
       email: scr@findwhatmatters.ai
       corresponding: true
-  date: 2026-07-25T00:00:00.000Z
+  date: 2026-07-25
   banner: general/batch-opt-3.png
   thumbnail: general/batch-opt.png
   toc:

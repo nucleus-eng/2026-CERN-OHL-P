@@ -1,6 +1,7 @@
 version: 1
 extends: base.yml
 project:
+  doi: 10.63765/mkjg5795
   title: 'Batch Bayesian Optimization'
   authors:
     - name: Joseph Lozier
