@@ -19,11 +19,18 @@ set -uo pipefail
 # version (0.14.2+) that plain `npx curvenote` (which can resolve to an
 # older cached/pinned version) doesn't always satisfy.
 #
+# Runs devnotes concurrently (default 6 at a time, override with
+# CONCURRENCY=n) via xargs -P - each submission is an independent CLI
+# invocation in its own directory, so there's no shared state to race on
+# beyond npx's package cache, which is already warm after the first call.
+#
 # Run from anywhere inside a clone of nucleus-eng/2026-CERN-OHL-P.
 # Written for bash 3.2 (macOS default) - no associative arrays.
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 cd "$REPO_ROOT"
+
+CONCURRENCY="${CONCURRENCY:-6}"
 
 DEVNOTES=()
 for path in devnotes/*/; do
@@ -34,40 +41,45 @@ for path in devnotes/*/; do
   fi
 done
 
-echo "Found ${#DEVNOTES[@]} devnotes: ${DEVNOTES[*]}"
+echo "Found ${#DEVNOTES[@]} devnotes: ${DEVNOTES[*]} (concurrency=$CONCURRENCY)"
 
-RESULT_NAMES=()
-RESULT_STATUSES=()
-RESULT_URLS=()
+RESULTS_DIR="$(mktemp -d "${TMPDIR:-/tmp}/curvenote-submit-XXXXXX")"
+trap 'rm -rf "$RESULTS_DIR"' EXIT
 
-for d in "${DEVNOTES[@]}"; do
+submit_one() {
+  d="$1"
   path="devnotes/$d"
-  echo
-  echo "==================== $d ===================="
   logfile="$path/_build/logs/curvenote.submit.json"
+  outlog="$RESULTS_DIR/$d.log"
   rm -f "$logfile"
   (
     cd "$path"
     npx --yes curvenote@latest submit bnext-devnotes --kind devnote --collection developer-cells --draft -y
-  )
+  ) >"$outlog" 2>&1
   rc=$?
-  RESULT_NAMES+=("$d")
-  if [ $rc -eq 0 ]; then
-    RESULT_STATUSES+=("OK")
-  else
-    RESULT_STATUSES+=("FAILED")
-  fi
   url=""
   if [ -f "$logfile" ]; then
     url=$(python3 -c "import json;print(json.load(open('$logfile')).get('buildUrl',''))" 2>/dev/null)
   fi
-  RESULT_URLS+=("$url")
-done
+  status="OK"
+  [ $rc -eq 0 ] || status="FAILED"
+  printf '%s\t%s\t%s\n' "$d" "$status" "$url" >"$RESULTS_DIR/$d.result"
+  echo
+  echo "==================== $d: $status ===================="
+  cat "$outlog"
+}
+export -f submit_one
+export RESULTS_DIR
+
+printf '%s\n' "${DEVNOTES[@]}" | xargs -P "$CONCURRENCY" -I{} bash -c 'submit_one "$@"' _ {}
 
 echo
 echo "==================== Summary ===================="
-i=0
-for d in "${RESULT_NAMES[@]}"; do
-  printf "%-30s %-8s %s\n" "$d" "${RESULT_STATUSES[$i]}" "${RESULT_URLS[$i]}"
-  i=$((i + 1))
+for d in "${DEVNOTES[@]}"; do
+  if [ -f "$RESULTS_DIR/$d.result" ]; then
+    IFS=$'\t' read -r name status url <"$RESULTS_DIR/$d.result"
+    printf "%-30s %-8s %s\n" "$name" "$status" "$url"
+  else
+    printf "%-30s %-8s %s\n" "$d" "MISSING" ""
+  fi
 done
