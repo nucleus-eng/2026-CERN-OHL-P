@@ -1,2 +1,6 @@
+_build/
+.ipynb_checkpoints/
+.DS_Store
+node_modules/
 devnote.pdf
 src/cdk/

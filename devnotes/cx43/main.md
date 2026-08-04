@@ -87,7 +87,7 @@ Note: that leakage can be inhibited by presence of 2 mM Ca++ in outer solution.
 
 # Performance data
 
-performance data is available in the original [publication](https://pubs.acs.org/doi/abs/10.1021/jacs.2c12491).
+performance data is available in the original [publication](https://doi.org/10.1021/jacs.2c12491).
 
 # Credits
 

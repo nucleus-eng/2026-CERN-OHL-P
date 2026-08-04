@@ -66,6 +66,11 @@ The goal is to demonstrate degradation of the GFP-ssrA protein by the AAA+ ATPas
 
 ## DNA Constructs and Purified Proteins
 
+:::::{tab-set}
+
+::::{tab-item} DNA Constructs
+:sync: dna-constructs-proteins-1
+
 All DNA constructs are designed to be used in PURE reactions for protein expressions:
 
 | **DNA Constructs** | **Description** | 
@@ -74,6 +79,10 @@ All DNA constructs are designed to be used in PURE reactions for protein express
 | [pOpen-pT7-deGFP-ssrA](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/pOpen-deGFP-ssrA.gb) | Express GFP protein wtih ssrA tag in the pOpen plasmid |
 | Linear pT7-deGFP-ssrA | Express deGFP protein wtih ssrA tag using linear DNA |
 | Linear pT7-deGFP |Express deGFP protein using linear DNA |
+::::
+
+::::{tab-item} Purified Proteins
+:sync: dna-constructs-proteins-2
 
 All purified proteins are ordered from GenScript:
 
@@ -82,6 +91,9 @@ All purified proteins are ordered from GenScript:
 | [ClpX](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-ClpX-CHis.gb) | Purified ClpX protein expressed using pET28a plasmid |
 | [ClpP](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-ClpP-CHis.gb) | Purified ClpP protein expressed using pET28a plasmid |
 | [deGFP-ssRA](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-deGFP-CHis-ssrA.gb) | Purified GFP protein wtih ssrA tag expressed using pET28a plasmid |
+::::
+
+:::::
 
 
 
@@ -103,8 +115,10 @@ All purified proteins are ordered from GenScript:
 
 ## Preparation of PURE bulk reactions:
 
-### Experiment 1:
+:::::{tab-set}
 
+::::{tab-item} Experiment 1
+:sync: protocol-exp-1
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
 | --- | --- | --- | --- | --- |
@@ -117,9 +131,10 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1 | 1.5 | 1.5 | 2 |
 | **Total** | **10** | **10** | **10** | **10** |
 :::
+::::
 
-### Experiment 2:
-
+::::{tab-item} Experiment 2
+:sync: protocol-exp-2
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
 | --- | --- | --- | --- | --- |
@@ -133,9 +148,10 @@ All purified proteins are ordered from GenScript:
 | **Total** | **10** | **10** | **10** | **10** |
 
 :::
+::::
 
-### Experiment 3-1:
-
+::::{tab-item} Experiment 3-1
+:sync: protocol-exp-3-1
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
 | --- | --- | --- | --- | --- |
@@ -149,9 +165,10 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1 | 0.67 | 0.33 | 2 |
 | **Total** | **10** | **10** | **10** | **10** |
 :::
+::::
 
-### Experiment 3-2:
-
+::::{tab-item} Experiment 3-2
+:sync: protocol-exp-3-2
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Sample 4** | **Control** |
 | --- | --- | --- | --- | --- | --- |
@@ -165,9 +182,11 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1.7 | 1.2 | 0.7 | 0.2 | 2.2 |
 | **Total** | **10** | **10** | **10** | **10** |
 :::
+::::
 
+::::{tab-item} Experiment 4
+:sync: protocol-exp-4
 :::{table}
-### Experiment 4:
 | **Component** | **Sample** | **Control** |
 | --- | --- | --- | 
 | Purified deGFP-ssrA (41.2 uM)  | 0.5 | 0.5 |
@@ -179,8 +198,10 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1 | 1.5 |
 | **Total** | **10** | **10** |
 :::
+::::
 
-### Experiment 5:
+::::{tab-item} Experiment 5
+:sync: protocol-exp-5
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
 | --- | --- | --- | --- | --- | 
@@ -195,8 +216,10 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1 | 0 | 0.7 | 1.5 |
 | **Total** | **10** | **10** | **10** | **10** |
 :::
+::::
 
-### Experiment 6:
+::::{tab-item} Experiment 6
+:sync: protocol-exp-6
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
 | --- | --- | --- | --- | --- | 
@@ -209,8 +232,10 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1.2 | 1.2 | 1.2 | 2 |
 | **Total** | **10** | **10** | **10** | **10** |
 :::
+::::
 
-### Experiment 7:
+::::{tab-item} Experiment 7
+:sync: protocol-exp-7
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
 | --- | --- | --- | --- | --- | 
@@ -223,10 +248,10 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1.1 | 0.9 | 0.7 | 2.1 |
 | **Total** | **10** | **10** | **10** | **10** |
 :::
+::::
 
-
-### Experiment 8:
-
+::::{tab-item} Experiment 8
+:sync: protocol-exp-8
 :::{table}
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Sample 4** |
 | --- | --- | --- | --- | --- | 
@@ -239,6 +264,9 @@ All purified proteins are ordered from GenScript:
 | Nucleus Free Water | 1.6 | 1.2 | 0.8 | 0.4 |
 | **Total** | **10** | **10** | **10** | **10** |
 :::
+::::
+
+:::::
 
 
 ## Preparation of liposomes:
@@ -301,6 +329,10 @@ The first experiment (Experiment 1) involved mixing purified deGFP ssrA with pur
 
 After establishing the functionality of the purified ClpXP degradation system, we next incorporated the PURE system. In this experiment (Experiment 2), purified ClpP was replaced with pT7 ClpP DNA. Again, we observed a decrease in deGFP fluorescence over time, demonstrating that ClpP can be expressed in vitro by PURE and remains functional for deGFP degradation {ref}`fig:ClpP-DNA`.
 
+:::::{tab-set}
+
+::::{tab-item} Purified ClpX + ClpP
+:sync: fig-2-3-1
 :::{figure} ./figures/ClpXP-protein.png
 :name: fig:Protein
 :align: center
@@ -308,7 +340,10 @@ After establishing the functionality of the purified ClpXP degradation system, w
 
 GFP fluorescence of samples containing purified proteins incubated at 37 °C for 4 hours. 
 :::
+::::
 
+::::{tab-item} ClpP DNA
+:sync: fig-2-3-2
 :::{figure} ./figures/ClpP DNA with ClpX and GFP proteins.png
 :name: fig:ClpP-DNA
 :align: center
@@ -316,9 +351,16 @@ GFP fluorescence of samples containing purified proteins incubated at 37 °C for
 
 GFP fluorescence signal in PURE reactions incubated at 37 °C for 6 hours. The reaction contains pT7-ClpP DNA, purified ClpX protein and purified deGFP-ssrA protein.
 :::
+::::
+
+:::::
 
 Because our ultimate goal is to encapsulate the entire control module with PURE inside liposomes, which require either Optiprep or sucrose as density-gradient media, we also tested bulk reactions supplemented with these additives (Experiment 3). We found that increasing Optiprep concentrations noticeably slowed GFP degradation {ref}`fig:Optiprep`, whereas sucrose had minimal impact on the degradation rate {ref}`fig:Sucrose`. Accordingly, sucrose was selected for liposome preparation in all subsequent cell-encapsulation experiments.
 
+:::::{tab-set}
+
+::::{tab-item} Optiprep
+:sync: fig-4-5-1
 :::{figure} ./figures/ClpXP-optiprep.png
 :name: fig:Optiprep
 :align: center
@@ -326,7 +368,10 @@ Because our ultimate goal is to encapsulate the entire control module with PURE 
 
 GFP fluorescence signal in PURE reactions with addition of different amount of Optiprep incubated at 37 °C for 6 hours. The reaction contains pT7-ClpP DNA, purified ClpX protein and purified deGFP-ssrA protein.
 :::
+::::
 
+::::{tab-item} Sucrose
+:sync: fig-4-5-2
 :::{figure} ./figures/ClpXP-sucrose.png
 :name: fig:Sucrose
 :align: center
@@ -334,9 +379,16 @@ GFP fluorescence signal in PURE reactions with addition of different amount of O
 
 GFP fluorescence signal in PURE reactions with addition of different amount of sucrose incubated at 37 °C for 6 hours. The reaction contains pT7-ClpP DNA, purified ClpX protein and purified deGFP-ssrA protein.
 :::
+::::
+
+:::::
 
 Besides using ClpP DNA, we also tested ClpX DNA to express the ClpX protease using the PURE system (Experiment 4). When the reaction was supplemented with purified ClpP protein and purified deGFP-ssrA substrate, we again observed the expected decrease in deGFP fluorescence over time. In contrast, the control reaction lacking ClpX DNA maintained constant fluorescence, aside from the small initial drop consistently seen in earlier experiments {ref}`fig:ClpX-DNA`. We also examined the effects of OptiPrep and sucrose on protein degradation (Experiment 5) and found that the addition of either component slowed the degradation rate, with Optiprep having a stronger inhibitory effect {ref}`fig:ClpX-S`. These results suggest that an even greater delay in GFP signal loss should be expected when the system is encapsulated within liposomes, where sucrose or OptiPrep is typically included. 
 
+:::::{tab-set}
+
+::::{tab-item} ClpX DNA
+:sync: fig-6-7-1
 :::{figure} ./figures/ClpX DNA with ClpP and GFP proteins.png
 :name: fig:ClpX-DNA
 :align: center
@@ -344,7 +396,10 @@ Besides using ClpP DNA, we also tested ClpX DNA to express the ClpX protease usi
 
 GFP fluorescence signal in PURE reactions incubated at 37 °C for 6 hours. The reaction contains pT7-ClpX DNA, purified ClpP protein and purified deGFP-ssrA protein.
 :::
+::::
 
+::::{tab-item} ClpX DNA + Optiprep/Sucrose
+:sync: fig-6-7-2
 :::{figure} ./figures/ClpX-Sucrose-Optiprep.png
 :name: fig:ClpX-S
 :align: center
@@ -352,6 +407,9 @@ GFP fluorescence signal in PURE reactions incubated at 37 °C for 6 hours. The r
 
 GFP fluorescence signal in PURE reactions with addition of Optiprep or sucrose incubated at 37 °C for 6 hours. The reaction contains pT7-ClpX DNA, purified ClpP protein and purified deGFP-ssrA protein.
 :::
+::::
+
+:::::
 
 
 Next, instead of using ClpP DNA, we replaced purified deGFP-ssrA with pT7-deGFP DNA for PURE-based expression and degradation (Experiment 6). By tuning the concentrations of purified ClpX and ClpP while keeping pT7-deGFP constant, we were able to control the GFP degradation kinetics. As expected, higher amounts of ClpXP resulted in faster decreases in GFP fluorescence. Interestingly, in a single PURE reaction, we could observe the fluorescence first rising (due to in vitro expression) and then declining (due to degradation) {ref}`fig:GFP-DNA`. Notably, it's hard to see the GFP signal returning to its initial baseline in most of the reactions, suggesting that the system likely exhausted its available energy for continued protein degradation.

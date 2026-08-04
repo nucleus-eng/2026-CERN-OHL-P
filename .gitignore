@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+_build/
 # shared curvenote plugin deps, committed so CI (which never runs npm
 # install for a devnote's own package.json) can actually load them
 !/plugins/seqviz/node_modules/

@@ -36,6 +36,11 @@ The goal is to demonstrate degradation of the GFP-ssrA protein by the AAA+ ATPas
 
 ## DNA Constructs and Purified Proteins
 
+:::::{tab-set}
+
+::::{tab-item} DNA Constructs
+:sync: dna-constructs-proteins-1
+
 All DNA constructs are designed to be used in PURE reactions for protein expressions:
 
 | **DNA Constructs** | **Description** | 
@@ -45,6 +50,10 @@ All DNA constructs are designed to be used in PURE reactions for protein express
 | [pOpen-pT7-deGFP-ssrA](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/pOpen-deGFP-ssrA.gb) | Express GFP protein wtih ssrA tag in the pOpen plasmid |
 | Linear pT7-deGFP-ssrA | Express deGFP protein wtih ssrA tag using linear DNA |
 | Linear pT7-deGFP |Express deGFP protein using linear DNA |
+::::
+
+::::{tab-item} Purified Proteins
+:sync: dna-constructs-proteins-2
 
 All purified proteins are ordered from GenScript:
 
@@ -53,6 +62,9 @@ All purified proteins are ordered from GenScript:
 | [ClpX](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-ClpX-CHis.gb) | Purified ClpX protein expressed using pET28a plasmid |
 | [ClpP](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-ClpP-CHis.gb) | Purified ClpP protein expressed using pET28a plasmid |
 | [deGFP-ssRA](https://github.com/nucleus-eng/DNA/blob/bf9cfc08f1e1443f8185da24cf78467c67911766/control/protein-purification/pET28a-deGFP-CHis-ssrA.gb) | Purified GFP protein wtih ssrA tag expressed using pET28a plasmid |
+::::
+
+:::::
 
 
 
@@ -67,12 +79,10 @@ All purified proteins are ordered from GenScript:
 
 ## Reaction compositions
 
-::::{tip} Experiment 1
-:class: simple
-:class: dropdown
-:icon: false
+:::::{tab-set}
 
-
+::::{tab-item} Experiment 1
+:sync: reaction-comp-1
 :::{table}
 :label: tbl-exp1
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
@@ -88,11 +98,8 @@ All purified proteins are ordered from GenScript:
 :::
 ::::
 
-::::{tip} Experiment 2
-:class: simple
-:class: dropdown
-:icon: false
-
+::::{tab-item} Experiment 2
+:sync: reaction-comp-2
 :::{table}
 :label: tbl-exp2
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
@@ -109,11 +116,8 @@ All purified proteins are ordered from GenScript:
 :::
 ::::
 
-::::{tip} Experiment 3
-:class: simple
-:class: dropdown
-:icon: false
-
+::::{tab-item} Experiment 3
+:sync: reaction-comp-3
 :::{table}
 :label: tbl-exp3
 | **Component** | **Sample** | **Control** |
@@ -129,11 +133,8 @@ All purified proteins are ordered from GenScript:
 :::
 ::::
 
-::::{tip} Experiment 4
-:class: simple
-:class: dropdown
-:icon: false
-
+::::{tab-item} Experiment 4
+:sync: reaction-comp-4
 :::{table}
 :label: tbl-exp4
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
@@ -149,11 +150,8 @@ All purified proteins are ordered from GenScript:
 :::
 ::::
 
-::::{tip} Experiment 5
-:class: simple
-:class: dropdown
-:icon: false
-
+::::{tab-item} Experiment 5
+:sync: reaction-comp-5
 :::{table}
 :label: tbl-exp5
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Control** |
@@ -169,12 +167,8 @@ All purified proteins are ordered from GenScript:
 :::
 ::::
 
-
-::::{tip} Experiment 6
-:class: simple
-:class: dropdown
-:icon: false
-
+::::{tab-item} Experiment 6
+:sync: reaction-comp-6
 :::{table}
 :label: tbl-exp6
 | **Component** | **Sample 1** | **Sample 2** | **Sample 3** | **Sample 4** |
@@ -189,6 +183,8 @@ All purified proteins are ordered from GenScript:
 | **Total** | **10** | **10** | **10** | **10** |
 :::
 ::::
+
+:::::
 
 ***
 

@@ -235,7 +235,7 @@ To assess the performance of OnePot PURE across varying magnesium acetate concen
 
 Magnesium acetate titration showed that 14 mM yielded the highest deGFP production; higher concentrations were not tested. The OnePot PURE reaction with 14 mM Mg²⁺ achieved approximately 40% of the protein yield observed in the PURExpress positive control. Note: Kinetics measurements were initiated 20–25 minutes after reaction setup, which explains the apparent expression observed at timepoint 00:00.
 
-:::{figure} ./experiments/20260120-OnePot-Opt1/g.png
+:::{figure} #fig:kinetics-opt1
 :label: fig:opt1
 :width: 75%
 Magnesium optimization in OnePot PURE: 14 mM provided highest deGFP yield among the tested concentrations, ~40% of the PURExpress positive control. 
@@ -283,7 +283,7 @@ PEG-8000 is widely used as an additive in cell-free reactions to introduce molec
 :::::{tab-set}
 ::::{tab-item} Reaction Kinetics
 :sync: tab2-1
-:::{figure} ./experiments/20260121-OnePot-Opt2/g.png
+:::{figure} #fig:kinetics-opt2
 :label: fig:opt2
 :width: 75%
 The addition of 2% PEG to the final reaction resulted in an approximately 50% increase in protein yield; however, no significant change in yield was observed with the addition of extra ribosomes or tRNAs.
@@ -292,8 +292,8 @@ The addition of 2% PEG to the final reaction resulted in an approximately 50% in
 
 ::::{tab-item} Reaction Summary
 :sync: tab2-2
-:::{figure} ./experiments/20260121-OnePot-Opt2/summary_plot.png
-:label: fig:opt2_summary
+:::{figure} #fig:opt2_summary
+:label: fig-opt2-summary
 :width: 75%
 The addition of 2% PEG to the final reaction resulted in an approximately 50% increase in protein yield; however, no significant change in yield was observed with the addition of extra ribosomes or tRNAs.
 :::
@@ -341,10 +341,10 @@ Next, we evaluated the effect of increasing creatine phosphate from 30 mM to 40 
 :::::
 
 
-:::{figure} ./experiments/20260123-OnePot-Opt4/g.png
+:::{figure} #fig:kinetics-opt4
 :label: fig:opt4
 :width: 75%
-The addition of 40 mM creatine phosphate or 3.4 µM ribosomes resulted in only a slight improvement (~5%) in protein yield compared to previous experiments {ref}`fig:opt2_summary`.
+The addition of 40 mM creatine phosphate or 3.4 µM ribosomes resulted in only a slight improvement (~5%) in protein yield compared to previous experiments {ref}`fig-opt2-summary`.
 :::
 
 The results showed only a slight improvement in protein yield (~5%) compared to the highest yield obtained in the previous experiment when higher CP and ribosome concentrations were tested. In summary, combining 2% PEG with a final Mg²⁺ concentration of 14 mM and a final ribosome concentration of 3.24 µM enabled OnePot PURE to achieve approximately 65% of the yield of the PURExpress positive control, with a maximum expression rate (Vmax) of ~45%. 
