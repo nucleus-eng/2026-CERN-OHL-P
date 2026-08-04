@@ -67,7 +67,7 @@ devnote, not as a batch script.
 | 05_pure_workshop | nucleus-devnote-core-09_pure-workshop | OnePot Workshop | ☑ pass (5/5) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-7518-74f5-88b6-17122619cf03 (draft) |
 | 08_ppk_cell | nucleus-devnote-core-08_ppk-module-in-pure-cell | Yen-Yu Hsu | ☑ pass (1/1) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-2dbb-7669-94e4-499ef3d0044d (draft) |
 | 09-cx43_cell | nucleus-devnote-core-cx43_01 | Yen-Yu Hsu | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-c741-7f2c-ae15-cd275d21d181 (draft) |
-| 10-nucleus_cytosol_v05 | nucleus-devnote-core-NucelusPURE_deGFP | Surendra Yadav | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2e-108b-7f21-be88-e2f696c3df1a (draft) |
+| 10-nucleus_cytosol_v05 | nucleus-devnote-core-NucelusPURE_deGFP | Surendra Yadav | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb41-9578-7c7f-a675-8a47afc40dd8 (draft) |
 | 11-Base_Cell | nucleus-devnote-core-Base_Cell | Surendra Yadav | n/a (no toc notebooks) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-2557-7d20-90dc-a0f7fedb9626 (draft) |
 | DNA-toolkit-T7-promoters | nucleus-devnote-core-dna-toolkit-promoter | Charlie Newell, Astrid Joergensen | ☑ pass (2/2) | ☐ | ☐ | https://scms.curvenote.com/build/019fcb2d-c028-7f0b-87eb-5f777b847f32 (draft) |
 | bac-working-group | bac-working-group | Energy Metabolism Working Group | n/a (no toc notebooks) | ☐ | ☑ | https://scms.curvenote.com/build/019fcb2d-5678-73d3-9cf4-f2674da30171 (draft, most recent — use this for content review; older real submission: https://scms.curvenote.com/build/019fc034-3f41-7bc8-b207-3cd4979b1aea) |
