@@ -1,0 +1,7 @@
+Date,Experiment,Well,Name,Type,Lysate,DNA,Replicate
+2026-03-25,bcecf-ph-measurement,C4,No DNA,Negative Control,BL21R2 DRecBCD,No,Replicate 1
+2026-03-25,bcecf-ph-measurement,C5,No DNA,Negative Control,BL21R2 DRecBCD,No,Replicate 2
+2026-03-25,bcecf-ph-measurement,D4,No DNA,Negative Control,BL21R2 DRecBCD,No,Replicate 3
+2026-03-25,bcecf-ph-measurement,D5,p70a-mCherry,Sample,BL21R2 DRecBCD,5 nM p70a-mCherry,Replicate 1
+2026-03-25,bcecf-ph-measurement,E4,p70a-mCherry,Sample,BL21R2 DRecBCD,5 nM p70a-mCherry,Replicate 2
+2026-03-25,bcecf-ph-measurement,E5,p70a-mCherry,Sample,BL21R2 DRecBCD,5 nM p70a-mCherry,Replicate 3

@@ -1,0 +1,13 @@
+Date,Experiment,Well,Name,Type,pH,Replicate
+2026-03-10,bcecf-ph-calibration,G3,BCECF standard,Standard,6.0,Replicate 1
+2026-03-10,bcecf-ph-calibration,G4,BCECF standard,Standard,6.5,Replicate 1
+2026-03-10,bcecf-ph-calibration,G5,BCECF standard,Standard,7.0,Replicate 1
+2026-03-10,bcecf-ph-calibration,G6,BCECF standard,Standard,7.5,Replicate 1
+2026-03-10,bcecf-ph-calibration,G7,BCECF standard,Standard,8.0,Replicate 1
+2026-03-10,bcecf-ph-calibration,G8,BCECF standard,Standard,8.5,Replicate 1
+2026-03-10,bcecf-ph-calibration,H3,BCECF standard,Standard,6.0,Replicate 2
+2026-03-10,bcecf-ph-calibration,H4,BCECF standard,Standard,6.5,Replicate 2
+2026-03-10,bcecf-ph-calibration,H5,BCECF standard,Standard,7.0,Replicate 2
+2026-03-10,bcecf-ph-calibration,H6,BCECF standard,Standard,7.5,Replicate 2
+2026-03-10,bcecf-ph-calibration,H7,BCECF standard,Standard,8.0,Replicate 2
+2026-03-10,bcecf-ph-calibration,H8,BCECF standard,Standard,8.5,Replicate 2

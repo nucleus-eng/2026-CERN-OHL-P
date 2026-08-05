@@ -1,0 +1,21 @@
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - h5py
+  - ipympl
+  - ipywidgets
+  - jupyterlab
+  - jupyterlab-myst
+  - tqdm 
+  - scikit-image
+  - scikit-learn
+  - hvplot
+  - seaborn
+  - timple
+  - rich
+  - openpyxl

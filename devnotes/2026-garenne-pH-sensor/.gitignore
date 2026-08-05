@@ -1,0 +1,8 @@
+_build/
+# typst export output (curvenote.yml exports.output) — regenerated on every submit
+bcecf-ph-sensor.pdf
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+.DS_Store
+src/cdk/
