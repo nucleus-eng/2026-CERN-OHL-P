@@ -1,0 +1,60 @@
+version: 1
+project:
+  id: 019ed70b-0af7-7dd0-aefe-688ebf933399
+  title: Characterizing the Limited Operational Lifetime of Cytosol Reactions
+  authors:
+    - name: Surendra Yadav
+      email: surendra@bnext.bio
+      orcid: 0009-0009-5630-957X
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: '94107'
+          country: USA
+      corresponding: true
+  keywords:
+    - Cytosol
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-06-24
+  banner: banner.webp
+  thumbnail: experiments/20260506-Cytosol-Lifetime-Test/kinetics-normalized.png
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: cytosol-lifetime.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - general/**/*
+    - experiments/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: cytosol-lifetime.zip
+    - file: general/pOpen-deGFP.gb
+      title: pOpen-deGFP
+site:
+  template: article-theme
+  nav: []

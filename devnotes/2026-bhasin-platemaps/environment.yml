@@ -1,0 +1,22 @@
+name: why-platemap
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - scipy
+  - matplotlib
+  - h5py
+  - ipympl
+  - ipywidgets
+  - jupyterlab
+  - jupyterlab-myst
+  - tqdm 
+  - scikit-image
+  - hvplot
+  - seaborn
+  - timple
+  - rich
+  - pip
+  - pip:
+      - git+https://github.com/BuildACell/bioCRNpyler.git@v1.3.2

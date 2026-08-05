@@ -1,0 +1,61 @@
+version: 1
+project:
+  id: 019e896a-6e0d-76d5-99ef-2df38c5ebd7f
+  title: SecYEG-Based Membrane Translation Module in Synthetic Cells
+  description: >-
+    Development of a Membrane Translation Module via Reconstitution of the
+    SecYEG Translocon for Enhanced Membrane Protein Integration in Liposomes
+  authors:
+    - name: Yen-Yu Hsu
+      email: yenyu@bnext.bio
+      orcid: 0000-0003-0866-6184
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: '94107'
+          country: USA
+      corresponding: true
+  keywords:
+    - Cytosol
+    - Module
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-06-12
+  banner: banner.webp
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  # No typst export. This DevNote lays its figures out with `{grid}` inside
+  # `{tab-set}` (main.md lines 421 and 440), and the Typst renderer cannot
+  # convert a `grid` node, so the PDF never builds. Restructuring the layout
+  # would mean rewriting the author's content, so the PDF is left out and the
+  # "Download Article PDF" entry with it. The published version has no PDF
+  # either. See devnote-migration-status.md.
+  exports:
+    - format: meca
+      id: meca
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - general/**/*
+  downloads:
+    - id: meca
+      title: Computational Archive
+      filename: secyeg-module.zip
+    - file: general/DNA Constructs/GenBank files.zip
+      title: DNA Constructs
+site:
+  template: article-theme
+  nav: []

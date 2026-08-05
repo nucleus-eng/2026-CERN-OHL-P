@@ -1,0 +1,19 @@
+Date,Experiment Name,Well,Name,Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMix ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (nM),[Mg-Ace] (mM),[CP] (mM),[polyP] (mM),[PPK2] (uM),[PEG] (%),PMix Vol (uL),Ribosome Vol (uL),SMix Vol (uL),tRNA Vol (uL),DNA Vol (uL),RNase Inhib Vol (uL),CP Vol (uL),PPK Vol (uL),polyP Vol (uL),Mg-Ace Vol (uL),PEG Vol (uL),Water vol (uL),Rxn Volume (uL)
+20260609,Cytosol-Lifetime-Test4,B2,Cytosol Control,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,B4,Cytosol Control,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,B6,Cytosol Control,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,D2,Smix + Pmix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,D4,Smix + Pmix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,D6,Smix + Pmix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,F2,Smix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,F4,Smix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,F6,Smix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,H2,Pmix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,H4,Pmix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,H6,Pmix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,J2,Smix + Pmix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,J4,Smix + Pmix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,J6,Smix + Pmix + Ribo  incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260609,Cytosol-Lifetime-Test4,L2,1 uM Fluorescein,Standard,,,,,,,,,,,,,,,,,,,,,,,,,,,10
+20260609,Cytosol-Lifetime-Test4,L4,1 uM Fluorescein,Standard,,,,,,,,,,,,,,,,,,,,,,,,,,,10
+20260609,Cytosol-Lifetime-Test4,L6,1 uM Fluorescein,Standard,,,,,,,,,,,,,,,,,,,,,,,,,,,10
