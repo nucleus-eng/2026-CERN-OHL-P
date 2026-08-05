@@ -92,7 +92,7 @@ The sensor is first calibrated ({ref}`fig:ph-calibration`). This calibration cur
 ::::{tab-item} Measurement
 :::{figure} #pH-vs-time
 :label: fig:ph-vs-time
-pH over time for myTXTL reactions performed in triplicate, either with (D5, E4, E5) or without (C4, C5, D4) 5 nM template DNA. Solid lines represent calculated pH values per condition vs time. Dashed lines represent model fit ([sigmoid with drift and baseline offset](https://devnotes.nucleus.engineering/articles/Newman-20260421)) to these data.
+pH over time for myTXTL reactions performed in triplicate, either with (D5, E4, E5; bottom) or without (C4, C5, D4; top) 5 nM template DNA. Dots represent calculated pH values per well vs time. Dashed curves represent model fit ([sigmoid with drift and baseline offset](https://devnotes.nucleus.engineering/articles/Newman-20260421)) to these data. Dashed lines included to help visualize time to steady state (vertical), signal at steady state (horizontal), and maximum reaction rate (diagonal).
 :::
 ::::
 :::::
