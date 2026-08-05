@@ -78,8 +78,8 @@ devnote, not as a batch script.
 | module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdc0-9407-7fae-986e-2fefa44eb448 |
 | module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-8698-7638-9941-ae1285b2a831 |
 | onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-9f01-7488-839f-1c0979c0a693 |
-| 2026-newman-kinetics-intro | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Sharon Newman | ☑ pass (1/1) | ☐ | ☐ | (pending — see "Issues #17/#18" below) |
-| module-Clpxp-Cells | nucleus-devnote-core-clpxp_module_cells-01 | Yen-Yu Hsu | ☑ pass (5/5, incl. 1 orphan) | ☐ | ☐ | (pending — see "Issues #17/#18" below) |
+| 2026-newman-kinetics-intro | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Sharon Newman | ☑ pass (1/1) | ☐ | ☐ (draft only) | https://scms.curvenote.com/build/019fd2f6-7117-7c39-b973-49a5cc4b6d09 |
+| module-Clpxp-Cells | nucleus-devnote-core-clpxp_module_cells-01 | Yen-Yu Hsu | ☑ pass (5/5, incl. 1 orphan) | ☐ | ☐ (draft only) | https://scms.curvenote.com/build/019fd2f6-efb1-757f-8124-8da9e356101b |
 
 **Note on `bac-working-group`/`onepot-sy`:** each previously had an *older* real, non-draft submission on file from early testing of whether the CLI path worked at all. Both have now been superseded by the real submission above (2026-08-04), which reflects this session's fixes.
 
@@ -215,6 +215,29 @@ figure-less devnotes. Caught by diffing PNG-output counts against the original
 MECA bundles; re-run without `MPLBACKEND` (ipykernel's default
 `matplotlib_inline` backend is what captures figures). Always compare figure
 counts before and after a re-execution sweep.
+
+**"Created a new work" on local draft submits — not a bug, and not specific to
+these two devnotes.** Draft-submitting `module-Clpxp-Cells` from a personal
+`curvenote token` reported `Created a new work` rather than
+`Created a new work version`, which looked like it was making a duplicate.
+Diagnosed by draft-submitting two devnotes already merged to `main`:
+`module-Clpxp-Cytosol` (string key) and `lipid-prep` (UUID key) — **both also
+report `Created a new work`**, so the key format is not the cause. The one
+devnote that updated in place, `2026-newman-kinetics-intro`, is also the only
+one of the three that appears in `curvenote submission list` for this account.
+
+So work resolution is scoped to the submitting account: a local `curvenote
+submit` under a personal token cannot see, and therefore cannot update, works
+owned by someone else. The real publish path is CI — `submit.yml` runs on push
+to `main` using the venue-level `secrets.CURVENOTE_TOKEN`, which is what
+resolves these works correctly. Verify the correct key was matched by checking
+`work.date_created` in `_build/logs/curvenote.submit.json`: an existing work
+shows its original creation date, a duplicate shows today's.
+
+Practical consequence: **use local drafts for build/QA only, and let the merge
+to `main` do the real submission.** Drafts do not reach the editor panel and do
+not create venue submissions (`curvenote submission list` shows no entry for
+either draft above), so extra draft works are harmless.
 
 **Known pre-existing issues, not fixed here** (both predate this work and are
 visible on the live pages):
