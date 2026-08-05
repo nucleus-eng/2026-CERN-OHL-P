@@ -1,4 +1,6 @@
 _build/
 .ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
 .DS_Store
 src/cdk/

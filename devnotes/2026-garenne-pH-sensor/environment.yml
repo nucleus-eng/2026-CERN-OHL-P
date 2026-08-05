@@ -3,6 +3,7 @@ channels:
 dependencies:
   - python
   - numpy
+  - pandas
   - scipy
   - matplotlib
   - h5py
