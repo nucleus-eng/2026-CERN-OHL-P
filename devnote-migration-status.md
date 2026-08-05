@@ -78,8 +78,8 @@ devnote, not as a batch script.
 | module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdc0-9407-7fae-986e-2fefa44eb448 |
 | module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-8698-7638-9941-ae1285b2a831 |
 | onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-9f01-7488-839f-1c0979c0a693 |
-| 2026-newman-kinetics-intro | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Sharon Newman | ☑ pass (1/1) | ☐ | ☐ (draft only) | https://scms.curvenote.com/build/019fd2f6-7117-7c39-b973-49a5cc4b6d09 |
-| module-Clpxp-Cells | nucleus-devnote-core-clpxp_module_cells-01 | Yen-Yu Hsu | ☑ pass (5/5, incl. 1 orphan) | ☐ | ☐ (draft only) | https://scms.curvenote.com/build/019fd2f6-efb1-757f-8124-8da9e356101b |
+| 2026-newman-kinetics-intro | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Sharon Newman | ☑ pass (1/1) | ☐ | ☐ (draft only) | https://scms.curvenote.com/build/019fd305-03a4-71fa-9e74-686b8f283f23 |
+| module-Clpxp-Cells | nucleus-devnote-core-clpxp_module_cells-01 | Yen-Yu Hsu | ☑ pass (5/5, incl. 1 orphan) | ☐ | ☐ (draft only) | https://scms.curvenote.com/build/019fd304-b1cc-729d-8570-fd9b5c6b8cf4 |
 
 **Note on `bac-working-group`/`onepot-sy`:** each previously had an *older* real, non-draft submission on file from early testing of whether the CLI path worked at all. Both have now been superseded by the real submission above (2026-08-04), which reflects this session's fixes.
 
