@@ -1,0 +1,147 @@
+version: 1
+project:
+  id: bd8b42b4-8a91-40c8-a636-3778d1c9a072
+  title: The colourimetric bacterial contamination sensing device.
+  authors:
+  - name: Charlie Newell
+    email: charlie.newell.21@ucl.ac.uk
+    orcid: 0000-0001-9208-7542
+    affiliations:
+    - id: booth-lab
+      name: Booth Lab, UCL, London
+      institution: University College London
+      department: Chemistry
+      city: London
+      country: United Kingdom
+  - name: Ion Ioannou
+    email: i.ioannou19@imperial.ac.uk
+    orcid: 0000-0001-8749-1049
+    affiliations:
+    - id: ces-lab
+      name: Ces Lab, Imperial, London
+      institution: Imperial College London
+      department: Chemistry
+      city: London
+      country: United Kingdom
+  - name: Jonah McDonald
+    email: jonah.mcdonald@kcl.ac.uk
+    orcid: 0009-0003-3314-6874
+    affiliations:
+    - id: hindley-lab
+      name: Hindley Lab, King's College, London
+      institution: King's College London
+      department: Chemistry
+      city: London
+      country: United Kingdom
+  - name: Julia Purrinos De Oliveira
+    email: j.purrinosdeoliveira@imperial.ac.uk
+    orcid: 0009-0004-7229-6709
+    affiliations:
+    - id: contini-lab
+      name: Contini Lab, Imperial, London
+      institution: Imperial College London
+      department: Chemistry
+      city: London
+      country: United Kingdom
+  - name: Manuel Bibrowski
+    email: manuel.bibrowski25@imperial.ac.uk
+    orcid: 0009-0002-8330-0692
+    affiliations:
+    - id: elani-lab
+      name: Elani Lab, Imperial, London
+      institution: Imperial College London
+      department: Chemistry
+      city: London
+      country: United Kingdom
+  - name: Niall McIntyre
+    email: niall.mcintyre16@imperial.ac.uk
+    affiliations:
+    - id: krishnakumar-lab
+      name: Krishna Kumar Lab, Imperial, London
+      institution: Imperial College London
+      department: Chemistry
+      city: London
+      country: United Kingdom
+  - name: Ignascio Gispert
+    email: i.gispert@imperial.ac.uk
+    orcid: 0000-0002-4100-5225
+    corresponding: true
+    affiliations:
+      name: Ces Lab, Imperial College, London
+  - name: Claudia Contini
+    email: c.contini@imperial.ac.uk
+    orcid: 0000-0002-5282-2458
+    corresponding: true
+    affiliations:
+      name: Contini Lab, Imperial College, London
+  - name: James Hindley
+    email: james.hindley@kcl.ac.uk
+    orcid: 0000-0002-3392-4387
+    corresponding: true
+    affiliations:
+      name: Hindley Lab, King's College, London
+  - name: Michael Booth
+    email: m.j.booth@ucl.ac.uk
+    orcid: 0000-0002-4224-798X
+    corresponding: true
+    affiliations:
+      name: Booth Lab, University College, London
+  - name: Oscar Ces
+    email: o.ces@imperial.ac.uk
+    corresponding: true
+    affiliations:
+      name: Ces Lab, Imperial College, London
+  - name: Ravinash Krishna Kumar
+    email: r.krishnakumar@imperial.ac.uk
+    orcid: 0000-0002-1223-1098
+    corresponding: true
+    affiliations:
+      name: Krishna Kumar Lab, Imperial College, London
+  - name: Yuval Elani
+    email: y.elani@imperial.ac.uk
+    orcid: 0000-0002-9603-2490
+    corresponding: true
+    affiliations:
+      name: Elani Lab, Imperial College, London
+  keywords:
+  - Cytosol
+  - Module
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2026-02-01'
+  banner: banner.webp
+  thumbnail: london-plan-schematic.png
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: colourimetric-device.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: colourimetric-device.zip
+site:
+  template: article-theme
+  nav: []

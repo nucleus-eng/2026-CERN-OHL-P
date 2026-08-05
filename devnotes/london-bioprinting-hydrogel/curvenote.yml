@@ -1,0 +1,66 @@
+version: 1
+project:
+  id: nm191611111
+  title: Bioprinting Synthetic Cells Within a Hydrogel Matrix
+  subtitle: 'Using commercial bioprinters to spatially pattern synthetic cells and bacteria within hydrogels '
+  authors:
+  - nameParsed:
+      literal: Niall McIntyre
+      given: Niall
+      family: McIntyre
+    name: Niall McIntyre
+    orcid: 0009-0004-7397-3812
+    corresponding: true
+    email: nm1916@ic.ac.uk
+    affiliations:
+    - Imperial College London
+  - nameParsed:
+      literal: Ravinash Krishna Kumar
+      given: Ravinash
+      family: Krishna Kumar
+    name: Ravinash Krishna Kumar
+    orcid: 0000-0002-1223-1098
+    corresponding: false
+    email: r.krishnakumar@imperial.ac.uk
+    affiliations:
+    - Imperial College London
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2026-01-10'
+  banner: devcells.webp
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: bioprinting-hydrogel.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - general/**/*
+  - src/**/*
+  - BioPrinting.png
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: bioprinting-hydrogel.zip
+site:
+  template: article-theme
+  nav: []
