@@ -41,9 +41,16 @@ Two rules that cause the most damage when broken:
 
 The venue site serves machine-readable JSON. No scraping or login needed.
 
+**Fetch every collection page.** Missing one silently hides whole groups of
+DevNotes. An earlier draft of this playbook fetched three pages and reported 26
+published; the real figure is 49. `index.json` alone is not enough either — it
+lists only the most recent DevNotes.
+
 ```bash
 # every article, with its work key, slug and title
-for c in index collections-core collections-contrib; do
+for c in index collections-core collections-contrib collections-ai-scientist \
+         collections-workshops-and-courses collections-devcell-node-chicago \
+         collections-devcell-node-london; do
   curl -s -A "Mozilla/5.0" "https://devnotes.nucleus.engineering/$c.json" -o "c-$c.json"
 done
 
@@ -82,15 +89,22 @@ for y in sorted(glob.glob('devnotes/*/curvenote.yml')):
 PY
 ```
 
-As of 2026-08-05: **26 published, 21 in the repo, 11 published DevNotes not yet
-migrated.** Three of those 11 are not in the tracker at all — "AI Scientist:
-Base Module Report", "Diffusion Kinetics", and "Theophylline-LacZ sensor
-validation in Nucleus Cytosol" — so the tracker is not a complete work list.
-Enumerate from the site, not from the tracker.
+As of 2026-08-05: **49 published, 22 in the repo, 30 published DevNotes not yet
+migrated.** Most of the 30 sit in `Node Chicago` and `Node London`, which is
+exactly why the licensing gate in §0 matters — much of it is external
+contributor work.
 
-Also worth knowing: both rows the tracker marks as "likely require contacting
-original authors" are in fact published with downloadable archives. Recover them
-the same way as anything else before chasing anyone by email.
+Two lessons from getting this wrong. First, an incomplete fetch gives a
+confidently wrong answer: three collection pages reported 26 published, and
+nothing about the output looked suspicious. Fetch all of them, and sanity-check
+that the per-collection counts add up to the total. Second, the tracker was
+never a complete work list — it had 28 rows against 49 published DevNotes.
+Enumerate from the site, then update
+[`devnote-migration-status.md`](./devnote-migration-status.md) from that.
+
+Also worth knowing: both rows the tracker used to mark as "likely require
+contacting original authors" are published with downloadable archives. Recover
+them the same way as anything else before chasing anyone by email.
 
 ---
 
@@ -401,5 +415,6 @@ A reasonable build order for #21 is one script per stage with a machine-readable
 report between stages, so a failure is attributable and the curation gate has a
 natural place to sit — after enumeration, before recovery.
 
-The 11 outstanding migration targets are listed in §1. Re-run that enumeration
-rather than trusting this number; it was current on 2026-08-05.
+The 30 outstanding migration targets are listed in
+[`devnote-migration-status.md`](./devnote-migration-status.md). Re-run the
+enumeration rather than trusting that count; it was current on 2026-08-05.
