@@ -1,0 +1,69 @@
+version: 1
+project:
+  # doi: TODO - no DOI assigned yet
+  id: nucleus-devnote-core-2026-garenne-ph-sensor
+  # Ensure your title is the same as in your `main.md`
+  title: "BCECF pH Sensor"
+  subtitle: "Ratiometric pH sensing in myTXTL cell-free reactions with BCECF"
+  description: "Adapting the ratiometric pH indicator BCECF to continuous, 24-hour kinetic pH tracking in myTXTL cell-free reactions"
+  # Authors should have affiliations, emails and ORCIDs if available
+  authors:
+    - name: David Garenne
+      # TODO: no institutional email on file for this author; david.garenne@hotmail.fr
+      # is the address listed on the source Drive folder's permissions, but that may not
+      # be the address to publish. Confirm before publishing.
+      email: TODO
+      # TODO: ORCID not on file; add before publishing if available
+      affiliations:
+        - name: University of Minnesota
+          city: Minneapolis
+          state: Minnesota
+          country: USA
+      corresponding: true
+  keywords:
+    - pH sensor
+    - BCECF
+    - Ratiometric fluorescence
+    - myTXTL
+    - Cell-free
+    - Calibration
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-07-09
+  banner: banner.webp
+  toc:
+    - file: main.md
+    - file: experiments/ms-ph_sensor/ph_calibration.ipynb
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: bcecf-ph-sensor.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+    - experiments/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: bcecf-ph-sensor.zip
+site:
+  template: article-theme
+  nav: []

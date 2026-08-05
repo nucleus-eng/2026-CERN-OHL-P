@@ -1,0 +1,7 @@
+,Well,Lysate,Replicate,DNA
+1,C4,BL21R2 DRecBCD,Replicate 1,No
+2,C5,BL21R2 DRecBCD,Replicate 2,No
+3,D4,BL21R2 DRecBCD,Replicate 3,No
+4,D5,BL21R2 DRecBCD,Replicate 1,5 nM p70a-mCherry
+5,E4,BL21R2 DRecBCD,Replicate 2,5 nM p70a-mCherry
+6,E5,BL21R2 DRecBCD,Replicate 3,5 nM p70a-mCherry
