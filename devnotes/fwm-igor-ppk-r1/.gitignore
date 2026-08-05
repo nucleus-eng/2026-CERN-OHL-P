@@ -1,0 +1,5 @@
+_build/
+.ipynb_checkpoints/
+.DS_Store
+
+fwm-igor-ppk-r1.pdf

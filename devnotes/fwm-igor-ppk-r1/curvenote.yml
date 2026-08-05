@@ -1,0 +1,60 @@
+version: 1
+project:
+  id: 51030dec-7ab4-475a-8312-9c73c9d24301
+  title: "IGOR PPK Optimization: Round 1"
+  authors:
+    - name: Scott Riggs
+      email: scr@findwhatmatters.ai
+      affiliations:
+        - name: Find What Matters
+      corresponding: true
+    - name: IGOR
+      affiliations:
+        - name: Find What Matters
+      corresponding: false
+  keywords:
+    - AI Scientist
+    - PURE
+    - PPK
+  abbreviations:
+    IGOR: Iterative Guide and Orchestrated Research, our AI scientist.
+    PURE: Protein synthesis Using Recombinant Elements, our base cytosol for compositional biology.
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-03-23
+  banner: aria.webp
+  thumbnail: figures/viz-03-sigmoid_rate-1-h-vs-sigmoid_steady_state-ng-ul.png
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: fwm-igor-ppk-r1.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+    - workspace/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: fwm-igor-ppk-r1.zip
+    - file: workspace/workspace_data.csv
+      title: Exported Workspace Dataset
+site:
+  template: article-theme
+  nav: []
