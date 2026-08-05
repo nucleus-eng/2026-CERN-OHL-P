@@ -1,3 +1,11 @@
+> **How to migrate a DevNote:** see [`MIGRATION-PLAYBOOK.md`](./MIGRATION-PLAYBOOK.md)
+> for the end-to-end procedure (enumerate → recover from MECA → de-bloat →
+> pin the CDK → execute → submit) and the catalogue of known snags.
+>
+> Note this table is **not** a complete work list — enumerate from the venue
+> site instead. As of 2026-08-05 three published DevNotes were missing from it
+> entirely; see the playbook's §1.
+
 | Title | Author | Myst Key | Collection | Status |
 |---|---|---|---|---|
 | IV-HSL Emitter Cell | Yen-Yu Hsu | nucleus-devnote-core-02_emitter_cell | | staged — see Manual review checklist below (devnotes/02_emitter_cell) |
