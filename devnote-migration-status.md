@@ -12,9 +12,9 @@
 | Characterizing the Limited Operational Lifetime of Cytosol Reactions | Surendra Yadav | 019ed70b-0af7-7dd0-aefe-688ebf933399 | Core | TODO |
 | SecYEG-Based Membrane Translation Module in Synthetic Cells | Yen-Yu Hsu | 019e896a-6e0d-76d5-99ef-2df38c5ebd7f | Core | TODO |
 | Using platemaps to analyze and share data | Jay Bhasin | 019d6e3a-c618-77bc-853c-fe4694511f53 | Core | TODO |
-| Intro to Kinetics Analysis of Plate Reader Experiments | Sharon Newman | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Core | TODO |
+| Intro to Kinetics Analysis of Plate Reader Experiments | Sharon Newman | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Core | staged, notebook passes (recovered from MECA, CDK pin added — issue #17) — see Manual review checklist below (devnotes/2026-newman-kinetics-intro) |
 | Nucleus OnePot PURE | Surendra Yadav | onepot-sy | Core | staged, notebooks pass (fixed this session), real submission on file — see Manual review checklist below (devnotes/onepot-sy) |
-| ClpXP Control Module: Deployment in PURE Cells | Yen-Yu Hsu | nucleus-devnote-core-clpxp_module_cells-01 | Core | TODO |
+| ClpXP Control Module: Deployment in PURE Cells | Yen-Yu Hsu | nucleus-devnote-core-clpxp_module_cells-01 | Core | staged, notebooks pass (recovered from MECA, CDK pin added — issue #18) — see Manual review checklist below (devnotes/module-Clpxp-Cells) |
 | ClpXP Control Module: Deployment in PURE | Yen-Yu Hsu | nucleus-devnote-core-clpxp_module_cytosol-01 | Core | staged, notebooks pass — see Manual review checklist below (devnotes/module-Clpxp-Cytosol) |
 | DNA toolkit - The T7 promoter collection | Charlie Newell, Astrid Joergensen | nucleus-devnote-core-dna-toolkit-promoter | Core | staged, notebooks pass — see Manual review checklist below (devnotes/DNA-toolkit-T7-promoters) |
 | Nucleus OnePot PURE Replication | Anton Molina, Anton Jackson-Smith | nucleus-devnote-core-07_bnext-onepot-pure-replication | Core | staged, notebook passes — see Manual review checklist below (devnotes/devnote-nucleus_onepot) |
@@ -35,16 +35,17 @@
 
 Note: the two rows above (`onepot-sy`, `bac-working-group`) were previously "found (sy-devnotes-download/...), not staged"; both have since been staged into `devnotes/onepot-sy` and `devnotes/bac-working-group` (Step 1 of the migration plan), excluding `onepot-sy`'s `plasmids/PURE_plasmids.tar.gz` DNA archive, which is handled by a separate DNA-reconciliation workstream. Also new on this branch, outside the original tracker scope: `devnotes/fwm-aria-d2` (ARIA/IGOR optimization) and `devnotes/fwm-batch-bo` (Batch Bayesian Optimization) — new devnotes, not migrations of tracked TODO rows.
 
-## Manual review checklist (all 19 devnotes currently in `devnotes/`)
+## Manual review checklist (all 21 devnotes currently in `devnotes/`)
 
-**Status as of 2026-08-04: all 19 devnotes submitted for real** (`curvenote submit` without `--draft`) — each row's URL below is the real, curator-visible submission build, ready for per-devnote curator review/approval.
+**Status as of 2026-08-04: the first 19 devnotes submitted for real** (`curvenote submit` without `--draft`) — each row's URL below is the real, curator-visible submission build, ready for per-devnote curator review/approval. The **two rows added 2026-08-05** (`2026-newman-kinetics-intro`, `module-Clpxp-Cells`) are not submitted yet and still need a content review — see "Issues #17/#18" below.
 
 Three review steps per devnote, each its own column: **notebooks run** (have the
 notebooks actually been executed/re-executed and outputs checked), **content
-reviewed** (has a human actually read `main.md` end to end — now done for
-all 19), **submitted** (a REAL, non-draft `curvenote submit` — an editor
-can't act on a draft, so a draft build does not count as submitted here; all
-19 rows below are now checked, see build URL column). URL is the real
+reviewed** (has a human actually read `main.md` end to end — done for the
+first 19, not yet for the 2 added on 2026-08-05), **submitted** (a REAL,
+non-draft `curvenote submit` — an editor can't act on a draft, so a draft
+build does not count as submitted here; the first
+19 rows below are checked, see build URL column). URL is the real
 submission's `https://scms.curvenote.com/build/...` build-report link.
 
 Run `./manual-submit-all.sh` (repo root) to (re-)submit **drafts** for every
@@ -77,6 +78,8 @@ devnote, not as a batch script.
 | module-Clpxp | nucleus-devnote-core-06_clpxp_module_01 | Yen-Yu Hsu | n/a (no toc notebooks) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdc0-9407-7fae-986e-2fefa44eb448 |
 | module-Clpxp-Cytosol | nucleus-devnote-core-clpxp_module_cytosol-01 | Yen-Yu Hsu | ☑ pass (6/6) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-8698-7638-9941-ae1285b2a831 |
 | onepot-sy | onepot-sy | Surendra Yadav | ☑ pass (3/3) | ☑ | ☑ | https://scms.curvenote.com/build/019fcdbd-9f01-7488-839f-1c0979c0a693 |
+| 2026-newman-kinetics-intro | 019db3ce-4971-7fd6-83c0-c1a15e780bbe | Sharon Newman | ☑ pass (1/1) | ☐ | ☐ | (pending — see "Issues #17/#18" below) |
+| module-Clpxp-Cells | nucleus-devnote-core-clpxp_module_cells-01 | Yen-Yu Hsu | ☑ pass (5/5, incl. 1 orphan) | ☐ | ☐ | (pending — see "Issues #17/#18" below) |
 
 **Note on `bac-working-group`/`onepot-sy`:** each previously had an *older* real, non-draft submission on file from early testing of whether the CLI path worked at all. Both have now been superseded by the real submission above (2026-08-04), which reflects this session's fixes.
 
@@ -126,6 +129,105 @@ Other fixes made in this session, each its own commit:
 - **`onepot-sy` blank Figure 4 + embed conversion** (`d555f12`): `summary_plot.png` was silently blank. Root cause: `pr.plot_summary()` calls `plt.show()` internally, which closes the figure in Jupyter's inline backend — so the notebook's own subsequent `plt.savefig("summary_plot.png")` saved a brand-new *empty* figure (confirmed live: `plt.gcf()` had 0 axes at save time). Fixed by converting `main.md` to embed all four data-plot figures directly from their source notebook cells (`#fig:kinetics-opt1`, `#fig:kinetics-opt2`, `#fig:opt2_summary`, `#fig:kinetics-opt4`) instead of separately-saved PNGs — a pattern already established elsewhere in this repo (`03_mthfs`, `04_ppk`, etc.) that sidesteps this failure mode entirely. The plate-layout photo (`fig:OnePotPURE-platemap`) is a real static image, not notebook-derived, and stays as one. Deleted the now-orphaned `g.png`/`summary_plot.png`/`summary-normalized.png` files.
 
 All of the above are on `migrate/debug-and-review`, not yet merged to `main`.
+
+### Issues #17/#18: two unmigrated devnotes recovered from MECA (2026-08-05 session)
+
+Anton filed two bugs against devnotes that were live but **not in this repo** —
+both were still `TODO` rows in the table above, so nothing in `devnotes/` could
+fix them:
+
+- **[#17]** `Newman-20260421` — `experiments/kinetics-intro.ipynb` had **no
+  install cell at all**, so Curvenote live compute raised
+  `ModuleNotFoundError: No module named 'cdk'`.
+- **[#18]** `bnext-devnotes-clpxp-pure-cells-01` — 4 notebooks on the unpinned
+  `!pip install nucleus-cdk | tail -n2`.
+
+**Source recovery.** Neither devnote exists in this repo,
+`bnext-bio/nucleus-developer-notes`, or any other org repo. Both were recovered
+from their Curvenote computational archives (MECA zips linked off the live
+article pages). The Myst keys in those bundles match the tracker exactly, so
+submitting from here updates the existing works rather than creating duplicates.
+
+**Why the pin is `0.5.0rc2` and not `0.6.0rc2`.** Unpinned `pip install
+nucleus-cdk` now resolves to **0.5.3**, not the rc these notebooks were written
+against. And **0.6.x deleted `cdk/analysis/cytosol/platereader.py`** (moved to
+`cdk/instruments/platereader/legacy/`), which every notebook in both devnotes
+imports — so 0.6.x breaks them outright. Verified by test: `nucleus-cdk==0.5.0rc2`
+installs clean on Python 3.14 (the live-compute Python) with all 14 deps, so the
+`--no-deps` workaround used by `2026-garenne-pH-sensor` is **not** needed here —
+that exists only because 0.6.x declares `pyarrow>=18,<19`, which has no cp314
+wheels.
+
+Every `toc` notebook in both devnotes now opens with:
+
+```python
+!pip install nucleus-cdk==0.5.0rc2 | tail -n2
+
+# Surface a failed install here, rather than as a confusing ModuleNotFoundError
+# in the import cell below.
+import importlib.metadata as md
+assert md.version("nucleus-cdk") == "0.5.0rc2", f"got {md.version('nucleus-cdk')}"
+```
+
+The assert is the pH-sensor devnote's pattern: `| tail -n2` hides a failed
+install, so without it the real error surfaces later as a confusing
+`ModuleNotFoundError`.
+
+Other fixes needed to make the recovered bundles build:
+
+- **Vendored CDK stripped** (`module-Clpxp-Cells`): the bundle shipped a whole
+  `src/cdk/` copy, two 52 KB copies of `platereader.py`, and committed
+  `__pycache__`. `20250930-analysis.ipynb` was importing the local copy
+  (`import platereader as pr`) — repointed at the packaged
+  `from cdk.analysis.cytosol import platereader as pr`, matching its siblings.
+- **Typst compile failure** (`module-Clpxp-Cells`): `:name: fig:ClpX S`
+  contained a space (Typst labels can't), and the one reference to it,
+  `{ref}`fig:ClpX s``, also had the wrong case. Exactly the PR #9 bug class.
+  Renamed to `fig:ClpX-S`; `devnote.pdf` now renders.
+- **Dangling plasmid download** (`module-Clpxp-Cells`): `curvenote.yml`
+  referenced `general/clpxp-module-plasmids-01.zip`; the real file is
+  `general/Plasmids.zip`.
+- **MECA-dropped assets**: neither bundle carried `banner*.webp` or `lorem.mjs`
+  (both referenced in `curvenote.yml`) — restored from a sibling, where they are
+  byte-identical across all devnotes. Newman's bundle also had `extends:
+  base.yml` with no `base.yml` present (removed) and a stale `thebe: binder:`
+  block pointing at the old repo (replaced with `jupyter: true`, matching the 15
+  other devnotes that use live compute).
+- **Newman thumbnail**: `assets/thumbnail.png` is *generated* by the notebook
+  (`plt.savefig("../assets/thumbnail.png")`), and the missing `assets/` directory
+  was making the notebook fail. Created the directory; verified the produced PNG
+  is a real kinetic fit and not blank (the `plt.show()`-closes-the-figure trap
+  that silently blanked `onepot-sy`'s Figure 4).
+- **`20251211-analysis-cytation5.ipynb`** (orphan, not in `toc`): failed on
+  `normalize_data_to_controls(ctrl_name='10 uM HPTS')` — the same
+  copied-boilerplate bug as `onepot-sy`, where no HPTS control was ever run and
+  `ctrl_name` matched zero wells. Its published sibling (Cytation 3) has no
+  normalization step at all, so the call was commented out with a note.
+- **Resource globs** trimmed in both `curvenote.yml`s to the directories that
+  actually exist after staging (the `src/**/*` and `experimental/**/*` entries
+  pointed at nothing).
+
+**Notebook execution note.** All 6 notebooks were executed and their outputs
+committed. Worth recording the near-miss: the first execution pass forced
+`MPLBACKEND=Agg`, which made every notebook pass while saving **zero** figures —
+`curvenote submit` renders saved outputs, so that would have published
+figure-less devnotes. Caught by diffing PNG-output counts against the original
+MECA bundles; re-run without `MPLBACKEND` (ipykernel's default
+`matplotlib_inline` backend is what captures figures). Always compare figure
+counts before and after a re-execution sweep.
+
+**Known pre-existing issues, not fixed here** (both predate this work and are
+visible on the live pages):
+
+- `kinetics-intro.ipynb`'s own table-of-contents anchors (`#setup`,
+  `#load-data`, `#plot-curves`, `#normalize`, `#kinetic-analysis`, `#summary`)
+  do not resolve — the headings have no matching MyST targets. Left alone
+  because fixing it means editing collaborator content beyond a URL.
+- `main.md` in the Newman devnote links to
+  `https://github.com/bnext-bio/bnext/tree/main/cdk/src/cdk/analysis/cytosol`,
+  which 404s for `curvenote check` because `bnext-bio/bnext` is private.
+- Three `module-Clpxp-Cells` figures are >3 MB PNGs, which makes the webp
+  conversion slow at build time.
 
 ### `onepot-sy` original bug detail (for reference)
 
