@@ -1,0 +1,950 @@
+{
+    "G8": {
+        "reaction_id": "R13",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 4,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 249,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G9": {
+        "reaction_id": "R26",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 113,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 9,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 71,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 25,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 175,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G10": {
+        "reaction_id": "R21",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 98,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 9,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 186,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G11": {
+        "reaction_id": "R22",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 86,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 4,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 49,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 5,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 249,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G12": {
+        "reaction_id": "R18",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 43,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 5,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 191,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G13": {
+        "reaction_id": "R36",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 6,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 46,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 139,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G14": {
+        "reaction_id": "R33",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 87,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 85,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 219,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G15": {
+        "reaction_id": "R16",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 43,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 5,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 191,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "G16": {
+        "reaction_id": "R15",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 4,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 249,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H8": {
+        "reaction_id": "R17",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 43,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 5,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 191,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H9": {
+        "reaction_id": "R11",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 43,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 217,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H10": {
+        "reaction_id": "R12",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 43,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 217,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H11": {
+        "reaction_id": "R24",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 86,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 4,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 49,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 5,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 249,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H12": {
+        "reaction_id": "R23",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 86,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 4,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 49,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 5,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 249,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H13": {
+        "reaction_id": "R8",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 108,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 230,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H14": {
+        "reaction_id": "R32",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 87,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 85,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 219,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H15": {
+        "reaction_id": "R25",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 113,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 9,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 71,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 25,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 175,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "H16": {
+        "reaction_id": "R1",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 7,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 228,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I8": {
+        "reaction_id": "R9",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 108,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 230,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I9": {
+        "reaction_id": "R7",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 108,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 230,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I10": {
+        "reaction_id": "R3",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 7,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 228,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I11": {
+        "reaction_id": "R5",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 108,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 7,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 220,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I12": {
+        "reaction_id": "R34",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 6,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 46,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 139,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I13": {
+        "reaction_id": "R2",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 7,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 228,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I14": {
+        "reaction_id": "R10",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 43,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 32,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 217,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I15": {
+        "reaction_id": "R28",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 110,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 67,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 56,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 160,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "I16": {
+        "reaction_id": "R31",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 87,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 85,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 1,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 219,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J8": {
+        "reaction_id": "R4",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 108,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 7,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 220,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J9": {
+        "reaction_id": "R27",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 113,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 9,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 71,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 25,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 175,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J10": {
+        "reaction_id": "R30",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 110,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 67,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 56,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 160,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J11": {
+        "reaction_id": "R19",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 98,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 9,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 186,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J12": {
+        "reaction_id": "R35",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 6,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 46,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 139,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J13": {
+        "reaction_id": "R14",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 102,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 4,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 249,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J14": {
+        "reaction_id": "R29",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 110,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 67,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 56,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 160,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J15": {
+        "reaction_id": "R6",
+        "reagents": {
+            "[DNA]_92.00_nM": {
+                "target_droplets": 22,
+                "added_droplets": 0
+            },
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 108,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 7,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 20,
+                "added_droplets": 0
+            },
+            "[Potassium glutamate]_2500.00_mM": {
+                "target_droplets": 16,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 220,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    },
+    "J16": {
+        "reaction_id": "R20",
+        "reagents": {
+            "[PMix]_18.00_mg/mL": {
+                "target_droplets": 98,
+                "added_droplets": 0
+            },
+            "[Magnesium acetate]_2500.00_mM": {
+                "target_droplets": 9,
+                "added_droplets": 0
+            },
+            "[Creatine phosphate]_1000.00_mM": {
+                "target_droplets": 100,
+                "added_droplets": 0
+            },
+            "Water_1.00_--": {
+                "target_droplets": 186,
+                "added_droplets": 0
+            }
+        },
+        "completed": false
+    }
+}

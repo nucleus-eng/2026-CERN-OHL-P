@@ -1,0 +1,96 @@
+{
+  "schema_version": "devnote_manifest/v1",
+  "workspace_id": "6a8acdfc-b149-46ec-b711-cc95012a2e24",
+  "session_id": "094507a5-2077-4b04-8810-bc310c966e5e",
+  "generation_timestamp": "2026-04-22T18:06:42.358233Z",
+  "generation_local_timestamp": "2026-04-22T11:06:42.358233-07:00",
+  "generation_timezone": "America/Los_Angeles",
+  "source_report_reference": "Optimize PURE System Yield via LabCraft - Final Report - 2026-04-22.md",
+  "included_visualizations": [
+    {
+      "id": "04ac055f-3cb9-425a-9eeb-1e7af42bd993",
+      "title": "1D Sensitivity for 20260309-DiscoveryPlate-R1-I10",
+      "filename": "viz-01-1d-sensitivity-for-20260309-discoveryplate-r1-i10.png",
+      "status": "included"
+    },
+    {
+      "id": "1eb3dc31-fdb7-4a8a-911a-947995e58474",
+      "title": "Test Split: sigmoid_rate (1/h)",
+      "filename": "viz-02-test-split-sigmoid_rate-1-h.png",
+      "status": "included"
+    },
+    {
+      "id": "2ab79579-349c-46f2-a80c-2cf17687b394",
+      "title": "Similarity of 20260319-DiscoveryPlate-R2-I10 to Dataset",
+      "filename": "viz-03-similarity-of-20260319-discoveryplate-r2-i10-to-dataset.png",
+      "status": "included"
+    },
+    {
+      "id": "2e340130-25c8-49ab-bbf1-b31ac3d15b87",
+      "title": "1D Sensitivity for 20260319-DiscoveryPlate-R2-I10 (2)",
+      "filename": "viz-04-1d-sensitivity-for-20260319-discoveryplate-r2-i10-2.png",
+      "status": "included"
+    },
+    {
+      "id": "34a83ef3-4714-4fd9-970a-24ad16080e29",
+      "title": "Test Split: drift_rate (1/h)",
+      "filename": "viz-05-test-split-drift_rate-1-h.png",
+      "status": "included"
+    },
+    {
+      "id": "6782c7c9-fe47-409b-895f-d1209a55bfcf",
+      "title": "Sensitivities for 20260309-DiscoveryPlate-R1-J13",
+      "filename": "viz-06-sensitivities-for-20260309-discoveryplate-r1-j13.png",
+      "status": "included"
+    },
+    {
+      "id": "7b487dd7-4899-4b8a-a100-73be90e1b897",
+      "title": "Similarity of GES-1 to Dataset",
+      "filename": "viz-07-similarity-of-ges-1-to-dataset.png",
+      "status": "included"
+    },
+    {
+      "id": "7ed8e7f6-0e54-488e-8ac6-75c106443758",
+      "title": "Prob. of Meeting Goals",
+      "filename": "viz-08-prob.-of-meeting-goals.png",
+      "status": "included"
+    },
+    {
+      "id": "8a9ab7a6-2957-4250-bbd6-95fc2195c66f",
+      "title": "1D Sensitivity for 20260319-DiscoveryPlate-R2-I10",
+      "filename": "viz-09-1d-sensitivity-for-20260319-discoveryplate-r2-i10.png",
+      "status": "included"
+    },
+    {
+      "id": "9698d0a6-d736-48f2-9787-3886af789b34",
+      "title": "1D Sensitivity for 20260319-DiscoveryPlate-R2-I15",
+      "filename": "viz-10-1d-sensitivity-for-20260319-discoveryplate-r2-i15.png",
+      "status": "included"
+    },
+    {
+      "id": "a34f84f8-03fd-4c32-9404-9ba5086dba4d",
+      "title": "sigmoid_steady_state vs drift_rate (1/h)",
+      "filename": "viz-11-sigmoid_steady_state-vs-drift_rate-1-h.png",
+      "status": "included"
+    },
+    {
+      "id": "bf976cdb-f373-43b9-9b4c-72817249cace",
+      "title": "sigmoid_steady_state vs sigmoid_rate (1/h)",
+      "filename": "viz-12-sigmoid_steady_state-vs-sigmoid_rate-1-h.png",
+      "status": "included"
+    },
+    {
+      "id": "d42f01dc-b8bc-4069-9c10-1ea7a077e827",
+      "title": "Test Split: sigmoid_steady_state",
+      "filename": "viz-13-test-split-sigmoid_steady_state.png",
+      "status": "included"
+    },
+    {
+      "id": "e56bd654-dc21-4e13-a5ce-10fb5d432a5d",
+      "title": "sigmoid_steady_state vs sigmoid_steady_state",
+      "filename": "viz-14-sigmoid_steady_state-vs-sigmoid_steady_state.png",
+      "status": "included"
+    }
+  ],
+  "warnings": []
+}

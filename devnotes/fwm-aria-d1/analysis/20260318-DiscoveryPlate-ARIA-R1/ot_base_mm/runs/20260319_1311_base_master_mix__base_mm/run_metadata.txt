@@ -1,0 +1,13 @@
+timestamp=2026-03-19 13:11
+run_name=base_master_mix
+protocol=/Volumes/sharon/bnext/experiments/20260318-DiscoveryPlate-ARIA-R1/ot_base_mm/base_mm.py
+parameters=/Volumes/sharon/bnext/experiments/20260318-DiscoveryPlate-ARIA-R1/ot_base_mm/base_params.py
+sweep_calculator=/Users/sharonnewman/Documents/general/bnext_local/cdk/src/cdk/calculators/sweep_calculator.py
+input_df=/tmp/ot_build.z5oVZK/input_dfs.py
+labware=/Users/sharonnewman/Documents/general/bnext_local/instrument/opentrons/labware
+manifest=/Volumes/sharon/bnext/experiments/20260318-DiscoveryPlate-ARIA-R1/ot_base_mm/manifest.toml
+merged_file=/tmp/ot_merge.Kna6H2/combined_base_mm.py
+csv_count=3
+csv=/Volumes/sharon/bnext/experiments/20260318-DiscoveryPlate-ARIA-R1/experiment_setup/base_master_mix.csv
+csv=/Volumes/sharon/bnext/experiments/20260318-DiscoveryPlate-ARIA-R1/experiment_setup/reagents.csv
+csv=/Volumes/sharon/bnext/experiments/20260318-DiscoveryPlate-ARIA-R1/experiment_setup/samples_titration_labcraft.csv

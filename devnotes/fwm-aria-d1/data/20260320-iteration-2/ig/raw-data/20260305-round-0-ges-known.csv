@@ -1,0 +1,6 @@
+ID,Note,[DNA] (nM),[PEG4K 40%] (%),[RNAse Inhib] (U/mL),IsNEB,[PMix] (mg/mL),[Ribosome] (uM),Rxn Volume (uL),[Magnesium acetate] (mM),[Creatine phosphate] (mM),[PPK] (uM),[PolyP] (mM),[Potassium glutamate] (mM),sigmoid_steady_state (ng/uL),sigmoid_rate (1/h),sigmoid_time_offset (h),success,isplamGFP
+id,note,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,feature,regressor,regressor,regressor,classifier,feature
+GES-7,,1.00000002,-9.60E-09,2000.000003,5.25E-09,1.767172488,1.799999951,9.999999959,0.150808484,100.0000014,0.00E+00,0.00E+00,60.00000111,0,,,0,0.00E+00
+GES-9,,19.99999901,-9.60E-09,2000.000003,5.25E-09,2.120920132,1.799999951,9.999999959,0.00E+00,0.00E+00,0.00E+00,0.00E+00,199.9999972,0,,,0,0.00E+00
+GES-10,,1.00000002,-9.60E-09,2000.000003,5.25E-09,1.682654481,1.799999951,9.999999959,0.00E+00,80.13730333,0.00E+00,0.00E+00,190.8472809,0,,,0,0.00E+00
+GES-13,,8.613216311,-9.60E-09,2000.000003,5.25E-09,1.529999978,1.799999951,9.999999959,0.00E+00,79.61555691,0.00E+00,0.00E+00,199.9999972,0,,,0,0.00E+00

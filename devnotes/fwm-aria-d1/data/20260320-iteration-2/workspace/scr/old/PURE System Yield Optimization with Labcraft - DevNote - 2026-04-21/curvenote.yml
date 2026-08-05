@@ -1,0 +1,38 @@
+version: 1
+extends: base.yml
+project:
+  title: 'Dev Note - bnext-iter-2'
+  # subtitle: ''
+  # description: ''
+  authors:
+    - name: 'Scott Riggs'
+      email: 'scr@findwhatmatters.ai'
+      # orcid: ''
+      affiliations:
+        - name: 'Find What Matters'
+          city: '<city>'
+          state: '<state>'
+          postal_code: '<postal_code>'
+          country: '<country>'
+      corresponding: true
+    - name: IGOR
+      # email: ''
+      # orcid: ''
+      affiliations:
+        - name: 'b.next'
+          city: '<city>'
+          state: '<state>'
+          postal_code: '<postal_code>'
+          country: '<country>'
+      corresponding: false
+  date: 2026-04-21
+  # banner: banner.webp
+  # thumbnail: figures/viz-01.png
+  toc:
+    - file: main.md
+  # downloads:
+  #   - file: workspace/workspace_data.csv
+  #     title: Workspace Data CSV
+  id: 301bb456-4bbf-43c6-81b9-323985014d1a
+site:
+  template: book-theme

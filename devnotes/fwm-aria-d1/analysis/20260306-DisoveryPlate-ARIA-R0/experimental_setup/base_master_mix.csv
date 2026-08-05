@@ -1,0 +1,16 @@
+reagent,unit,stock_conc,base_conc,vol_per_rxn_ul,vol_to_pipette_ul,below_min_pipetting_vol,base_master_mix_fold,base_master_mix_vol_to_add_ul,effective_pipetting_scalar,total_master_mix_volume_ul
+dna,nM,92.0,1.0,0.109,4.696,False,1.647773,6.069,1.2,262.172
+rnas_inh,U/ml,40000.0,2000.0,0.5,21.6,False,1.647773,6.069,1.2,262.172
+ribosome,uM,10.0,1.799,1.799,77.717,False,1.647773,6.069,1.2,262.172
+magnesium_acetate,mM,1000.0,2.469,0.025,1.067,False,1.647773,6.069,1.2,262.172
+potassium_glutamate,mM,2500.0,60.0,0.24,10.368,False,1.647773,6.069,1.2,262.172
+hepes,mM,1500.0,50.0,0.333,14.4,False,1.647773,6.069,1.2,262.172
+atp,mM,100.0,2.0,0.2,8.64,False,1.647773,6.069,1.2,262.172
+gtp,mM,100.0,2.0,0.2,8.64,False,1.647773,6.069,1.2,262.172
+ctp,mM,50.0,1.0,0.2,8.64,False,1.647773,6.069,1.2,262.172
+utp,mM,50.0,1.0,0.2,8.64,False,1.647773,6.069,1.2,262.172
+tcep,mM,50.0,1.0,0.2,8.64,False,1.647773,6.069,1.2,262.172
+folinic_acid,mM,5.0,0.02,0.04,1.728,False,1.647773,6.069,1.2,262.172
+spermidine,mM,200.0,2.0,0.1,4.32,False,1.647773,6.069,1.2,262.172
+aas,mM,3.25,0.3,0.923,39.877,False,1.647773,6.069,1.2,262.172
+trna,ug/ul,35.0,3.5,1.0,43.2,False,1.647773,6.069,1.2,262.172

@@ -1,0 +1,7 @@
+added stat_type row
+deleted 14 constant columns
+deleted 10 columns dependent on SMS ID (all IDs in block except Magnesium Acetate ID)
+deleted 2 Reader columns dependent on serial number
+    TODO: check decimal places in serials
+Date: switched to days since 2026-01-01
+TODO: gain 35/50/ext embeddable?
