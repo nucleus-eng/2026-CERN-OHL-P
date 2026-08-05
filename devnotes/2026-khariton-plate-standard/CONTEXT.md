@@ -1,5 +1,5 @@
 # Context
-Margarita Khariton (b.next) has been working on establishing experimental fluorescence standards for plate reader assays. She's now ready to share her work and make formal recommendations to the community in the form of a DevNote. Additionally, Anton Molina has been working on tooling to help turn Google Docs into DevNotes using Claude. He needs test cases to develop against. This branch will both introduce this new DevNote as well as log the writing and publishing process for use in automation later.
+Margarita Khariton (b.next) built fluorescence standards for plate reader assays and is ready to write them up as a DevNote with formal recommendations. Anton Molina builds tooling that converts Google Docs into DevNotes via Claude and needs test cases. This branch does both: publishes the DevNote and logs the writing/publishing process for Anton's tooling to use later.
 
 # Resources
 DevNote Google Drive Shared Folder: https://drive.google.com/drive/folders/1TS3o4_yP52IznalC96Xf3wFStqmJ1Hq9?usp=drive_link
