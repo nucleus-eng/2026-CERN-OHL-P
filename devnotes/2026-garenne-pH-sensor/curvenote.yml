@@ -9,11 +9,7 @@ project:
   # Authors should have affiliations, emails and ORCIDs if available
   authors:
     - name: David Garenne
-      # TODO: no institutional email on file for this author; david.garenne@hotmail.fr
-      # is the address listed on the source Drive folder's permissions, but that may not
-      # be the address to publish. Confirm before publishing.
-      email: TODO
-      # TODO: ORCID not on file; add before publishing if available
+      email: david.garenne@hotmail.fr
       affiliations:
         - name: University of Minnesota
           city: Minneapolis
@@ -24,9 +20,6 @@ project:
     - pH sensor
     - BCECF
     - Ratiometric fluorescence
-    - myTXTL
-    - Cell-free
-    - Calibration
   abbreviations:
     MyST: Markedly Structured Text
     CDK: cell development kit
