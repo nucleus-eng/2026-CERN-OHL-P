@@ -1,0 +1,10 @@
+Date,Experiment,Well,Name,Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMS ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (ng/uL),PMix Vol (uL),Ribosome Vol (uL),SMS Vol (uL),tRNA Vol (uL),DNA Vol (uL),RNase Inhib Vol (uL),Water vol (uL),Rxn Volume (uL),Standard Concentration [nM]
+11/19/25,test-invitrogen-standards,G11,1000 nM Standard,Standard,,,,,,,,,,,,,,,,,10,1000
+11/19/25,test-invitrogen-standards,G12,1000 nM Standard,Standard,,,,,,,,,,,,,,,,,10,1000
+11/19/25,test-invitrogen-standards,G13,1000 nM Standard,Standard,,,,,,,,,,,,,,,,,10,1000
+11/19/25,test-invitrogen-standards,H11,1000 nM Standard,Standard,,,,,,,,,,,,,,,,,10,1000
+11/19/25,test-invitrogen-standards,H12,1000 nM Standard,Standard,,,,,,,,,,,,,,,,,10,1000
+11/19/25,test-invitrogen-standards,H13,1000 nM Standard,Standard,,,,,,,,,,,,,,,,,10,1000
+11/19/25,test-invitrogen-standards,I11,10 uL PURE,Sample,,,,,,,,,,,,,,,,,10,
+11/19/25,test-invitrogen-standards,I12,10 uL PURE,Sample,,,,,,,,,,,,,,,,,10,
+11/19/25,test-invitrogen-standards,I13,10 uL PURE,Sample,,,,,,,,,,,,,,,,,10,
