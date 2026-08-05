@@ -76,6 +76,9 @@ project:
     - src/**/*
     - general/**/*
     - experiments/**/*
+    # kinetics-intro.ipynb writes ../assets/thumbnail.png, so live compute
+    # needs the directory in the deployed bundle, not only in git
+    - assets/**/*
   plugins:
     - type: javascript
       path: lorem.mjs
