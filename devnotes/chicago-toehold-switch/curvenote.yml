@@ -1,0 +1,80 @@
+version: 1
+project:
+  id: sjcliulab01
+  title: Toehold switch-enabled translation regulation verified in Nucleus Cytosol
+  subtitle: Preliminary testing for pH-responsive DevCell.
+  description: Preliminary testing for pH-responsive DevCell.
+  authors:
+  - name: Samuel J. Chen
+    orcid: 0000-0001-8501-7175
+    corresponding: true
+    email: samjchen@umich.edu
+    affiliations:
+    - name: Mechanical Engineering Department, University of Michigan, Ann Arbor, Michigan, 48103, USA
+      city: Ann Arbor
+      state: Michigan
+      postal_code: '48103'
+      country: USA
+  - name: Sung-Won Hwang
+    corresponding: true
+    email: sungwonh@umich.edu
+    affiliations:
+    - name: Mechanical Engineering Department, University of Michigan, Ann Arbor, Michigan, 48103, USA
+      city: Ann Arbor
+      state: Michigan
+      postal_code: '48103'
+      country: USA
+  - name: Allen Liu
+    corresponding: true
+    email: allenliu@umich.edu
+    affiliations:
+    - name: Mechanical Engineering Department, University of Michigan, Ann Arbor, Michigan, 48103, USA
+      city: Ann Arbor
+      state: Michigan
+      postal_code: '48103'
+      country: USA
+  keywords:
+  - Cytosol
+  - Module
+  - translation regulation
+  - trigger ssDNA
+  - toehold switch
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2025-12-16'
+  banner: banner.webp
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: toehold-switch.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - experiments/**/*
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: toehold-switch.zip
+site:
+  template: article-theme
+  nav: []

@@ -1,0 +1,168 @@
+version: 1
+project:
+  id: dd21c8ff-f44c-415c-83ee-8fc9ab9badc7
+  title: Biochromatic Materials
+  subtitle: Modular Integration of Developer Cells into Materials for Color Based Reporting
+  description: Modular Integration of Developer Cells into Materials for Color Based Reporting
+  authors:
+  - name: Maddie Briggs
+    email: mbriggs@u.northwestern.edu
+    orcid: 0000-0002-5221-8074
+    affiliations:
+    - id: kamat-lab
+      name: Kamat Lab, Northwestern University, Evanston, IL
+      institution: Northwestern University
+      department: Biomedical Engineering
+      city: Evanston
+      state: IL
+      country: USA
+  - name: Maram Naji
+    email: maram.naji@northwestern.edu
+    orcid: 0000-0003-1409-4194
+    affiliations:
+    - id: lucks-lab
+      name: Lucks Lab, Northwestern University, Evanston, IL
+      institution: Northwestern University
+      department: Chemical and Biological Engineering
+      city: Evanston
+      state: IL
+      country: USA
+  - name: Mary Kelly
+    email: marykelly2026@u.northwestern.edu
+    affiliations:
+    - id: kamat-lab
+      name: Kamat Lab, Northwestern University, Evanston, IL
+      institution: Northwestern University
+      department: Biomedical Engineering
+      city: Evanston
+      state: IL
+      country: USA
+  - name: Matthew Lucia
+    email: matthewlucia2028@u.northwestern.edu
+    orcid: 0000-0002-8289-8365
+    affiliations:
+    - id: tullmanercek-lab
+      name: Tullman-Ercek Lab, Northwestern University, Evanston, IL
+      institution: Northwestern University
+      department: Chemical and Biological Engineering
+      city: Evanston
+      state: IL
+      country: USA
+    - id: kamat-lab
+      name: Kamat Lab, Northwestern University, Evanston, IL
+      institution: Northwestern University
+      department: Biomedical Engineering
+      city: Evanston
+      state: IL
+      country: USA
+  - name: Natalie Fisher
+    email: natalie.fisher@northwestern.edu
+    orcid: 0009-0006-8679-8544
+    affiliations:
+    - id: chazot-lab
+      name: Chazot Lab, Northwestern University, Evanston, IL
+      institution: Northwestern University
+      department: Materials Science and Engineering
+      city: Evanston
+      state: IL
+      country: USA
+  - name: Ojaswita Pant
+    email: ojaswita.pant@northwestern.edu
+    orcid: 0009-0001-2868-4307
+    affiliations:
+    - id: truby-lab
+      name: Truby Lab, Northwestern University, Evanston, IL
+      institution: Northwestern University
+      department: Materials Science and Engineering
+      city: Evanston
+      state: IL
+      country: USA
+  - name: Samuel Chen
+    email: samjchen@umich.edu
+    orcid: 0000-0001-8501-7175
+    affiliations:
+    - id: chen-lab
+      name: Liu Lab, University of Michigan, Ann Arbor, MI
+      institution: University of Michigan
+      department: Mechanical Engineering
+      city: Ann Arbor
+      state: MI
+      country: USA
+  - name: Allen Liu
+    email: allenliu@umich.edu
+    orcid: 0000-0002-0309-7018
+    corresponding: true
+    affiliations:
+    - name: Liu Lab, University of Michigan, Ann Arbor, MI
+  - name: Cecile Chazot
+    email: cchazot@northwestern.edu
+    orcid: 0000-0002-9064-7566
+    corresponding: true
+    affiliations:
+    - name: Chazot Lab, Northwestern University, Evanston, IL
+  - name: Danielle Tullman-Ercek
+    email: ercek@northwestern.edu
+    orcid: 0000-0001-6734-480X
+    corresponding: true
+    affiliations:
+    - name: Tullman-Ercek Lab, Northwestern University, Evanston, IL
+  - name: Julius Lucks
+    email: jblucks@northwestern.edu
+    orcid: 0000-0002-0619-6505
+    corresponding: true
+    affiliations:
+    - name: Lucks Lab, Northwestern University, Evanston, IL
+  - name: Neha Kamat
+    email: nkamat@northwestern.edu
+    orcid: 0000-0001-9362-6106
+    corresponding: true
+    affiliations:
+    - name: Kamat Lab, Northwestern University, Evanston, IL
+  - name: Ryan Truby
+    email: rtruby@northwestern.edu
+    orcid: 0000-0002-1313-6463
+    corresponding: true
+    affiliations:
+    - name: Truby Lab, Northwestern University, Evanston, IL
+  keywords:
+  - Developer Cells
+  - Demonstration
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2025-02-01'
+  banner: banner.webp
+  thumbnail: chicago-plan-schematic.png
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: biochromatic-materials.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: biochromatic-materials.zip
+site:
+  template: article-theme
+  nav: []

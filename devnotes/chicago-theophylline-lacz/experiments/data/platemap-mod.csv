@@ -1,0 +1,7 @@
+Date,Experiment,Well,Name,Type
+,laczsensor,B9,Unregulated,Sample
+,laczsensor,B10,+2000 nM TetR,Sample
+,laczsensor,B11,+2000 nM TetR + 10 µM aTc,Sample
+,laczsensor,B12,+75 nM TetR,Sample
+,laczsensor,B13,+ 75 nM TetR + 10 µM aTc,Sample
+,laczsensor,B14,Unknown,Sample
