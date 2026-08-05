@@ -3,10 +3,10 @@
 This file tracks every DevNote: where it lives, whether it is published, and
 what still needs to move.
 
-To migrate a DevNote, use the `migrate-devnote` skill in
-[`.claude/skills/migrate-devnote/`](./.claude/skills/migrate-devnote/). It gives
-the full procedure and a catalogue of known snags. This file records **state**;
-the skill records **method**.
+To migrate a DevNote, start at [`MIGRATION-PLAYBOOK.md`](./MIGRATION-PLAYBOOK.md).
+It links to the full procedure and a catalogue of known snags, which live in the
+`migrate-devnote` skill. This file records **state**; the playbook records
+**method**.
 
 ## Summary as of 2026-08-05
 
