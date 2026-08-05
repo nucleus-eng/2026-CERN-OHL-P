@@ -3,9 +3,10 @@
 This file tracks every DevNote: where it lives, whether it is published, and
 what still needs to move.
 
-To migrate a DevNote, follow [`MIGRATION-PLAYBOOK.md`](./MIGRATION-PLAYBOOK.md).
-It gives the full procedure and a catalogue of known snags. This file records
-state; the playbook records method.
+To migrate a DevNote, use the `migrate-devnote` skill in
+[`.claude/skills/migrate-devnote/`](./.claude/skills/migrate-devnote/). It gives
+the full procedure and a catalogue of known snags. This file records **state**;
+the skill records **method**.
 
 ## Summary as of 2026-08-05
 
@@ -50,7 +51,7 @@ done
 Then extract each article's `key`, `slug` and `title`, and compare with
 `project.id` from every `devnotes/*/curvenote.yml`. Parse the YAML properly.
 Several files carry other `id:` keys under `exports:` and `authors:` that a plain
-grep matches first. The playbook's §1 has the full script.
+grep matches first. The skill's `references/recover.md` has the full script.
 
 ## Every DevNote
 
@@ -254,7 +255,7 @@ Both were `TODO` rows here, so nothing in `devnotes/` could fix them.
 **Source recovery.** Neither DevNote existed in this repo,
 `bnext-bio/nucleus-developer-notes`, or any other org repo. We recovered both
 from their Curvenote MECA archives, linked off the live article pages. This is
-the method that PR #22 generalised into the playbook, and that issue #21 proposes
+the method that PR #22 generalised into the `migrate-devnote` skill, and that issue #21 proposes
 for the rest of the migration.
 
 **Why the pin is `0.5.0rc2`, not `0.6.0rc2`.** Unpinned `pip install nucleus-cdk`
