@@ -13,11 +13,11 @@ It links to the full procedure and a catalogue of known snags, which live in the
 | Count | Meaning |
 |---|---|
 | **49** | DevNotes published on the venue |
-| **26** | DevNotes in this repo |
-| **23** | in this repo **and** published |
+| **51** | DevNotes in this repo |
+| **48** | in this repo **and** published |
 | **3** | in this repo and submitted, but not yet published |
-| **26** | published, but **not yet in this repo** |
-| **25** | of those 26, cleared for this repo — the remaining migration work |
+| **1** | published, but **not yet in this repo** |
+| **0** | of that 1, cleared for this repo — **the migration is complete** |
 
 Two corrections to earlier versions of this file, both found on 2026-08-05:
 
@@ -26,8 +26,10 @@ Two corrections to earlier versions of this file, both found on 2026-08-05:
    `AI Scientist` and `Workshops and Courses` collections entirely. Always
    enumerate from the venue, never from this file.
 2. **"Needs author outreach" was wrong.** This file used to say two DevNotes
-   probably needed us to contact their authors. Both are published, and both
-   have a downloadable MECA archive. Recover them like anything else.
+   probably needed us to contact their authors. Both are published, both have
+   a downloadable MECA archive, and on 2026-08-05 both were recovered from it
+   with no author contact at all — see `2026-falcon-liposome-encapsulation`
+   and `2026-oza-synthetic-cells-lab-manual`.
 
 ## Before you migrate anything
 
@@ -69,6 +71,12 @@ Then extract each article's `key`, `slug` and `title`, and compare with
 Several files carry other `id:` keys under `exports:` and `authors:` that a plain
 grep matches first. The skill's `references/recover.md` has the full script.
 
+**Match `devnotes/*/curvenote.yml` exactly — one level deep.** A looser pattern
+such as `git ls-files '*curvenote.yml'` returns 53, not 51: `fwm-aria-d1` ships
+two more inside its `data/` tree, from sub-DevNotes IGOR generated during the
+run. They are data, not DevNotes in this repo, and counting them overstates the
+total by two.
+
 ## Every DevNote
 
 A DevNote is **live** once the venue publishes it. A DevNote that is in the
@@ -95,37 +103,37 @@ repo but not yet live is waiting on a curator to approve its submission.
 | The Developer Cell Control Module: Protein Degradation by ClpXP | Yen-Yu Hsu | Core | `nucleus-devnote-core-06_clpxp_module_01` | Live, from `module-Clpxp`. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdc0-9407-7fae-986e-2fefa44eb448) |
 | Using platemaps to analyze and share data | Jay Bhasin | Core | `019d6e3a-c618-77bc-853c-fe4694511f53` | Submitted from `2026-bhasin-platemaps`, recovered from MECA. Its notebook passes, pinned to `nucleus-cdk==0.5.0rc2`. `curvenote check` passes, PDF builds. **Still needs a content review.** [Build report](https://scms.curvenote.com/build/019fd4e3-a72d-7b40-99b4-9962d40f67e6) |
 | BCECF pH Sensor | David Garenne | Community | `nucleus-devnote-core-2026-garenne-ph-sensor` | Live, from `2026-garenne-pH-sensor`. Its notebook passes. Reviewed. Submitted in PR #16. |
-| DNA toolkit - The T7 terminator collection | Charlie Newell | Community | `cn-05272026-terminators` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
+| DNA toolkit - The T7 terminator collection | Charlie Newell | Community | `cn-05272026-terminators` | In `DNA-toolkit-T7-terminators`, recovered from MECA. Its notebook passes, pinned to `nucleus-cdk==0.5.0rc2`. `curvenote check` passes, 8/8 frontmatter, 3/3 content, PDF builds. **Still needs a content review.** |
 | Energy Metabolism Working Group at Build-a-Cell #15 | Energy Metabolism Working Group | Community | `bac-working-group` | Live, from `bac-working-group`. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-d5e0-7602-bfb7-f1c75b3b30e1) |
 | London Exchange Meeting: Liposome Protocol Survey | London Exchange Meeting Participants | Community | `019dcea0-91e3-78da-be6d-6450c2ff8308` | Live, from `lipid-prep`. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-7f13-7cc3-b358-c42e0c6c3bcd) |
 | Tunable protein expression strength with toehold exchange riboregulators | Samuel Schaffter, Fernanda Piorino, Eugenia Romantseva | Community | `7b6aaa00-7351-4a7e-ba45-ade3f7332335` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| AI Scientist: Base Module Report | IGOR, b.next, FindWhatMatters | AI Scientist | `019dcbd4-f87a-7e0d-97d7-6e58ef3403df` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
+| AI Scientist: Base Module Report | IGOR, b.next, FindWhatMatters | AI Scientist | `019dcbd4-f87a-7e0d-97d7-6e58ef3403df` | In `fwm-aria-d1`, recovered from MECA, **minus 31 unreferenced PDFs** — see the note below. `curvenote check` passes, 10/10 content, PDF builds. Its notebook only displays an image, so nothing to pin. **Still needs a content review.** |
 | Batch Bayesian Optimization | Joseph Lozier | AI Scientist | `019f9b60-cc79-7008-9c25-4a46b53b8604` | Live, from `fwm-batch-bo`. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbe-1b37-7658-8b35-e8be01ca926f) |
 | Defining AI Scientific Workflows: Using IGOR for Optimization of PURE | b.next, Find What Matters | AI Scientist | `019f6db2-e060-710d-8984-6bcd5747d775` | Live, from `fwm-aria-d2`. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbe-363a-77c5-936a-17af2178ef46) |
-| IGOR PPK Optimization: Round 1 | Scott Riggs, IGOR | AI Scientist | `51030dec-7ab4-475a-8312-9c73c9d24301` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| IGOR PPK Optimization: Round 2 | Scott Riggs, IGOR | AI Scientist | `591140bb-e66b-415b-ae5c-03302aa68bbe` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| DevCells: Kickoff Workshop | DevCells Kickoff Workshop | Workshops and Courses | `b6272c31-dae6-4c60-bf48-a86466349d86` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Liposome encapsulation: A tractable and reproducible approach | Chris Falcon, Katie Drew | Workshops and Courses | `9e302e31-3dbb-494a-b8e3-5fc6d91ea941` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
+| IGOR PPK Optimization: Round 1 | Scott Riggs, IGOR | AI Scientist | `51030dec-7ab4-475a-8312-9c73c9d24301` | In `fwm-igor-ppk-r1`. **No MECA archive** — rebuilt from the venue's published assets. `curvenote check` passes, PDF builds. Two broken `{include}`s and two unknown roles carried over from the live article; see the note below. **Still needs a content review.** |
+| IGOR PPK Optimization: Round 2 | Scott Riggs, IGOR | AI Scientist | `591140bb-e66b-415b-ae5c-03302aa68bbe` | In `fwm-igor-ppk-r2`. **No MECA archive** — rebuilt from the venue's published assets. `curvenote check` passes, PDF builds. Same broken `{include}`s and roles, plus one broken data link; see the note below. **Still needs a content review.** |
+| DevCells: Kickoff Workshop | DevCells Kickoff Workshop | Workshops and Courses | `b6272c31-dae6-4c60-bf48-a86466349d86` | In `devcells-kickoff-workshop`, recovered from MECA. Both notebooks pass, pinned to `nucleus-cdk==0.5.0rc2`. `curvenote check` passes. **No PDF export** — see the note below. **Still needs a content review.** |
+| Liposome encapsulation: A tractable and reproducible approach | Chris Falcon, Katie Drew | Workshops and Courses | `9e302e31-3dbb-494a-b8e3-5fc6d91ea941` | In `2026-falcon-liposome-encapsulation`, recovered from MECA. `curvenote check` passes, 13/15 frontmatter, PDF builds. No notebooks. **Still needs a content review.** |
 | Nucleus OnePot PURE workshop | OnePot Workshop | Workshops and Courses | `nucleus-devnote-core-09_pure-workshop` | Live, from `05_pure_workshop`. All 5 notebooks pass. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-8559-7af4-b014-96363dd453b1) |
-| Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation | Javin P Oza | Workshops and Courses | `118a7ada-92d1-448f-adc2-f19c2da16b16` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Biochromatic Materials | Maddie Briggs, Maram Naji, Mary Kelly, Matthew Lucia, Natalie Fisher, Ojaswita Pant, Samuel Chen, Allen Liu, Cecile Chazot, Danielle Tullman-Ercek, Julius Lucks, Neha Kamat, Ryan Truby | Node Chicago | `dd21c8ff-f44c-415c-83ee-8fc9ab9badc7` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Colorimetric Sensing Module Development Plan | Cécile A. C. Chazot, Natalie C. Fisher, Simona Fine | Node Chicago | `NCF-planningDevNote-01` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Double emulsion optimization: inner solution, lipid concentration, and composition | Mary Kelly | Node Chicago | `019d643c-63e8-74f3-a5f6-ae8d29175383` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Environmentally Responsive Materials via Integration of DevCells | Madison Briggs | Node Chicago | `mrb_kamatlab` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| In Vitro Reporter Validation | Matthew Lucia | Node Chicago | `mjl-devnote-kickoff-workshop` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Matrix Design for Stable Liposomes and Efficient Cell-Free Protein Synthesis | Mary Kelly | Node Chicago | `PlanningDevNoteMaryKelly` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Module Development Plan: DevCell-based pH sensor | Samuel J. Chen, Sung-Won Hwang | Node Chicago | `sjcliulab` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Photopatterned Hydrogels with DevCells | Ojaswita Pant | Node Chicago | `ojaswitapant` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| TetO-Catecholase sensor validation in Nucleus Cytosol | Maram Naji | Node Chicago | `019db237-0d03-7ae1-8c40-e57e2ce1bea1` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Theophylline-LacZ sensor validation in Nucleus Cytosol | Maram Naji | Node Chicago | `019d20e4-4787-7f35-9c77-f2f53f43d107` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Toehold switch-enabled translation regulation verified in Nucleus Cytosol | Samuel J. Chen, Sung-Won Hwang, Allen Liu | Node Chicago | `sjcliulab01` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Validation of colorimetric reporter sensors in Nucleus Cytosol | Maram Naji \| Lucks Lab | Node Chicago | `MN_LucksLab` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Bioprinting Synthetic Cells Within a Hydrogel Matrix | Niall McIntyre, Ravinash Krishna Kumar | Node London | `nm191611111` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Diffusion Kinetics | Jonah McDonald, James Hindley | Node London | `JMcDDiffusionKinetics-01` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Hydrogel-Embedded GUV Developer Cells | Ion Ioannou, Ignacio Gispert, James Hindley, Ocar Ces | Node London | `II9a7f1e82-58ea-42a8-896c-7312b3538ef6` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| LacZ/XylE colour change module | Charlie Newell, Michael Booth | Node London | `CN_London_planning_DevNote` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| Quorum Sensing Polymersome | Julia Purrinos De Oliveira, Claudia Contini | Node London | `62abfe00-110e-41e1-8121-4572a093eb17` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| The colourimetric bacterial contamination sensing device. | Charlie Newell, Ion Ioannou, Jonah McDonald, Julia Purrinos De Oliveira, Manuel Bibrowski, Niall McIntyre, Ignascio Gispert, Claudia Contini, James Hindley, Michael Booth, Oscar Ces, Ravinash Krishna Kumar, Yuval Elani | Node London | `bd8b42b4-8a91-40c8-a636-3778d1c9a072` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
+| Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation | Javin P Oza | Workshops and Courses | `118a7ada-92d1-448f-adc2-f19c2da16b16` | In `2026-oza-synthetic-cells-lab-manual`, recovered from MECA. `curvenote check` passes, 10/10 frontmatter, PDF builds. No notebooks. Its `date:` was a placeholder — see the note below. **Still needs a content review.** |
+| Biochromatic Materials | Maddie Briggs, Maram Naji, Mary Kelly, Matthew Lucia, Natalie Fisher, Ojaswita Pant, Samuel Chen, Allen Liu, Cecile Chazot, Danielle Tullman-Ercek, Julius Lucks, Neha Kamat, Ryan Truby | Node Chicago | `dd21c8ff-f44c-415c-83ee-8fc9ab9badc7` | In `chicago-biochromatic-materials`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Colorimetric Sensing Module Development Plan | Cécile A. C. Chazot, Natalie C. Fisher, Simona Fine | Node Chicago | `NCF-planningDevNote-01` | In `chicago-colorimetric-sensing-plan`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Double emulsion optimization: inner solution, lipid concentration, and composition | Mary Kelly | Node Chicago | `019d643c-63e8-74f3-a5f6-ae8d29175383` | In `chicago-double-emulsion`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. Fixed a duplicate figure label. **Its corresponding email is a placeholder** — see the note below. **Still needs a content review.** |
+| Environmentally Responsive Materials via Integration of DevCells | Madison Briggs | Node Chicago | `mrb_kamatlab` | In `chicago-env-responsive-materials`, recovered from MECA, minus the MTHFS template scaffolding. PDF builds, but `curvenote check` **exits 1: no author email** — see the note below. **Still needs a content review.** |
+| In Vitro Reporter Validation | Matthew Lucia | Node Chicago | `mjl-devnote-kickoff-workshop` | In `chicago-invitro-reporter`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Matrix Design for Stable Liposomes and Efficient Cell-Free Protein Synthesis | Mary Kelly | Node Chicago | `PlanningDevNoteMaryKelly` | In `chicago-matrix-design`, recovered from MECA, minus the MTHFS template scaffolding. PDF builds, but `curvenote check` **exits 1: no author email** — see the note below. **Still needs a content review.** |
+| Module Development Plan: DevCell-based pH sensor | Samuel J. Chen, Sung-Won Hwang | Node Chicago | `sjcliulab` | In `chicago-ph-sensor-plan`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Photopatterned Hydrogels with DevCells | Ojaswita Pant | Node Chicago | `ojaswitapant` | In `chicago-photopatterned-hydrogels`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| TetO-Catecholase sensor validation in Nucleus Cytosol | Maram Naji | Node Chicago | `019db237-0d03-7ae1-8c40-e57e2ce1bea1` | In `chicago-teto-catecholase`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Theophylline-LacZ sensor validation in Nucleus Cytosol | Maram Naji | Node Chicago | `019d20e4-4787-7f35-9c77-f2f53f43d107` | In `chicago-theophylline-lacz`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Toehold switch-enabled translation regulation verified in Nucleus Cytosol | Samuel J. Chen, Sung-Won Hwang, Allen Liu | Node Chicago | `sjcliulab01` | In `chicago-toehold-switch`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Validation of colorimetric reporter sensors in Nucleus Cytosol | Maram Naji \| Lucks Lab | Node Chicago | `MN_LucksLab` | In `chicago-colorimetric-validation`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Bioprinting Synthetic Cells Within a Hydrogel Matrix | Niall McIntyre, Ravinash Krishna Kumar | Node London | `nm191611111` | In `london-bioprinting-hydrogel`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. Its `BioPrinting.png` was recovered from the venue — see the note below. **Still needs a content review.** |
+| Diffusion Kinetics | Jonah McDonald, James Hindley | Node London | `JMcDDiffusionKinetics-01` | In `london-diffusion-kinetics`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| Hydrogel-Embedded GUV Developer Cells | Ion Ioannou, Ignacio Gispert, James Hindley, Ocar Ces | Node London | `II9a7f1e82-58ea-42a8-896c-7312b3538ef6` | In `london-hydrogel-guv-devcells`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| LacZ/XylE colour change module | Charlie Newell, Michael Booth | Node London | `CN_London_planning_DevNote` | In `london-lacz-xyle-module`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes 11/11 frontmatter, PDF builds. Renamed one label containing spaces. **Still needs a content review.** |
+| Quorum Sensing Polymersome | Julia Purrinos De Oliveira, Claudia Contini | Node London | `62abfe00-110e-41e1-8121-4572a093eb17` | In `london-quorum-sensing-polymersome`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes 10/10 frontmatter, PDF builds. Renamed one label containing spaces; its `AHL.jpg` thumbnail was recovered from the venue. **Still needs a content review.** |
+| The colourimetric bacterial contamination sensing device. | Charlie Newell, Ion Ioannou, Jonah McDonald, Julia Purrinos De Oliveira, Manuel Bibrowski, Niall McIntyre, Ignascio Gispert, Claudia Contini, James Hindley, Michael Booth, Oscar Ces, Ravinash Krishna Kumar, Yuval Elani | Node London | `bd8b42b4-8a91-40c8-a636-3778d1c9a072` | In `london-colourimetric-device`, recovered from MECA, minus the MTHFS template scaffolding. `curvenote check` passes, PDF builds. No `toc` notebooks. **Still needs a content review.** |
 | IV-HSL Emitter Cell | — | — | `nucleus-devnote-core-02_emitter_cell` | In `02_emitter_cell`, waiting on the curator. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbe-5745-7f49-a3f6-68ef77450817) |
 | First Nucleus Cytosol Testing | — | — | `nucleus-devnote-core-NucelusPURE_deGFP` | In `10-nucleus_cytosol_v05`, waiting on the curator. Both notebooks pass. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-c96c-7e3b-815d-b4c130a2f023) |
 | Cx43 Cell | — | — | `nucleus-devnote-core-01_contrib_cx43_cell` | In `cx43`, waiting on the curator. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-a991-7f87-9dce-bdd7f07c9395) |
@@ -133,12 +141,15 @@ repo but not yet live is waiting on a curator to approve its submission.
 Notes on the rows above:
 
 - **`2026-hsu-secyeg` publishes without a PDF.** It lays its figures out with
-  `{grid}` inside `{tab-set}` (`main.md` lines 421 and 440), and the Typst
-  renderer cannot convert a `grid` node, so the export fails. Fixing it means
-  restructuring the author's layout, so the typst export and the "Download
-  Article PDF" entry are left out instead. The published version has no PDF
-  either, so nothing is lost. Reinstate both if the renderer gains `grid`
-  support, or if Yen-Yu Hsu agrees to a layout change.
+  `{grid}` inside `{tab-set}` (`main.md` lines 421 and 440). Typst has no
+  conversion for a `grid` node, so it drops the node **and the four figures
+  inside it**. The `{ref}` calls to those figures then fail with `label
+  <fig:local-emre> does not exist in the document`, and the PDF never builds.
+  Deleting the two `{grid}` wrappers would probably fix it — a one-column grid
+  renders much like stacked figures — but that changes the author's layout, so
+  the typst export and the "Download Article PDF" entry are left out instead.
+  The published version has no PDF either, so nothing is lost. Reinstate both
+  if Yen-Yu Hsu agrees to the change, or if Typst gains `grid` support.
 - **Three JATS conversion messages are author-content limits, not config bugs.**
   `2026-bhasin-platemaps` builds a `{table}` whose body is an `{include}` of
   `assets/simple-platemap.txt`, so that table is empty in JATS and in the PDF;
@@ -154,6 +165,140 @@ Notes on the rows above:
   `Test3` are. But `Test1` holds a `summary.png` that exists nowhere else, and
   both hold a different `analysis.ipynb` from the one on disk. They were kept.
   Verify before deleting an archive.
+- **`DNA-toolkit-T7-terminators` carries an orphan notebook.** Its
+  `src/20250220-analysis.ipynb` is a 24-cell notebook titled "20250220
+  analysis" — MTHFS scaffolding, copied in with the vendored `src/cdk/` tree.
+  It is in no `toc` and nothing references it. The vendored CDK and its `.pyc`
+  files were deleted; the notebook was kept, because deleting a notebook is
+  not an automated decision. Charlie Newell should confirm it can go.
+- **`fwm-aria-d1` ships without 31 PDFs that its archive contained.** Its
+  `data/**/*` glob pulled in 31 PDF files, 29.6 MB of the bundle's 72 MB, 15
+  unique after duplicates. Among them: four third-party journal papers
+  (Shimizu 2001 in *Nature Biotechnology*, Li 2014 in *PLoS ONE*, Lavickova
+  2019 in *ACS Synthetic Biology*, and a "PURE overview"), plus "20250630
+  FWMai_bnext Meeting Notes", which appeared three times. None of the 31 was
+  referenced by any `main.md`, notebook or config. Jon Calles decided on
+  2026-08-05 to drop all of them, rather than redistribute paywalled papers
+  and internal notes from a fully-open repo. Verified inert: the DevNote
+  builds identically without them — same 10/10 content, same 2.9 MB PDF — and
+  the tree is 43 MB instead of 72 MB. **This is the licensing gate applied per
+  file, not per DevNote. Run the same check on every bundle.**
+- **A second call on `fwm-aria-d1`, still open.** The same sweep found **31
+  Office documents** — `.docx` drafts, `.pptx` decks, curation notes, and
+  files like "Prompt to not do OFAT.docx". All 31 are unreferenced too. They
+  were **kept**, on the grounds that the PDFs were third-party copyrighted
+  work while these are b.next's and Find What Matters' own writing, published
+  by their own authors through the venue's archive. That is a judgement about
+  disclosure, not copyright, so it is reversible and cheap:
+
+  ```bash
+  find devnotes/fwm-aria-d1 -type f \( -iname '*.doc*' -o -iname '*.ppt*' \) -delete
+  ```
+
+  Confirm with Anton Jackson-Smith and Scott Riggs before this reaches `main`,
+  because merging is what publishes it.
+- **Node London shipped the same MTHFS scaffolding, and it was removed too.**
+  All six carried the byte-identical `experiments/experiment-01/` and
+  `general/schematic-FA_metabolism.png`. Same template, same decision.
+- **Two Node London files were recovered from the venue, not the archive.**
+  `london-bioprinting-hydrogel`'s `main.md` embeds `/BioPrinting.png` from the
+  project root, which no `resources:` glob matched, so MECA never shipped it —
+  the article would have built with a missing figure. `london-quorum-sensing-
+  polymersome`'s `AHL.jpg` thumbnail was missing the same way. Both are
+  published as assets and were downloaded. **When a recovered figure is
+  missing, check the article page before dropping the reference.**
+- **Two more labels with spaces, both renamed.**
+  `london-lacz-xyle-module` used `:name: Colour change module schematic` and
+  `london-quorum-sensing-polymersome` used `:label: fig:Module Diagram`.
+  Neither was referenced, and both would have failed the PDF export.
+- **Every Node Chicago DevNote shipped MTHFS's example data.** Eleven of the
+  twelve carried an identical `experiments/experiment-01/` — the
+  `20250220-analysis.ipynb` scaffold notebook, MTHFS plate data, MTHFS
+  figures, and `MTHFS-labnotebook.pdf` — plus
+  `general/schematic-FA_metabolism.png`. It comes from the DevNote template,
+  is in no `toc`, is referenced by no `main.md`, and duplicates content the
+  repo already holds as `03_mthfs`. Jon Calles approved deleting it on
+  2026-08-05. That took the batch from about 65 MB to 11 MB. Each author's own
+  files were kept, including data and sequences they never cited. The same
+  scaffold explains two earlier puzzles: the orphan notebook in
+  `DNA-toolkit-T7-terminators`, and `2026-hsu-clpxp-cytosol`'s thumbnail
+  pointing at `general/schematic-FA_metabolism.png`.
+- **Three Node Chicago DevNotes have a contact problem. Do not guess.**
+  `chicago-env-responsive-materials` (Madison Briggs) and
+  `chicago-matrix-design` (Mary Kelly) declare no author email, so
+  `curvenote check` exits 1 — the same blocker `bac-working-group` has had all
+  along. Worse, `chicago-double-emulsion` publishes
+  **`mary.kelly@example.com`**, a placeholder that is live on the venue right
+  now; it passes the check precisely because an address exists, and
+  correspondence would go nowhere. Addresses for both people appear in
+  `chicago-biochromatic-materials`, the 13-author node DevNote they co-wrote:
+  `mbriggs@u.northwestern.edu` and `marykelly2026@u.northwestern.edu`. Those
+  look authoritative, but a contact detail is the authors' to confirm, so
+  nothing was changed. Confirm with Madison Briggs and Mary Kelly, then set
+  all three.
+- **`chicago-invitro-reporter` lost a dangling thumbnail.** It pointed at
+  `general/exa.png`, which is in neither the archive nor the venue's published
+  assets, and no notebook generates it. The key was dropped; its banner is
+  unaffected.
+- **`chicago-double-emulsion` had two figures sharing one label.** Its
+  `GUV-diameter.jpg` figure was labelled `GUV-count`, the same as the figure
+  above it. Nothing referenced either, so the second was renamed to
+  `GUV-diameter`.
+- **`devcells-kickoff-workshop` publishes without a PDF, for the same reason
+  as `2026-hsu-secyeg`.** Its `main.md` wraps the "Kinetic Fits" tab-set in
+  `:::{admonition}` with a custom title (line 218). The bnext Typst template
+  reports "Unknown admonition kind", drops the block, and the two figure
+  labels inside go with it, so `{ref}`Group1-kineticfit`` and
+  `Group2-kineticfit` dangle and the export fails. Deleting the admonition
+  wrapper and keeping the bare tab-set would fix it — the other five tab-sets
+  in the file are unwrapped — but that removes the collapsible "Kinetic Fits"
+  heading the authors chose. Setting `:class: dropdown` instead of
+  `simple, dropdown` was tried and does not help; the template rejects the
+  custom title itself.
+- **Two real fixes in `devcells-kickoff-workshop`, both kept.** Its figure
+  `:label: participants` collided with the automatic label of the
+  `# Participants` heading, which Typst reports as "label occurs multiple
+  times"; the figure is now `participants-photo`, with its one `{ref}`
+  updated. And `analysis-G1.ipynb` saved its summary figure as
+  `kinetics-summary-1.png` while `main.md` referenced
+  `kinetics-summary-group1.png` — a typo, since its sibling `analysis-G2.ipynb`
+  writes the `-group2` form. The notebook now regenerates the file `main.md`
+  actually uses.
+- **`2026-oza-synthetic-cells-lab-manual` had a placeholder for a date.** Its
+  `curvenote.yml` carried the literal string
+  `REVIEW: not found in source — confirm with course organizers` in `date:`.
+  The venue publishes the article with `2026-07-20`, so that is what the
+  recovered file now uses. Worth confirming with Javin P Oza. Its `main.md`
+  frontmatter also declares affiliations whose `id` and `name` are not
+  strings, which `curvenote check` reports; that is author content, left alone.
+- **The two IGOR rounds have no MECA archive.** Their article pages offer none.
+  They were rebuilt from the venue's published assets instead: `config.json`
+  supplies the frontmatter and work key, and `main.md` supplies the original
+  relative paths, because the site truncates every asset's stem to 20
+  characters and appends a content hash. The method is in the skill's
+  `references/recover.md` §3. Expect more of these — check for an archive
+  first, and fall back to this.
+- **Both IGOR rounds ship two broken `{include}`s and two unknown roles.**
+  `main.md` does `{include} discourse.md` and `{include} ges.md`, and uses
+  `{claim}` and `{evidence}` roles. None of those files, and no plugin
+  defining those roles, was ever published — the live articles render the
+  literal text `discourse.md`. This is not migration damage; it is the
+  published state. **Find What Matters needs to supply the two files and the
+  discourse-graph plugin.** `fwm-igor-ppk-r2` additionally links
+  `./workspace/workspace_data.csv`, which was never published either.
+- **Round 2's includes were deliberately left broken.** Jon Calles decided on
+  2026-08-05 to migrate both rounds exactly as published, and to ask Find What
+  Matters for the missing files rather than reconstruct them. The evidence
+  behind the option not taken is kept below, in case that changes.
+- **A likely fix for Round 2's includes, if it is ever wanted.**
+  `fwm-aria-d1` contains `orchestrated-research/iter2/`, whose `main.md` is
+  byte-identical to `fwm-igor-ppk-r2`'s except for the title and an added
+  "generated by an AI Scientist" notice, and whose 11 figures are all
+  byte-identical. Its `discourse.md` and `ges.md` are therefore very probably
+  the missing files. They were **not** copied across, because that would add
+  content to a published article. Approve it and it is a two-file copy.
+  **Do not do the same for Round 1**: `iter1` is a different report, with a
+  different abstract and a completely different set of five figures.
 - `bac-working-group` has an open problem. Its only author, "Energy Metabolism
   Working Group", has no `email` in `curvenote.yml`, so `curvenote check` fails
   every time. Do not guess an address. The DevNote's owner must supply one.
