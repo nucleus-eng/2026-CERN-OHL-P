@@ -1,0 +1,59 @@
+version: 1
+project:
+  id: 118a7ada-92d1-448f-adc2-f19c2da16b16
+  title: 'Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation'
+  authors:
+    - name: Javin P Oza
+      email: joza@calpoly.edu
+      orcid: 0000-0002-2902-6939
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+      corresponding: true
+  keywords:
+    - cell-free expression
+    - liposome encapsulation
+    - synthetic cells
+    - lab course
+    - PURExpress
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  # The recovered archive carried the literal placeholder
+  # "REVIEW: not found in source — confirm with course organizers" here.
+  # 2026-07-20 is the date the venue publishes for this article.
+  date: 2026-07-20
+  thumbnail: ./figures/media/grace-0306-fluorescein.png
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # No notebooks, so no live compute. This matches the archive.
+  jupyter: false
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: synthetic-cells-lab-manual.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: synthetic-cells-lab-manual.zip
+site:
+  template: article-theme
+  nav: []

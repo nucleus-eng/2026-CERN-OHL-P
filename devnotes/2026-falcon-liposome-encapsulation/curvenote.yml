@@ -1,0 +1,61 @@
+version: 1
+project:
+  id: 9e302e31-3dbb-494a-b8e3-5fc6d91ea941
+  title: 'Liposome encapsulation: A tractable and reproducible approach'
+  authors:
+    - name: Chris Falcon
+      email: ccfalcon@calpoly.edu
+      affiliations:
+        - name: Department of Chemistry and Biochemistry, California Polytechnic State University, San Luis Obispo, CA, USA
+      corresponding: true
+    - name: Katie Drew
+      email: kdrew01@calpoly.edu
+      affiliations:
+        - name: Department of Chemistry and Biochemistry, California Polytechnic State University, San Luis Obispo, CA, USA
+  keywords:
+    - liposome encapsulation
+    - emulsion transfer
+    - PURExpress
+    - cell-free protein synthesis
+    - synthetic cell
+    - sfGFP
+    - fluorescence microscopy
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-06-08
+  thumbnail: ./figures/fig1-timecourse.png
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  # No notebooks, so no live compute. This matches the archive.
+  jupyter: false
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: liposome-encapsulation.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: liposome-encapsulation.zip
+site:
+  template: article-theme
+  nav: []

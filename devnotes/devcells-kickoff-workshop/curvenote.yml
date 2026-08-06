@@ -1,0 +1,220 @@
+version: 1
+project:
+  id: b6272c31-dae6-4c60-bf48-a86466349d86
+  title: 'DevCells: Kickoff Workshop'
+  authors:
+    - name: DevCells Kickoff Workshop
+      email: build@bnext.bio
+      corresponding: true
+      affiliations:
+        - name: Nucleus Labs, San Francisco, CA
+  # The workshop's individual participants, kept commented out exactly as the
+  # authors left them. The DevNote publishes under the collective name above.
+    # - name: Charlie Newell
+    #   affiliations:
+    #   - id: booth-lab
+    #     name: Booth Lab, UCL, London
+    #     institution: University College London
+    #     department: Chemistry
+    #     city: London
+    #     country: United Kingdom
+    # - name: Manuel Bibrowski
+    #   affiliations:
+    #   - id: elani-lab
+    #     name: Elani Lab, Imperial, London
+    #     institution: Imperial College London
+    #     department: Chemistry
+    #     city: London
+    #     country: United Kingdom
+    # - name: Ion Ioannou
+    #   affiliations:
+    #   - id: ces-lab
+    #     name: Ces Lab, Imperial, London
+    #     institution: Imperial College London
+    #     department: Chemistry
+    #     city: London
+    #     country: United Kingdom
+    # - name: Niall McIntyre
+    #   affiliations:
+    #   - id: krishnakumar-lab
+    #     name: Krishna Kumar Lab, Imperial, London
+    #     institution: Imperial College London
+    #     department: Chemistry
+    #     city: London
+    #     country: United Kingdom
+    # - name: Julia Purrinos De Oliveira
+    #   affiliations:
+    #   - id: contini-lab
+    #     name: Contini Lab, Imperial, London
+    #     institution: Imperial College London
+    #     department: Chemistry
+    #     city: London
+    #     country: United Kingdom
+    # - name: Jonah McDonald
+    #   affiliations:
+    #   - id: hindley-lab
+    #     name: "Hindley Lab, King's College, London"
+    #     institution: "King's College London"
+    #     department: Chemistry
+    #     city: London
+    #     country: United Kingdom
+    # - name: Maddie Briggs
+    #   affiliations:
+    #   - id: kamat-lab
+    #     name: Kamat Lab, Northwestern, Evanston, IL
+    #     institution: Northwestern University
+    #     department: Biomedical Engineering
+    #     city: Evanston
+    #     state: IL
+    #     country: USA
+    # - name: Mary Kelly
+    #   affiliations:
+    #   - id: kamat-lab
+    #     name: Kamat Lab, Northwestern, Evanston, IL
+    #     institution: Northwestern University
+    #     department: Biomedical Engineering
+    #     city: Evanston
+    #     state: IL
+    #     country: USA
+    # - name: Natalie Fisher
+    #   affiliations:
+    #   - id: chazot-lab
+    #     name: Chazot Lab, Northwestern, Evanston, IL
+    #     institution: Northwestern University
+    #     department: Materials Science and Engineering
+    #     city: Evanston
+    #     state: IL
+    #     country: USA
+    # - name: Maram Naji
+    #   affiliations:
+    #   - id: lucks-lab
+    #     name: Lucks Lab, Northwestern, Evanston, IL
+    #     institution: Northwestern University
+    #     department: Chemical and Biological Engineering
+    #     city: Evanston
+    #     state: IL
+    #     country: USA
+    # - name: Matthew Lucia
+    #   affiliations:
+    #   - id: tullmanercek-lab
+    #     name: Tullman-Ercek Lab, Northwestern, Evanston, IL
+    #     institution: Northwestern University
+    #     department: Chemical and Biological Engineering
+    #     city: Evanston
+    #     state: IL
+    #     country: USA
+    # - name: Ojaswita Pant
+    #   affiliations:
+    #   - id: truby-lab
+    #     name: Truby Lab, Northwestern, Evanston, IL
+    #     institution: Northwestern University
+    #     department: Materials Science and Engineering
+    #     city: Evanston
+    #     state: IL
+    #     country: USA
+    # - name: Samuel Chen
+    #   affiliations:
+    #   - id: chen-lab
+    #     name: Liu Lab, University of Michigan, Ann Arbor, MI
+    #     institution: University of Michigan
+    #     department: Mechanical Engineering
+    #     city: Ann Arbor
+    #     state: MI
+    #     country: USA
+    # - name: Javin Oza
+    #   affiliations:
+    #   - id: oza-lab
+    #     name: Oza Lab, California Polytechnic State University, San Luis Obispo, CA
+    #     institution: California Polytechnic State University
+    #     department: Chemistry and Biochemistry Department
+    #     city: San Luis Obispo
+    #     state: CA
+    #     country: USA
+    # - name: Sharon Newman
+    #   affiliations:
+    #   - id: bnext
+    #     name: b.next, San Francisco, CA
+    #     institution: b.next
+    #     city: San Francisco
+    #     state: CA
+    #     country: USA
+    # - name: Anton Jackson-Smith
+    #   affiliations:
+    #   - id: bnext
+    #     name: b.next, San Francisco, CA
+    #     institution: b.next
+    #     city: San Francisco
+    #     state: CA
+    #     country: USA
+    # - name: Anton Molina
+    #   email: antonmolina@bnext.bio
+    #   corresponding: true
+    #   affiliations:
+    #   - id: bnext
+    #     name: b.next, San Francisco, CA
+    #     institution: b.next
+    #     city: San Francisco
+    #     state: CA
+    #     country: USA
+    # - name: Surendra Yadav
+    #   email: surendra@bnext.bio
+    #   orcid: 0009-0009-5630-957X
+    #   corresponding: true
+    #   affiliations:
+    #   - id: bnext
+    #     name: b.next, San Francisco, CA
+    #     institution: b.next
+    #     city: San Francisco
+    #     state: CA
+    #     country: USA
+  date: 2025-12-19
+  keywords:
+    - DevCells
+    - Workshop
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  banner: devcells.webp
+  toc:
+    - file: main.md
+    - file: experiments/20251208-day1/analysis-G1.ipynb
+    - file: experiments/20251208-day1/analysis-G2.ipynb
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  # No typst export. main.md wraps its "Kinetic Fits" tab-set in
+  # `:::{admonition}` with a custom title (line 218). The bnext Typst template
+  # reports "Unknown admonition kind", drops the block, and the two figure
+  # labels inside it go with it, so `{ref}`Group1-kineticfit`` and
+  # `Group2-kineticfit` dangle and the PDF never builds. Deleting the
+  # admonition wrapper and keeping the bare tab-set would fix it — the other
+  # five tab-sets in this file are unwrapped — but that removes the collapsible
+  # "Kinetic Fits" heading, which is the authors' layout. See
+  # devnote-migration-status.md.
+  exports:
+    - format: meca
+      id: meca
+  requirements:
+    - environment.yml
+  resources:
+    - general/**/*
+    - experiments/**/*
+    - src/**/*
+  downloads:
+    - id: meca
+      title: Computational Archive
+      filename: devcells-kickoff.zip
+    - file: experiments/workshop-protocols.pdf
+      title: Workshop Protocols
+    - file: experiments/BOM Kickoff.pdf
+      title: Bill of Materials
+site:
+  template: article-theme
+  nav: []
