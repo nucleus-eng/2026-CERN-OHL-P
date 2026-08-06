@@ -13,10 +13,11 @@ It links to the full procedure and a catalogue of known snags, which live in the
 | Count | Meaning |
 |---|---|
 | **49** | DevNotes published on the venue |
-| **22** | DevNotes in this repo |
-| **19** | in this repo **and** published |
+| **26** | DevNotes in this repo |
+| **23** | in this repo **and** published |
 | **3** | in this repo and submitted, but not yet published |
-| **30** | published, but **not yet in this repo** — the remaining migration work |
+| **26** | published, but **not yet in this repo** |
+| **25** | of those 26, cleared for this repo — the remaining migration work |
 
 Two corrections to earlier versions of this file, both found on 2026-08-05:
 
@@ -32,8 +33,23 @@ Two corrections to earlier versions of this file, both found on 2026-08-05:
 
 This repo is only for DevNotes released fully in the open, under CC-BY or a
 CERN-OHL-P equivalent. **A human must decide whether a DevNote may be included.**
-Never automate that decision. Many of the 30 remaining DevNotes come from
+Never automate that decision. Many of the remaining DevNotes come from
 external contributors at the Chicago and London nodes, so this matters.
+
+### Curation decisions of 2026-08-05
+
+Jon Calles reviewed the 30 DevNotes then outstanding and cleared all of them
+except one:
+
+- **"Tunable protein expression strength with toehold exchange riboregulators"**
+  (Samuel Schaffter, Fernanda Piorino, Eugenia Romantseva, key
+  `7b6aaa00-7351-4a7e-ba45-ade3f7332335`) — **not licensed for this repo. Do not
+  migrate it.**
+- Charlie Newell's RNA aptamers DevNote is also not licensed for this repo. It
+  is not published on the venue, so it never enters the work list. Nothing to
+  skip, but do not add it by hand either.
+
+Every other outstanding DevNote has a compatible licence.
 
 ## How to regenerate this table
 
@@ -61,8 +77,8 @@ repo but not yet live is waiting on a curator to approve its submission.
 
 | Title | Author(s) | Collection | Myst key | Status |
 |---|---|---|---|---|
-| Characterizing the Limited Operational Lifetime of Cytosol Reactions | Surendra Yadav | Core | `019ed70b-0af7-7dd0-aefe-688ebf933399` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
-| ClpXP Control Module: Deployment in Nucleus Cytosol | Yen-Yu Hsu | Core | `019f05c8-f7ea-74d8-ab37-a6e418627268` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
+| Characterizing the Limited Operational Lifetime of Cytosol Reactions | Surendra Yadav | Core | `019ed70b-0af7-7dd0-aefe-688ebf933399` | In `2026-yadav-cytosol-lifetime`, recovered from MECA. `curvenote check` passes, 6/6 frontmatter, PDF builds. No `toc` notebooks. **Still needs a content review.** |
+| ClpXP Control Module: Deployment in Nucleus Cytosol | Yen-Yu Hsu | Core | `019f05c8-f7ea-74d8-ab37-a6e418627268` | In `2026-hsu-clpxp-cytosol`, recovered from MECA. `curvenote check` passes, 6/6 frontmatter, PDF builds. No `toc` notebooks. **Still needs a content review.** |
 | ClpXP Control Module: Deployment in PURE | Yen-Yu Hsu | Core | `nucleus-devnote-core-clpxp_module_cytosol-01` | Live, from `module-Clpxp-Cytosol`. All 6 notebooks pass. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-8698-7638-9941-ae1285b2a831) |
 | ClpXP Control Module: Deployment in PURE Cells | Yen-Yu Hsu | Core | `nucleus-devnote-core-clpxp_module_cells-01` | Live, from `module-Clpxp-Cells`. All 5 notebooks pass. **Still needs a content review.** [Build report](https://scms.curvenote.com/build/019fd304-b1cc-729d-8570-fd9b5c6b8cf4) |
 | Cx43 Cell: DNA Validation | Yen-Yu Hsu | Core | `nucleus-devnote-core-cx43_01` | Live, from `09-cx43_cell`. Both notebooks pass. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbe-5ef0-7026-9610-99264e36e02a) |
@@ -75,9 +91,9 @@ repo but not yet live is waiting on a curator to approve its submission.
 | Nucleus OnePot PURE | Surendra Yadav | Core | `onepot-sy` | Live, from `onepot-sy`. All 3 notebooks pass. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-9f01-7488-839f-1c0979c0a693) |
 | Nucleus OnePot PURE Replication | Anton Molina, Anton Jackson-Smith | Core | `nucleus-devnote-core-07_bnext-onepot-pure-replication` | Live, from `devnote-nucleus_onepot`. Its notebook passes. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-e4b6-7227-a6c7-c3ce474e1284) |
 | PPK Module testing in PURE | Surendra Yadav | Core | `nucleus-devnote-core-04_ppk` | Live, from `04_ppk`. All 5 notebooks pass. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-84b4-7d12-9a9a-d4a101f3ff0b) |
-| SecYEG-Based Membrane Translation Module in Synthetic Cells | Yen-Yu Hsu | Core | `019e896a-6e0d-76d5-99ef-2df38c5ebd7f` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
+| SecYEG-Based Membrane Translation Module in Synthetic Cells | Yen-Yu Hsu | Core | `019e896a-6e0d-76d5-99ef-2df38c5ebd7f` | In `2026-hsu-secyeg`, recovered from MECA. `curvenote check` passes, 7/7 frontmatter. No `toc` notebooks. **No PDF export** — see the note below. **Still needs a content review.** |
 | The Developer Cell Control Module: Protein Degradation by ClpXP | Yen-Yu Hsu | Core | `nucleus-devnote-core-06_clpxp_module_01` | Live, from `module-Clpxp`. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdc0-9407-7fae-986e-2fefa44eb448) |
-| Using platemaps to analyze and share data | Jay Bhasin | Core | `019d6e3a-c618-77bc-853c-fe4694511f53` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
+| Using platemaps to analyze and share data | Jay Bhasin | Core | `019d6e3a-c618-77bc-853c-fe4694511f53` | In `2026-bhasin-platemaps`, recovered from MECA. Its notebook passes, pinned to `nucleus-cdk==0.5.0rc2`. `curvenote check` passes, PDF builds. **Still needs a content review.** |
 | BCECF pH Sensor | David Garenne | Community | `nucleus-devnote-core-2026-garenne-ph-sensor` | Live, from `2026-garenne-pH-sensor`. Its notebook passes. Reviewed. Submitted in PR #16. |
 | DNA toolkit - The T7 terminator collection | Charlie Newell | Community | `cn-05272026-terminators` | **Not in the repo yet.** Published, so recoverable from its MECA archive. |
 | Energy Metabolism Working Group at Build-a-Cell #15 | Energy Metabolism Working Group | Community | `bac-working-group` | Live, from `bac-working-group`. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-d5e0-7602-bfb7-f1c75b3b30e1) |
@@ -114,8 +130,30 @@ repo but not yet live is waiting on a curator to approve its submission.
 | First Nucleus Cytosol Testing | — | — | `nucleus-devnote-core-NucelusPURE_deGFP` | In `10-nucleus_cytosol_v05`, waiting on the curator. Both notebooks pass. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-c96c-7e3b-815d-b4c130a2f023) |
 | Cx43 Cell | — | — | `nucleus-devnote-core-01_contrib_cx43_cell` | In `cx43`, waiting on the curator. No notebooks to run. Reviewed. [Build report](https://scms.curvenote.com/build/019fcdbd-a991-7f87-9dce-bdd7f07c9395) |
 
-Two notes on the rows above:
+Notes on the rows above:
 
+- **`2026-hsu-secyeg` publishes without a PDF.** It lays its figures out with
+  `{grid}` inside `{tab-set}` (`main.md` lines 421 and 440), and the Typst
+  renderer cannot convert a `grid` node, so the export fails. Fixing it means
+  restructuring the author's layout, so the typst export and the "Download
+  Article PDF" entry are left out instead. The published version has no PDF
+  either, so nothing is lost. Reinstate both if the renderer gains `grid`
+  support, or if Yen-Yu Hsu agrees to a layout change.
+- **Three JATS conversion messages are author-content limits, not config bugs.**
+  `2026-bhasin-platemaps` builds a `{table}` whose body is an `{include}` of
+  `assets/simple-platemap.txt`, so that table is empty in JATS and in the PDF;
+  it also uses `{aside}`. `2026-hsu-clpxp-cytosol` uses a thematic break outside
+  a table cell. All three still pass `curvenote check`. Leave them to their
+  authors.
+- **`2026-yadav-cytosol-lifetime` keeps four notebooks that never render.** Its
+  `toc` is `main.md` alone, and `main.md` embeds pre-generated PNGs as static
+  figures. The four `analysis.ipynb` files ship as resources. That is the
+  author's design, so they were not added to the `toc` and not re-executed.
+- **Its `experiments/Test1.tar.gz` and `Test4.tar.gz` are not redundant.** They
+  look like duplicates of the extracted experiment directories, and `Test2` and
+  `Test3` are. But `Test1` holds a `summary.png` that exists nowhere else, and
+  both hold a different `analysis.ipynb` from the one on disk. They were kept.
+  Verify before deleting an archive.
 - `bac-working-group` has an open problem. Its only author, "Energy Metabolism
   Working Group", has no `email` in `curvenote.yml`, so `curvenote check` fails
   every time. Do not guess an address. The DevNote's owner must supply one.

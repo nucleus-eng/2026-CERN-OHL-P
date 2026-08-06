@@ -1,0 +1,25 @@
+Date,Experiment Name,Well,Name,Type,PMix ID,[PMix] (mg/mL),Ribosome ID,[Ribosome] (uM),SMix ID,tRNA ID,[tRNA] (ug/uL),DNA ID,[DNA] (nM),[Mg-Ace] (mM),[CP] (mM),[polyP] (mM),[PPK2] (uM),[PEG] (%),PMix Vol (uL),Ribosome Vol (uL),SMix Vol (uL),tRNA Vol (uL),DNA Vol (uL),RNase Inhib Vol (uL),CP Vol (uL),PPK Vol (uL),polyP Vol (uL),Mg-Ace Vol (uL),PEG Vol (uL),Water vol (uL),Rxn Volume (uL)
+20260603,Cytosol-Lifetime-Test3,B2,Cytosol Control,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,B4,Cytosol Control,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,B6,Cytosol Control,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,D2,Smix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,D4,Smix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,D6,Smix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,F2,Pmix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,F4,Pmix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,F6,Pmix incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,H2,Ribo incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,H4,Ribo incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,H6,Ribo incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,J2,DNA incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,J4,DNA incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,J6,DNA incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,L2,tRNA incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,L4,tRNA incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,L6,tRNA incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,N2,RIM incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,N4,RIM incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,N6,RIM incubation -2 hrs,Sample,AR-975,15,AR-905,10,AR-895,AR-1080,35,AR-1028,60,,,,,,1.2,1.8,3,1,0.5,0.5,,,,,,2,10
+20260603,Cytosol-Lifetime-Test3,B8,1 uM Fluorescein,Standard,,,,,,,,,,,,,,,,,,,,,,,,,,,10
+20260603,Cytosol-Lifetime-Test3,B10,1 uM Fluorescein,Standard,,,,,,,,,,,,,,,,,,,,,,,,,,,10
+20260603,Cytosol-Lifetime-Test3,B12,1 uM Fluorescein,Standard,,,,,,,,,,,,,,,,,,,,,,,,,,,10

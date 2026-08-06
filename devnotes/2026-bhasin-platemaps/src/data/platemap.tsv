@@ -1,0 +1,14 @@
+Date	Experiment	Well	Name	Type	PMix ID	[PMix] (mg/mL)	Ribosome ID	[Ribosome] (uM)	SMS ID	tRNA ID	[tRNA] (ug/uL)	DNA ID	[DNA] (ng/uL)	PMix Vol (uL)	Ribosome Vol (uL)	SMS Vol (uL)	tRNA Vol (uL)	DNA Vol (uL)	RNase Inhib Vol (uL)	Water vol (uL)	Rxn Volume (uL)
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	B2	tRNA AR-1080	Sample	AR-1060	15.0	AR-1011	10.0	AR-976	AR-1080	35.0	AR-1028	111.0	1.2	1.8	3.0	1.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	D2	tRNA AR-1080	Sample	AR-1060	15.0	AR-1011	10.0	AR-976	AR-1080	35.0	AR-1028	111.0	1.2	1.8	3.0	1.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	F2	tRNA AR-1080	Sample	AR-1060	15.0	AR-1011	10.0	AR-976	AR-1080	35.0	AR-1028	111.0	1.2	1.8	3.0	1.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	B8	tRNA Control (AR-1035)	Reaction Control	AR-1060	15.0	AR-1011	10.0	AR-976	AR-1035	35.0	AR-1028	111.0	1.2	1.8	3.0	1.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	D8	tRNA Control (AR-1035)	Reaction Control	AR-1060	15.0	AR-1011	10.0	AR-976	AR-1035	35.0	AR-1028	111.0	1.2	1.8	3.0	1.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	F8	tRNA Control (AR-1035)	Reaction Control	AR-1060	15.0	AR-1011	10.0	AR-976	AR-1035	35.0	AR-1028	111.0	1.2	1.8	3.0	1.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	B16	Positive Control	Positive Control	NEB Sol B				NEB Sol A			AR-1028	111.0	3.0	0.0	4.0	0.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	D16	Positive Control	Positive Control	NEB Sol B				NEB Sol A			AR-1028	111.0	3.0	0.0	4.0	0.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	F16	Positive Control	Positive Control	NEB Sol B				NEB Sol A			AR-1028	111.0	3.0	0.0	4.0	0.0	0.5	0.5	2.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	B18	Negative Control	Negative Control	NEB Sol B				NEB Sol A					3.0	0.0	4.0	0.0	0.0	0.0	3.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	B20	1 uM Fluorescein	Standard	AR-910									0.0	0.0	0.0	0.0	0.0	0.0	0.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	D20	1 uM Fluorescein	Standard	AR-910									0.0	0.0	0.0	0.0	0.0	0.0	0.0	10.0
+2026-04-01	tRNA-MFG-193-AR-1080-Activity-QC	F20	1 uM Fluorescein	Standard	AR-910									0.0	0.0	0.0	0.0	0.0	0.0	0.0	10.0

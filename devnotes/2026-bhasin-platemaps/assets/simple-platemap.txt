@@ -1,0 +1,74 @@
+<div style="overflow-x: auto; width:100%">
+<table style="width:120%">
+    <tr>
+        <th>Well</th>
+        <th>Date</th>
+        <th>Experiment</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>[Standard] (nM)</th>
+        <th>Reporter</th>
+        <th>Volume (µL)</th>
+    </tr>
+    <tr>
+        <td style="text-align:center">A1</td>
+        <td>2026-04-08</td>
+        <td>platemap-example</td>
+        <td>Cytosol + deGFP</td>
+        <td>Sample</td>
+        <td></td>
+        <td>deGFP</td>
+        <td style="padding-right: 1em; text-align:right">10</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">A2</td>
+        <td>2026-04-08</td>
+        <td>platemap-example</td>
+        <td>Cytosol + deGFP</td>
+        <td>Sample</td>
+        <td></td>
+        <td>deGFP</td>
+        <td style="padding-right: 1em; text-align:right">10</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">A3</td>
+        <td>2026-04-08</td>
+        <td>platemap-example</td>
+        <td>Cytosol + plamGFP</td>
+        <td>Sample</td>
+        <td></td>
+        <td>plamGFP</td>
+        <td style="padding-right: 1em; text-align:right">10</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">B1</td>
+        <td>2026-04-08</td>
+        <td>platemap-example</td>
+        <td>1 µM fluorescein</td>
+        <td>Standard</td>
+        <td style="padding-right: 1em; text-align:right">1000</td>
+        <td></td>
+        <td style="padding-right: 1em; text-align:right">10</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">B2</td>
+        <td>2026-04-08</td>
+        <td>platemap-example</td>
+        <td>1 µM fluorescein</td>
+        <td>Standard</td>
+        <td style="padding-right: 1em; text-align:right">1000</td>
+        <td></td>
+        <td style="padding-right: 1em; text-align:right">10</td>
+    </tr>
+    <tr>
+        <td style="text-align:center">B3</td>
+        <td>2026-04-08</td>
+        <td>platemap-example</td>
+        <td>1 µM fluorescein</td>
+        <td>Standard</td>
+        <td style="padding-right: 1em; text-align:right">1000</td>
+        <td></td>
+        <td style="padding-right: 1em; text-align:right">10</td>
+    </tr>
+</table>
+</div>

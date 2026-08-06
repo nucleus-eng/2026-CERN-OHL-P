@@ -1,0 +1,63 @@
+version: 1
+project:
+  id: 019d6e3a-c618-77bc-853c-fe4694511f53
+  title: Using platemaps to analyze and share data
+  authors:
+    - name: Jay Bhasin
+      email: jay@bnext.bio
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: '94107'
+          country: USA
+      corresponding: true
+  keywords:
+    - Platemap
+    - Data format
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-04-22
+  banner: banner.webp
+  thumbnail: assets/thumbnail.png
+  toc:
+    - file: main.md
+    - file: src/long-data-format.ipynb
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  # The last line of the figure cell returns a matplotlib Text object, which
+  # would otherwise render as a stray "Text(43.5, 0.5, ...)" string above the
+  # figure. Dropping it here avoids editing the author's code cell.
+  settings:
+    output_matplotlib_strings: remove
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: platemaps.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - assets/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: platemaps.zip
+site:
+  template: article-theme
+  nav: []
