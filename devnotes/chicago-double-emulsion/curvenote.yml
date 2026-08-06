@@ -1,0 +1,50 @@
+version: 1
+project:
+  id: 019d643c-63e8-74f3-a5f6-ae8d29175383
+  title: 'Double emulsion optimization: inner solution, lipid concentration, and composition'
+  authors:
+  - name: Mary Kelly
+    orcid: 0000-0001-6222-6281
+    email: mary.kelly@example.com
+    corresponding: true
+    affiliations:
+    - northwestern
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2026-01-10'
+  banner: 021026_Sucrose200_0Theo004_RGB_Cy3.jpg
+  thumbnail: ./021026_Sucrose200_0Theo004_RGB_Cy3.jpg
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: double-emulsion.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: double-emulsion.zip
+site:
+  template: article-theme
+  nav: []

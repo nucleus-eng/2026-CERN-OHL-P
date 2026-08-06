@@ -1,0 +1,54 @@
+version: 1
+project:
+  id: 019d20e4-4787-7f35-9c77-f2f53f43d107
+  title: Theophylline-LacZ sensor validation in Nucleus Cytosol
+  authors:
+  - name: Maram Naji
+    email: maram@U.northwestern.edu
+    orcid: 0000-0003-1409-4194
+    affiliations:
+    - name: Northwestern University
+      city: Evanston
+      state: Illinois
+      postal_code: 60201
+      country: USA
+    corresponding: true
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2026-05-08'
+  banner: banner.webp
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: theophylline-lacz.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - experiments/**/*
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: theophylline-lacz.zip
+site:
+  template: article-theme
+  nav: []

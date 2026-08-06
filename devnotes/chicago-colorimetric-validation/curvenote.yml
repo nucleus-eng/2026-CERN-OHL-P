@@ -1,0 +1,55 @@
+version: 1
+project:
+  id: MN_LucksLab
+  title: Validation of colorimetric reporter sensors in Nucleus Cytosol
+  subtitle: Plans for in vitro validation of the sensors going into the Chicago node demonstration
+  authors:
+  - name: Maram Naji | Lucks Lab
+    email: maram@u.northwestern.edu
+    orcid: 0000-0003-1409-4194
+    affiliations:
+    - name: Northwestern University
+      corresponding: true
+      email: maram@u.northwestern.edu
+    id: MN_LucksLab
+  keywords:
+  - DevCell Kickoff Workshop 2025
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2025-11-12'
+  banner: devcells.webp
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: colorimetric-validation.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - general/**/*
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: colorimetric-validation.zip
+site:
+  template: article-theme
+  nav: []

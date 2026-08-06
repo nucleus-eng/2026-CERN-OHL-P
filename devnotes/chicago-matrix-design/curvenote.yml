@@ -1,0 +1,57 @@
+version: 1
+project:
+  id: PlanningDevNoteMaryKelly
+  title: Matrix Design for Stable Liposomes and Efficient Cell-Free Protein Synthesis
+  subtitle: Integrating liposomes containing a cell free sensor into a hydrogel matrix that is compatible
+    with cell free sensor function, liposome stability, and overall matrix 3D printing.
+  description: Determination of Matrix Composition to support Liposome Stability and Efficient Cell Free
+    Protein Synthesis
+  authors:
+  - name: Mary Kelly
+    affiliations:
+    - id: kamat-lab
+      name: Kamat Lab, Northwestern, Evanston, IL
+      institution: Northwestern University
+      department: Biomedical Engineering
+      city: Evanston
+      state: IL
+      country: USA
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2025-12-18'
+  banner: DSC0430.webp
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: matrix-design.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - general/**/*
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: matrix-design.zip
+site:
+  template: article-theme
+  nav: []

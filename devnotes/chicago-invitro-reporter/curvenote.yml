@@ -1,0 +1,60 @@
+version: 1
+project:
+  id: mjl-devnote-kickoff-workshop
+  title: In Vitro Reporter Validation
+  subtitle: Development and experimental validation of cytosol reporters.
+  description: Development and experimental validation of cytosol reporters.
+  authors:
+  - nameParsed:
+      literal: Matthew Lucia
+      given: Matthew
+      family: Lucia
+    name: Matthew Lucia
+    orcid: 0000-0002-8289-8365
+    affiliations:
+    - Tullman-Ercek Lab, Kamat Lab, Northwestern University
+    corresponding: true
+    email: matthewlucia2028@u.northwestern.edu
+    id: contributors-curvenote-generated-uid-0
+  keywords:
+  - Cytosol
+  - Modules
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2025-12-11'
+  banner: devcells.webp
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: invitro-reporter.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - general/**/*
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: invitro-reporter.zip
+site:
+  template: article-theme
+  nav: []
