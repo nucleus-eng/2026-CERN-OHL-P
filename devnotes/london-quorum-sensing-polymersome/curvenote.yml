@@ -1,0 +1,61 @@
+version: 1
+project:
+  id: 62abfe00-110e-41e1-8121-4572a093eb17
+  title: Quorum Sensing Polymersome
+  subtitle: Polymersome module integrated in hydrogel for quorum sensing of biofilms
+  authors:
+  - name: Julia Purrinos De Oliveira
+    email: j.purrinosdeoliveira@imperial.ac.uk
+    github: juliapurrinos
+    orcid: 0009-0004-7229-6709
+    corresponding: true
+    affiliations:
+      name: Imperial College London
+  - name: Claudia Contini
+    email: c.contini@imperial.ac.uk
+    orcid: 0000-0002-5282-2458
+    corresponding: true
+    affiliations:
+      name: Imperial College London
+  keywords:
+  - Cytosol
+  - Module
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2026-01-10'
+  banner: banner.webp
+  thumbnail: AHL.jpg
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: quorum-sensing-polymersome.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: quorum-sensing-polymersome.zip
+site:
+  template: article-theme
+  nav: []

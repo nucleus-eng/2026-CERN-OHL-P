@@ -1,0 +1,92 @@
+version: 1
+project:
+  id: II9a7f1e82-58ea-42a8-896c-7312b3538ef6
+  title: Hydrogel-Embedded GUV Developer Cells
+  subtitle: Hydrogel embedded lipid-based GUVs for stable encapsulation and functional protein expression
+  description: This module creates hydrogel-embedded, lipid-based GUV “developer cells” that can stably
+    encapsulate a cell-free expression system and produce functional proteins. It provides a foundational
+    synthetic-cell chassis for building spatially organised signalling and functional modules
+  authors:
+  - nameParsed:
+      literal: Ion Ioannou
+      given: Ion
+      family: Ioannou
+    name: Ion Ioannou
+    orcid: 0000-0001-8749-1049
+    corresponding: true
+    email: ii717@ic.ac.uk
+    affiliations:
+    - affiliations-curvenote-generated-uid-0
+    id: contributors-curvenote-generated-uid-0
+  - nameParsed:
+      literal: Ignacio Gispert
+      given: Ignacio
+      family: Gispert
+    name: Ignacio Gispert
+    orcid: 0000-0002-4100-5225
+    corresponding: false
+    email: i.gispert@imperial.ac.uk
+    affiliations:
+    - affiliations-curvenote-generated-uid-0
+    id: contributors-curvenote-generated-uid-1
+  - nameParsed:
+      literal: James
+      given: Hindley
+      family: Hindley
+    name: James Hindley
+    orcid: 0000-0002-3392-4387
+    corresponding: false
+    email: james.hindley@kcl.ac.uk
+    affiliations:
+    - affiliations-curvenote-generated-uid-1
+    id: contributors-curvenote-generated-uid-2
+  - nameParsed:
+      literal: Oscar
+      given: Ces
+      family: Ces
+    name: Ocar Ces
+    orcid: 0000-0002-3392-4387
+    corresponding: true
+    email: o.ces@imperial.ac.uk
+    affiliations:
+    - affiliations-curvenote-generated-uid-0
+    id: contributors-curvenote-generated-uid-3
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: '2025-12-11'
+  banner: devcells.webp
+  toc:
+  - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+  - lorem.mjs
+  jupyter: true
+  exports:
+  - format: meca
+    id: meca
+  - format: typst
+    template: https://github.com/curvenote-templates/bnext.git
+    article: main.md
+    output: hydrogel-guv-devcells.pdf
+    id: article
+  requirements:
+  - environment.yml
+  resources:
+  - general/**/*
+  - src/**/*
+  downloads:
+  - id: article
+    title: Download Article PDF
+  - id: meca
+    title: Computational Archive
+    filename: hydrogel-guv-devcells.zip
+site:
+  template: article-theme
+  nav: []
