@@ -20,6 +20,22 @@ CERN-OHL-P equivalent. Deciding whether a DevNote *may* be included is a
 Most DevNotes still to migrate come from external contributors at the Chicago
 and London nodes, so this is a live risk, not a formality.
 
+**Apply the gate per file as well as per DevNote.** A correctly-licensed
+DevNote can still carry files that must not be republished. `fwm-aria-d1` is
+CC-BY-4.0, but its `data/**/*` glob dragged in 31 PDFs — four third-party
+journal papers and an internal meeting-notes file, none referenced by anything
+that renders. Before committing any recovered bundle, list what it carries and
+ask about anything you did not expect:
+
+```bash
+find <devnote> -type f \( -iname '*.pdf' -o -iname '*.doc*' -o -iname '*.xls*' \
+  -o -iname '*meeting*' -o -iname '*note*' -o -iname '*copy of*' \) | sort
+```
+
+Then check whether each hit is referenced at all. Unreferenced third-party
+material is the clearest case to raise, and dropping it changes nothing that
+builds.
+
 ## The pipeline
 
 ```

@@ -12,6 +12,8 @@ Check here before diagnosing from scratch.
 | Notebooks pass but no figures render | `MPLBACKEND` forced to `Agg` | never set it; diff PNG counts |
 | A figure renders blank | a CDK helper calls `plt.show()`, closing it before `savefig` | embed from the notebook cell instead |
 | `devnote.pdf` export fails | space in a Typst label, or a wrong-case `{ref}` | rename the label, fix the reference — `verify-submit.md` §7 |
+| Typst: `label <x> does not exist in the document` | a container Typst cannot convert (`{grid}`) was dropped, taking its labelled children with it. Look for an earlier `Unhandled Typst conversion for node of ...` | removing the wrapper fixes it, but that is a layout change — ask the author |
+| `Unhandled Typst conversion for node of ...` but the PDF still builds | the node had no labelled children, so nothing dangles | benign; do not chase it |
 | File-not-found at build, path looks correct | `resources:` glob does not match | fix the glob, not the path — `prepare.md` §4 |
 | Notebook crashes writing a file | a needed directory was pruned as "missing" | recreate it; check `savefig` targets |
 | `Could not find static resource` in downloads | renamed or absent download target | point at the real filename |
@@ -19,6 +21,9 @@ Check here before diagnosing from scratch.
 | Submit reports "Created a new work" | work resolution is scoped to the submitting account | expected locally; let CI submit |
 | 403 fetching an article page | no browser `User-Agent` | pass `-A "Mozilla/5.0"` |
 | Enumeration finds too few DevNotes | not every collection page was fetched | fetch all of them; check counts sum |
+| Recovered DevNote has no input data, so a notebook cannot re-run | the archive was built with a broken `resources:` glob, so the data was never in it | read `bundle/curvenote.yml`, audit every glob — `recover.md` §2 |
+| Recovered DevNote reports no license, no exports, no resources | `extends: base.yml`, and MECA drops `base.yml` | inline what base supplied; do not assume it had none |
+| A `downloads:` target is absent from the bundle | same broken-glob cause | check the article page — download assets are published as their own zips |
 
 ## What to automate, and what not to
 
