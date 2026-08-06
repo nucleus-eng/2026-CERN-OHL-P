@@ -1,0 +1,13 @@
+timestamp_utc=2026-03-09T17:34:33Z
+run_name=base_master_mix
+protocol=/Volumes/bnext/experiments/20260306-DisoveryPlate-ARIA-R0/ot_base_mm/base_mm.py
+parameters=/Volumes/bnext/experiments/20260306-DisoveryPlate-ARIA-R0/ot_base_mm/base_params.py
+sweep_calculator=/Users/sharonnewman/Documents/general/bnext_local/cdk/src/cdk/calculators/sweep_calculator.py
+input_df=/tmp/ot_build.kKPXC2/input_dfs.py
+labware=/Users/sharonnewman/Documents/general/bnext_local/instrument/opentrons/labware
+manifest=/Volumes/bnext/experiments/20260306-DisoveryPlate-ARIA-R0/ot_base_mm/manifest.toml
+merged_file=combined_protocols_DO_NOT_EDIT/combined_base_mm.py
+csv_count=3
+csv=/Volumes/bnext/experiments/20260306-DisoveryPlate-ARIA-R0/base_master_mix.csv
+csv=/Volumes/bnext/experiments/20260306-DisoveryPlate-ARIA-R0/reagents.csv
+csv=/Volumes/bnext/experiments/20260306-DisoveryPlate-ARIA-R0/samples_titration_labcraft.csv

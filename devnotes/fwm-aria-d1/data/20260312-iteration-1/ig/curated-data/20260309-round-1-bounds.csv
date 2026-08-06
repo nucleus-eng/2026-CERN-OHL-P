@@ -1,0 +1,3 @@
+,[DNA] (nM),[PEG4K 40%] (%),[RNAse Inhib] (U/mL),[PMix] (mg/mL),[Ribosome] (uM),Rxn Volume (uL),[Magnesium acetate] (mM),[Creatine phosphate] (mM),[Potassium glutamate] (mM),[HEPES] (mM),[PPK] (uM),[PolyP] (mM),[ATP] (mM),[GTP] (mM),[CTP] (mM),[UTP] (mM),[TCEP] (mM),[Folinic acid] (mM),[Spermidine] (mM),[Amino acid mix] (mM),[tRNA] (ug/uL),IsNEB,HasMgAR953,sigmoid_steady_state (ng/uL),sigmoid_rate (1/h),sigmoid_time_offset (h),success,isplamGFP
+min,1,0,2000,1.529999978,1.799999951,5,0,0,60,50,0,0,1,1,0.5,0.5,1,0.02,2,0.1,1,FALSE,FALSE,100,0,0,FALSE,FALSE
+max,20,0,2000.000003,2.2425,3.24,10,25,100,200,50,0,0,4,4,2,2,1,0.02,2,0.6,5.25,FALSE,FALSE,500,10,3,TRUE,FALSE

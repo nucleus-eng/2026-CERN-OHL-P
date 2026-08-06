@@ -1,0 +1,13 @@
+final_rxn_vol_ul = 10.0
+samples_final_concs_file = "ges-round-1-mod-cp60-aa04.csv"
+pipetting_scalar = 1.4
+min_pipetting_vol_ul = 0.5
+conc_decimals = 3
+vol_decimals = 3
+buffer_reagent = "water"
+use_base_master_mix = true
+add_buffer_to_base_master_mix = false
+replicates = 1
+
+# If omitted by calculator, default to all non-buffer reagents.
+exclude_from_base_reagents = ["trna", "aas","magnesium_acetate", "potassium_glutamate", "gtp", "atp"]
